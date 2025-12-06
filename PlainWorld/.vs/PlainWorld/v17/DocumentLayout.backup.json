@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|d:\\github\\project-plainworld.fe-v1.0-unity\\plainworld\\assets\\service\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\inetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\inetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\utility\\gamelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\utility\\gamelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\bootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\bootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\servicelocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\servicelocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\coroutinerunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\coroutinerunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "INetworkHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\INetworkHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\INetworkHandler.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\INetworkHandler.cs",
+              "RelativeToolTip": "Assets\\Network\\INetworkHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T03:27:39.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Bootstrapper.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\Bootstrapper.cs",
+              "RelativeDocumentMoniker": "Assets\\Core\\Bootstrapper.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\Bootstrapper.cs",
+              "RelativeToolTip": "Assets\\Core\\Bootstrapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T03:08:50.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\IService.cs",
+              "RelativeDocumentMoniker": "Assets\\Core\\IService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\IService.cs",
+              "RelativeToolTip": "Assets\\Core\\IService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T02:54:38.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameLogger.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\GameLogger.cs",
+              "RelativeDocumentMoniker": "Assets\\Utility\\GameLogger.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\GameLogger.cs",
+              "RelativeToolTip": "Assets\\Utility\\GameLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T02:47:21.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NetworkService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkService.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\NetworkService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkService.cs",
+              "RelativeToolTip": "Assets\\Network\\NetworkService.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAA7wEQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T16:48:39.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ServiceLocator.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\ServiceLocator.cs",
+              "RelativeDocumentMoniker": "Assets\\Core\\ServiceLocator.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\ServiceLocator.cs",
+              "RelativeToolTip": "Assets\\Core\\ServiceLocator.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAnwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:02:42.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\PlayerService.cs",
+              "RelativeDocumentMoniker": "Assets\\Service\\PlayerService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\PlayerService.cs",
+              "RelativeToolTip": "Assets\\Service\\PlayerService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAnwC8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T16:57:28.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CoroutineRunner.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\CoroutineRunner.cs",
+              "RelativeDocumentMoniker": "Assets\\Core\\CoroutineRunner.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\CoroutineRunner.cs",
+              "RelativeToolTip": "Assets\\Core\\CoroutineRunner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T16:54:31.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GlobalExceptionHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\GlobalExceptionHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Core\\GlobalExceptionHandler.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\GlobalExceptionHandler.cs",
+              "RelativeToolTip": "Assets\\Core\\GlobalExceptionHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T16:54:14.943Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
