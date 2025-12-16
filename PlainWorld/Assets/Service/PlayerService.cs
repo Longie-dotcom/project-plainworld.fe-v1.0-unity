@@ -1,61 +1,62 @@
 ﻿using Assets.Core;
-using Assets.Network;
-using Assets.Utility;
+using Assets.Network.Interface.Command;
+using System;
+using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Assets.Service
 {
-    public class PlayerService : IService, INetworkHandler
+    public class PlayerService : IService
     {
         #region Attributes
-        private NetworkService networkService;
+        private ViewPresenter viewLogic;
         #endregion
 
         #region Properties
+        public bool IsInitialized { get; private set; } = false;
+        public IPlayerNetworkCommand PlayerNetworkCommand { get; private set; }
+        public Guid PlayerID { get; private set; } = Guid.Parse("a5a5405a-c1e1-49af-a68c-7cbb035be75d");
+
+        public ViewPresenter Logic
+        {
+            get { return viewLogic; }
+        }
         #endregion
 
         public PlayerService() { }
 
         #region Methods
-        public void Initialize()
+        public Task InitializeAsync()
         {
-            networkService = ServiceLocator.Get<NetworkService>();
-            networkService.RegisterHandler(this);
+            if (PlayerNetworkCommand == null)
+                throw new InvalidOperationException(
+                    "PlayerNetworkCommand not bound before Initialize");
+
+            viewLogic = new ViewPresenter(
+                this,
+                PlayerID,
+                "Long"
+            );
+
+            IsInitialized = true;
+
+            return Task.CompletedTask;
         }
 
-        public void Shutdown()
+        public Task ShutdownAsync()
         {
-            networkService.UnregisterHandler(this);
+            return Task.CompletedTask;
         }
 
-        public void HandleNetworkEvent(string group, string method, object payload)
+        public void BindNetworkCommand(IPlayerNetworkCommand command)
         {
-            switch (method)
-            {
-                case NetworkMethod.PlayerJoined:
-                    SpawnPlayer(payload);
-                    break;
-                case NetworkMethod.PlayerMoved:
-                    UpdateMovement(payload);
-                    break;
-            }
+            PlayerNetworkCommand = command;
         }
 
-        public void SendNetworkEvent(string group, string method, object payload)
+        public void HandleUpdatePosition(float x, float y)
         {
-            networkService.SendEvent(group, method, payload);
+            viewLogic.UpdatePosition(new Vector2(x, y));
         }
-
-        #region Handler received event
-        private void SpawnPlayer(object payload)
-        {
-            GameLogger.Info(Channel.Service, $"Spwaned new player");
-        }
-
-        private void UpdateMovement(object payload)
-        {
-            GameLogger.Info(Channel.Service, $"Update player movement");
-        }
-        #endregion
         #endregion
     }
 }

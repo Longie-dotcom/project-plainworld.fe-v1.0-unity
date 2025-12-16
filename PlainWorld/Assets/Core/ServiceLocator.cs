@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Assets.Core
 {
@@ -15,13 +16,7 @@ namespace Assets.Core
         #region Methods
         public static void Register<T>(T service) where T : IService
         {
-            var type = typeof(T);
-
-            if (services.ContainsKey(type))
-                services[type].Shutdown();
-
-            services[type] = service;
-            service.Initialize();
+            services[typeof(T)] = service;
         }
 
         public static T Get<T>() where T : IService
@@ -29,14 +24,19 @@ namespace Assets.Core
             return (T)services[typeof(T)];
         }
 
-        public static void ShutdownAll()
+        public static async Task ShutdownAll()
         {
             foreach (var service in services.Values)
             {
-                service.Shutdown();
+                await service.ShutdownAsync();
             }
 
             services.Clear();
+        }
+
+        public static bool IsRegistered<T>() where T : IService
+        {
+            return services.ContainsKey(typeof(T));
         }
         #endregion
     }

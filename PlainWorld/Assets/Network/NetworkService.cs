@@ -1,29 +1,35 @@
 using Assets.Core;
+using Assets.Network.DTO;
+using Assets.Network.Interface.Base;
+using Assets.Network.Interface.Receiver;
 using Assets.Utility;
 using Microsoft.AspNetCore.SignalR.Client;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Assets.Network
 {
     public class NetworkService : IService
     {
         #region Attributes
-        private readonly List<INetworkHandler> handlers = new();
+        private readonly Dictionary<Type, object> receivers = new();
+        private readonly Dictionary<Type, Queue<Action>> pendingEvents = new();
 
         private HubConnection connection;
         private bool isConnected = false;
-        private const string HUB_URL = "https://your-server-url/hub";
+        private const string HUB_URL = "http://26.92.115.30:5020/hubs/game";
         #endregion
 
         #region Properties
+        public bool IsInitialized { get; private set; } = false;
         public event Action<string, string, object> OnRawNetworkEvent;
         #endregion
 
         public NetworkService() { }
 
         #region Methods
-        public async void Initialize()
+        public async Task InitializeAsync()
         {
             GameLogger.Info(Channel.Network, "The network is initializing");
 
@@ -32,33 +38,31 @@ namespace Assets.Network
                 .WithAutomaticReconnect()
                 .Build();
 
-            connection.On<string, string, object>("OnNetworkEvent",
-                (group, method, payload) =>
-                {
-                    foreach (var handler in handlers)
-                    {
-                        handler.HandleNetworkEvent(group, method, payload);
-                    }
-                });
+            BindServerEvents();
 
             try
             {
                 await connection.StartAsync();
                 isConnected = true;
 
-                GameLogger.Info(Channel.Network, "The network connected successfully");
+                GameLogger.Info(
+                    Channel.Network, "The network connected successfully");
             }
             catch (Exception ex)
             {
-                GameLogger.Error(Channel.Network, $"The network connection has an exception: {ex.Message}");
+                GameLogger.Error(
+                    Channel.Network, $"The network connection has an exception: {ex.Message}");
             }
+
+            IsInitialized = true;
         }
 
-        public async void Shutdown()
+        public async Task ShutdownAsync()
         {
             if (connection != null)
             {
-                GameLogger.Warning(Channel.Network, "The network is shut down");
+                GameLogger.Warning(
+                    Channel.Network, "The network is shut down");
 
                 await connection.StopAsync();
                 await connection.DisposeAsync();
@@ -66,33 +70,138 @@ namespace Assets.Network
             }
         }
 
-        public void RegisterHandler(INetworkHandler handler)
+        public void Register<T>(T receiver) where T : class
         {
-            if (!handlers.Contains(handler))
-                handlers.Add(handler);
+            var type = typeof(T);
+            receivers[type] = receiver;
+
+            if (pendingEvents.TryGetValue(type, out var queue))
+            {
+                while (queue.Count > 0)
+                    queue.Dequeue().Invoke();
+                pendingEvents.Remove(type);
+            }
         }
 
-        public void UnregisterHandler(INetworkHandler handler)
+        public void Unregister<T>()
         {
-            if (handlers.Contains(handler))
-                handlers.Remove(handler);
+            receivers.Remove(typeof(T));
         }
 
-        public async void SendEvent(
-            string group, 
-            string method, 
-            object payload)
+        public async Task SendEvent(
+            string method,
+            params object[] args)
         {
-            if (connection == null || connection.State != HubConnectionState.Connected) return;
+            if (connection == null || connection.State != HubConnectionState.Connected)
+                throw new Exception("Network is not ready");
 
             try
             {
-                GameLogger.Info(Channel.Network, $"Send event with method {method} for group: {group}");
-                await connection.InvokeAsync("SendEvent", group, method, payload);
+                await connection.InvokeCoreAsync(method, args);
+                GameLogger.Info(
+                    Channel.Network, $"Send event with method {method}");
             }
             catch (Exception ex)
             {
-                GameLogger.Error(Channel.Network, $"Send event failed: {ex.Message}");
+                GameLogger.Error(
+                    Channel.Network, $"Send event failed: {ex.Message}");
+            }
+        }
+
+        public async Task JoinGroup(string groupName)
+        {
+            if (connection == null || connection.State != HubConnectionState.Connected)
+                throw new Exception("Network is not ready");
+
+            try
+            {
+                await connection.InvokeAsync(OnSend.JoinGroup, groupName);
+                GameLogger.Info(
+                    Channel.Network, $"Joined group {groupName}");
+            }
+            catch (Exception ex)
+            {
+                GameLogger.Error(
+                    Channel.Network, $"Failed to join group {groupName}: {ex.Message}");
+            }
+        }
+        #endregion
+
+        #region Private Helpers
+        private void BindServerEvents()
+        {
+            // --- Player Service ---
+            connection.On<Guid, PositionDTO>(
+                OnReceive.OnPlayerJoin, (playerId, position) =>
+                {
+                    var dto = new PlayerJoinDTO { PlayerId = playerId, Position = position };
+                    Dispatch<IPlayerNetworkReceiver, PlayerJoinDTO>(
+                        dto, (r, d) => r.OnPlayerJoined(d));
+                });
+
+            connection.On<Guid, PositionDTO>(
+                OnReceive.OnPlayerMove, (playerId, position) =>
+                {
+                    var dto = new PlayerMoveDTO { PlayerId = playerId, Position = position };
+                    Dispatch<IPlayerNetworkReceiver, PlayerMoveDTO>(
+                        dto, (r, d) => r.OnPlayerMoved(d));
+                });
+
+            // --- Entity Service ---
+            connection.On<Guid, PositionDTO>(
+                OnReceive.OnPlayerEntityJoin, (playerId, position) =>
+                {
+                    var dto = new PlayerJoinDTO { PlayerId = playerId, Position = position };
+                    Dispatch<IEntityNetworkReceiver, PlayerJoinDTO>(
+                        dto, (r, d) => r.OnPlayerEntityJoined(d));
+                });
+
+            connection.On<Guid, PositionDTO>(
+                OnReceive.OnPlayerEntityMove, (playerId, position) =>
+                {
+                    var dto = new PlayerMoveDTO { PlayerId = playerId, Position = position };
+                    Dispatch<IEntityNetworkReceiver, PlayerMoveDTO>(
+                        dto, (r, d) => r.OnPlayerEntityMoved(d));
+                });
+        }
+
+        private void Dispatch<TReceiver, TData>(
+            TData data,
+            Action<TReceiver, TData> call,
+            string group = null)
+            where TReceiver : class
+        {
+            bool calledAny = false;
+
+            foreach (var receiver in receivers.Values)
+            {
+                // Call methods
+                if (receiver is TReceiver r)
+                {
+                    if (group == null || (r is INetworkBase gr && gr.Group == group))
+                    {
+                        call(r, data);
+                        calledAny = true;
+                    }
+                }
+            }
+
+            if (!calledAny)
+            {
+                // Fallback for pending events
+                var type = typeof(TReceiver);
+                if (!pendingEvents.TryGetValue(type, out var queue))
+                    queue = new Queue<Action>();
+
+                queue.Enqueue(() => {
+                    if (receivers.TryGetValue(type, out var later))
+                        call((TReceiver)later, data);
+                    else
+                        GameLogger.Warning(
+                            Channel.Network, $"Pending event for {type} dropped, receiver still not registered");
+                });
+
+                pendingEvents[type] = queue;
             }
         }
         #endregion

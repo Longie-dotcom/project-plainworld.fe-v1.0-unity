@@ -1,8 +1,11 @@
+using System.Threading.Tasks;
+
 namespace Assets.Core
 {
     public interface IService
     {
-        void Initialize();
-        void Shutdown();
+        bool IsInitialized { get; }
+        Task InitializeAsync();
+        Task ShutdownAsync();
     }
 }

@@ -25,20 +25,26 @@ namespace Assets.Core
             // Catch Task-based async exceptions
             TaskScheduler.UnobservedTaskException += HandleUnobservedTaskException;
 
-            GameLogger.Info(Channel.System, "[GlobalExceptionHandler] Initialized.");
+            GameLogger.Info(
+                Channel.System, 
+                "[GlobalExceptionHandler] Initialized.");
         }
 
         private static void HandleUnityLog(string condition, string stackTrace, LogType type)
         {
             if (type == LogType.Exception)
             {
-                GameLogger.Error(Channel.System, "[Unity Exception] " + condition + "\n" + stackTrace);
+                GameLogger.Error(
+                    Channel.System, 
+                    "[Unity Exception] " + condition + "\n" + stackTrace);
             }
         }
 
         private static void HandleUnobservedTaskException(object sender, UnobservedTaskExceptionEventArgs e)
         {
-            GameLogger.Error(Channel.System, "[Unobserved Task Exception] " + e.Exception);
+            GameLogger.Error(
+                Channel.System, 
+                "[Unobserved Task Exception] " + e.Exception);
             e.SetObserved();
         }
 
@@ -47,7 +53,9 @@ namespace Assets.Core
             Application.logMessageReceived -= HandleUnityLog;
             TaskScheduler.UnobservedTaskException -= HandleUnobservedTaskException;
 
-            GameLogger.Info(Channel.System, "[GlobalExceptionHandler] Shutdown.");
+            GameLogger.Info(
+                Channel.System, 
+                "[GlobalExceptionHandler] Shutdown.");
         }
         #endregion
     }

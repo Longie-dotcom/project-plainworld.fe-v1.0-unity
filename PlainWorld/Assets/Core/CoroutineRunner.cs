@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.Core
@@ -6,11 +8,10 @@ namespace Assets.Core
     {
         #region Attributes
         private static CoroutineRunner instance;
+        private readonly Queue<Action> actions = new();
         #endregion
 
         #region Properties
-        #endregion
-
         public static CoroutineRunner Instance
         {
             get
@@ -28,8 +29,33 @@ namespace Assets.Core
                 return instance;
             }
         }
+        #endregion
 
         #region Methods
+        public void Schedule(Action action)
+        {
+            lock (actions)
+            {
+                actions.Enqueue(action);
+            }
+        }
+
+        private void Update()
+        {
+            while (true)
+            {
+                Action a = null;
+                lock (actions)
+                {
+                    if (actions.Count > 0)
+                        a = actions.Dequeue();
+                }
+                if (a == null)
+                    break;
+
+                a.Invoke();
+            }
+        }
         #endregion
     }
 }
