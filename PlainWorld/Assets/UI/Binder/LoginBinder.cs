@@ -1,5 +1,4 @@
-﻿using Assets.Core;
-using Assets.Service;
+﻿using Assets.Service;
 using Assets.UI.MainMenu.Login;
 using Assets.Utility;
 using System.Collections;
@@ -12,6 +11,7 @@ public class LoginUIBinder : ComponentBinder
     private LoginView loginView;
     private LoginPresenter presenter;
     private UIService uiService;
+    private AuthService authService;
     #endregion
 
     #region Properties
@@ -20,27 +20,28 @@ public class LoginUIBinder : ComponentBinder
     #region Methods
     private IEnumerator Start()
     {
+        yield return BindWhenReady<AuthService>(auth =>
+        {
+            authService = auth;
+        });
+
         yield return BindWhenReady<UIService>(ui =>
         {
             uiService = ui;
-
-            var auth = ServiceLocator.Get<AuthService>();
-            presenter = new LoginPresenter(loginView, auth);
-
-            ui.OnUIStateChanged += loginView.HandleUIState;
-
-            GameLogger.Info(
-                Channel.System,
-                "Login UI components binded successfully");
         });
+
+        // Resolve dependencies
+        presenter = new LoginPresenter(authService, uiService);
+        presenter.Bind(loginView);
+
+        GameLogger.Info(
+            Channel.System,
+            "Login UI components binded successfully");
     }
 
     private void OnDestroy()
     {
         presenter?.Dispose();
-
-        if (uiService != null)
-            uiService.OnUIStateChanged -= loginView.HandleUIState;
     }
     #endregion
 }

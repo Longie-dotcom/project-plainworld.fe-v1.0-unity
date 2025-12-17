@@ -1,5 +1,6 @@
 ﻿using Assets.Core;
 using Assets.Network.Interface.Command;
+using Assets.State;
 using System;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -9,18 +10,13 @@ namespace Assets.Service
     public class PlayerService : IService
     {
         #region Attributes
-        private ViewPresenter viewLogic;
         #endregion
 
         #region Properties
         public bool IsInitialized { get; private set; } = false;
         public IPlayerNetworkCommand PlayerNetworkCommand { get; private set; }
-        public Guid PlayerID { get; private set; } = Guid.Parse("a5a5405a-c1e1-49af-a68c-7cbb035be75d");
 
-        public ViewPresenter Logic
-        {
-            get { return viewLogic; }
-        }
+        public PlayerState State { get; private set; }
         #endregion
 
         public PlayerService() { }
@@ -32,14 +28,9 @@ namespace Assets.Service
                 throw new InvalidOperationException(
                     "PlayerNetworkCommand not bound before Initialize");
 
-            viewLogic = new ViewPresenter(
-                this,
-                PlayerID,
-                "Long"
-            );
+            State = new PlayerState();
 
             IsInitialized = true;
-
             return Task.CompletedTask;
         }
 
@@ -53,9 +44,23 @@ namespace Assets.Service
             PlayerNetworkCommand = command;
         }
 
+        public async Task JoinAsync()
+        {
+            await PlayerNetworkCommand.Join(State.PlayerId, State.PlayerName);
+            State.MarkJoined();
+        }
+
+        public async Task MoveAsync(Vector2 dir)
+        {
+            var next = State.PredictMove(dir);
+            await PlayerNetworkCommand.Move(State.PlayerId, next);
+            State.ApplyPredictedPosition(next); // client-side prediction
+        }
+
+        // Called by network layer
         public void HandleUpdatePosition(float x, float y)
         {
-            viewLogic.UpdatePosition(new Vector2(x, y));
+            State.ApplyServerPosition(new Vector2(x, y));
         }
         #endregion
     }

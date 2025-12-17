@@ -1,4 +1,5 @@
 ﻿using Assets.Service;
+using Assets.Utility;
 using System.Collections;
 using UnityEngine;
 
@@ -7,7 +8,8 @@ public class PlayerBinder : ComponentBinder
     #region Attributes
     [SerializeField]
     private PlayerView playerView;
-    private ViewPresenter presenter;
+    private PlayerService playerService;
+    private PlayerPresenter presenter;
     #endregion
 
     #region Properties
@@ -16,24 +18,23 @@ public class PlayerBinder : ComponentBinder
     #region Methods
     private IEnumerator Start()
     {
-        // Use the generic BindWhenReady from ComponentBinder
-        yield return BindWhenReady<PlayerService>(playerService =>
+        yield return BindWhenReady<PlayerService>(player =>
         {
-            // Create presenter for this prefab instance
-            presenter = new ViewPresenter(
-                playerService, playerService.PlayerID, "Long");
-
-            // Assign presenter to the View
-            playerView.SetLogic(presenter);
-
-            // Optionally subscribe to service events
-            // playerService.OnPositionUpdate += presenter.UpdatePosition;
+            playerService = player;
         });
+
+        // Resolve dependencies
+        presenter = new PlayerPresenter(playerService);
+        presenter.Bind(playerView);
+
+        GameLogger.Info(
+            Channel.System,
+            "Player components bound successfully");
     }
 
     private void OnDestroy()
     {
-        presenter = null;
+        presenter?.Dispose();
     }
     #endregion
 }

@@ -1,4 +1,5 @@
 ﻿using Assets.Service;
+using Assets.Utility;
 using System;
 
 namespace Assets.UI.MainMenu.Login
@@ -6,8 +7,11 @@ namespace Assets.UI.MainMenu.Login
     public class LoginPresenter : IDisposable
     {
         #region Attributes
-        private readonly LoginView view;
-        private readonly AuthService service;
+        private readonly AuthService authService;
+        private readonly UIService uiService;
+
+        private LoginView view;
+        private bool disposed;
 
         private string email;
         private string password;
@@ -16,24 +20,37 @@ namespace Assets.UI.MainMenu.Login
         #region Properties
         #endregion
 
-        public LoginPresenter(
-            LoginView view, 
-            AuthService service)
+        public LoginPresenter(AuthService authService, UIService uiService)
         {
+            this.authService = authService;
+            this.uiService = uiService;
+        }
+
+        #region Methods
+        public void Bind(LoginView view)
+        {
+            if (disposed)
+                throw new ObjectDisposedException(nameof(LoginPresenter));
+
             this.view = view;
-            this.service = service;
 
             view.OnEmailChanged += OnEmailChanged;
             view.OnPasswordChanged += OnPasswordChanged;
             view.OnJoinClicked += OnLogin;
+
+            uiService.OnUIStateChanged += view.HandleUIState;
         }
 
-        #region Methods
         public void Dispose()
         {
+            if (disposed) return;
+            disposed = true;
+
             view.OnEmailChanged -= OnEmailChanged;
             view.OnPasswordChanged -= OnPasswordChanged;
             view.OnJoinClicked -= OnLogin;
+
+            uiService.OnUIStateChanged -= view.HandleUIState;
         }
 
         private void OnEmailChanged(string v)
@@ -46,18 +63,10 @@ namespace Assets.UI.MainMenu.Login
             password = v;
         }
 
-        private async void OnLogin()
+        private void OnLogin()
         {
             view.SetInteractable(false);
-
-            try
-            {
-                await service.Login(email, password);
-            }
-            finally
-            {
-                view.SetInteractable(true);
-            }
+            AsyncHelper.Run(() => authService.Login(email, password));
         }
         #endregion
     }

@@ -29,7 +29,7 @@ namespace Assets.Service
                     "UINetworkCommand not bound before Initialize");
 
             state = ServiceLocator.Get<StateService>();
-            state.OnUIChanged += HandleUIState;
+            state.OnGameChanged += HandleGameState;
 
             IsInitialized = true;
 
@@ -38,7 +38,6 @@ namespace Assets.Service
 
         public Task ShutdownAsync()
         {
-            state.OnUIChanged -= HandleUIState;
             return Task.CompletedTask;
         }
 
@@ -47,8 +46,16 @@ namespace Assets.Service
             UINetworkCommand = command;
         }
 
-        private void HandleUIState(UIState ui)
+        private void HandleGameState(GameState game)
         {
+            var ui = new UIState
+            {
+                ShowLogin = game.Phase == GamePhase.None,
+                ShowLoading = game.Phase == GamePhase.Connecting,
+                ShowLobby = game.Phase == GamePhase.Lobby,
+                ShowHUD = game.Phase == GamePhase.InGame
+            };
+
             OnUIStateChanged?.Invoke(ui);
         }
         #endregion

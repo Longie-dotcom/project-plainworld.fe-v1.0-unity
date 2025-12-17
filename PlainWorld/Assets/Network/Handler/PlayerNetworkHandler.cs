@@ -55,13 +55,13 @@ namespace Assets.Network.Handler
         #region Receive Handlers
         public void OnPlayerJoined(PlayerJoinDTO dto)
         {
-            if (dto.PlayerId != playerService.PlayerID) return;
+            if (dto.PlayerId != playerService.State.PlayerId) return;
             playerService.HandleUpdatePosition(dto.Position.X, dto.Position.Y);
         }
 
         public void OnPlayerMoved(PlayerMoveDTO dto)
         {
-            if (dto.PlayerId != playerService.PlayerID) return;
+            if (dto.PlayerId != playerService.State.PlayerId) return;
             playerService.HandleUpdatePosition(dto.Position.X, dto.Position.Y);
         }
         #endregion

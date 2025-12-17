@@ -1,30 +1,33 @@
+using System;
 using UnityEngine;
 
 public class PlayerView : MonoBehaviour
 {
     #region Attributes
-    private ViewPresenter logic;
     #endregion
 
     #region Properties
+    public event Action OnJoinPressed;
+    public event Action<Vector2> OnMove;
     #endregion
 
     #region Methods
     void Update()
     {
-        if (logic == null) return;
+        if (Input.GetKeyDown(KeyCode.J))
+            OnJoinPressed?.Invoke();
 
-        if (!logic.HasJoined && Input.GetKeyDown(KeyCode.J))
-            _ = logic.Join();
+        Vector2 dir = new Vector2(
+            Input.GetAxis("Horizontal"),
+            Input.GetAxis("Vertical"));
 
-        Vector2 dir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         if (dir != Vector2.zero)
-            _ = logic.Move(dir);
+            OnMove?.Invoke(dir);
     }
 
-    public void SetLogic(ViewPresenter logic)
+    public void ApplyPosition(Vector2 pos)
     {
-        this.logic = logic;
+        transform.position = new Vector3(pos.x, pos.y, 0);
     }
     #endregion
 }
