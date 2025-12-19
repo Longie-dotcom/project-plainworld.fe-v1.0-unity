@@ -24,6 +24,8 @@ public class LoginView : MonoBehaviour
     public event Action<string> OnPasswordChanged;
     #endregion
 
+    public LoginView() { }
+
     #region Methods
     void Awake()
     {
@@ -49,11 +51,6 @@ public class LoginView : MonoBehaviour
     public void HandleUIState(UIState state)
     {
         gameObject.SetActive(state.ShowLogin);
-    }
-
-    public void SetInteractable(bool value)
-    {
-        joinButton.interactable = value;
     }
     #endregion
 }

@@ -9,9 +9,9 @@ namespace Assets.State
         #endregion
 
         #region Properties
-        public Guid PlayerId { get; }
-        public string PlayerName { get; }
-        public float MoveSpeed { get; } = 5f;
+        public Guid PlayerID { get; private set; }
+        public string PlayerName { get; private set; }
+        public float MoveSpeed { get; private set; }
 
         public bool HasJoined { get; private set; }
         public Vector2 Position { get; private set; }
@@ -22,17 +22,21 @@ namespace Assets.State
 
         public PlayerState()
         {
-            PlayerId = Guid.Parse("a5a5405a-c1e1-49af-a68c-7cbb035be75d");
-            PlayerName = "Long";
+            MoveSpeed = 1f;
         }
 
         #region Methods
-        public void MarkJoined()
+        public void MarkJoined(
+            Guid playerId,
+            string playerName)
         {
             if (HasJoined)
                 return;
 
+            PlayerID = playerId;
+            PlayerName = playerName;
             HasJoined = true;
+
             OnJoinChanged?.Invoke(true);
         }
 

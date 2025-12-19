@@ -1,22 +1,30 @@
 using System;
 using UnityEngine;
 
-public class PlayerView : MonoBehaviour
+public class PlayerMoveView : MonoBehaviour
 {
     #region Attributes
     #endregion
 
     #region Properties
-    public event Action OnJoinPressed;
     public event Action<Vector2> OnMove;
     #endregion
 
+    public PlayerMoveView() { }
+
     #region Methods
+    void Awake()
+    {
+        
+    }
+
+    void Start()
+    {
+        
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
-            OnJoinPressed?.Invoke();
-
         Vector2 dir = new Vector2(
             Input.GetAxis("Horizontal"),
             Input.GetAxis("Vertical"));

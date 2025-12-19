@@ -1,5 +1,28 @@
 using UnityEngine;
 
+/*
+ * Centralized logging utility for the game client.
+ *
+ * Purpose:
+ * - Provide a consistent, categorized logging format.
+ * - Separate log output by system responsibility (Channel).
+ * - Control debug verbosity from a single switch.
+ *
+ * Design notes:
+ * - Wraps UnityEngine.Debug to avoid direct usage across codebase.
+ * - Intended for development and debugging only.
+ * - Logging can be globally disabled via EnableDebug.
+ *
+ * Behavior:
+ * - Formats logs as: [Level][Channel] Message
+ * - Routes messages to Unity's Log / Warning / Error streams.
+ *
+ * Usage:
+ * - GameLogger.Info(Channel.System, "Service initialized");
+ * - GameLogger.Warning(Channel.Network, "Connection unstable");
+ * - GameLogger.Error(Channel.Gameplay, "Invalid player state");
+ */
+
 namespace Assets.Utility
 {
     public enum Level

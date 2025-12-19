@@ -1,4 +1,5 @@
-﻿using Assets.Service;
+﻿using Assets.Gameplay.Player;
+using Assets.Service;
 using Assets.Utility;
 using System.Collections;
 using UnityEngine;
@@ -6,14 +7,16 @@ using UnityEngine;
 public class PlayerBinder : ComponentBinder
 {
     #region Attributes
-    [SerializeField]
-    private PlayerView playerView;
+    private LoginBinder loginBinder;
+
+    private PlayerPresenter playerPresenter;
     private PlayerService playerService;
-    private PlayerPresenter presenter;
     #endregion
 
     #region Properties
     #endregion
+
+    public PlayerBinder() { }
 
     #region Methods
     private IEnumerator Start()
@@ -24,17 +27,34 @@ public class PlayerBinder : ComponentBinder
         });
 
         // Resolve dependencies
-        presenter = new PlayerPresenter(playerService);
-        presenter.Bind(playerView);
+        loginBinder = GetComponent<LoginBinder>();
+        loginBinder.OnLoginPresenterReady += presenter =>
+        {
+            presenter.OnPlayerCreated += BindPlayerView;
+        };
 
         GameLogger.Info(
             Channel.System,
             "Player components bound successfully");
     }
 
+    private void BindPlayerView(GameObject playerInstance)
+    {
+        playerPresenter = new PlayerPresenter(playerService);
+        playerPresenter.Bind(
+            playerInstance.GetComponent<PlayerMoveView>());
+
+        GameLogger.Info(
+            Channel.System,
+            "Binding player presenter successfully");
+    }
+
     private void OnDestroy()
     {
-        presenter?.Dispose();
+        if (loginBinder?.LoginPresenter != null)
+            loginBinder.LoginPresenter.OnPlayerCreated -= BindPlayerView;
+
+        playerPresenter?.Dispose();
     }
     #endregion
 }

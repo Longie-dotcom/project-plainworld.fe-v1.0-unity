@@ -4,12 +4,12 @@ using Assets.Service;
 
 namespace Assets.Network.Handler
 {
-    public class StateNetworkHandler :
-        IStateNetworkReceiver,
-        IStateNetworkCommand
+    public class GameNetworkHandler :
+        IGameNetworkReceiver,
+        IGameNetworkCommand
     {
         #region Attributes
-        private StateService stateService;
+        private GameService gameService;
         private NetworkCommandSender sender = new();
         #endregion
 
@@ -17,12 +17,12 @@ namespace Assets.Network.Handler
         public string Group { get; private set; }
         #endregion
 
-        public StateNetworkHandler() { }
+        public GameNetworkHandler() { }
 
         #region Methods
-        public void BindService(StateService service, NetworkService network)
+        public void BindService(GameService service, NetworkService network)
         {
-            stateService = service;
+            gameService = service;
             sender.BindNetwork(network);
         }
         #endregion

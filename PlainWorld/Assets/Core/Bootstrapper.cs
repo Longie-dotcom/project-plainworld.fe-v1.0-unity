@@ -16,6 +16,7 @@ namespace Assets.Core
         #region Properties
         #endregion
 
+        public Bootstrapper() { }
 
         #region Methods
         private void Awake()
@@ -29,7 +30,7 @@ namespace Assets.Core
 
             // --- Instantiate services ---
             var networkService = new NetworkService();
-            var stateService = new StateService();
+            var gameService = new GameService();
             var playerService = new PlayerService();
             var entityService = new EntityService();
             var uiService = new UIService();
@@ -43,31 +44,35 @@ namespace Assets.Core
             var playerNetworkHandler = new PlayerNetworkHandler();
             var entityNetworkHandler = new EntityNetworkHandler();
             var uiNetworkHandler = new UINetworkHandler();
-            var stateNetworkHandler = new StateNetworkHandler();
+            var gameNetworkHandler = new GameNetworkHandler();
+            var authNetworkHandler = new AuthNetworkHandler();
 
             GameLogger.Info(
                 Channel.System,
                 "Instantiate network handlers successfully");
 
             // --- Bind dependencies ---
-            stateService.BindNetworkCommand(stateNetworkHandler);
-            stateNetworkHandler.BindService(stateService, networkService);
+            gameService.BindNetworkCommand(gameNetworkHandler);
+            gameNetworkHandler.BindService(gameService, networkService);
             playerService.BindNetworkCommand(playerNetworkHandler);
             playerNetworkHandler.BindService(playerService, networkService);
             entityService.BindNetworkCommand(entityNetworkHandler);
             entityNetworkHandler.BindService(entityService, networkService);
             uiService.BindNetworkCommand(uiNetworkHandler);
             uiNetworkHandler.BindService(uiService, networkService);
+            authService.BindNetworkCommand(authNetworkHandler);
+            authNetworkHandler.BindService(authService, networkService);
 
             GameLogger.Info(
                 Channel.System,
                 "Bind network handlers and services successfully");
 
             // --- Register receivers ---
-            networkService.Register<IStateNetworkReceiver>(stateNetworkHandler);
+            networkService.Register<IGameNetworkReceiver>(gameNetworkHandler);
             networkService.Register<IPlayerNetworkReceiver>(playerNetworkHandler);
             networkService.Register<IEntityNetworkReceiver>(entityNetworkHandler);
             networkService.Register<IUINetworkReceiver>(uiNetworkHandler);
+            networkService.Register<IAuthNetworkReceiver>(authNetworkHandler);
 
             GameLogger.Info(
                 Channel.System,
@@ -75,7 +80,7 @@ namespace Assets.Core
 
             // --- Register services --- 
             ServiceLocator.Register<NetworkService>(networkService);
-            ServiceLocator.Register<StateService>(stateService);
+            ServiceLocator.Register<GameService>(gameService);
             ServiceLocator.Register<PlayerService>(playerService);
             ServiceLocator.Register<EntityService>(entityService);
             ServiceLocator.Register<UIService>(uiService);
@@ -89,7 +94,7 @@ namespace Assets.Core
             runner.StartCoroutine(
                 InitializeServices(
                     networkService,
-                    stateService,
+                    gameService,
                     playerService,
                     entityService,
                     uiService,
@@ -105,7 +110,7 @@ namespace Assets.Core
         #region Private Helpers
         private IEnumerator InitializeServices(
             NetworkService networkService,
-            StateService stateService,
+            GameService gameService,
             PlayerService playerService,
             EntityService entityService,
             UIService uiService,
@@ -115,7 +120,7 @@ namespace Assets.Core
             yield return networkService.InitializeAsync().AsCoroutine();
 
             // Other services ready after connection established
-            yield return stateService.InitializeAsync().AsCoroutine();
+            yield return gameService.InitializeAsync().AsCoroutine();
             yield return playerService.InitializeAsync().AsCoroutine();
             yield return entityService.InitializeAsync().AsCoroutine();
             yield return uiService.InitializeAsync().AsCoroutine();

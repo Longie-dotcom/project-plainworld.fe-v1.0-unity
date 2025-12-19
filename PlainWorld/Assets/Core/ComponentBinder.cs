@@ -5,6 +5,15 @@ using UnityEngine;
 
 public abstract class ComponentBinder : MonoBehaviour
 {
+    #region Attributes
+    #endregion
+
+    #region Properties
+    #endregion
+
+    public ComponentBinder() { }
+
+    #region Methods
     protected IEnumerator BindWhenReady<T>(
         Action<T> onReady) where T : class, IService
     {
@@ -21,4 +30,5 @@ public abstract class ComponentBinder : MonoBehaviour
         // 3. Safe to bind
         onReady(service);
     }
+    #endregion
 }

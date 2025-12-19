@@ -9,14 +9,12 @@ namespace Assets.Service
     public class UIService : IService
     {
         #region Attributes
-        private StateService state;
         #endregion
 
         #region Properties
         public bool IsInitialized { get; private set; } = false;
         public IUINetworkCommand UINetworkCommand { get; private set; }
-
-        public event Action<UIState> OnUIStateChanged;
+        public UIState UIState { get; private set; } = new UIState();
         #endregion
 
         public UIService() { }
@@ -28,35 +26,23 @@ namespace Assets.Service
                 throw new InvalidOperationException(
                     "UINetworkCommand not bound before Initialize");
 
-            state = ServiceLocator.Get<StateService>();
-            state.OnGameChanged += HandleGameState;
+            var gameService = ServiceLocator.Get<GameService>();
+            gameService.GameState.OnChanged += UIState.ApplyGameState;
 
             IsInitialized = true;
-
             return Task.CompletedTask;
         }
 
         public Task ShutdownAsync()
         {
+            var gameService = ServiceLocator.Get<GameService>();
+            gameService.GameState.OnChanged -= UIState.ApplyGameState;
             return Task.CompletedTask;
         }
 
         public void BindNetworkCommand(IUINetworkCommand command)
         {
             UINetworkCommand = command;
-        }
-
-        private void HandleGameState(GameState game)
-        {
-            var ui = new UIState
-            {
-                ShowLogin = game.Phase == GamePhase.None,
-                ShowLoading = game.Phase == GamePhase.Connecting,
-                ShowLobby = game.Phase == GamePhase.Lobby,
-                ShowHUD = game.Phase == GamePhase.InGame
-            };
-
-            OnUIStateChanged?.Invoke(ui);
         }
         #endregion
     }

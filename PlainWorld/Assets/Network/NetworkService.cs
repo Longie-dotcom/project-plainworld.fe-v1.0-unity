@@ -23,7 +23,6 @@ namespace Assets.Network
 
         #region Properties
         public bool IsInitialized { get; private set; } = false;
-        public event Action<string, string, object> OnRawNetworkEvent;
         #endregion
 
         public NetworkService() { }

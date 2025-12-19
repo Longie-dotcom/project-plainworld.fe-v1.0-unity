@@ -2,7 +2,7 @@
 
 namespace Assets.Network.Interface.Receiver
 {
-    public interface IStateNetworkReceiver : INetworkBase
+    public interface IGameNetworkReceiver : INetworkBase
     {
     }
 }

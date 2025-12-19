@@ -1,6 +1,8 @@
 ﻿using Assets.Service;
+using Assets.State;
 using Assets.Utility;
 using System;
+using UnityEngine;
 
 namespace Assets.UI.MainMenu.Login
 {
@@ -8,9 +10,12 @@ namespace Assets.UI.MainMenu.Login
     {
         #region Attributes
         private readonly AuthService authService;
+        private readonly PlayerService playerService;
         private readonly UIService uiService;
+        private readonly GameService gameService;
+        private readonly GameObject playerPrefab;
 
-        private LoginView view;
+        private LoginView loginView;
         private bool disposed;
 
         private string email;
@@ -18,27 +23,37 @@ namespace Assets.UI.MainMenu.Login
         #endregion
 
         #region Properties
+        public event Action<GameObject> OnPlayerCreated;
         #endregion
 
-        public LoginPresenter(AuthService authService, UIService uiService)
+        public LoginPresenter(
+            AuthService authService,
+            PlayerService playerService,
+            UIService uiService, 
+            GameService gameService,
+            GameObject playerPrefab)
         {
             this.authService = authService;
+            this.playerService = playerService;
             this.uiService = uiService;
+            this.gameService = gameService;
+            this.playerPrefab = playerPrefab;
         }
 
         #region Methods
-        public void Bind(LoginView view)
+        public void Bind(LoginView loginView)
         {
             if (disposed)
                 throw new ObjectDisposedException(nameof(LoginPresenter));
 
-            this.view = view;
+            this.loginView = loginView;
 
-            view.OnEmailChanged += OnEmailChanged;
-            view.OnPasswordChanged += OnPasswordChanged;
-            view.OnJoinClicked += OnLogin;
+            loginView.OnEmailChanged += OnEmailChanged;
+            loginView.OnPasswordChanged += OnPasswordChanged;
+            loginView.OnJoinClicked += OnLogin;
+            loginView.OnRegisterClicked += OnRegister;
 
-            uiService.OnUIStateChanged += view.HandleUIState;
+            uiService.UIState.OnUIStateChanged += loginView.HandleUIState;
         }
 
         public void Dispose()
@@ -46,11 +61,12 @@ namespace Assets.UI.MainMenu.Login
             if (disposed) return;
             disposed = true;
 
-            view.OnEmailChanged -= OnEmailChanged;
-            view.OnPasswordChanged -= OnPasswordChanged;
-            view.OnJoinClicked -= OnLogin;
+            loginView.OnEmailChanged -= OnEmailChanged;
+            loginView.OnPasswordChanged -= OnPasswordChanged;
+            loginView.OnJoinClicked -= OnLogin;
+            loginView.OnRegisterClicked -= OnRegister;
 
-            uiService.OnUIStateChanged -= view.HandleUIState;
+            uiService.UIState.OnUIStateChanged -= loginView.HandleUIState;
         }
 
         private void OnEmailChanged(string v)
@@ -65,8 +81,32 @@ namespace Assets.UI.MainMenu.Login
 
         private void OnLogin()
         {
-            view.SetInteractable(false);
-            AsyncHelper.Run(() => authService.Login(email, password));
+            AsyncHelper.Run(async () =>
+            {
+                // Authenticate player
+                await authService.Login(email, password);
+                var claims = authService.Claims;
+
+                // Request Game Service to load player data
+                await playerService.JoinAsync(
+                    Guid.Parse(claims.UserId),
+                    claims.FullName
+                );
+
+                // Instantiate player
+                var playerInstance = GameObject.Instantiate(playerPrefab);
+                playerInstance.name = $"MainPlayer_{claims.FullName}";
+
+                // Notify listeners (e.g., PlayerBinder)
+                OnPlayerCreated?.Invoke(playerInstance);
+            });
+
+            gameService.GameState.SetPhase(GamePhase.InGame);
+        }
+
+        private void OnRegister()
+        {
+            gameService.GameState.SetPhase(GamePhase.Register);
         }
         #endregion
     }

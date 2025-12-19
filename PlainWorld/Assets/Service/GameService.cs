@@ -6,20 +6,18 @@ using System.Threading.Tasks;
 
 namespace Assets.Service
 {
-    public class StateService : IService
+    public class GameService : IService
     {
         #region Attributes
-        private readonly GameState gameState = new();
         #endregion
 
         #region Properties
         public bool IsInitialized { get; private set; } = false;
-        public IStateNetworkCommand StateNetworkCommand { get; private set; }
-
-        public event Action<GameState> OnGameChanged;
+        public IGameNetworkCommand StateNetworkCommand { get; private set; }
+        public GameState GameState { get; private set; } = new GameState(GamePhase.Connecting);
         #endregion
 
-        public StateService() { }
+        public GameService() { }
 
         #region Methods
         public Task InitializeAsync()
@@ -28,10 +26,7 @@ namespace Assets.Service
                 throw new InvalidOperationException(
                     "StateNetworkCommand not bound before Initialize");
 
-            SetGamePhase(GamePhase.Connecting);
-
             IsInitialized = true;
-
             return Task.CompletedTask;
         }
 
@@ -40,15 +35,9 @@ namespace Assets.Service
             return Task.CompletedTask;
         }
 
-        public void BindNetworkCommand(IStateNetworkCommand command)
+        public void BindNetworkCommand(IGameNetworkCommand command)
         {
             StateNetworkCommand = command;
-        }
-
-        public void SetGamePhase(GamePhase phase)
-        {
-            gameState.Phase = phase;
-            OnGameChanged?.Invoke(gameState);
         }
         #endregion
     }

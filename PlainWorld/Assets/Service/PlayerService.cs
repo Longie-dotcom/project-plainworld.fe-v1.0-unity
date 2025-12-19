@@ -15,8 +15,7 @@ namespace Assets.Service
         #region Properties
         public bool IsInitialized { get; private set; } = false;
         public IPlayerNetworkCommand PlayerNetworkCommand { get; private set; }
-
-        public PlayerState State { get; private set; }
+        public PlayerState State { get; private set; } = new PlayerState();
         #endregion
 
         public PlayerService() { }
@@ -27,8 +26,6 @@ namespace Assets.Service
             if (PlayerNetworkCommand == null)
                 throw new InvalidOperationException(
                     "PlayerNetworkCommand not bound before Initialize");
-
-            State = new PlayerState();
 
             IsInitialized = true;
             return Task.CompletedTask;
@@ -44,23 +41,30 @@ namespace Assets.Service
             PlayerNetworkCommand = command;
         }
 
-        public async Task JoinAsync()
+        // Senders
+        public async Task JoinAsync(Guid playerId, string playerName)
         {
-            await PlayerNetworkCommand.Join(State.PlayerId, State.PlayerName);
-            State.MarkJoined();
+            await PlayerNetworkCommand.Join(playerId, playerName);
+            State.MarkJoined(playerId, playerName);
         }
 
         public async Task MoveAsync(Vector2 dir)
         {
+            if (!State.HasJoined) 
+                return;
+
             var next = State.PredictMove(dir);
-            await PlayerNetworkCommand.Move(State.PlayerId, next);
-            State.ApplyPredictedPosition(next); // client-side prediction
+            await PlayerNetworkCommand.Move(State.PlayerID, next);
+            State.ApplyPredictedPosition(next);
         }
 
-        // Called by network layer
+        // Receivers
         public void HandleUpdatePosition(float x, float y)
         {
-            State.ApplyServerPosition(new Vector2(x, y));
+            CoroutineRunner.Instance.Schedule(() =>
+                State.ApplyServerPosition(
+                    new Vector2(x, y))
+            );
         }
         #endregion
     }
