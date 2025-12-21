@@ -1,7 +1,6 @@
 ﻿using Assets.Service;
 using Assets.UI.MainMenu.Login;
 using Assets.Utility;
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -9,11 +8,9 @@ public class LoginBinder : ComponentBinder
 {
     #region Attributes
     [SerializeField]
-    private GameObject playerPrefab;
-
-    [SerializeField]
-    private LoginView loginView;
+    private LoginView loginPrefab;
     private LoginPresenter loginPresenter;
+
     private AuthService authService;
     private PlayerService playerService;
     private UIService uiService;
@@ -21,12 +18,6 @@ public class LoginBinder : ComponentBinder
     #endregion
 
     #region Properties
-    public LoginPresenter LoginPresenter
-    { 
-        get { return loginPresenter; } 
-    }
-
-    public event Action<LoginPresenter> OnLoginPresenterReady;
     #endregion
 
     public LoginBinder() { }
@@ -60,12 +51,7 @@ public class LoginBinder : ComponentBinder
             playerService,
             uiService,
             gameService,
-            playerPrefab);
-        loginPresenter.Bind(loginView);
-
-        // Invoke player binder to get the login presenter
-        // Player presenter get player instance through login presenter event
-        OnLoginPresenterReady?.Invoke(loginPresenter);
+            loginPrefab);
 
         GameLogger.Info(
             Channel.System,

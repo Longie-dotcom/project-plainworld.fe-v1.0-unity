@@ -1,3 +1,4 @@
+using Assets.Utility;
 using System;
 
 namespace Assets.State
@@ -34,6 +35,7 @@ namespace Assets.State
         #region Methods
         public void SetPhase(GamePhase phase)
         {
+            GameLogger.Info(Channel.Service, $"Change from phase: {Phase} to phase: {phase}");
             if (Phase == phase) return;
 
             Phase = phase;

@@ -1,6 +1,8 @@
 ﻿using Assets.Core;
+using Assets.Network.DTO;
 using Assets.Network.Interface.Command;
 using Assets.State;
+using Assets.Utility;
 using System;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -15,7 +17,7 @@ namespace Assets.Service
         #region Properties
         public bool IsInitialized { get; private set; } = false;
         public IPlayerNetworkCommand PlayerNetworkCommand { get; private set; }
-        public PlayerState State { get; private set; } = new PlayerState();
+        public PlayerState PlayerState { get; private set; } = new PlayerState();
         #endregion
 
         public PlayerService() { }
@@ -26,6 +28,8 @@ namespace Assets.Service
             if (PlayerNetworkCommand == null)
                 throw new InvalidOperationException(
                     "PlayerNetworkCommand not bound before Initialize");
+
+            ServiceLocator.OnExiting += LogoutAsync;
 
             IsInitialized = true;
             return Task.CompletedTask;
@@ -44,26 +48,62 @@ namespace Assets.Service
         // Senders
         public async Task JoinAsync(Guid playerId, string playerName)
         {
-            await PlayerNetworkCommand.Join(playerId, playerName);
-            State.MarkJoined(playerId, playerName);
+            var dto = new PlayerJoinDTO()
+            {
+                ID = playerId,
+                Name = playerName
+            };
+            await PlayerNetworkCommand.Join(dto);
+
+            PlayerState.MarkJoined(playerId, playerName);
+        }
+
+        public async Task LogoutAsync()
+        {
+            if (!PlayerState.HasJoined)
+                return;
+
+            await PlayerNetworkCommand.Logout(
+                new PlayerLogoutDTO
+                {
+                    ID = PlayerState.PlayerID,
+                    Name = PlayerState.PlayerName
+                });
         }
 
         public async Task MoveAsync(Vector2 dir)
         {
-            if (!State.HasJoined) 
-                return;
+            var next = PlayerState.PredictMove(dir);
 
-            var next = State.PredictMove(dir);
-            await PlayerNetworkCommand.Move(State.PlayerID, next);
-            State.ApplyPredictedPosition(next);
+            var dto = new PlayerMoveDTO()
+            {
+                ID = PlayerState.PlayerID,
+                Position = new PositionDTO()
+                {
+                    X = next.x,
+                    Y = next.y,
+                },
+            };
+            await PlayerNetworkCommand.Move(dto);
+
+            PlayerState.ApplyPredictedPosition(next);
         }
 
         // Receivers
-        public void HandleUpdatePosition(float x, float y)
+        public void OnPlayerMoved(PlayerPositionDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                State.ApplyServerPosition(
-                    new Vector2(x, y))
+                PlayerState.ApplyServerPosition(
+                    dto.ID,
+                    new Vector2(dto.Position.X, dto.Position.Y))
+            );
+        }
+
+        public void OnPlayerJoined(PlayerDTO dto)
+        {
+            CoroutineRunner.Instance.Schedule(() =>
+                PlayerState.LoadPlayerData(
+                    new Vector2(dto.Position.X, dto.Position.Y))
             );
         }
         #endregion

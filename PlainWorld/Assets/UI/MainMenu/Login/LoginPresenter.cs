@@ -2,7 +2,6 @@
 using Assets.State;
 using Assets.Utility;
 using System;
-using UnityEngine;
 
 namespace Assets.UI.MainMenu.Login
 {
@@ -13,17 +12,14 @@ namespace Assets.UI.MainMenu.Login
         private readonly PlayerService playerService;
         private readonly UIService uiService;
         private readonly GameService gameService;
-        private readonly GameObject playerPrefab;
+        private readonly LoginView loginPrefab;
 
-        private LoginView loginView;
         private bool disposed;
-
         private string email;
         private string password;
         #endregion
 
         #region Properties
-        public event Action<GameObject> OnPlayerCreated;
         #endregion
 
         public LoginPresenter(
@@ -31,42 +27,42 @@ namespace Assets.UI.MainMenu.Login
             PlayerService playerService,
             UIService uiService, 
             GameService gameService,
-            GameObject playerPrefab)
+            LoginView loginPrefab)
         {
             this.authService = authService;
             this.playerService = playerService;
             this.uiService = uiService;
             this.gameService = gameService;
-            this.playerPrefab = playerPrefab;
+            this.loginPrefab = loginPrefab;
+
+            Bind();
         }
 
         #region Methods
-        public void Bind(LoginView loginView)
-        {
-            if (disposed)
-                throw new ObjectDisposedException(nameof(LoginPresenter));
-
-            this.loginView = loginView;
-
-            loginView.OnEmailChanged += OnEmailChanged;
-            loginView.OnPasswordChanged += OnPasswordChanged;
-            loginView.OnJoinClicked += OnLogin;
-            loginView.OnRegisterClicked += OnRegister;
-
-            uiService.UIState.OnUIStateChanged += loginView.HandleUIState;
-        }
-
         public void Dispose()
         {
             if (disposed) return;
             disposed = true;
 
-            loginView.OnEmailChanged -= OnEmailChanged;
-            loginView.OnPasswordChanged -= OnPasswordChanged;
-            loginView.OnJoinClicked -= OnLogin;
-            loginView.OnRegisterClicked -= OnRegister;
+            loginPrefab.OnEmailChanged -= OnEmailChanged;
+            loginPrefab.OnPasswordChanged -= OnPasswordChanged;
+            loginPrefab.OnJoinClicked -= OnLogin;
+            loginPrefab.OnRegisterClicked -= OnRegister;
 
-            uiService.UIState.OnUIStateChanged -= loginView.HandleUIState;
+            uiService.UIState.OnUIStateChanged -= loginPrefab.HandleUIState;
+        }
+
+        private void Bind()
+        {
+            if (disposed)
+                throw new ObjectDisposedException(nameof(LoginPresenter));
+
+            loginPrefab.OnEmailChanged += OnEmailChanged;
+            loginPrefab.OnPasswordChanged += OnPasswordChanged;
+            loginPrefab.OnJoinClicked += OnLogin;
+            loginPrefab.OnRegisterClicked += OnRegister;
+
+            uiService.UIState.OnUIStateChanged += loginPrefab.HandleUIState;
         }
 
         private void OnEmailChanged(string v)
@@ -92,13 +88,6 @@ namespace Assets.UI.MainMenu.Login
                     Guid.Parse(claims.UserId),
                     claims.FullName
                 );
-
-                // Instantiate player
-                var playerInstance = GameObject.Instantiate(playerPrefab);
-                playerInstance.name = $"MainPlayer_{claims.FullName}";
-
-                // Notify listeners (e.g., PlayerBinder)
-                OnPlayerCreated?.Invoke(playerInstance);
             });
 
             gameService.GameState.SetPhase(GamePhase.InGame);

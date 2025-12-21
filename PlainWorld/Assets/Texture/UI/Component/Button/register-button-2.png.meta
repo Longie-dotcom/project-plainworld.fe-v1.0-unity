@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 574385658199f384f9c4b1f65806e5c0
+guid: 629e88148d5b4b9478ed28cac42d00d8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2538605367084378945
-    second: login-frame_0
+      213: 1495327227557146186
+    second: register-button-2_0
   - first:
-      213: 876798425474205916
-    second: login-frame_1
+      213: -3183777782571611104
+    second: register-button-2_1
   - first:
-      213: 3939782071729092748
-    second: login-frame_2
+      213: 2358150977333880964
+    second: register-button-2_2
   - first:
-      213: 5126567440053153951
-    second: login-frame_3
+      213: -2492746304668106663
+    second: register-button-2_3
   - first:
-      213: 8270624659313175281
-    second: login-frame_4
+      213: 523823915695456730
+    second: register-button-2_4
   - first:
-      213: 4634537838045415110
-    second: login-frame_5
+      213: -2383574554715768461
+    second: register-button-2_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +61,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -128,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: login-frame_0
+      name: register-button-2_0
       rect:
         serializedVersion: 2
-        x: 51
-        y: 307
-        width: 92
-        height: 38
+        x: 0
+        y: 0
+        width: 128
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 14be6f99120fa3320800000000000000
-      internalID: 2538605367084378945
+      spriteID: a4e638dd03870c410800000000000000
+      internalID: 1495327227557146186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: login-frame_1
+      name: register-button-2_1
       rect:
         serializedVersion: 2
-        x: 5
-        y: 257
-        width: 44
-        height: 46
+        x: 128
+        y: 0
+        width: 128
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,96 +165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd80302c5830b2c00800000000000000
-      internalID: 876798425474205916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: login-frame_2
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 203
-        width: 132
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c887ddd9beaeca630800000000000000
-      internalID: 3939782071729092748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: login-frame_3
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 153
-        width: 44
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f90b37dcce9352740800000000000000
-      internalID: 5126567440053153951
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: login-frame_4
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 37
-        width: 134
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1faa2f8de4927c270800000000000000
-      internalID: 8270624659313175281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: login-frame_5
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 9
-        width: 34
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6c6cdcedb9f215040800000000000000
-      internalID: 4634537838045415110
+      spriteID: 02cc902a9f2f0d3d0800000000000000
+      internalID: -3183777782571611104
       vertices: []
       indices: 
       edges: []
@@ -263,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: da327b595cfeeb74d893a9fc6e8fed34
     internalID: 0
     vertices: []
     indices: 
@@ -273,12 +185,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      login-frame_0: 2538605367084378945
-      login-frame_1: 876798425474205916
-      login-frame_2: 3939782071729092748
-      login-frame_3: 5126567440053153951
-      login-frame_4: 8270624659313175281
-      login-frame_5: 4634537838045415110
+      register-button-2_0: 1495327227557146186
+      register-button-2_1: -3183777782571611104
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

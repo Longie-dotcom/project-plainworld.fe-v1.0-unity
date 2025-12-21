@@ -45,21 +45,29 @@ namespace Assets.Service
         // Senders
 
         // Receivers
-        public void HandleRemotePlayerJoined(PlayerJoinDTO dto)
+        public void OnPlayerEntityJoined(PlayerEntityDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
                 EntityState.AddEntity(
-                    dto.PlayerId,
+                    dto.ID,
                     new Vector2(dto.Position.X, dto.Position.Y))
             );
         }
 
-        public void HandleRemotePlayerMoved(PlayerMoveDTO dto)
+        public void OnPlayerEntityMoved(PlayerEntityPositionDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
                 EntityState.UpdateEntityPosition(
-                    dto.PlayerId, 
+                    dto.ID, 
                     new Vector2(dto.Position.X, dto.Position.Y))
+            );
+        }
+
+        public void OnEntityLeft(Guid id)
+        {
+            CoroutineRunner.Instance.Schedule(() =>
+                EntityState.RemoveEntity(
+                    id)
             );
         }
         #endregion

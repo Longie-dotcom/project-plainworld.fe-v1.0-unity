@@ -106,61 +106,63 @@ namespace Assets.Network
                     Channel.Network, $"Send event failed: {ex.Message}");
             }
         }
-
-        public async Task JoinGroup(string groupName)
-        {
-            if (connection == null || connection.State != HubConnectionState.Connected)
-                throw new Exception("Network is not ready");
-
-            try
-            {
-                await connection.InvokeAsync(OnSend.JoinGroup, groupName);
-                GameLogger.Info(
-                    Channel.Network, $"Joined group {groupName}");
-            }
-            catch (Exception ex)
-            {
-                GameLogger.Error(
-                    Channel.Network, $"Failed to join group {groupName}: {ex.Message}");
-            }
-        }
         #endregion
 
         #region Private Helpers
         private void BindServerEvents()
         {
             // --- Player Service ---
-            connection.On<Guid, PositionDTO>(
-                OnReceive.OnPlayerJoin, (playerId, position) =>
+            connection.On<PlayerDTO>(
+                OnReceive.OnPlayerJoin, dto =>
                 {
-                    var dto = new PlayerJoinDTO { PlayerId = playerId, Position = position };
-                    Dispatch<IPlayerNetworkReceiver, PlayerJoinDTO>(
+                    Dispatch<IPlayerNetworkReceiver, PlayerDTO>(
                         dto, (r, d) => r.OnPlayerJoined(d));
                 });
 
-            connection.On<Guid, PositionDTO>(
-                OnReceive.OnPlayerMove, (playerId, position) =>
+            connection.On<Guid>(
+                OnReceive.OnPlayerLogout, id =>
                 {
-                    var dto = new PlayerMoveDTO { PlayerId = playerId, Position = position };
-                    Dispatch<IPlayerNetworkReceiver, PlayerMoveDTO>(
+                    Dispatch<IPlayerNetworkReceiver, Guid>(
+                        id, (r, d) => r.OnPlayerLogout(d));
+                });
+
+            connection.On<PlayerPositionDTO>(
+                OnReceive.OnPlayerMove, dto =>
+                {
+                    Dispatch<IPlayerNetworkReceiver, PlayerPositionDTO>(
                         dto, (r, d) => r.OnPlayerMoved(d));
                 });
 
             // --- Entity Service ---
-            connection.On<Guid, PositionDTO>(
-                OnReceive.OnPlayerEntityJoin, (playerId, position) =>
+            connection.On<PlayerEntityDTO>(
+                OnReceive.OnPlayerEntityJoin, dto =>
                 {
-                    var dto = new PlayerJoinDTO { PlayerId = playerId, Position = position };
-                    Dispatch<IEntityNetworkReceiver, PlayerJoinDTO>(
+                    Dispatch<IEntityNetworkReceiver, PlayerEntityDTO>(
                         dto, (r, d) => r.OnPlayerEntityJoined(d));
                 });
 
-            connection.On<Guid, PositionDTO>(
-                OnReceive.OnPlayerEntityMove, (playerId, position) =>
+            connection.On<Guid>(
+                OnReceive.OnPlayerEntityLogout, id =>
                 {
-                    var dto = new PlayerMoveDTO { PlayerId = playerId, Position = position };
-                    Dispatch<IEntityNetworkReceiver, PlayerMoveDTO>(
+                    Dispatch<IEntityNetworkReceiver, Guid>(
+                        id, (r, d) => r.OnEntityLeft(d));
+                });
+
+            connection.On<PlayerEntityPositionDTO>(
+                OnReceive.OnPlayerEntityMove, dto =>
+                {
+                    Dispatch<IEntityNetworkReceiver, PlayerEntityPositionDTO>(
                         dto, (r, d) => r.OnPlayerEntityMoved(d));
+                });
+
+            connection.On<IEnumerable<PlayerEntityDTO>>(
+                OnReceive.OnPlayerEntityOnline, dtos =>
+                {
+                    foreach (var dto in dtos)
+                    {
+                        Dispatch<IEntityNetworkReceiver, PlayerEntityDTO>(
+                            dto, (r, d) => r.OnPlayerEntityJoined(d));
+                    }
                 });
         }
 

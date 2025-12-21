@@ -24,16 +24,6 @@ namespace Assets.Gameplay.Entity
         }
 
         #region Methods
-        protected virtual void BindView(TView view)
-        { 
-        
-        }
-
-        protected virtual void UnbindView(TView view)
-        { 
-        
-        }
-
         public virtual void Dispose()
         {
             foreach (var view in entityViews.Values)
@@ -49,6 +39,16 @@ namespace Assets.Gameplay.Entity
             UnbindView(view);
             GameObject.Destroy(view.gameObject);
             entityViews.Remove(id);
+        }
+
+        protected virtual void BindView(TView view)
+        { 
+        
+        }
+
+        protected virtual void UnbindView(TView view)
+        { 
+        
         }
 
         public abstract void SpawnEntity(Guid id, Vector2 position);

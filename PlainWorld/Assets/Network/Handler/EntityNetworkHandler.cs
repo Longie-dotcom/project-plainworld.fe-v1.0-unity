@@ -2,6 +2,7 @@
 using Assets.Network.Interface.Command;
 using Assets.Network.Interface.Receiver;
 using Assets.Service;
+using System;
 
 namespace Assets.Network.Handler
 {
@@ -29,14 +30,19 @@ namespace Assets.Network.Handler
         #endregion
 
         #region Send Commands
-        public void OnPlayerEntityJoined(PlayerJoinDTO dto)
+        public void OnPlayerEntityJoined(PlayerEntityDTO dto)
         {
-            entityService.HandleRemotePlayerJoined(dto);
+            entityService.OnPlayerEntityJoined(dto);
         }
 
-        public void OnPlayerEntityMoved(PlayerMoveDTO dto)
+        public void OnPlayerEntityMoved(PlayerEntityPositionDTO dto)
         {
-            entityService.HandleRemotePlayerMoved(dto);
+            entityService.OnPlayerEntityMoved(dto);
+        }
+
+        public void OnEntityLeft(Guid id)
+        {
+            entityService.OnEntityLeft(id);
         }
         #endregion
 

@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: d1697c3ceb015714084668320dd9406c
+guid: 315fdca146ebfc14685270dc2a022142
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2704210451771139102
-    second: female_0
+      213: 6769551928829256463
+    second: register-button_0
+  - first:
+      213: -3311470048148622314
+    second: register-button_1
+  - first:
+      213: 8445699043486431192
+    second: register-button_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: female_0
+      name: register-button_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
-        height: 112
+        width: 230
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,30 +134,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e14a7bf0419478520800000000000000
-      internalID: 2704210451771139102
+      spriteID: f03ad66dc9742fd50800000000000000
+      internalID: 6769551928829256463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female_1
+      name: register-button_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 230
         y: 0
-        width: 96
-        height: 112
+        width: 230
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2fc459b7f9aedbf43b084ba111a7c5b3
-      internalID: 1433254763
+      spriteID: 61471cf398b4b02d0800000000000000
+      internalID: -3311470048148622314
       vertices: []
       indices: 
       edges: []
@@ -160,7 +166,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 927aced235b970349b8e230975871af1
+    spriteID: ee15ec09ce616cf47bc9394c4f23dac2
     internalID: 0
     vertices: []
     indices: 
@@ -170,8 +176,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      female_0: 2704210451771139102
-      female_1: 1433254763
+      register-button_0: 6769551928829256463
+      register-button_1: -3311470048148622314
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

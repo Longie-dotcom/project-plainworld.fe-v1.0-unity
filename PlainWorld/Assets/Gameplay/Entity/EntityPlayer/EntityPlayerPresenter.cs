@@ -27,16 +27,6 @@ namespace Assets.Gameplay.Entity.EntityPlayer
         }
 
         #region Methods
-        protected override void BindView(EntityPlayerView view)
-        {
-            // future: view events go here
-        }
-
-        protected override void UnbindView(EntityPlayerView view)
-        {
-            // future: unsubscribe here
-        }
-
         public override void Dispose()
         {
             if (disposed) return;
@@ -65,6 +55,16 @@ namespace Assets.Gameplay.Entity.EntityPlayer
         {
             if (entityViews.TryGetValue(id, out var view))
                 view.UpdatePosition(position);
+        }
+
+        protected override void BindView(EntityPlayerView view)
+        {
+            // future: view events go here
+        }
+
+        protected override void UnbindView(EntityPlayerView view)
+        {
+            // future: unsubscribe here
         }
         #endregion
     }

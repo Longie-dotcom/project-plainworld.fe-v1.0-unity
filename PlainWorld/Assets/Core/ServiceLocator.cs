@@ -11,6 +11,7 @@ namespace Assets.Core
         #endregion
 
         #region Properties
+        public static event Func<Task> OnExiting;
         #endregion
 
         #region Methods
@@ -26,6 +27,14 @@ namespace Assets.Core
 
         public static async Task ShutdownAll()
         {
+            if (OnExiting != null)
+            {
+                foreach (Func<Task> handler in OnExiting.GetInvocationList())
+                {
+                    await handler();
+                }
+            }
+
             foreach (var service in services.Values)
             {
                 await service.ShutdownAsync();

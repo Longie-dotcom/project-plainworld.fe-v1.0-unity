@@ -42,14 +42,11 @@ namespace Assets.Service
             var result = await AuthNetworkCommand.Login(
                 email, 
                 password);
-            var accessToken = result.payload.accessToken;
-            var refreshToken = result.payload.refreshToken;
-
-            // Decode JWT
-            var jsonPayload = JwtHelper.DecodePayload(accessToken);
 
             // Parse claims
-            Claims = JwtHelper.ParseClaims(jsonPayload);
+            Claims = JwtHelper.ParseClaims(
+                JwtHelper.DecodePayload(
+                    result.payload.accessToken));
         }
 
         public async Task Register(

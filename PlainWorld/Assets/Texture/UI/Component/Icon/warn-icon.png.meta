@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: bbdb0dd7e793f8a42a2b60d75ad7fd7d
+guid: 784b03e65653b9b4ca54c607c8b0ecdf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5066846463355323016
-    second: button-Sheet_0
-  - first:
-      213: -6487207882843635499
-    second: button-Sheet_1
-  - first:
-      213: 2879248555218508480
-    second: button-Sheet_2
+      213: 1562857437180516319
+    second: warn-icon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,79 +113,35 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 42
-        width: 128
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91621434850d8f74e8b940ef80040e4c
-      internalID: 154503939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: button-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 42
-        width: 128
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a882a2e944f43224f9dddaafafaf3eee
-      internalID: 979723431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: button-Sheet_2
+      name: warn-icon_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 42
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4393c964251b7474b8b9586fa73ef217
-      internalID: 1725857419
+      spriteID: fd7d8b90f8260b510800000000000000
+      internalID: 1562857437180516319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: button-Sheet_3
+      name: warn-icon_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 28
         y: 0
-        width: 128
-        height: 42
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a909fff56c31f254ab74996156c574ab
-      internalID: 2067781059
+      spriteID: 4b9d1a6da44ae42489d1ca3706108655
+      internalID: -401757738
       vertices: []
       indices: 
       edges: []
@@ -210,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8e5e620bb0981df46ababc319816a4db
+    spriteID: 9fe51e19f25e793438708b934eecf4b5
     internalID: 0
     vertices: []
     indices: 
@@ -220,10 +170,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      button-Sheet_0: 154503939
-      button-Sheet_1: 979723431
-      button-Sheet_2: 1725857419
-      button-Sheet_3: 2067781059
+      warn-icon_0: 1562857437180516319
+      warn-icon_1: -401757738
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

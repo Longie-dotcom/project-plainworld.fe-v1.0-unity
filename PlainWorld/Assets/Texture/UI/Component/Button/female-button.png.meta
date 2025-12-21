@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c5d3e7dbbb5eea04187b199a9a821ea5
+guid: df481150601da6d48a67352fa84cccd6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1671096542575932750
-    second: male_0
+      213: -5466530883743707131
+    second: female-button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: male_0
+      name: female-button_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
-        height: 112
+        width: 50
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,20 +128,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e453f9d937de03710800000000000000
-      internalID: 1671096542575932750
+      spriteID: 50011c8cf1bf224b0800000000000000
+      internalID: -5466530883743707131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: male_1
+      name: female-button_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 50
         y: 0
-        width: 96
-        height: 112
+        width: 50
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db64c4629ea4e0249aceed2acf20af60
-      internalID: -804496199
+      spriteID: 7e8c66aa63326684392855c3f6db7654
+      internalID: 829378077
       vertices: []
       indices: 
       edges: []
@@ -160,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4cba4a9328f66814c865532c5a453c72
+    spriteID: 2185aae6deb83214cab109c77be59dea
     internalID: 0
     vertices: []
     indices: 
@@ -170,8 +170,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      male_0: 1671096542575932750
-      male_1: -804496199
+      female-button_0: -5466530883743707131
+      female-button_1: 829378077
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

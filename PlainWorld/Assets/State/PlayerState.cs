@@ -18,6 +18,7 @@ namespace Assets.State
 
         public event Action<Vector2> OnPositionChanged;
         public event Action<bool> OnJoinChanged;
+        public event Action OnCreatePlayer;
         #endregion
 
         public PlayerState()
@@ -42,6 +43,8 @@ namespace Assets.State
 
         public Vector2 PredictMove(Vector2 inputDir)
         {
+            if (!HasJoined) return Position;
+
             if (inputDir == Vector2.zero)
                 return Position;
 
@@ -54,8 +57,17 @@ namespace Assets.State
             OnPositionChanged?.Invoke(position);
         }
 
-        public void ApplyServerPosition(Vector2 position)
+        public void ApplyServerPosition(Guid id, Vector2 position)
         {
+            if (id != PlayerID) return;
+            Position = position;
+            OnPositionChanged?.Invoke(position);
+        }
+
+        public void LoadPlayerData(Vector2 position)
+        {
+            OnCreatePlayer?.Invoke();
+
             Position = position;
             OnPositionChanged?.Invoke(position);
         }

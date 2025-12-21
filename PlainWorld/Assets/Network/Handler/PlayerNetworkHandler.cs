@@ -2,9 +2,9 @@
 using Assets.Network.Interface.Command;
 using Assets.Network.Interface.Receiver;
 using Assets.Service;
+using Assets.Utility;
 using System;
 using System.Threading.Tasks;
-using UnityEngine;
 
 namespace Assets.Network.Handler
 {
@@ -32,37 +32,46 @@ namespace Assets.Network.Handler
         #endregion
 
         #region Send Commands
-        public Task Join(Guid playerId, string playerName)
+        public Task Join(PlayerJoinDTO dto)
         {
             return sender.Send(
                 OnSend.PlayerJoin,
-                playerId,
-                playerName
+                dto
             );
         }
 
-        public Task Move(Guid playerId, Vector2 position)
+        public Task Logout(PlayerLogoutDTO dto)
+        {
+            return sender.Send(
+                OnSend.PlayerLogout,
+                dto
+            );
+        }
+
+        public Task Move(PlayerMoveDTO dto)
         {
             return sender.Send(
                 OnSend.PlayerMove,
-                playerId,
-                position.x,
-                position.y
+                dto
             );
         }
         #endregion
 
         #region Receive Handlers
-        public void OnPlayerJoined(PlayerJoinDTO dto)
+        public void OnPlayerJoined(PlayerDTO dto)
         {
-            if (dto.PlayerId != playerService.State.PlayerID) return;
-            playerService.HandleUpdatePosition(dto.Position.X, dto.Position.Y);
+            playerService.OnPlayerJoined(dto);
         }
 
-        public void OnPlayerMoved(PlayerMoveDTO dto)
+        public void OnPlayerLogout(Guid id)
         {
-            if (dto.PlayerId != playerService.State.PlayerID) return;
-            playerService.HandleUpdatePosition(dto.Position.X, dto.Position.Y);
+            GameLogger.Info(
+                Channel.Service, $"Player with ID: {id} has logout");
+        }
+
+        public void OnPlayerMoved(PlayerPositionDTO dto)
+        {
+            playerService.OnPlayerMoved(dto);
         }
         #endregion
     }

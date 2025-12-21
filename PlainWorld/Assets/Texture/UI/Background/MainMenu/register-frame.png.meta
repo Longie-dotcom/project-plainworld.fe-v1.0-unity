@@ -1,10 +1,37 @@
 fileFormatVersion: 2
-guid: 8e0b4955cf042a942991032133e04560
+guid: 87bf439f9fdb9dc4188dd80d57043644
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -5450225264701240574
     second: register-frame_0
+  - first:
+      213: -7441427685079251178
+    second: register-frame_1
+  - first:
+      213: 3952032537722837116
+    second: register-frame_2
+  - first:
+      213: 2785951631909357125
+    second: register-frame_3
+  - first:
+      213: 4732164755107798469
+    second: register-frame_4
+  - first:
+      213: 713782925307105795
+    second: register-frame_5
+  - first:
+      213: 5340681380574440448
+    second: register-frame_6
+  - first:
+      213: 8007419647846245119
+    second: register-frame_7
+  - first:
+      213: 6035195799892159434
+    second: register-frame_8
+  - first:
+      213: 8560554969179662030
+    second: register-frame_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +73,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,10 +143,10 @@ TextureImporter:
       name: register-frame_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 640
-        height: 384
+        x: 67
+        y: 435
+        width: 92
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,11 +161,209 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: register-frame_1
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 435
+        width: 84
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 617081162fcbab890800000000000000
+      internalID: -7441427685079251178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: register-frame_2
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 385
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7851cf77a078d630800000000000000
+      internalID: 3952032537722837116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: register-frame_3
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 385
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5468065af30b9a620800000000000000
+      internalID: 2785951631909357125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: register-frame_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 321
+        width: 132
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cdd2dec5c60ca140800000000000000
+      internalID: 4732164755107798469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: register-frame_5
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 321
+        width: 162
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3025bade9cdd7e900800000000000000
+      internalID: 713782925307105795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: register-frame_6
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 271
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00caea36b69ed1a40800000000000000
+      internalID: 5340681380574440448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: register-frame_7
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 271
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2eb5d9eb1102f60800000000000000
+      internalID: 8007419647846245119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: register-frame_8
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 207
+        width: 100
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acb608aaa9251c350800000000000000
+      internalID: 6035195799892159434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: register-frame_9
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 155
+        width: 164
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec6a82283633dc670800000000000000
+      internalID: 8560554969179662030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -149,6 +374,15 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       register-frame_0: -5450225264701240574
+      register-frame_1: -7441427685079251178
+      register-frame_2: 3952032537722837116
+      register-frame_3: 2785951631909357125
+      register-frame_4: 4732164755107798469
+      register-frame_5: 713782925307105795
+      register-frame_6: 5340681380574440448
+      register-frame_7: 8007419647846245119
+      register-frame_8: 6035195799892159434
+      register-frame_9: 8560554969179662030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

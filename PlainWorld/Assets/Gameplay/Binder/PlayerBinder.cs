@@ -7,10 +7,12 @@ using UnityEngine;
 public class PlayerBinder : ComponentBinder
 {
     #region Attributes
-    private LoginBinder loginBinder;
-
+    [SerializeField]
+    private PlayerMoveView playerPrefab;
     private PlayerPresenter playerPresenter;
+
     private PlayerService playerService;
+    private AuthService authService;
     #endregion
 
     #region Properties
@@ -26,34 +28,25 @@ public class PlayerBinder : ComponentBinder
             playerService = player;
         });
 
-        // Resolve dependencies
-        loginBinder = GetComponent<LoginBinder>();
-        loginBinder.OnLoginPresenterReady += presenter =>
+        yield return BindWhenReady<AuthService>(auth =>
         {
-            presenter.OnPlayerCreated += BindPlayerView;
-        };
+            authService = auth;
+        });
+
+        // Resolve dependencies
+        playerPresenter = new PlayerPresenter(
+            playerService,
+            authService,
+            playerPrefab);
 
         GameLogger.Info(
             Channel.System,
             "Player components bound successfully");
     }
 
-    private void BindPlayerView(GameObject playerInstance)
-    {
-        playerPresenter = new PlayerPresenter(playerService);
-        playerPresenter.Bind(
-            playerInstance.GetComponent<PlayerMoveView>());
-
-        GameLogger.Info(
-            Channel.System,
-            "Binding player presenter successfully");
-    }
 
     private void OnDestroy()
     {
-        if (loginBinder?.LoginPresenter != null)
-            loginBinder.LoginPresenter.OnPlayerCreated -= BindPlayerView;
-
         playerPresenter?.Dispose();
     }
     #endregion

@@ -10,6 +10,7 @@ public class EntityBinder : ComponentBinder
     [SerializeField]
     private EntityPlayerView entityPlayerPrefab;
     private EntityPlayerPresenter entityPlayerPresenter;
+
     private EntityService entityService;
     #endregion
 
