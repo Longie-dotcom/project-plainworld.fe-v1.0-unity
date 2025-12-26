@@ -32,6 +32,9 @@ TextureImporter:
   - first:
       213: 8560554969179662030
     second: register-frame_9
+  - first:
+      213: 1794581155618844531
+    second: register-frame_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -341,10 +344,10 @@ TextureImporter:
       name: register-frame_9
       rect:
         serializedVersion: 2
-        x: 567
-        y: 155
-        width: 164
-        height: 86
+        x: 521
+        y: 191
+        width: 214
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,6 +358,28 @@ TextureImporter:
       bones: []
       spriteID: ec6a82283633dc670800000000000000
       internalID: 8560554969179662030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: register-frame_10
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 139
+        width: 168
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f654d8d02a7e810800000000000000
+      internalID: 1794581155618844531
       vertices: []
       indices: 
       edges: []
@@ -375,6 +400,7 @@ TextureImporter:
     nameFileIdTable:
       register-frame_0: -5450225264701240574
       register-frame_1: -7441427685079251178
+      register-frame_10: 1794581155618844531
       register-frame_2: 3952032537722837116
       register-frame_3: 2785951631909357125
       register-frame_4: 4732164755107798469

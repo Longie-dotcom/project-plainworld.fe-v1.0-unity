@@ -45,8 +45,6 @@ public class RegisterView : MonoBehaviour
     public event Action<string> OnYearDobChanged;
     #endregion
 
-    public RegisterView() { }
-
     #region Methods
     void Awake()
     {

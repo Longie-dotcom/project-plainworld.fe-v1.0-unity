@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.UI.Enum;
+using System;
 
 namespace Assets.State
 {
@@ -16,11 +17,17 @@ namespace Assets.State
         public bool ShowLoading { get; private set; }
 
         public event Action<UIState> OnUIStateChanged;
+        public event Action<(PopUpType type, string message)> OnPopUpRequested;
         #endregion
 
         public UIState() { }
 
         #region Methods
+        public void ShowPopUp(PopUpType type, string message)
+        {
+            OnPopUpRequested?.Invoke((type, message));
+        }
+
         public void ApplyGameState(GameState game)
         {
             ShowLogin = game.Phase == GamePhase.Login;

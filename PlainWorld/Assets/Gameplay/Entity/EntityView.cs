@@ -10,8 +10,6 @@ public abstract class EntityView : MonoBehaviour
     public Guid Id { get; private set; }
     #endregion
 
-    public EntityView() { }
-
     #region Methods
     public virtual void Initialize(Guid id, Vector2 startPosition)
     {

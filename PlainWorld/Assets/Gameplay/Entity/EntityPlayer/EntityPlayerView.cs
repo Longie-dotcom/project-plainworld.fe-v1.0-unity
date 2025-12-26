@@ -8,8 +8,6 @@ public class EntityPlayerView : EntityView
     #region Properties
     #endregion
 
-    public EntityPlayerView() : base() { }
-
     #region Methods
     void Awake()
     {

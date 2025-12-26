@@ -24,8 +24,6 @@ public class LoginView : MonoBehaviour
     public event Action<string> OnPasswordChanged;
     #endregion
 
-    public LoginView() { }
-
     #region Methods
     void Awake()
     {

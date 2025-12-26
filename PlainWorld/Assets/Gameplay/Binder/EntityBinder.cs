@@ -17,8 +17,6 @@ public class EntityBinder : ComponentBinder
     #region Properties
     #endregion
 
-    public EntityBinder() { }
-
     #region Methods
     private IEnumerator Start()
     {

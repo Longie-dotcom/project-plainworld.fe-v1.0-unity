@@ -18,8 +18,6 @@ public class PlayerBinder : ComponentBinder
     #region Properties
     #endregion
 
-    public PlayerBinder() { }
-
     #region Methods
     private IEnumerator Start()
     {

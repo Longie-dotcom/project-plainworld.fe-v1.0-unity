@@ -1,5 +1,6 @@
 using Assets.Utility;
 using System;
+using System.Collections.Generic;
 
 namespace Assets.State
 {
@@ -7,17 +8,18 @@ namespace Assets.State
     {
         Login,
         Register,
-
-        Connecting,
-        Lobby,
         InGame,
+        Connecting,
+
+        Lobby,
         Paused,
-        GameOver
+        GameOver,
     }
 
     public class GameState
     {
         #region Attributes
+        private readonly Stack<GamePhase> phaseStack = new();
         #endregion
 
         #region Properties
@@ -27,18 +29,52 @@ namespace Assets.State
         public event Action<GameState> OnChanged;
         #endregion
 
-        public GameState(GamePhase gamePhase)
+        public GameState(GamePhase initialPhase)
         {
-            Phase = gamePhase;
+            Phase = initialPhase;
         }
 
         #region Methods
-        public void SetPhase(GamePhase phase)
+        public void SetPhase(GamePhase next)
         {
-            GameLogger.Info(Channel.Service, $"Change from phase: {Phase} to phase: {phase}");
-            if (Phase == phase) return;
+            if (Phase == next)
+                return;
 
-            Phase = phase;
+            GameLogger.Info(
+                Channel.Service,
+                $"Phase change: {Phase} to {next}");
+
+            phaseStack.Clear();
+            Phase = next;
+
+            OnChanged?.Invoke(this);
+        }
+
+        public void PushPhase(GamePhase overlay)
+        {
+            GameLogger.Info(
+                Channel.Service,
+                $"Push phase: {Phase} to {overlay}");
+
+            phaseStack.Push(Phase);
+            Phase = overlay;
+
+            OnChanged?.Invoke(this);
+        }
+
+        public void PopPhase()
+        {
+            if (phaseStack.Count == 0)
+                return;
+
+            var previous = phaseStack.Pop();
+
+            GameLogger.Info(
+                Channel.Service,
+                $"Pop phase: {Phase} to {previous}");
+
+            Phase = previous;
+
             OnChanged?.Invoke(this);
         }
         #endregion

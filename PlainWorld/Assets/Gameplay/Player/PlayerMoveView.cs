@@ -10,8 +10,6 @@ public class PlayerMoveView : MonoBehaviour
     public event Action<Vector2> OnMove;
     #endregion
 
-    public PlayerMoveView() { }
-
     #region Methods
     void Awake()
     {

@@ -1,13 +1,13 @@
-﻿using Assets.Network.Interface.Command;
+﻿using Assets.Network.DTO;
+using Assets.Network.Interface.Command;
 using Assets.Network.Interface.Receiver;
+using Assets.Network.NetworkException;
 using Assets.Service;
-using Assets.Utility;
 using System;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
-using Assets.Network.DTO;
 
 namespace Assets.Network.Handler
 {
@@ -81,18 +81,18 @@ namespace Assets.Network.Handler
             string gender,
             string dob)
         {
-            var payload = new RegisterRequest
+            var dto = new RegisterRequest
             {
                 email = email,
                 password = password,
                 fullName = fullName,
                 gender = gender,
-                dob = DateTime.Parse(dob).ToString("o")
+                dob = dob
             };
 
             await PostAsync<RegisterRequest, object>(
                 "iam/auth/register",
-                payload);
+                dto);
         }
         #endregion
 
@@ -102,7 +102,6 @@ namespace Assets.Network.Handler
             TRequest payload)
         {
             var json = JsonUtility.ToJson(payload);
-            GameLogger.Info(Channel.System, $"[AUTH][REQUEST] {endpoint}\n{json}");
 
             using var content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -111,13 +110,20 @@ namespace Assets.Network.Handler
 
             if (!response.IsSuccessStatusCode)
             {
-                GameLogger.Error(
-                    Channel.System,
-                    $"[AUTH][ERROR] {endpoint}\n" +
-                    $"Status: {(int)response.StatusCode} {response.ReasonPhrase}\n" +
-                    $"Body:\n{body}");
+                string message = "Request failed";
 
-                throw new Exception($"Request failed: {endpoint}");
+                if (!string.IsNullOrWhiteSpace(body))
+                {
+                    try
+                    {
+                        var error = JsonUtility.FromJson<ErrorResponse>(body);
+                        if (!string.IsNullOrEmpty(error.message))
+                            message = error.message;
+                    }
+                    catch { }
+                }
+
+                throw new AuthException(message);
             }
 
             if (string.IsNullOrWhiteSpace(body))

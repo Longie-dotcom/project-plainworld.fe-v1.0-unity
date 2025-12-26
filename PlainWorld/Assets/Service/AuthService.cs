@@ -1,6 +1,7 @@
 ﻿using Assets.Core;
 using Assets.Network.Interface.Command;
 using Assets.Utility;
+using System;
 using System.Threading.Tasks;
 
 namespace Assets.Service
@@ -53,15 +54,15 @@ namespace Assets.Service
             string email,
             string password,
             string fullName,
-            string dob,
-            string gender)
+            string gender,
+            string dob)
         {
             await AuthNetworkCommand.Register(
                 email, 
                 password, 
-                fullName, 
-                dob, 
-                gender);
+                fullName,
+                gender,
+                dob);
         }
         #endregion
     }

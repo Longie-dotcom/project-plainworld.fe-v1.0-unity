@@ -20,8 +20,6 @@ public class LoginBinder : ComponentBinder
     #region Properties
     #endregion
 
-    public LoginBinder() { }
-
     #region Methods
     private IEnumerator Start()
     {

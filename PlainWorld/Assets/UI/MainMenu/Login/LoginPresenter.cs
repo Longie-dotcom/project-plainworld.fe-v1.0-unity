@@ -1,5 +1,7 @@
-﻿using Assets.Service;
+﻿using Assets.Network.NetworkException;
+using Assets.Service;
 using Assets.State;
+using Assets.UI.Enum;
 using Assets.Utility;
 using System;
 
@@ -79,18 +81,34 @@ namespace Assets.UI.MainMenu.Login
         {
             AsyncHelper.Run(async () =>
             {
-                // Authenticate player
-                await authService.Login(email, password);
-                var claims = authService.Claims;
+                try
+                {
+                    // Authenticate players
+                    await authService.Login(email, password);
+                    var claims = authService.Claims;
 
-                // Request Game Service to load player data
-                await playerService.JoinAsync(
-                    Guid.Parse(claims.UserId),
-                    claims.FullName
-                );
+                    // Request spawning players
+                    await playerService.JoinAsync(
+                        Guid.Parse(claims.UserId),
+                        claims.FullName
+                    );
+                    gameService.GameState.SetPhase(GamePhase.InGame);
+                }
+                catch (AuthException ex)
+                {
+                    uiService.UIState.ShowPopUp(
+                        PopUpType.Error,
+                        ex.Message
+                    );
+                }
+                catch (Exception)
+                {
+                    uiService.UIState.ShowPopUp(
+                        PopUpType.Error,
+                        "Something went wrong. Please try again."
+                    );
+                }
             });
-
-            gameService.GameState.SetPhase(GamePhase.InGame);
         }
 
         private void OnRegister()

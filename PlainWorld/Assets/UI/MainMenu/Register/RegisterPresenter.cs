@@ -1,4 +1,5 @@
-﻿using Assets.Service;
+﻿using Assets.Network.NetworkException;
+using Assets.Service;
 using Assets.State;
 using Assets.UI.Enum;
 using Assets.Utility;
@@ -150,12 +151,41 @@ namespace Assets.UI.MainMenu.Register
 
         private void OnRegister()
         {
-            AsyncHelper.Run(() => authService.Register(
-                email, 
-                password,
-                fullName,
-                dob,
-                gender));
+            AsyncHelper.Run(async () =>
+            {
+                try
+                {
+                    // Request registration
+                    await authService.Register(
+                        email,
+                        password,
+                        fullName,
+                        gender,
+                        dob
+                    );
+
+                    // Show success and return to login view
+                    uiService.UIState.ShowPopUp(
+                        PopUpType.Information,
+                        "Registration successful!"
+                    );
+                    gameService.GameState.SetPhase(GamePhase.Login);
+                }
+                catch (AuthException ex)
+                {
+                    uiService.UIState.ShowPopUp(
+                        PopUpType.Error,
+                        ex.Message
+                    );
+                }
+                catch (Exception)
+                {
+                    uiService.UIState.ShowPopUp(
+                        PopUpType.Error,
+                        "Unexpected error. Please try again."
+                    );
+                }
+            });
         }
         #endregion
 
@@ -208,7 +238,15 @@ namespace Assets.UI.MainMenu.Register
                 parsedYear &&
                 IsValidDate(d, m, y);
 
-            dob = isDobValid ? $"{y:D4}-{m:D2}-{d:D2}" : null;
+            if (isDobValid)
+            {
+                var date = new DateTime(y, m, d, 0, 0, 0, DateTimeKind.Utc);
+                dob = date.ToString("o");
+            }
+            else
+            {
+                dob = null;
+            }
 
             registerPrefab.SetDobValid(isDobValid);
         }

@@ -1,7 +1,12 @@
 ﻿using System;
 
+/*
+ * NOTE: Auth Service call HTTP APIs only
+ */
+
 namespace Assets.Network.DTO
 {
+    // Request DTO
     [Serializable]
     public class LoginRequest
     {
@@ -20,12 +25,7 @@ namespace Assets.Network.DTO
         public string dob;
     }
 
-    [Serializable]
-    public class HttpResponse<T>
-    {
-        public T payload;
-    }
-
+    // Response DTO
     [Serializable]
     public class TokenPayload
     {

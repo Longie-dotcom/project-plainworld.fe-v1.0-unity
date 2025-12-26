@@ -11,8 +11,6 @@ public abstract class ComponentBinder : MonoBehaviour
     #region Properties
     #endregion
 
-    public ComponentBinder() { }
-
     #region Methods
     protected IEnumerator BindWhenReady<T>(
         Action<T> onReady) where T : class, IService

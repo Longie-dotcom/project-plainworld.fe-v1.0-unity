@@ -16,8 +16,6 @@ namespace Assets.Core
         #region Properties
         #endregion
 
-        public Bootstrapper() { }
-
         #region Methods
         private void Awake()
         {
@@ -35,6 +33,7 @@ namespace Assets.Core
             var entityService = new EntityService();
             var uiService = new UIService();
             var authService = new AuthService();
+            var cursorService = new CursorService();
 
             GameLogger.Info(
                 Channel.System,
@@ -46,6 +45,7 @@ namespace Assets.Core
             var uiNetworkHandler = new UINetworkHandler();
             var gameNetworkHandler = new GameNetworkHandler();
             var authNetworkHandler = new AuthNetworkHandler();
+            var cursorNetworkHandler = new CursorNetworkHandler();
 
             GameLogger.Info(
                 Channel.System,
@@ -62,6 +62,8 @@ namespace Assets.Core
             uiNetworkHandler.BindService(uiService, networkService);
             authService.BindNetworkCommand(authNetworkHandler);
             authNetworkHandler.BindService(authService, networkService);
+            cursorService.BindNetworkCommand(cursorNetworkHandler);
+            cursorNetworkHandler.BindService(cursorService, networkService);
 
             GameLogger.Info(
                 Channel.System,
@@ -73,6 +75,7 @@ namespace Assets.Core
             networkService.Register<IEntityNetworkReceiver>(entityNetworkHandler);
             networkService.Register<IUINetworkReceiver>(uiNetworkHandler);
             networkService.Register<IAuthNetworkReceiver>(authNetworkHandler);
+            networkService.Register<ICursorNetworkReceiver>(cursorNetworkHandler);
 
             GameLogger.Info(
                 Channel.System,
@@ -85,6 +88,7 @@ namespace Assets.Core
             ServiceLocator.Register<EntityService>(entityService);
             ServiceLocator.Register<UIService>(uiService);
             ServiceLocator.Register<AuthService>(authService);
+            ServiceLocator.Register<CursorService>(cursorService);
 
             GameLogger.Info(
                 Channel.System,
@@ -98,7 +102,8 @@ namespace Assets.Core
                     playerService,
                     entityService,
                     uiService,
-                    authService));
+                    authService,
+                    cursorService));
         }
 
         private void OnApplicationQuit()
@@ -114,7 +119,8 @@ namespace Assets.Core
             PlayerService playerService,
             EntityService entityService,
             UIService uiService,
-            AuthService authService)
+            AuthService authService,
+            CursorService cursorService)
         {
             // Network is ready first
             yield return networkService.InitializeAsync().AsCoroutine();
@@ -125,6 +131,7 @@ namespace Assets.Core
             yield return entityService.InitializeAsync().AsCoroutine();
             yield return uiService.InitializeAsync().AsCoroutine();
             yield return authService.InitializeAsync().AsCoroutine();
+            yield return cursorService.InitializeAsync().AsCoroutine();
 
             GameLogger.Info(
                 Channel.System, 

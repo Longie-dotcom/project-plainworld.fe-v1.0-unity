@@ -19,8 +19,6 @@ public class RegisterBinder : ComponentBinder
     #region Properties
     #endregion
 
-    public RegisterBinder() { }
-
     #region Methods
     private IEnumerator Start()
     {

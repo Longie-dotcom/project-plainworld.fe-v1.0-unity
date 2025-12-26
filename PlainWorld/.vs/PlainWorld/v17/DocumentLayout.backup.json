@@ -3,100 +3,264 @@
   "WorkspaceRootPath": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|d:\\github\\project-plainworld.fe-v1.0-unity\\plainworld\\assets\\ui\\mainmenu\\register\\registerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\register\\registerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|d:\\github\\project-plainworld.fe-v1.0-unity\\plainworld\\assets\\ui\\enum\\hsvchannel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\enum\\hsvchannel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\register\\registerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\register\\registerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\component\\hsv\\bardrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\component\\hsv\\bardrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\entity\\entityplayer\\entityplayerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\entity\\entityplayer\\entityplayerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|d:\\github\\project-plainworld.fe-v1.0-unity\\plainworld\\assets\\ui\\component\\hsv\\hsvcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\component\\hsv\\hsvcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\networkmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\networkmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\command\\iauthnetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\command\\iauthnetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\login\\loginpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\login\\loginpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\login\\loginview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\login\\loginview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\uiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\uiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\uistate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\uistate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\player\\playerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\player\\playerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\common\\popup\\popupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\common\\popup\\popupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\player\\playermoveview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\player\\playermoveview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\binder\\playerbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\binder\\playerbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\common\\cursor\\cursortargetview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\common\\cursor\\cursortargetview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\binder\\entitybinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\binder\\entitybinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\common\\cursor\\cursorpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\common\\cursor\\cursorpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\entity\\entitypresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\entity\\entitypresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\common\\cursor\\cursorview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\common\\cursor\\cursorview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\binder\\registerbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\binder\\registerbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\binder\\cursorbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\binder\\cursorbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\register\\registerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\register\\registerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\login\\loginview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\login\\loginview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\register\\registerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\register\\registerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\binder\\loginbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\binder\\loginbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\uistate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\uistate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\login\\loginpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\login\\loginpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\networkmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\networkmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\enum\\cursortype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\enum\\cursortype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\cursorstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\cursorstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\cursorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\cursorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\binder\\popupbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\binder\\popupbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\enum\\popuptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\enum\\popuptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\utility\\asynchelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\utility\\asynchelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\common\\popup\\popuppresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\common\\popup\\popuppresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\servicelocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\servicelocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\binder\\entitybinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\binder\\entitybinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\binder\\playerbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\binder\\playerbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\entity\\entityplayer\\entityplayerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\entity\\entityplayer\\entityplayerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\entity\\entityview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\entity\\entityview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\entity\\entitypresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\entity\\entitypresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\player\\playerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\player\\playerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\entity\\entityplayer\\entityplayerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\entity\\entityplayer\\entityplayerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\bootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\bootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\command\\iplayernetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\command\\iplayernetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\componentbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\componentbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\coroutinerunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\coroutinerunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\cursornetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\cursornetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\entitynetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\entitynetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\playernetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\playernetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\uinetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\uinetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\authnetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\authnetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\dto\\basedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\dto\\basedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\dto\\playernetworkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\dto\\playernetworkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\command\\icursornetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\command\\icursornetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\command\\iuinetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\command\\iuinetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\command\\iauthnetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\command\\iauthnetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\receiver\\icursornetworkreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\receiver\\icursornetworkreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\receiver\\iuinetworkreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\receiver\\iuinetworkreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\uiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\uiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\entityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\entityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\entitystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\entitystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\binder\\registerbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\binder\\registerbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\enum\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\enum\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\utility\\gamelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\utility\\gamelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\utility\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\utility\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\utility\\taskextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\utility\\taskextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\dto\\authnetworkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\dto\\authnetworkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\networkexception\\authexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\networkexception\\authexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\networkcommandsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\networkcommandsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\command\\iplayernetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\command\\iplayernetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\receiver\\iplayernetworkreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,48 +271,12 @@
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\entitystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\entitystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\entityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\entityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\servicelocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\servicelocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\networkcommandsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\networkcommandsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\receiver\\iuinetworkreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\receiver\\iuinetworkreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\entitynetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\entitynetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\receiver\\ientitynetworkreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\receiver\\ientitynetworkreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\command\\ientitynetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\command\\ientitynetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\dto\\playernetworkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\dto\\playernetworkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\command\\iuinetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\command\\iuinetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\command\\igamenetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -159,60 +287,8 @@
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\receiver\\igamenetworkreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\entity\\entityview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\entity\\entityview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\utility\\gamelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\utility\\gamelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\enum\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\enum\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\componentbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\componentbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\utility\\taskextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\utility\\taskextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\utility\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\utility\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\utility\\asynchelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\utility\\asynchelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\authnetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\authnetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\dto\\authnetworkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\dto\\authnetworkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\receiver\\iauthnetworkreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\receiver\\iauthnetworkreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\uinetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\uinetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\coroutinerunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\coroutinerunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\base\\inetworkbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -237,6 +313,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IStateNetworkCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Network\\Interface\\Command\\IStateNetworkCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorBinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\UI\\Common\\Cursor\\CursorBinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -249,6 +329,45 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginBinder.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\LoginBinder.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Binder\\LoginBinder.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\LoginBinder.cs",
+              "RelativeToolTip": "Assets\\UI\\Binder\\LoginBinder.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T16:33:51.467Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Register\\RegisterView.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Register\\RegisterView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Register\\RegisterView.cs",
+              "RelativeToolTip": "Assets\\UI\\MainMenu\\Register\\RegisterView.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAqwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T07:13:28.986Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HSVChannel.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\HSVChannel.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Enum\\HSVChannel.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\HSVChannel.cs",
+              "RelativeToolTip": "Assets\\UI\\Enum\\HSVChannel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T17:38:46.717Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
@@ -258,56 +377,154 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RegisterView.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Register\\RegisterView.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Register\\RegisterView.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Register\\RegisterView.cs",
-              "RelativeToolTip": "Assets\\UI\\MainMenu\\Register\\RegisterView.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAQwCMAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "CursorBinder.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\CursorBinder.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Binder\\CursorBinder.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\CursorBinder.cs",
+              "RelativeToolTip": "Assets\\UI\\Binder\\CursorBinder.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T07:13:28.986Z",
+              "WhenOpened": "2025-12-23T03:45:01.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerMoveView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\PlayerMoveView.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay\\Player\\PlayerMoveView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\PlayerMoveView.cs",
+              "RelativeToolTip": "Assets\\Gameplay\\Player\\PlayerMoveView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T03:21:13.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CursorTargetView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorTargetView.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Common\\Cursor\\CursorTargetView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorTargetView.cs",
+              "RelativeToolTip": "Assets\\UI\\Common\\Cursor\\CursorTargetView.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAawDYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T04:12:29.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PopUpView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\PopUp\\PopUpView.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Common\\PopUp\\PopUpView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\PopUp\\PopUpView.cs",
+              "RelativeToolTip": "Assets\\UI\\Common\\PopUp\\PopUpView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T14:38:22.267Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PlayerPresenter.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\PlayerPresenter.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay\\Player\\PlayerPresenter.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\PlayerPresenter.cs",
-              "RelativeToolTip": "Assets\\Gameplay\\Player\\PlayerPresenter.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAqwEAAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "HSVCollector.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Component\\HSV\\HSVCollector.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Component\\HSV\\HSVCollector.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Component\\HSV\\HSVCollector.cs",
+              "RelativeToolTip": "Assets\\UI\\Component\\HSV\\HSVCollector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T17:12:42.214Z"
+              "WhenOpened": "2025-12-26T17:06:44.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BarDrag.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Component\\HSV\\BarDrag.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Component\\HSV\\BarDrag.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Component\\HSV\\BarDrag.cs",
+              "RelativeToolTip": "Assets\\UI\\Component\\HSV\\BarDrag.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAqwEMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T16:46:38.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CursorPresenter.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorPresenter.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Common\\Cursor\\CursorPresenter.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorPresenter.cs",
+              "RelativeToolTip": "Assets\\UI\\Common\\Cursor\\CursorPresenter.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwvy8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:39:28.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterPresenter.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
+              "RelativeToolTip": "Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwCUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T07:13:46.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CursorView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorView.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Common\\Cursor\\CursorView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorView.cs",
+              "RelativeToolTip": "Assets\\UI\\Common\\Cursor\\CursorView.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:37:42.867Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "LoginView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginView.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Login\\LoginView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginView.cs",
+              "RelativeToolTip": "Assets\\UI\\MainMenu\\Login\\LoginView.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T09:25:38.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "UIState.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\UIState.cs",
               "RelativeDocumentMoniker": "Assets\\State\\UIState.cs",
               "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\UIState.cs",
               "RelativeToolTip": "Assets\\State\\UIState.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAWwBcAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwB4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T02:59:24.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PlayerState.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\PlayerState.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\PlayerState.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\PlayerState.cs",
-              "RelativeToolTip": "Assets\\State\\PlayerState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "LoginPresenter.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
+              "RelativeToolTip": "Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAUwDUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T08:55:02.735Z"
+              "WhenOpened": "2025-12-16T16:00:42.671Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "NetworkMethod.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkMethod.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\NetworkMethod.cs",
@@ -319,151 +536,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EntityPlayerPresenter.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerPresenter.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerPresenter.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerPresenter.cs",
-              "RelativeToolTip": "Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerPresenter.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAA1wEEAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "PopUpType.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\PopUpType.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Enum\\PopUpType.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\PopUpType.cs",
+              "RelativeToolTip": "Assets\\UI\\Enum\\PopUpType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T03:26:59.99Z"
+              "WhenOpened": "2025-12-22T14:58:12.921Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegisterPresenter.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
-              "RelativeToolTip": "Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAcwEkAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "PopUpBinder.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\PopUpBinder.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Binder\\PopUpBinder.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\PopUpBinder.cs",
+              "RelativeToolTip": "Assets\\UI\\Binder\\PopUpBinder.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T07:13:46.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IAuthNetworkCommand.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IAuthNetworkCommand.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Command\\IAuthNetworkCommand.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IAuthNetworkCommand.cs",
-              "RelativeToolTip": "Assets\\Network\\Interface\\Command\\IAuthNetworkCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T08:51:56.516Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\AuthService.cs",
-              "RelativeDocumentMoniker": "Assets\\Service\\AuthService.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\AuthService.cs",
-              "RelativeToolTip": "Assets\\Service\\AuthService.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAIwCkAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T16:39:05.661Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GameState.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\GameState.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\GameState.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\GameState.cs",
-              "RelativeToolTip": "Assets\\State\\GameState.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAjwCMAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T08:48:41.724Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UIService.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\UIService.cs",
-              "RelativeDocumentMoniker": "Assets\\Service\\UIService.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\UIService.cs",
-              "RelativeToolTip": "Assets\\Service\\UIService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAywB0AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T12:41:01.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginPresenter.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
-              "RelativeToolTip": "Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAmwFIAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T16:00:42.671Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginView.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginView.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Login\\LoginView.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginView.cs",
-              "RelativeToolTip": "Assets\\UI\\MainMenu\\Login\\LoginView.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwDQAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T09:25:38.592Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PlayerService.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\PlayerService.cs",
-              "RelativeDocumentMoniker": "Assets\\Service\\PlayerService.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\PlayerService.cs",
-              "RelativeToolTip": "Assets\\Service\\PlayerService.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAArwEsAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T16:57:28.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PlayerMoveView.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\PlayerMoveView.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay\\Player\\PlayerMoveView.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\PlayerMoveView.cs",
-              "RelativeToolTip": "Assets\\Gameplay\\Player\\PlayerMoveView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T03:21:13.234Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PlayerBinder.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Binder\\PlayerBinder.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay\\Binder\\PlayerBinder.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Binder\\PlayerBinder.cs",
-              "RelativeToolTip": "Assets\\Gameplay\\Binder\\PlayerBinder.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwCQAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T17:24:34.777Z"
+              "WhenOpened": "2025-12-22T15:17:40.577Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "EntityBinder.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Binder\\EntityBinder.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay\\Binder\\EntityBinder.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Binder\\EntityBinder.cs",
-              "RelativeToolTip": "Assets\\Gameplay\\Binder\\EntityBinder.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
+              "Title": "CursorType.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\CursorType.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Enum\\CursorType.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\CursorType.cs",
+              "RelativeToolTip": "Assets\\UI\\Enum\\CursorType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T02:51:42.479Z"
+              "WhenOpened": "2025-12-23T03:41:15.322Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
+              "Title": "CursorState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\CursorState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\CursorState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\CursorState.cs",
+              "RelativeToolTip": "Assets\\State\\CursorState.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:14:26.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CursorService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\CursorService.cs",
+              "RelativeDocumentMoniker": "Assets\\Service\\CursorService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\CursorService.cs",
+              "RelativeToolTip": "Assets\\Service\\CursorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:07:36.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AsyncHelper.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\AsyncHelper.cs",
+              "RelativeDocumentMoniker": "Assets\\Utility\\AsyncHelper.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\AsyncHelper.cs",
+              "RelativeToolTip": "Assets\\Utility\\AsyncHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T04:04:33.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EntityPlayerView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerView.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerView.cs",
+              "RelativeToolTip": "Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T03:29:28.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "EntityPresenter.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityPresenter.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay\\Entity\\EntityPresenter.cs",
@@ -475,271 +632,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RegisterBinder.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\RegisterBinder.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Binder\\RegisterBinder.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\RegisterBinder.cs",
-              "RelativeToolTip": "Assets\\UI\\Binder\\RegisterBinder.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 78,
+              "Title": "CursorBinder.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorBinder.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Common\\Cursor\\CursorBinder.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorBinder.cs",
+              "RelativeToolTip": "Assets\\UI\\Common\\Cursor\\CursorBinder.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T07:35:14.205Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "LoginBinder.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\LoginBinder.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Binder\\LoginBinder.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\LoginBinder.cs",
-              "RelativeToolTip": "Assets\\UI\\Binder\\LoginBinder.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T16:33:51.467Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "EntityPlayerView.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerView.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerView.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerView.cs",
-              "RelativeToolTip": "Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T03:29:28.017Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Bootstrapper.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\Bootstrapper.cs",
-              "RelativeDocumentMoniker": "Assets\\Core\\Bootstrapper.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\Bootstrapper.cs",
-              "RelativeToolTip": "Assets\\Core\\Bootstrapper.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAzwGkAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T03:08:50.638Z"
+              "WhenOpened": "2025-12-23T03:38:16.203Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "IPlayerNetworkCommand.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IPlayerNetworkCommand.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Command\\IPlayerNetworkCommand.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IPlayerNetworkCommand.cs",
-              "RelativeToolTip": "Assets\\Network\\Interface\\Command\\IPlayerNetworkCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Title": "PopUpPresenter.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\PopUp\\PopUpPresenter.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Common\\PopUp\\PopUpPresenter.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\PopUp\\PopUpPresenter.cs",
+              "RelativeToolTip": "Assets\\UI\\Common\\PopUp\\PopUpPresenter.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T07:33:14.019Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "PlayerNetworkHandler.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
-              "RelativeToolTip": "Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwD4AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T07:09:28.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IPlayerNetworkReceiver.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IPlayerNetworkReceiver.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\IPlayerNetworkReceiver.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IPlayerNetworkReceiver.cs",
-              "RelativeToolTip": "Assets\\Network\\Interface\\Receiver\\IPlayerNetworkReceiver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T03:23:51.881Z"
+              "WhenOpened": "2025-12-22T14:37:52.443Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "NetworkService.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkService.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\NetworkService.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkService.cs",
-              "RelativeToolTip": "Assets\\Network\\NetworkService.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAUwHYAAAA3AAAAAAAAAA==",
+              "Title": "EntityBinder.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Binder\\EntityBinder.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay\\Binder\\EntityBinder.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Binder\\EntityBinder.cs",
+              "RelativeToolTip": "Assets\\Gameplay\\Binder\\EntityBinder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T16:48:39.338Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "EntityState.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\EntityState.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\EntityState.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\EntityState.cs",
-              "RelativeToolTip": "Assets\\State\\EntityState.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAiwB0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T19:00:53.054Z"
+              "WhenOpened": "2025-12-19T02:51:42.479Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "GameService.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\GameService.cs",
-              "RelativeDocumentMoniker": "Assets\\Service\\GameService.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\GameService.cs",
-              "RelativeToolTip": "Assets\\Service\\GameService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T06:46:51.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "EntityService.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\EntityService.cs",
-              "RelativeDocumentMoniker": "Assets\\Service\\EntityService.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\EntityService.cs",
-              "RelativeToolTip": "Assets\\Service\\EntityService.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAwwEEAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T09:11:26.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ServiceLocator.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\ServiceLocator.cs",
-              "RelativeDocumentMoniker": "Assets\\Core\\ServiceLocator.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\ServiceLocator.cs",
-              "RelativeToolTip": "Assets\\Core\\ServiceLocator.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T17:02:42.515Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "NetworkCommandSender.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\NetworkCommandSender.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\NetworkCommandSender.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\NetworkCommandSender.cs",
-              "RelativeToolTip": "Assets\\Network\\Handler\\NetworkCommandSender.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T07:09:57.599Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IUINetworkReceiver.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IUINetworkReceiver.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\IUINetworkReceiver.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IUINetworkReceiver.cs",
-              "RelativeToolTip": "Assets\\Network\\Interface\\Receiver\\IUINetworkReceiver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T12:40:24.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "EntityNetworkHandler.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\EntityNetworkHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\EntityNetworkHandler.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\EntityNetworkHandler.cs",
-              "RelativeToolTip": "Assets\\Network\\Handler\\EntityNetworkHandler.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAIwCUAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T07:59:53.914Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IEntityNetworkReceiver.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IEntityNetworkReceiver.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\IEntityNetworkReceiver.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IEntityNetworkReceiver.cs",
-              "RelativeToolTip": "Assets\\Network\\Interface\\Receiver\\IEntityNetworkReceiver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T09:27:09.741Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "IEntityNetworkCommand.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IEntityNetworkCommand.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Command\\IEntityNetworkCommand.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IEntityNetworkCommand.cs",
-              "RelativeToolTip": "Assets\\Network\\Interface\\Command\\IEntityNetworkCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T07:33:38.092Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "PlayerNetworkDTO.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\DTO\\PlayerNetworkDTO.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\DTO\\PlayerNetworkDTO.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\DTO\\PlayerNetworkDTO.cs",
-              "RelativeToolTip": "Assets\\Network\\DTO\\PlayerNetworkDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T03:14:06.021Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "IUINetworkCommand.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IUINetworkCommand.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Command\\IUINetworkCommand.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IUINetworkCommand.cs",
-              "RelativeToolTip": "Assets\\Network\\Interface\\Command\\IUINetworkCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T08:14:13.565Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "IGameNetworkCommand.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IGameNetworkCommand.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Command\\IGameNetworkCommand.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IGameNetworkCommand.cs",
-              "RelativeToolTip": "Assets\\Network\\Interface\\Command\\IGameNetworkCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T09:10:41.798Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "IGameNetworkReceiver.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IGameNetworkReceiver.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\IGameNetworkReceiver.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IGameNetworkReceiver.cs",
-              "RelativeToolTip": "Assets\\Network\\Interface\\Receiver\\IGameNetworkReceiver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T09:10:51.129Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
               "Title": "EntityView.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityView.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay\\Entity\\EntityView.cs",
               "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityView.cs",
               "RelativeToolTip": "Assets\\Gameplay\\Entity\\EntityView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T19:04:41.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 26,
+              "Title": "PlayerBinder.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Binder\\PlayerBinder.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay\\Binder\\PlayerBinder.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Binder\\PlayerBinder.cs",
+              "RelativeToolTip": "Assets\\Gameplay\\Binder\\PlayerBinder.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T17:24:34.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ServiceLocator.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\ServiceLocator.cs",
+              "RelativeDocumentMoniker": "Assets\\Core\\ServiceLocator.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\ServiceLocator.cs",
+              "RelativeToolTip": "Assets\\Core\\ServiceLocator.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwCcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:02:42.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "IService.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\IService.cs",
               "RelativeDocumentMoniker": "Assets\\Core\\IService.cs",
@@ -751,187 +716,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "GameLogger.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\GameLogger.cs",
-              "RelativeDocumentMoniker": "Assets\\Utility\\GameLogger.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\GameLogger.cs",
-              "RelativeToolTip": "Assets\\Utility\\GameLogger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "DocumentIndex": 30,
+              "Title": "PlayerPresenter.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\PlayerPresenter.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay\\Player\\PlayerPresenter.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\PlayerPresenter.cs",
+              "RelativeToolTip": "Assets\\Gameplay\\Player\\PlayerPresenter.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T02:47:21.143Z"
+              "WhenOpened": "2025-12-16T17:12:42.214Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Gender.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\Gender.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Enum\\Gender.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\Gender.cs",
-              "RelativeToolTip": "Assets\\UI\\Enum\\Gender.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 31,
+              "Title": "EntityPlayerPresenter.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerPresenter.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerPresenter.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerPresenter.cs",
+              "RelativeToolTip": "Assets\\Gameplay\\Entity\\EntityPlayer\\EntityPlayerPresenter.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwEEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T07:27:35.346Z"
+              "WhenOpened": "2025-12-19T03:26:59.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 32,
+              "Title": "Bootstrapper.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\Bootstrapper.cs",
+              "RelativeDocumentMoniker": "Assets\\Core\\Bootstrapper.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\Bootstrapper.cs",
+              "RelativeToolTip": "Assets\\Core\\Bootstrapper.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAcwFQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T03:08:50.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "ComponentBinder.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\ComponentBinder.cs",
               "RelativeDocumentMoniker": "Assets\\Core\\ComponentBinder.cs",
               "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\ComponentBinder.cs",
               "RelativeToolTip": "Assets\\Core\\ComponentBinder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-16T16:25:26.622Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "TaskExtension.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\TaskExtension.cs",
-              "RelativeDocumentMoniker": "Assets\\Utility\\TaskExtension.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\TaskExtension.cs",
-              "RelativeToolTip": "Assets\\Utility\\TaskExtension.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T17:21:15.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "JwtHelper.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\JwtHelper.cs",
-              "RelativeDocumentMoniker": "Assets\\Utility\\JwtHelper.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\JwtHelper.cs",
-              "RelativeToolTip": "Assets\\Utility\\JwtHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T13:48:57.126Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "AsyncHelper.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\AsyncHelper.cs",
-              "RelativeDocumentMoniker": "Assets\\Utility\\AsyncHelper.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\AsyncHelper.cs",
-              "RelativeToolTip": "Assets\\Utility\\AsyncHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T04:04:33.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "AuthNetworkHandler.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\AuthNetworkHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\AuthNetworkHandler.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\AuthNetworkHandler.cs",
-              "RelativeToolTip": "Assets\\Network\\Handler\\AuthNetworkHandler.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAAAC0AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T08:52:39.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "StateNetworkHandler.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\StateNetworkHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\StateNetworkHandler.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\StateNetworkHandler.cs",
-              "RelativeToolTip": "Assets\\Network\\Handler\\StateNetworkHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T08:16:47.954Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "AuthNetworkDTO.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\DTO\\AuthNetworkDTO.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\DTO\\AuthNetworkDTO.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\DTO\\AuthNetworkDTO.cs",
-              "RelativeToolTip": "Assets\\Network\\DTO\\AuthNetworkDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T14:19:19.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "IAuthNetworkReceiver.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IAuthNetworkReceiver.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\IAuthNetworkReceiver.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IAuthNetworkReceiver.cs",
-              "RelativeToolTip": "Assets\\Network\\Interface\\Receiver\\IAuthNetworkReceiver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T08:53:00.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "IStateNetworkReceiver.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IStateNetworkReceiver.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\IStateNetworkReceiver.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IStateNetworkReceiver.cs",
-              "RelativeToolTip": "Assets\\Network\\Interface\\Receiver\\IStateNetworkReceiver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T06:47:30.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "UINetworkHandler.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\UINetworkHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\UINetworkHandler.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\UINetworkHandler.cs",
-              "RelativeToolTip": "Assets\\Network\\Handler\\UINetworkHandler.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAWwBYAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T08:15:11.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 34,
               "Title": "CoroutineRunner.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\CoroutineRunner.cs",
               "RelativeDocumentMoniker": "Assets\\Core\\CoroutineRunner.cs",
               "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\CoroutineRunner.cs",
               "RelativeToolTip": "Assets\\Core\\CoroutineRunner.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAiwD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-05T16:54:31.025Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "ViewPresentor.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\ViewPresentor.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay\\Player\\ViewPresentor.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\ViewPresentor.cs",
-              "RelativeToolTip": "Assets\\Gameplay\\Player\\ViewPresentor.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAUwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T03:24:09.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "ViewView.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\ViewView.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay\\Player\\ViewView.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\ViewView.cs",
-              "RelativeToolTip": "Assets\\Gameplay\\Player\\ViewView.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAiwCgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T17:12:43.885Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 35,
               "Title": "GlobalExceptionHandler.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\GlobalExceptionHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Core\\GlobalExceptionHandler.cs",
@@ -943,7 +788,487 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CursorNetworkHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\CursorNetworkHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\CursorNetworkHandler.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\CursorNetworkHandler.cs",
+              "RelativeToolTip": "Assets\\Network\\Handler\\CursorNetworkHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:18:15.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "EntityNetworkHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\EntityNetworkHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\EntityNetworkHandler.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\EntityNetworkHandler.cs",
+              "RelativeToolTip": "Assets\\Network\\Handler\\EntityNetworkHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T07:59:53.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "PlayerNetworkHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
+              "RelativeToolTip": "Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T07:09:28.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UINetworkHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\UINetworkHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\UINetworkHandler.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\UINetworkHandler.cs",
+              "RelativeToolTip": "Assets\\Network\\Handler\\UINetworkHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T08:15:11.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AuthNetworkHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\AuthNetworkHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\AuthNetworkHandler.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\AuthNetworkHandler.cs",
+              "RelativeToolTip": "Assets\\Network\\Handler\\AuthNetworkHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T08:52:39.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "BaseDTO.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\DTO\\BaseDTO.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\DTO\\BaseDTO.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\DTO\\BaseDTO.cs",
+              "RelativeToolTip": "Assets\\Network\\DTO\\BaseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T15:56:15.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "PlayerNetworkDTO.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\DTO\\PlayerNetworkDTO.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\DTO\\PlayerNetworkDTO.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\DTO\\PlayerNetworkDTO.cs",
+              "RelativeToolTip": "Assets\\Network\\DTO\\PlayerNetworkDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T03:14:06.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IAuthNetworkCommand.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IAuthNetworkCommand.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Command\\IAuthNetworkCommand.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IAuthNetworkCommand.cs",
+              "RelativeToolTip": "Assets\\Network\\Interface\\Command\\IAuthNetworkCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T08:51:56.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "EntityService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\EntityService.cs",
+              "RelativeDocumentMoniker": "Assets\\Service\\EntityService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\EntityService.cs",
+              "RelativeToolTip": "Assets\\Service\\EntityService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAA0wEMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T09:11:26.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "UIService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\UIService.cs",
+              "RelativeDocumentMoniker": "Assets\\Service\\UIService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\UIService.cs",
+              "RelativeToolTip": "Assets\\Service\\UIService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:41:01.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "EntityState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\EntityState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\EntityState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\EntityState.cs",
+              "RelativeToolTip": "Assets\\State\\EntityState.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T19:00:53.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ICursorNetworkCommand.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\ICursorNetworkCommand.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Command\\ICursorNetworkCommand.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\ICursorNetworkCommand.cs",
+              "RelativeToolTip": "Assets\\Network\\Interface\\Command\\ICursorNetworkCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:16:47.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ICursorNetworkReceiver.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\ICursorNetworkReceiver.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\ICursorNetworkReceiver.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\ICursorNetworkReceiver.cs",
+              "RelativeToolTip": "Assets\\Network\\Interface\\Receiver\\ICursorNetworkReceiver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:16:05.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IUINetworkCommand.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IUINetworkCommand.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Command\\IUINetworkCommand.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IUINetworkCommand.cs",
+              "RelativeToolTip": "Assets\\Network\\Interface\\Command\\IUINetworkCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T08:14:13.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "GameState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\GameState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\GameState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\GameState.cs",
+              "RelativeToolTip": "Assets\\State\\GameState.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T08:48:41.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "IUINetworkReceiver.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IUINetworkReceiver.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\IUINetworkReceiver.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IUINetworkReceiver.cs",
+              "RelativeToolTip": "Assets\\Network\\Interface\\Receiver\\IUINetworkReceiver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:40:24.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "RegisterBinder.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\RegisterBinder.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Binder\\RegisterBinder.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\RegisterBinder.cs",
+              "RelativeToolTip": "Assets\\UI\\Binder\\RegisterBinder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T07:35:14.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\GameService.cs",
+              "RelativeDocumentMoniker": "Assets\\Service\\GameService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\GameService.cs",
+              "RelativeToolTip": "Assets\\Service\\GameService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T06:46:51.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Gender.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\Gender.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Enum\\Gender.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\Gender.cs",
+              "RelativeToolTip": "Assets\\UI\\Enum\\Gender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T07:27:35.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "GameLogger.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\GameLogger.cs",
+              "RelativeDocumentMoniker": "Assets\\Utility\\GameLogger.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\GameLogger.cs",
+              "RelativeToolTip": "Assets\\Utility\\GameLogger.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAYwE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T02:47:21.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "JwtHelper.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\JwtHelper.cs",
+              "RelativeDocumentMoniker": "Assets\\Utility\\JwtHelper.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\JwtHelper.cs",
+              "RelativeToolTip": "Assets\\Utility\\JwtHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T13:48:57.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "TaskExtension.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\TaskExtension.cs",
+              "RelativeDocumentMoniker": "Assets\\Utility\\TaskExtension.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\TaskExtension.cs",
+              "RelativeToolTip": "Assets\\Utility\\TaskExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T17:21:15.214Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 58,
+              "Title": "PlayerService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\PlayerService.cs",
+              "RelativeDocumentMoniker": "Assets\\Service\\PlayerService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\PlayerService.cs",
+              "RelativeToolTip": "Assets\\Service\\PlayerService.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAvwEoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T16:57:28.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "Assets\\Service\\AuthService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\AuthService.cs",
+              "RelativeToolTip": "Assets\\Service\\AuthService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAUwDcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T16:39:05.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "AuthNetworkDTO.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\DTO\\AuthNetworkDTO.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\DTO\\AuthNetworkDTO.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\DTO\\AuthNetworkDTO.cs",
+              "RelativeToolTip": "Assets\\Network\\DTO\\AuthNetworkDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T14:19:19.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "AuthException.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkException\\AuthException.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\NetworkException\\AuthException.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkException\\AuthException.cs",
+              "RelativeToolTip": "Assets\\Network\\NetworkException\\AuthException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T15:54:44.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "NetworkCommandSender.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\NetworkCommandSender.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\NetworkCommandSender.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\NetworkCommandSender.cs",
+              "RelativeToolTip": "Assets\\Network\\Handler\\NetworkCommandSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T07:09:57.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "PlayerState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\PlayerState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\PlayerState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\PlayerState.cs",
+              "RelativeToolTip": "Assets\\State\\PlayerState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T08:55:02.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "IPlayerNetworkCommand.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IPlayerNetworkCommand.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Command\\IPlayerNetworkCommand.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IPlayerNetworkCommand.cs",
+              "RelativeToolTip": "Assets\\Network\\Interface\\Command\\IPlayerNetworkCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T07:33:14.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "IPlayerNetworkReceiver.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IPlayerNetworkReceiver.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\IPlayerNetworkReceiver.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IPlayerNetworkReceiver.cs",
+              "RelativeToolTip": "Assets\\Network\\Interface\\Receiver\\IPlayerNetworkReceiver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T03:23:51.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "NetworkService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkService.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\NetworkService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkService.cs",
+              "RelativeToolTip": "Assets\\Network\\NetworkService.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAUwHYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T16:48:39.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "IEntityNetworkReceiver.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IEntityNetworkReceiver.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\IEntityNetworkReceiver.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IEntityNetworkReceiver.cs",
+              "RelativeToolTip": "Assets\\Network\\Interface\\Receiver\\IEntityNetworkReceiver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T09:27:09.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "IEntityNetworkCommand.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IEntityNetworkCommand.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Command\\IEntityNetworkCommand.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IEntityNetworkCommand.cs",
+              "RelativeToolTip": "Assets\\Network\\Interface\\Command\\IEntityNetworkCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T07:33:38.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "IGameNetworkCommand.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IGameNetworkCommand.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Command\\IGameNetworkCommand.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IGameNetworkCommand.cs",
+              "RelativeToolTip": "Assets\\Network\\Interface\\Command\\IGameNetworkCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T09:10:41.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "IGameNetworkReceiver.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IGameNetworkReceiver.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\IGameNetworkReceiver.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IGameNetworkReceiver.cs",
+              "RelativeToolTip": "Assets\\Network\\Interface\\Receiver\\IGameNetworkReceiver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T09:10:51.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "StateNetworkHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\StateNetworkHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\StateNetworkHandler.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\StateNetworkHandler.cs",
+              "RelativeToolTip": "Assets\\Network\\Handler\\StateNetworkHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T08:16:47.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "IAuthNetworkReceiver.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IAuthNetworkReceiver.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\IAuthNetworkReceiver.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IAuthNetworkReceiver.cs",
+              "RelativeToolTip": "Assets\\Network\\Interface\\Receiver\\IAuthNetworkReceiver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T08:53:00.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "IStateNetworkReceiver.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IStateNetworkReceiver.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\IStateNetworkReceiver.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IStateNetworkReceiver.cs",
+              "RelativeToolTip": "Assets\\Network\\Interface\\Receiver\\IStateNetworkReceiver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T06:47:30.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "ViewPresentor.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\ViewPresentor.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay\\Player\\ViewPresentor.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\ViewPresentor.cs",
+              "RelativeToolTip": "Assets\\Gameplay\\Player\\ViewPresentor.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAUwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T03:24:09.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "ViewView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\ViewView.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay\\Player\\ViewView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\ViewView.cs",
+              "RelativeToolTip": "Assets\\Gameplay\\Player\\ViewView.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T17:12:43.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
               "Title": "IStateNetworkCommand.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IStateNetworkCommand.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Command\\IStateNetworkCommand.cs",
@@ -955,7 +1280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 72,
               "Title": "INetworkBase.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Base\\INetworkBase.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Base\\INetworkBase.cs",
