@@ -14,7 +14,7 @@ namespace Assets.Service
         #region Properties
         public bool IsInitialized { get; private set; } = false;
         public IGameNetworkCommand StateNetworkCommand { get; private set; }
-        public GameState GameState { get; private set; } = new GameState(GamePhase.Connecting);
+        public GameState GameState { get; private set; } = new GameState(GamePhase.Loading);
         #endregion
 
         public GameService() { }

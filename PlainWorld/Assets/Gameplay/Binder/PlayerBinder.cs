@@ -8,7 +8,7 @@ public class PlayerBinder : ComponentBinder
 {
     #region Attributes
     [SerializeField]
-    private PlayerMoveView playerPrefab;
+    private PlayerView playerView;
     private PlayerPresenter playerPresenter;
 
     private PlayerService playerService;
@@ -35,13 +35,12 @@ public class PlayerBinder : ComponentBinder
         playerPresenter = new PlayerPresenter(
             playerService,
             authService,
-            playerPrefab);
+            playerView);
 
         GameLogger.Info(
             Channel.System,
             "Player components bound successfully");
     }
-
 
     private void OnDestroy()
     {

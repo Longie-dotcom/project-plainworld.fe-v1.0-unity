@@ -8,7 +8,7 @@ public class RegisterBinder : ComponentBinder
 {
     #region Attributes
     [SerializeField]
-    private RegisterView registerPrefab;
+    private RegisterView registerView;
     private RegisterPresenter registerPresenter;
 
     private AuthService authService;
@@ -42,7 +42,7 @@ public class RegisterBinder : ComponentBinder
             authService,
             uiService,
             gameService,
-            registerPrefab);
+            registerView);
 
         GameLogger.Info(
             Channel.System,

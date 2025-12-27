@@ -8,6 +8,7 @@ public class PlayerMoveView : MonoBehaviour
 
     #region Properties
     public event Action<Vector2> OnMove;
+    public event Action OnStop;
     #endregion
 
     #region Methods
@@ -24,16 +25,13 @@ public class PlayerMoveView : MonoBehaviour
     void Update()
     {
         Vector2 dir = new Vector2(
-            Input.GetAxis("Horizontal"),
-            Input.GetAxis("Vertical"));
+            Input.GetAxisRaw("Horizontal"),
+            Input.GetAxisRaw("Vertical"));
 
         if (dir != Vector2.zero)
-            OnMove?.Invoke(dir);
-    }
-
-    public void ApplyPosition(Vector2 pos)
-    {
-        transform.position = new Vector3(pos.x, pos.y, 0);
+            OnMove?.Invoke(dir.normalized);
+        else
+            OnStop?.Invoke();
     }
     #endregion
 }

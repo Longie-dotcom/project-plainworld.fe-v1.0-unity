@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cba495992b6e15b4a9c0ef2cffe791e6, type: 3}
+  m_Name: Hoodie
+  m_EditorClassIdentifier: 
+  EntityPartName: Hoodie
+  EntityPartType: 4
+  FramesPerAction: 4
+  DirectionCount: 4
+  Sprites:
+  - {fileID: -8026452786959779749, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: -8026452786959779749, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: -8026452786959779749, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: -8026452786959779749, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 7938404250637937876, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 7938404250637937876, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 7938404250637937876, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 7938404250637937876, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 3315332123837441259, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 3315332123837441259, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 3315332123837441259, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 3315332123837441259, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 4684688544853220276, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 4684688544853220276, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 4684688544853220276, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 4684688544853220276, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: -590707006847584580, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 6061772544710162896, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: -8180036605702442753, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 1522552094696072308, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: -8064208203774665975, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 640248845903605670, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 4453285321045741620, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 7174647869118946166, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: -6203698562783307783, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: -1518987568524828099, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: -3698231332313254236, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 3708401188844917320, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: -1980713155078937177, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: -7004011409102171213, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 8333604219070541897, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  - {fileID: 1809270034751816738, guid: 166c51321d8cf6949b66627f9b59efbf, type: 3}
+  SupportedActions: 0000000001000000

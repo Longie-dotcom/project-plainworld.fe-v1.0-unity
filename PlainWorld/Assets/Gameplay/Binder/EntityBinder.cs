@@ -8,7 +8,7 @@ public class EntityBinder : ComponentBinder
 {
     #region Attributes
     [SerializeField]
-    private EntityPlayerView entityPlayerPrefab;
+    private EntityPlayerView entityPlayerView;
     private EntityPlayerPresenter entityPlayerPresenter;
 
     private EntityService entityService;
@@ -28,7 +28,7 @@ public class EntityBinder : ComponentBinder
         // Resolve dependencies
         entityPlayerPresenter = new EntityPlayerPresenter(
             entityService,
-            entityPlayerPrefab);
+            entityPlayerView);
 
         GameLogger.Info(
             Channel.System,

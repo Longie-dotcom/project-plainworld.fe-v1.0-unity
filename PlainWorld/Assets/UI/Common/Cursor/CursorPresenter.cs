@@ -8,7 +8,7 @@ namespace Assets.UI.Common.Popup
     {
         #region Attributes
         private readonly CursorService cursorService;
-        private readonly CursorView cursorPrefab;
+        private readonly CursorView cursorView;
 
         private bool disposed;
         #endregion
@@ -19,13 +19,13 @@ namespace Assets.UI.Common.Popup
 
         public CursorPresenter(
             CursorService cursorService,
-            CursorView cursorPrefab)
+            CursorView cursorView)
         {
             this.cursorService = cursorService;
-            this.cursorPrefab = cursorPrefab;
+            this.cursorView = cursorView;
 
             Bind();
-            cursorPrefab.Apply(CursorType.Default);
+            cursorView.Apply(CursorType.Default);
         }
 
         #region Methods
@@ -34,7 +34,7 @@ namespace Assets.UI.Common.Popup
             if (disposed) return;
             disposed = true;
 
-            cursorService.CursorState.OnChanged -= cursorPrefab.Apply;
+            cursorService.CursorState.OnChanged -= cursorView.Apply;
         }
 
         // Target objects
@@ -52,7 +52,7 @@ namespace Assets.UI.Common.Popup
         // Cursor (Source)
         private void Bind()
         {
-            cursorService.CursorState.OnChanged += cursorPrefab.Apply;
+            cursorService.CursorState.OnChanged += cursorView.Apply;
         }
         #endregion
     }

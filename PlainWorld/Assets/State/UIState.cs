@@ -11,6 +11,7 @@ namespace Assets.State
         #region Properites
         public bool ShowLogin { get; private set; }
         public bool ShowRegister { get; private set; }
+        public bool ShowCustomizeCharacter { get; private set; }
 
         public bool ShowLobby { get; private set; }
         public bool ShowHUD { get; private set; }
@@ -32,9 +33,9 @@ namespace Assets.State
         {
             ShowLogin = game.Phase == GamePhase.Login;
             ShowRegister = game.Phase == GamePhase.Register;
+            ShowCustomizeCharacter = game.Phase == GamePhase.CustomizeCharacter;
 
-            ShowLoading = game.Phase == GamePhase.Connecting;
-            ShowLobby = game.Phase == GamePhase.Lobby;
+            ShowLoading = game.Phase == GamePhase.Loading;
             ShowHUD = game.Phase == GamePhase.InGame;
 
             OnUIStateChanged?.Invoke(this);

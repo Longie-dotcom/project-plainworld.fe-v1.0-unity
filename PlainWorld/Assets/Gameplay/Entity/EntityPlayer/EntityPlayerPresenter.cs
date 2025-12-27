@@ -8,7 +8,7 @@ namespace Assets.Gameplay.Entity.EntityPlayer
         : EntityPresenter<EntityPlayerView>
     {
         #region Attributes
-        private EntityPlayerView entityPlayerPrefab;
+        private EntityPlayerView entityPlayerView;
         #endregion
 
         #region Properties
@@ -16,10 +16,10 @@ namespace Assets.Gameplay.Entity.EntityPlayer
 
         public EntityPlayerPresenter(
             EntityService entityService,
-            EntityPlayerView entityPlayerPrefab
+            EntityPlayerView entityPlayerView
         ) : base(entityService)
         {
-            this.entityPlayerPrefab = entityPlayerPrefab;
+            this.entityPlayerView = entityPlayerView;
 
             entityService.EntityState.OnEntityAdded += SpawnEntity;
             entityService.EntityState.OnEntityMoved += UpdateEntityPosition;
@@ -44,7 +44,7 @@ namespace Assets.Gameplay.Entity.EntityPlayer
         {
             if (entityViews.ContainsKey(id)) return;
 
-            var view = GameObject.Instantiate(entityPlayerPrefab, position, Quaternion.identity);
+            var view = GameObject.Instantiate(entityPlayerView, position, Quaternion.identity);
             view.Initialize(id, position);
 
             entityViews[id] = view;

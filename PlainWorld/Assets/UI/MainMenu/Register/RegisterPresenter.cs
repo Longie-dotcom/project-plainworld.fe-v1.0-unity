@@ -13,7 +13,7 @@ namespace Assets.UI.MainMenu.Register
         private readonly AuthService authService;
         private readonly UIService uiService;
         private readonly GameService gameService;
-        private readonly RegisterView registerPrefab;
+        private readonly RegisterView registerView;
 
         private bool disposed;
         private bool isEmailValid;
@@ -39,12 +39,12 @@ namespace Assets.UI.MainMenu.Register
             AuthService authService, 
             UIService uiService,
             GameService gameService,
-            RegisterView registerPrefab)
+            RegisterView registerView)
         {
             this.authService = authService;
             this.uiService = uiService;
             this.gameService = gameService;
-            this.registerPrefab = registerPrefab;
+            this.registerView = registerView;
 
             Bind();
         }
@@ -55,18 +55,18 @@ namespace Assets.UI.MainMenu.Register
             if (disposed) return;
             disposed = true;
 
-            registerPrefab.OnEmailChanged -= OnEmailChanged;
-            registerPrefab.OnPasswordChanged -= OnPasswordChanged;
-            registerPrefab.OnFullNameChanged -= OnFullNameChanged;
-            registerPrefab.OnDayDobChanged -= OnDayDobChanged;
-            registerPrefab.OnMonthDobChanged -= OnMonthDobChanged;
-            registerPrefab.OnYearDobChanged -= OnYearDobChanged;
-            registerPrefab.OnBackClicked -= OnBack;
-            registerPrefab.OnRegisterClicked -= OnRegister;
-            registerPrefab.OnFemaleClicked -= OnFemaleChanged;
-            registerPrefab.OnMaleClicked -= OnMaleChanged;
+            registerView.OnEmailChanged -= OnEmailChanged;
+            registerView.OnPasswordChanged -= OnPasswordChanged;
+            registerView.OnFullNameChanged -= OnFullNameChanged;
+            registerView.OnDayDobChanged -= OnDayDobChanged;
+            registerView.OnMonthDobChanged -= OnMonthDobChanged;
+            registerView.OnYearDobChanged -= OnYearDobChanged;
+            registerView.OnBackClicked -= OnBack;
+            registerView.OnRegisterClicked -= OnRegister;
+            registerView.OnFemaleClicked -= OnFemaleChanged;
+            registerView.OnMaleClicked -= OnMaleChanged;
 
-            uiService.UIState.OnUIStateChanged -= registerPrefab.HandleUIState;
+            uiService.UIState.OnUIStateChanged -= registerView.HandleUIState;
         }
 
         private void Bind()
@@ -74,18 +74,18 @@ namespace Assets.UI.MainMenu.Register
             if (disposed)
                 throw new ObjectDisposedException(nameof(RegisterPresenter));
 
-            registerPrefab.OnEmailChanged += OnEmailChanged;
-            registerPrefab.OnPasswordChanged += OnPasswordChanged;
-            registerPrefab.OnFullNameChanged += OnFullNameChanged;
-            registerPrefab.OnDayDobChanged += OnDayDobChanged;
-            registerPrefab.OnMonthDobChanged += OnMonthDobChanged;
-            registerPrefab.OnYearDobChanged += OnYearDobChanged;
-            registerPrefab.OnBackClicked += OnBack;
-            registerPrefab.OnRegisterClicked += OnRegister;
-            registerPrefab.OnFemaleClicked += OnFemaleChanged;
-            registerPrefab.OnMaleClicked += OnMaleChanged;
+            registerView.OnEmailChanged += OnEmailChanged;
+            registerView.OnPasswordChanged += OnPasswordChanged;
+            registerView.OnFullNameChanged += OnFullNameChanged;
+            registerView.OnDayDobChanged += OnDayDobChanged;
+            registerView.OnMonthDobChanged += OnMonthDobChanged;
+            registerView.OnYearDobChanged += OnYearDobChanged;
+            registerView.OnBackClicked += OnBack;
+            registerView.OnRegisterClicked += OnRegister;
+            registerView.OnFemaleClicked += OnFemaleChanged;
+            registerView.OnMaleClicked += OnMaleChanged;
 
-            uiService.UIState.OnUIStateChanged += registerPrefab.HandleUIState;
+            uiService.UIState.OnUIStateChanged += registerView.HandleUIState;
         }
 
         private void OnEmailChanged(string v)
@@ -199,31 +199,31 @@ namespace Assets.UI.MainMenu.Register
                 isDobValid &&
                 isGenderValid;
 
-            registerPrefab.SetRegisterInteractable(canRegister);
+            registerView.SetRegisterInteractable(canRegister);
         }
 
         private void ValidateEmail()
         {
             isEmailValid = !string.IsNullOrWhiteSpace(email) && email.Contains("@");
-            registerPrefab.SetEmailValid(isEmailValid);
+            registerView.SetEmailValid(isEmailValid);
         }
 
         private void ValidatePassword()
         {
             isPasswordValid = !string.IsNullOrWhiteSpace(password) && password.Length >= 6;
-            registerPrefab.SetPasswordValid(isPasswordValid);
+            registerView.SetPasswordValid(isPasswordValid);
         }
 
         private void ValidateFullName()
         {
             isNameValid = !string.IsNullOrWhiteSpace(fullName);
-            registerPrefab.SetNameValid(isNameValid);
+            registerView.SetNameValid(isNameValid);
         }
 
         private void ValidateGender()
         {
             isGenderValid = true;
-            registerPrefab.SetGenderValid(true);
+            registerView.SetGenderValid(true);
         }
 
         private void ValidateDob()
@@ -248,7 +248,7 @@ namespace Assets.UI.MainMenu.Register
                 dob = null;
             }
 
-            registerPrefab.SetDobValid(isDobValid);
+            registerView.SetDobValid(isDobValid);
         }
 
         private bool IsValidDate(int day, int month, int year)

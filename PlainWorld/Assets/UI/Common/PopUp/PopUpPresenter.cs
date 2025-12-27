@@ -20,7 +20,7 @@ namespace Assets.UI.Common.Popup
     {
         #region Attributes
         private readonly UIService uiService;
-        private readonly PopUpView popUpPrefab;
+        private readonly PopUpView popUpView;
 
         private bool disposed;
         private PopUpData? current;
@@ -31,10 +31,10 @@ namespace Assets.UI.Common.Popup
 
         public PopUpPresenter(
             UIService uiService,
-            PopUpView popUpPrefab)
+            PopUpView popUpView)
         {
             this.uiService = uiService;
-            this.popUpPrefab = popUpPrefab;
+            this.popUpView = popUpView;
 
             Bind();
         }
@@ -45,16 +45,16 @@ namespace Assets.UI.Common.Popup
             if (disposed) return;
             disposed = true;
 
-            popUpPrefab.OnOkClicked -= OnOk;
-            popUpPrefab.OnCancelClicked -= OnCancel;
+            popUpView.OnOkClicked -= OnOk;
+            popUpView.OnCancelClicked -= OnCancel;
 
             uiService.UIState.OnPopUpRequested -= OnPopUpRequested;
         }
 
         private void Bind()
         {
-            popUpPrefab.OnOkClicked += OnOk;
-            popUpPrefab.OnCancelClicked += OnCancel;
+            popUpView.OnOkClicked += OnOk;
+            popUpView.OnCancelClicked += OnCancel;
 
             uiService.UIState.OnPopUpRequested += OnPopUpRequested;
         }
@@ -63,20 +63,20 @@ namespace Assets.UI.Common.Popup
         {
             current = new PopUpData(request.type, request.message);
 
-            popUpPrefab.SetMessage(current.Value.Message);
+            popUpView.SetMessage(current.Value.Message);
 
             switch (current.Value.Type)
             {
                 case PopUpType.Information:
-                    popUpPrefab.ShowInformation();
+                    popUpView.ShowInformation();
                     break;
 
                 case PopUpType.Error:
-                    popUpPrefab.ShowError();
+                    popUpView.ShowError();
                     break;
 
                 case PopUpType.Question:
-                    popUpPrefab.ShowQuestion();
+                    popUpView.ShowQuestion();
                     break;
             }
         }
@@ -84,13 +84,13 @@ namespace Assets.UI.Common.Popup
         private void OnOk()
         {
             current = null;
-            popUpPrefab.Hide();
+            popUpView.Hide();
         }
 
         private void OnCancel()
         {
             current = null;
-            popUpPrefab.Hide();
+            popUpView.Hide();
         }
         #endregion
     }

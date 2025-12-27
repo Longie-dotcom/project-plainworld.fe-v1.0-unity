@@ -6,12 +6,13 @@ namespace Assets.State
 {
     public enum GamePhase
     {
+        // --- UI States ---
         Login,
         Register,
+        CustomizeCharacter,
+        Loading,
         InGame,
-        Connecting,
 
-        Lobby,
         Paused,
         GameOver,
     }

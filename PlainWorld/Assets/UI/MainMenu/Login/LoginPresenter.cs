@@ -14,7 +14,7 @@ namespace Assets.UI.MainMenu.Login
         private readonly PlayerService playerService;
         private readonly UIService uiService;
         private readonly GameService gameService;
-        private readonly LoginView loginPrefab;
+        private readonly LoginView loginView;
 
         private bool disposed;
         private string email;
@@ -29,13 +29,13 @@ namespace Assets.UI.MainMenu.Login
             PlayerService playerService,
             UIService uiService, 
             GameService gameService,
-            LoginView loginPrefab)
+            LoginView loginView)
         {
             this.authService = authService;
             this.playerService = playerService;
             this.uiService = uiService;
             this.gameService = gameService;
-            this.loginPrefab = loginPrefab;
+            this.loginView = loginView;
 
             Bind();
         }
@@ -46,12 +46,12 @@ namespace Assets.UI.MainMenu.Login
             if (disposed) return;
             disposed = true;
 
-            loginPrefab.OnEmailChanged -= OnEmailChanged;
-            loginPrefab.OnPasswordChanged -= OnPasswordChanged;
-            loginPrefab.OnJoinClicked -= OnLogin;
-            loginPrefab.OnRegisterClicked -= OnRegister;
+            loginView.OnEmailChanged -= OnEmailChanged;
+            loginView.OnPasswordChanged -= OnPasswordChanged;
+            loginView.OnJoinClicked -= OnLogin;
+            loginView.OnRegisterClicked -= OnRegister;
 
-            uiService.UIState.OnUIStateChanged -= loginPrefab.HandleUIState;
+            uiService.UIState.OnUIStateChanged -= loginView.HandleUIState;
         }
 
         private void Bind()
@@ -59,12 +59,12 @@ namespace Assets.UI.MainMenu.Login
             if (disposed)
                 throw new ObjectDisposedException(nameof(LoginPresenter));
 
-            loginPrefab.OnEmailChanged += OnEmailChanged;
-            loginPrefab.OnPasswordChanged += OnPasswordChanged;
-            loginPrefab.OnJoinClicked += OnLogin;
-            loginPrefab.OnRegisterClicked += OnRegister;
+            loginView.OnEmailChanged += OnEmailChanged;
+            loginView.OnPasswordChanged += OnPasswordChanged;
+            loginView.OnJoinClicked += OnLogin;
+            loginView.OnRegisterClicked += OnRegister;
 
-            uiService.UIState.OnUIStateChanged += loginPrefab.HandleUIState;
+            uiService.UIState.OnUIStateChanged += loginView.HandleUIState;
         }
 
         private void OnEmailChanged(string v)

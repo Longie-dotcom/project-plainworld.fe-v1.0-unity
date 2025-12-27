@@ -8,7 +8,7 @@ public class CursorBinder : ComponentBinder
 {
     #region Attributes
     [SerializeField]
-    private CursorView cursorPrefab;
+    private CursorView cursorView;
     private CursorPresenter cursorPresenter;
 
     private CursorService cursorService;
@@ -28,7 +28,7 @@ public class CursorBinder : ComponentBinder
         // Resolve dependencies
         cursorPresenter = new CursorPresenter(
             cursorService,
-            cursorPrefab);
+            cursorView);
 
         CursorTarget.OnTargetEnabled += cursorPresenter.BindTarget;
         CursorTarget.OnTargetDisabled += cursorPresenter.UnbindTarget;

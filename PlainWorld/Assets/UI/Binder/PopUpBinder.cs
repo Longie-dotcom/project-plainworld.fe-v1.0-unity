@@ -8,7 +8,7 @@ public class PopUpBinder : ComponentBinder
 {
     #region Attributes
     [SerializeField]
-    private PopUpView popUpPrefab;
+    private PopUpView popUpView;
     private PopUpPresenter popUpPresenter;
 
     private UIService uiService;
@@ -28,7 +28,7 @@ public class PopUpBinder : ComponentBinder
         // Resolve dependencies
         popUpPresenter = new PopUpPresenter(
             uiService,
-            popUpPrefab);
+            popUpView);
 
         GameLogger.Info(
             Channel.System,

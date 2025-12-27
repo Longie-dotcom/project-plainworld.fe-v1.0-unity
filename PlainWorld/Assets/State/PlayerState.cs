@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Utility;
+using System;
 using UnityEngine;
 
 namespace Assets.State
@@ -23,7 +24,7 @@ namespace Assets.State
 
         public PlayerState()
         {
-            MoveSpeed = 1f;
+            MoveSpeed = 5f;
         }
 
         #region Methods
@@ -43,25 +44,25 @@ namespace Assets.State
 
         public Vector2 PredictMove(Vector2 inputDir)
         {
-            if (!HasJoined) return Position;
+            if (!HasJoined || inputDir == Vector2.zero) return Position;
+            GameLogger.Info(Channel.Gameplay, $"Position: {Position.x}:{Position.y}");
 
-            if (inputDir == Vector2.zero)
-                return Position;
-
-            return Position + inputDir * MoveSpeed;
+            Position += inputDir * MoveSpeed * Time.deltaTime;
+            return Position;
         }
 
         public void ApplyPredictedPosition(Vector2 position)
         {
             Position = position;
-            OnPositionChanged?.Invoke(position);
+            OnPositionChanged?.Invoke(Position);
         }
 
         public void ApplyServerPosition(Guid id, Vector2 position)
         {
             if (id != PlayerID) return;
+
             Position = position;
-            OnPositionChanged?.Invoke(position);
+            OnPositionChanged?.Invoke(Position);
         }
 
         public void LoadPlayerData(Vector2 position)
@@ -69,8 +70,11 @@ namespace Assets.State
             OnCreatePlayer?.Invoke();
 
             Position = position;
-            OnPositionChanged?.Invoke(position);
+            OnPositionChanged?.Invoke(Position);
         }
+        #endregion
+
+        #region Private Helpers
         #endregion
     }
 }

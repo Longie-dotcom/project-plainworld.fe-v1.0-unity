@@ -8,7 +8,7 @@ public class LoginBinder : ComponentBinder
 {
     #region Attributes
     [SerializeField]
-    private LoginView loginPrefab;
+    private LoginView loginView;
     private LoginPresenter loginPresenter;
 
     private AuthService authService;
@@ -49,7 +49,7 @@ public class LoginBinder : ComponentBinder
             playerService,
             uiService,
             gameService,
-            loginPrefab);
+            loginView);
 
         GameLogger.Info(
             Channel.System,
