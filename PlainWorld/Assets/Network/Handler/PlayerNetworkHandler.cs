@@ -32,26 +32,30 @@ namespace Assets.Network.Handler
         #endregion
 
         #region Send Commands
-        public Task Join(PlayerJoinDTO dto)
+        public Task Join()
         {
             return sender.Send(
-                OnSend.PlayerJoin,
-                dto
-            );
+                OnSend.PlayerJoin);
         }
 
-        public Task Logout(PlayerLogoutDTO dto)
+        public Task Logout()
         {
             return sender.Send(
-                OnSend.PlayerLogout,
-                dto
-            );
+                OnSend.PlayerLogout);
         }
 
         public Task Move(PlayerMoveDTO dto)
         {
             return sender.Send(
                 OnSend.PlayerMove,
+                dto
+            );
+        }
+
+        public Task CreateAppearance(PlayerCreateAppearanceDTO dto)
+        {
+            return sender.Send(
+                OnSend.PlayerCreateAppearance,
                 dto
             );
         }
@@ -65,13 +69,17 @@ namespace Assets.Network.Handler
 
         public void OnPlayerLogout(Guid id)
         {
-            GameLogger.Info(
-                Channel.Service, $"Player with ID: {id} has logout");
+            playerService.OnPlayerLogout(id);
         }
 
-        public void OnPlayerMoved(PlayerPositionDTO dto)
+        public void OnPlayerMoved(PlayerMovementDTO dto)
         {
             playerService.OnPlayerMoved(dto);
+        }
+
+        public void OnPlayerCreatedAppearance(PlayerAppearanceDTO dto)
+        {
+            playerService.OnPlayerCreatedAppearance(dto);
         }
         #endregion
     }

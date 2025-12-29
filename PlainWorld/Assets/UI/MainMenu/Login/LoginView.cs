@@ -1,4 +1,4 @@
-using Assets.State;
+using Assets.State.UI;
 using System;
 using TMPro;
 using UnityEngine;
@@ -31,7 +31,7 @@ public class LoginView : MonoBehaviour
         joinButton.onClick.AddListener(() => OnJoinClicked?.Invoke());
         registerButton.onClick.AddListener(() => OnRegisterClicked?.Invoke());
 
-        // Input
+        // Inputs
         emailTextField.onValueChanged.AddListener(v => OnEmailChanged?.Invoke(v));
         passwordTextField.onValueChanged.AddListener(v => OnPasswordChanged?.Invoke(v));
     }

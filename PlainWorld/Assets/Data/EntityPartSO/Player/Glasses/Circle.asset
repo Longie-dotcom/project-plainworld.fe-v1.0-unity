@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cba495992b6e15b4a9c0ef2cffe791e6, type: 3}
+  m_Name: Circle
+  m_EditorClassIdentifier: 
+  EntityPartName: Circle
+  EntityPartType: 1
+  FramesPerAction: 4
+  DirectionCount: 4
+  Sprites:
+  - {fileID: 6809232116598211764, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 6809232116598211764, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 6809232116598211764, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 6809232116598211764, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 7415388661402226307, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 7415388661402226307, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 7415388661402226307, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 7415388661402226307, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: -3440703590427799959, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: -3440703590427799959, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: -3440703590427799959, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: -3440703590427799959, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 2044839581307160310, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 5499530976172551169, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 8376617246408509340, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: -1371227932123418010, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 389148504713853830, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: -8285051789836051396, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: -5294240410957533634, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 4878083913270355042, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: -764222623806055218, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: -8373863040218770189, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 7006255356632024413, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  - {fileID: 750688508513719256, guid: eb065912241fd4d409347a43ae8aac97, type: 3}
+  SupportedActions: 0000000001000000

@@ -1,18 +1,17 @@
 ﻿using Assets.Service;
 using System;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace Assets.Gameplay.Entity
 {
-    public abstract class EntityPresenter<TView> : IDisposable
-        where TView : EntityView
+    public abstract class EntityPresenter<TEntityView, TEntity>
+        where TEntityView : EntityView
     {
         #region Attributes
-        protected readonly Dictionary<Guid, TView> entityViews = new();
         protected readonly EntityService entityService;
+        protected readonly Dictionary<Guid, TEntityView> entityViews = new();
 
-        protected bool disposed;
+        protected bool disposed = false;
         #endregion
 
         #region Properties
@@ -26,33 +25,27 @@ namespace Assets.Gameplay.Entity
         #region Methods
         public virtual void Dispose()
         {
-            foreach (var view in entityViews.Values)
-                UnbindView(view);
-
+            disposed = true;
             entityViews.Clear();
         }
 
-        public virtual void RemoveEntity(Guid id)
+        public abstract void SpawnEntity(TEntity entity);
+        public abstract void RemoveEntity(Guid id);
+
+        public bool TryGetView(Guid id, out TEntityView view)
         {
-            if (!entityViews.TryGetValue(id, out var view)) return;
-
-            UnbindView(view);
-            GameObject.Destroy(view.gameObject);
-            entityViews.Remove(id);
+            return entityViews.TryGetValue(id, out view);
         }
 
-        protected virtual void BindView(TView view)
-        { 
-        
+        public TEntityView GetView(Guid id)
+        {
+            if (!entityViews.TryGetValue(id, out var view))
+                throw new KeyNotFoundException($"Entity view not found for ID: {id}");
+            return view;
         }
 
-        protected virtual void UnbindView(TView view)
-        { 
-        
-        }
-
-        public abstract void SpawnEntity(Guid id, Vector2 position);
-        public abstract void UpdateEntityPosition(Guid id, Vector2 position);
+        protected abstract void BindView(TEntityView view, TEntity entity);
+        protected abstract void UnbindView(TEntityView view, TEntity entity);
         #endregion
     }
 }

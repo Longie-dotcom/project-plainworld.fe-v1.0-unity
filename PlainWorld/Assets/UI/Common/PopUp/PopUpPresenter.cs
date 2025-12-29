@@ -22,8 +22,9 @@ namespace Assets.UI.Common.Popup
         private readonly UIService uiService;
         private readonly PopUpView popUpView;
 
-        private bool disposed;
         private PopUpData? current;
+
+        private bool disposed;
         #endregion
 
         #region Properties
@@ -45,20 +46,42 @@ namespace Assets.UI.Common.Popup
             if (disposed) return;
             disposed = true;
 
+            // Inbound
             popUpView.OnOkClicked -= OnOk;
             popUpView.OnCancelClicked -= OnCancel;
 
+            // Outbound
             uiService.UIState.OnPopUpRequested -= OnPopUpRequested;
         }
 
         private void Bind()
         {
+            if (disposed)
+                throw new ObjectDisposedException(nameof(PopUpPresenter));
+
+            // Inbound
             popUpView.OnOkClicked += OnOk;
             popUpView.OnCancelClicked += OnCancel;
 
+            // Outbound
             uiService.UIState.OnPopUpRequested += OnPopUpRequested;
         }
 
+        #region Buttons
+        private void OnOk()
+        {
+            current = null;
+            popUpView.Hide();
+        }
+
+        private void OnCancel()
+        {
+            current = null;
+            popUpView.Hide();
+        }
+        #endregion
+
+        #region Outbound
         private void OnPopUpRequested((PopUpType type, string message) request)
         {
             current = new PopUpData(request.type, request.message);
@@ -80,18 +103,7 @@ namespace Assets.UI.Common.Popup
                     break;
             }
         }
-
-        private void OnOk()
-        {
-            current = null;
-            popUpView.Hide();
-        }
-
-        private void OnCancel()
-        {
-            current = null;
-            popUpView.Hide();
-        }
+        #endregion
         #endregion
     }
 }

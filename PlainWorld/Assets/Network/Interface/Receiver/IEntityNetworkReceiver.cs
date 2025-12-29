@@ -7,7 +7,8 @@ namespace Assets.Network.Interface.Receiver
     public interface IEntityNetworkReceiver : INetworkBase
     {
         void OnPlayerEntityJoined(PlayerEntityDTO dto);
-        void OnPlayerEntityMoved(PlayerEntityPositionDTO dto);
-        void OnEntityLeft(Guid id);
+        void OnPlayerEntityLogout(Guid id);
+        void OnPlayerEntityMoved(PlayerEntityMovementDTO dto);
+        void OnPlayerEntityCreatedAppearance(PlayerEntityAppearanceDTO dto);
     }
 }

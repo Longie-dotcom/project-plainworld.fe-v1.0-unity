@@ -7,12 +7,21 @@ using UnityEngine;
 public class PlayerBinder : ComponentBinder
 {
     #region Attributes
+    [Header("Appearance Catalogs")]
+    [SerializeField] private EntityPartCatalog hairCatalog;
+    [SerializeField] private EntityPartCatalog glassesCatalog;
+    [SerializeField] private EntityPartCatalog shirtCatalog;
+    [SerializeField] private EntityPartCatalog pantCatalog;
+    [SerializeField] private EntityPartCatalog shoeCatalog;
+    [SerializeField] private EntityPartCatalog eyesCatalog;
+    [SerializeField] private EntityPartCatalog skinCatalog;
+
     [SerializeField]
     private PlayerView playerView;
     private PlayerPresenter playerPresenter;
 
     private PlayerService playerService;
-    private AuthService authService;
+    private GameService gameService;
     #endregion
 
     #region Properties
@@ -26,16 +35,24 @@ public class PlayerBinder : ComponentBinder
             playerService = player;
         });
 
-        yield return BindWhenReady<AuthService>(auth =>
+        yield return BindWhenReady<GameService>(game =>
         {
-            authService = auth;
+            gameService = game;
         });
 
         // Resolve dependencies
         playerPresenter = new PlayerPresenter(
             playerService,
-            authService,
-            playerView);
+            gameService,
+            playerView,
+
+            hairCatalog,
+            glassesCatalog,
+            shirtCatalog,
+            pantCatalog,
+            shoeCatalog,
+            eyesCatalog,
+            skinCatalog);
 
         GameLogger.Info(
             Channel.System,

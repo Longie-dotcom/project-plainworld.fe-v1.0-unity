@@ -81,6 +81,16 @@ public class BarDrag :
             _ => barImage.texture
         };
     }
+
+    public void SetValue(float value)
+    {
+        Value = Mathf.Clamp01(value);
+
+        float width = bar.rect.width;
+        float x = Mathf.Lerp(-width / 2f, width / 2f, Value);
+
+        target.localPosition = new Vector3(x, target.localPosition.y, 0f);
+    }
     #endregion
 
     #region Private Helpers

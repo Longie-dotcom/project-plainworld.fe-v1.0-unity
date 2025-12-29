@@ -11,15 +11,15 @@ public class PlayerView : MonoBehaviour
     #endregion
 
     #region Properties
-    public event Action<Vector2> OnMove;
-    public event Action OnStop;
+    public event Action<Vector2> OnUpdateVisualMove;
+    public event Action OnSendMoveToServer;
     #endregion
 
     #region Methods
     private void Awake()
     {
-        moveView.OnMove += dir => OnMove?.Invoke(dir);
-        moveView.OnStop += () => OnStop?.Invoke();
+        moveView.OnUpdateVisualMove += dir => OnUpdateVisualMove?.Invoke(dir);
+        moveView.OnSendMoveToServer += () => OnSendMoveToServer?.Invoke();
     }
 
     void Start()
@@ -30,6 +30,35 @@ public class PlayerView : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void ApplyAppearance(
+        EntityPartFrame hair,
+        EntityPartFrame glasses,
+        EntityPartFrame shirt,
+        EntityPartFrame pant,
+        EntityPartFrame shoe,
+        EntityPartFrame eyes,
+        EntityPartFrame skin,
+
+        Color hairColor,
+        Color pantColor,
+        Color eyeColor,
+        Color skinColor)
+    {
+        visualView.ApplyAppearance(
+            hair,
+            glasses,
+            shirt,
+            pant,
+            shoe,
+            eyes,
+            skin,
+
+            hairColor,
+            pantColor,
+            eyeColor,
+            skinColor);
     }
 
     public void ApplyPosition(Vector2 pos)

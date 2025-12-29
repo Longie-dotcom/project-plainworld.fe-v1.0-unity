@@ -7,17 +7,17 @@ public abstract class EntityView : MonoBehaviour
     #endregion
 
     #region Properties
-    public Guid Id { get; private set; }
+    public Guid ID { get; private set; }
     #endregion
 
     #region Methods
     public virtual void Initialize(Guid id, Vector2 startPosition)
     {
-        Id = id;
+        ID = id;
         transform.position = startPosition;
     }
 
-    public abstract void UpdatePosition(Vector2 position);
+    public abstract void ApplyPosition(Vector2 position);
     #endregion
 }
 

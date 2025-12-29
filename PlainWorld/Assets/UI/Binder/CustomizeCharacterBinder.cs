@@ -16,12 +16,12 @@ namespace Assets.UI.Binder
         [SerializeField] private EntityPartCatalog pantCatalog;
         [SerializeField] private EntityPartCatalog shoeCatalog;
         [SerializeField] private EntityPartCatalog eyesCatalog;
+        [SerializeField] private EntityPartCatalog skinCatalog;
 
         [SerializeField]
         private CustomizeCharacterView customizeCharacterView;
         private CustomizeCharacterPresenter customizeCharacterPresenter;
 
-        private AuthService authService;
         private PlayerService playerService;
         private UIService uiService;
         private GameService gameService;
@@ -33,11 +33,6 @@ namespace Assets.UI.Binder
         #region Methods
         private IEnumerator Start()
         {
-            yield return BindWhenReady<AuthService>(auth =>
-            {
-                authService = auth;
-            });
-
             yield return BindWhenReady<PlayerService>(player =>
             {
                 playerService = player;
@@ -55,7 +50,6 @@ namespace Assets.UI.Binder
 
             // Resolve dependencies
             customizeCharacterPresenter = new CustomizeCharacterPresenter(
-                authService,
                 playerService,
                 uiService,
                 gameService,
@@ -66,7 +60,8 @@ namespace Assets.UI.Binder
                 shirtCatalog,
                 pantCatalog,
                 shoeCatalog,
-                eyesCatalog
+                eyesCatalog,
+                skinCatalog
             );
 
             GameLogger.Info(

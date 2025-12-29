@@ -1,6 +1,6 @@
 ﻿using Assets.Core;
 using Assets.Network.Interface.Command;
-using Assets.State;
+using Assets.State.Cursor;
 using System;
 using System.Threading.Tasks;
 

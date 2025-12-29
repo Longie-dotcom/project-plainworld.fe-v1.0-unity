@@ -1,10 +1,10 @@
 ﻿using Assets.Core;
 using Assets.Network.DTO;
 using Assets.Network.Interface.Command;
-using Assets.State;
+using Assets.State.Player;
+using Assets.Utility;
 using System;
 using System.Threading.Tasks;
-using UnityEngine;
 
 namespace Assets.Service
 {
@@ -45,16 +45,12 @@ namespace Assets.Service
         }
 
         // Senders
-        public async Task JoinAsync(Guid playerId, string playerName)
+        public async Task JoinAsync()
         {
-            var dto = new PlayerJoinDTO()
-            {
-                ID = playerId,
-                Name = playerName
-            };
-            await PlayerNetworkCommand.Join(dto);
+            if (PlayerState.HasJoined)
+                return;
 
-            PlayerState.MarkJoined(playerId, playerName);
+            await PlayerNetworkCommand.Join();
         }
 
         public async Task LogoutAsync()
@@ -62,47 +58,69 @@ namespace Assets.Service
             if (!PlayerState.HasJoined)
                 return;
 
-            await PlayerNetworkCommand.Logout(
-                new PlayerLogoutDTO
-                {
-                    ID = PlayerState.PlayerID,
-                    Name = PlayerState.PlayerName
-                });
+            await PlayerNetworkCommand.Logout();
         }
 
-        public async Task MoveAsync(Vector2 dir)
+        public async Task MoveAsync()
         {
-            var next = PlayerState.PredictMove(dir);
+            if (!PlayerState.TryCreateMovementCreation(out var snapshot))
+                return;
 
-            var dto = new PlayerMoveDTO()
+            var dto = new PlayerMoveDTO
             {
-                ID = PlayerState.PlayerID,
-                Position = new PositionDTO()
-                {
-                    X = next.x,
-                    Y = next.y,
-                },
+                Movement = PlayerMovementMapper.ToDTO(snapshot)
             };
             await PlayerNetworkCommand.Move(dto);
+        }
 
-            PlayerState.ApplyPredictedPosition(next);
+        public async Task CreateAppearanceAsync()
+        {
+            if (!PlayerState.TryPrepareAppearanceCreation(out var snapshot))
+                return;
+
+            var dto = new PlayerCreateAppearanceDTO
+            {
+                Appearance = PlayerAppearanceMapper.ToDTO(snapshot)
+            };
+            await PlayerNetworkCommand.CreateAppearance(dto);
         }
 
         // Receivers
-        public void OnPlayerMoved(PlayerPositionDTO dto)
+        public void OnPlayerJoined(PlayerDTO dto)
+        {
+            CoroutineRunner.Instance.Schedule(() =>
+            {
+                PlayerState.LoadPlayerData(
+                    dto.ID,
+                    dto.FullName,
+                    PlayerMovementMapper.ToSnapshot(dto.Movement),
+                    PlayerAppearanceMapper.ToSnapshot(dto.Appearance)
+                );
+            });
+        }
+
+        public void OnPlayerLogout(Guid id)
+        {
+            CoroutineRunner.Instance.Schedule(() =>
+                GameLogger.Info(
+                    Channel.Service,
+                    $"Player with ID: {id} has logout")
+            );
+        }
+
+        public void OnPlayerMoved(PlayerMovementDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
                 PlayerState.ApplyServerPosition(
                     dto.ID,
-                    new Vector2(dto.Position.X, dto.Position.Y))
+                    PlayerMovementMapper.ToSnapshot(dto.Movement))
             );
         }
 
-        public void OnPlayerJoined(PlayerDTO dto)
+        public void OnPlayerCreatedAppearance(PlayerAppearanceDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                PlayerState.LoadPlayerData(
-                    new Vector2(dto.Position.X, dto.Position.Y))
+                PlayerState.ConfirmAppearanceCreated()
             );
         }
         #endregion

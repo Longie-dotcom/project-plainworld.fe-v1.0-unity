@@ -1,10 +1,11 @@
 ﻿using Assets.Core;
 using Assets.Network.DTO;
 using Assets.Network.Interface.Command;
-using Assets.State;
+using Assets.State.Entity;
+using Assets.State.Entity.Player;
+using Assets.Utility;
 using System;
 using System.Threading.Tasks;
-using UnityEngine;
 
 namespace Assets.Service
 {
@@ -45,28 +46,42 @@ namespace Assets.Service
         // Senders
 
         // Receivers
+        #region Player Entity
         public void OnPlayerEntityJoined(PlayerEntityDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                EntityState.AddEntity(
+                EntityState.AddPlayerEntity(
+                    new PlayerEntity(
+                        dto.ID,
+                        dto.FullName,
+                        PlayerMovementMapper.ToSnapshot(dto.Movement),
+                        PlayerAppearanceMapper.ToSnapshot(dto.Appearance)))
+            );
+        }
+
+        public void OnPlayerEntityMoved(PlayerEntityMovementDTO dto)
+        {
+            CoroutineRunner.Instance.Schedule(() =>
+                EntityState.UpdatePlayerEntityPosition(
                     dto.ID,
-                    new Vector2(dto.Position.X, dto.Position.Y))
+                    PlayerMovementMapper.ToSnapshot(dto.Movement))
             );
         }
 
-        public void OnPlayerEntityMoved(PlayerEntityPositionDTO dto)
+        public void OnPlayerEntityCreatedAppearance(PlayerEntityAppearanceDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                EntityState.UpdateEntityPosition(
-                    dto.ID, 
-                    new Vector2(dto.Position.X, dto.Position.Y))
+                GameLogger.Info(
+                    Channel.Service,
+                    $"CREATED!!!!: with the SHIRT ID: {dto.Appearance.ShirtID}")
             );
         }
+        #endregion
 
-        public void OnEntityLeft(Guid id)
+        public void OnPlayerEntityLogout(Guid id)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                EntityState.RemoveEntity(
+                EntityState.RemovePlayerEntity(
                     id)
             );
         }

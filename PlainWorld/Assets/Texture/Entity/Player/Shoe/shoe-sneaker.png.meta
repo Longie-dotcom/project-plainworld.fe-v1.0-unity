@@ -1,85 +1,85 @@
 fileFormatVersion: 2
-guid: 7883bd78dc7d82d43a2dd710ee0daf61
+guid: 525af4d4d98c8a04cb4639bc7005c3ed
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7400437324147675890
-    second: shoe-sneaker_0
+      213: 1080957595863859978
+    second: shoe-sneaker 1_0
   - first:
-      213: -8765227855917328672
-    second: shoe-sneaker_1
+      213: -5347567253997997715
+    second: shoe-sneaker 1_1
   - first:
-      213: 6399254341797007906
-    second: shoe-sneaker_2
+      213: 8292536024827012612
+    second: shoe-sneaker 1_2
   - first:
-      213: 4123670892320043030
-    second: shoe-sneaker_3
+      213: -79198731230309571
+    second: shoe-sneaker 1_3
   - first:
-      213: -2744702445759116669
-    second: shoe-sneaker_4
+      213: -5625543941333911399
+    second: shoe-sneaker 1_4
   - first:
-      213: 3218965093547545109
-    second: shoe-sneaker_5
+      213: -3616492251160121410
+    second: shoe-sneaker 1_5
   - first:
-      213: -6035764362894582483
-    second: shoe-sneaker_6
+      213: 5730369453883975673
+    second: shoe-sneaker 1_6
   - first:
-      213: 8835285033919930746
-    second: shoe-sneaker_7
+      213: -8639024172496300731
+    second: shoe-sneaker 1_7
   - first:
-      213: -5970630465741614241
-    second: shoe-sneaker_8
+      213: 2828067428171010052
+    second: shoe-sneaker 1_8
   - first:
-      213: 2030023714735876538
-    second: shoe-sneaker_9
+      213: 2805879102057196051
+    second: shoe-sneaker 1_9
   - first:
-      213: -7717671222418924889
-    second: shoe-sneaker_10
+      213: 5707926799260419815
+    second: shoe-sneaker 1_10
   - first:
-      213: -9085200425700094496
-    second: shoe-sneaker_11
+      213: -2470307089349140018
+    second: shoe-sneaker 1_11
   - first:
-      213: 8805939915155997372
-    second: shoe-sneaker_12
+      213: -2928238355484092976
+    second: shoe-sneaker 1_12
   - first:
-      213: 3487554459144464493
-    second: shoe-sneaker_13
+      213: -4452826560842470898
+    second: shoe-sneaker 1_13
   - first:
-      213: 8704824220099215694
-    second: shoe-sneaker_14
+      213: 5839885276325565684
+    second: shoe-sneaker 1_14
   - first:
-      213: 4639431964070482291
-    second: shoe-sneaker_15
+      213: 9124532605845203939
+    second: shoe-sneaker 1_15
   - first:
-      213: 1344209624858857206
-    second: shoe-sneaker_16
+      213: 7309169484050874032
+    second: shoe-sneaker 1_16
   - first:
-      213: -166189733413489197
-    second: shoe-sneaker_17
+      213: -6344003618236071098
+    second: shoe-sneaker 1_17
   - first:
-      213: -4512439933747519235
-    second: shoe-sneaker_18
+      213: 3312466237892868196
+    second: shoe-sneaker 1_18
   - first:
-      213: 3390339806400044465
-    second: shoe-sneaker_19
+      213: -5963030734345080344
+    second: shoe-sneaker 1_19
   - first:
-      213: 4012477019294497597
-    second: shoe-sneaker_20
+      213: -4657273224097627100
+    second: shoe-sneaker 1_20
   - first:
-      213: -7009450777598749810
-    second: shoe-sneaker_21
+      213: 4153533306530437688
+    second: shoe-sneaker 1_21
   - first:
-      213: -1837643634200874146
-    second: shoe-sneaker_22
+      213: -6226227200960655948
+    second: shoe-sneaker 1_22
   - first:
-      213: -2609888491497336842
-    second: shoe-sneaker_23
+      213: 4723208880441498936
+    second: shoe-sneaker 1_23
   - first:
-      213: 6394455356143346857
-    second: shoe-sneaker_24
+      213: -3303779084873006673
+    second: shoe-sneaker 1_24
   - first:
-      213: -1016120624910514849
-    second: shoe-sneaker_25
+      213: 5402527798565363527
+    second: shoe-sneaker 1_25
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -201,10 +201,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e0da2af767d5c4990800000000000000
-      internalID: -7400437324147675890
+      spriteID: edb580c53f3ed4a4e98f47aa8a9cb594
+      internalID: -1507617461
       vertices: []
       indices: 
       edges: []
@@ -223,10 +223,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0e650b884b7ab5680800000000000000
-      internalID: -8765227855917328672
+      spriteID: 3daf66d4b79ee3642912fb38d06a1524
+      internalID: -255055109
       vertices: []
       indices: 
       edges: []
@@ -245,10 +245,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 222df2e4be7bec850800000000000000
-      internalID: 6399254341797007906
+      spriteID: aa3e35b4470bc334d9762c2e8dc49f15
+      internalID: -927512257
       vertices: []
       indices: 
       edges: []
@@ -267,10 +267,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 610ba5314d83a3930800000000000000
-      internalID: 4123670892320043030
+      spriteID: 543424699fb9f484b92257333e7ecd49
+      internalID: 177358916
       vertices: []
       indices: 
       edges: []
@@ -289,10 +289,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 38ac16aeaabd8e9d0800000000000000
-      internalID: -2744702445759116669
+      spriteID: 2fc2f0ac2f15d754788233aadd0e78e7
+      internalID: -13145074
       vertices: []
       indices: 
       edges: []
@@ -311,10 +311,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5129841a2bf0cac20800000000000000
-      internalID: 3218965093547545109
+      spriteID: aed25f6ff6320a44794418742ce0f014
+      internalID: 445544676
       vertices: []
       indices: 
       edges: []
@@ -333,10 +333,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d2dd4b17a48ac3ca0800000000000000
-      internalID: -6035764362894582483
+      spriteID: 17d61a02bfa53b04986cac97638c7ed5
+      internalID: -342947731
       vertices: []
       indices: 
       edges: []
@@ -355,10 +355,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a716f105dec3d9a70800000000000000
-      internalID: 8835285033919930746
+      spriteID: c73825aacbf9db941bb3d704f125e0e4
+      internalID: -1985167086
       vertices: []
       indices: 
       edges: []
@@ -377,10 +377,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f539854a93f042da0800000000000000
-      internalID: -5970630465741614241
+      spriteID: b2b47edfa802f61488e55b31e347d079
+      internalID: -550943381
       vertices: []
       indices: 
       edges: []
@@ -399,10 +399,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ab9637220d71c2c10800000000000000
-      internalID: 2030023714735876538
+      spriteID: 8643165bbcf31634dbe0bdae904c914b
+      internalID: 1037107675
       vertices: []
       indices: 
       edges: []
@@ -421,10 +421,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7aa1776c9e255e490800000000000000
-      internalID: -7717671222418924889
+      spriteID: 40e2677f80a045d44932b39348e94886
+      internalID: -1913307844
       vertices: []
       indices: 
       edges: []
@@ -443,10 +443,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0ed0be82952eae180800000000000000
-      internalID: -9085200425700094496
+      spriteID: d836d9c35cffa2448950fec3f67525a4
+      internalID: -1662730501
       vertices: []
       indices: 
       edges: []
@@ -465,10 +465,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cb28e4c62bbf43a70800000000000000
-      internalID: 8805939915155997372
+      spriteID: 3bedf6a69b73ce84ebf91f78316f1d52
+      internalID: -955259429
       vertices: []
       indices: 
       edges: []
@@ -487,10 +487,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d68a2208d48466030800000000000000
-      internalID: 3487554459144464493
+      spriteID: 8f68381729c43b94a93f0f65f7b66824
+      internalID: -452305849
       vertices: []
       indices: 
       edges: []
@@ -509,10 +509,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e410b3f028fbdc870800000000000000
-      internalID: 8704824220099215694
+      spriteID: 3ea78751db3b71a47a2cd073c6665131
+      internalID: -1880200387
       vertices: []
       indices: 
       edges: []
@@ -531,10 +531,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 37193026ac2926040800000000000000
-      internalID: 4639431964070482291
+      spriteID: 983d0187a4a54c841bb0f308d0b93ac5
+      internalID: -1715835113
       vertices: []
       indices: 
       edges: []
@@ -553,10 +553,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6fe8f59288797a210800000000000000
-      internalID: 1344209624858857206
+      spriteID: 7c3c2fa1cf7866a41803bdcfc7990baf
+      internalID: -950058610
       vertices: []
       indices: 
       edges: []
@@ -575,10 +575,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3d57296615391bdf0800000000000000
-      internalID: -166189733413489197
+      spriteID: 3edbd70c45508ec4386691a9151476c7
+      internalID: -843664395
       vertices: []
       indices: 
       edges: []
@@ -597,10 +597,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: df021b6c9c79061c0800000000000000
-      internalID: -4512439933747519235
+      spriteID: 028e2fea5dc725c478b4f23cef9da231
+      internalID: 2062700416
       vertices: []
       indices: 
       edges: []
@@ -619,10 +619,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1bd57545718ec0f20800000000000000
-      internalID: 3390339806400044465
+      spriteID: 1c63c1677426beb41a82bf1a722ce871
+      internalID: -1182943648
       vertices: []
       indices: 
       edges: []
@@ -631,7 +631,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1d2976aa26a025545997422652354dab
+    spriteID: 09a3760753bb6b949a87cbf430d988e2
     internalID: 0
     vertices: []
     indices: 
@@ -641,26 +641,26 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      shoe-sneaker_0: -7400437324147675890
-      shoe-sneaker_1: -8765227855917328672
-      shoe-sneaker_10: -7717671222418924889
-      shoe-sneaker_11: -9085200425700094496
-      shoe-sneaker_12: 8805939915155997372
-      shoe-sneaker_13: 3487554459144464493
-      shoe-sneaker_14: 8704824220099215694
-      shoe-sneaker_15: 4639431964070482291
-      shoe-sneaker_16: 1344209624858857206
-      shoe-sneaker_17: -166189733413489197
-      shoe-sneaker_18: -4512439933747519235
-      shoe-sneaker_19: 3390339806400044465
-      shoe-sneaker_2: 6399254341797007906
-      shoe-sneaker_3: 4123670892320043030
-      shoe-sneaker_4: -2744702445759116669
-      shoe-sneaker_5: 3218965093547545109
-      shoe-sneaker_6: -6035764362894582483
-      shoe-sneaker_7: 8835285033919930746
-      shoe-sneaker_8: -5970630465741614241
-      shoe-sneaker_9: 2030023714735876538
+      shoe-sneaker_0: -1507617461
+      shoe-sneaker_1: -255055109
+      shoe-sneaker_10: -1913307844
+      shoe-sneaker_11: -1662730501
+      shoe-sneaker_12: -955259429
+      shoe-sneaker_13: -452305849
+      shoe-sneaker_14: -1880200387
+      shoe-sneaker_15: -1715835113
+      shoe-sneaker_16: -950058610
+      shoe-sneaker_17: -843664395
+      shoe-sneaker_18: 2062700416
+      shoe-sneaker_19: -1182943648
+      shoe-sneaker_2: -927512257
+      shoe-sneaker_3: 177358916
+      shoe-sneaker_4: -13145074
+      shoe-sneaker_5: 445544676
+      shoe-sneaker_6: -342947731
+      shoe-sneaker_7: -1985167086
+      shoe-sneaker_8: -550943381
+      shoe-sneaker_9: 1037107675
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

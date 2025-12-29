@@ -1,6 +1,8 @@
-﻿using Assets.Network.NetworkException;
+﻿using Assets.Core;
+using Assets.Network;
+using Assets.Network.NetworkException;
 using Assets.Service;
-using Assets.State;
+using Assets.State.Game;
 using Assets.UI.Enum;
 using Assets.Utility;
 using System;
@@ -16,9 +18,10 @@ namespace Assets.UI.MainMenu.Login
         private readonly GameService gameService;
         private readonly LoginView loginView;
 
-        private bool disposed;
         private string email;
         private string password;
+
+        private bool disposed;
         #endregion
 
         #region Properties
@@ -46,11 +49,14 @@ namespace Assets.UI.MainMenu.Login
             if (disposed) return;
             disposed = true;
 
-            loginView.OnEmailChanged -= OnEmailChanged;
-            loginView.OnPasswordChanged -= OnPasswordChanged;
+            // Inbound
             loginView.OnJoinClicked -= OnLogin;
             loginView.OnRegisterClicked -= OnRegister;
 
+            loginView.OnEmailChanged -= OnEmailChanged;
+            loginView.OnPasswordChanged -= OnPasswordChanged;
+
+            // Outbound
             uiService.UIState.OnUIStateChanged -= loginView.HandleUIState;
         }
 
@@ -59,24 +65,18 @@ namespace Assets.UI.MainMenu.Login
             if (disposed)
                 throw new ObjectDisposedException(nameof(LoginPresenter));
 
-            loginView.OnEmailChanged += OnEmailChanged;
-            loginView.OnPasswordChanged += OnPasswordChanged;
+            // Inbound
             loginView.OnJoinClicked += OnLogin;
             loginView.OnRegisterClicked += OnRegister;
 
+            loginView.OnEmailChanged += OnEmailChanged;
+            loginView.OnPasswordChanged += OnPasswordChanged;
+
+            // Outbound
             uiService.UIState.OnUIStateChanged += loginView.HandleUIState;
         }
 
-        private void OnEmailChanged(string v)
-        {
-            email = v;
-        }
-
-        private void OnPasswordChanged(string v)
-        {
-            password = v;
-        }
-
+        #region Buttons
         private void OnLogin()
         {
             AsyncHelper.Run(async () =>
@@ -85,14 +85,13 @@ namespace Assets.UI.MainMenu.Login
                 {
                     // Authenticate players
                     await authService.Login(email, password);
-                    var claims = authService.Claims;
+
+                    // Connect to the game service
+                    var networkService = ServiceLocator.Get<NetworkService>();
+                    await networkService.ConnectAsync(authService.Token);
 
                     // Request spawning players
-                    await playerService.JoinAsync(
-                        Guid.Parse(claims.UserId),
-                        claims.FullName
-                    );
-                    gameService.GameState.SetPhase(GamePhase.InGame);
+                    await playerService.JoinAsync();
                 }
                 catch (AuthException ex)
                 {
@@ -115,6 +114,19 @@ namespace Assets.UI.MainMenu.Login
         {
             gameService.GameState.SetPhase(GamePhase.Register);
         }
+        #endregion
+
+        #region Inputs
+        private void OnEmailChanged(string v)
+        {
+            email = v;
+        }
+
+        private void OnPasswordChanged(string v)
+        {
+            password = v;
+        }
+        #endregion
         #endregion
     }
 }

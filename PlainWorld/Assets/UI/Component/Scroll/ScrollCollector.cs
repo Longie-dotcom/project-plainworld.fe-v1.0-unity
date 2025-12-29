@@ -24,6 +24,7 @@ public class ScrollCollector : MonoBehaviour
     [Header("Values")]
     [SerializeField] private List<ScrollValue> values = new();
 
+    private bool suppressEvents;
     private int currentIndex = 0;
     #endregion
 
@@ -48,11 +49,31 @@ public class ScrollCollector : MonoBehaviour
 
     }
 
+    public void SetCurrentByID(string id)
+    {
+        if (values == null || values.Count == 0) return;
+
+        int index = values.FindIndex(v => v.ID == id);
+        if (index < 0) index = 0;
+
+        suppressEvents = true;
+        currentIndex = index;
+        valueText.text = values[currentIndex].Name;
+        suppressEvents = false;
+    }
+
     public void SetValues(List<ScrollValue> newValues, int startIndex = 0)
     {
+        suppressEvents = true;
+
         values = newValues;
         currentIndex = Mathf.Clamp(startIndex, 0, values.Count - 1);
-        UpdateDisplay();
+        if (values == null || values.Count == 0) return;
+
+        var entry = values[currentIndex];
+        valueText.text = entry.Name;
+
+        suppressEvents = false;
     }
 
     public string GetCurrentID()
@@ -82,19 +103,16 @@ public class ScrollCollector : MonoBehaviour
     {
         if (values == null || values.Count == 0)
         {
-            if (valueText != null)
-                valueText.text = string.Empty;
+            valueText.text = string.Empty;
             return;
         }
 
         currentIndex = Mathf.Clamp(currentIndex, 0, values.Count - 1);
-
         var entry = values[currentIndex];
+        valueText.text = entry.Name;
 
-        if (valueText != null)
-            valueText.text = entry.Name;
-
-        OnValueChanged?.Invoke(entry.ID);
+        if (!suppressEvents)
+            OnValueChanged?.Invoke(entry.ID);
     }
     #endregion
 }

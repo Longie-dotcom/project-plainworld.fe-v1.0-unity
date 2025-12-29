@@ -16,3 +16,9 @@ MonoBehaviour:
   parts:
   - ID: PLAYER_SHOE_SNEAKER
     Frame: {fileID: 11400000, guid: 6ebd5f6b42eb9344d95a32558f028184, type: 2}
+  - ID: PLAYER_SHOE_LOAFER
+    Frame: {fileID: 11400000, guid: 10906d9ef2a3b0a4da904b094f536671, type: 2}
+  - ID: PLAYER_SHOE_OXFORD
+    Frame: {fileID: 11400000, guid: df64726800b54e64eb0476fc0ffd05ce, type: 2}
+  - ID: PLAYER_SHOE_SANDAL
+    Frame: {fileID: 11400000, guid: 0170de2445995e340a36c5f19ef356ff, type: 2}

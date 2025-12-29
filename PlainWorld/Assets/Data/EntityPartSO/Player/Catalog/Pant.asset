@@ -16,3 +16,7 @@ MonoBehaviour:
   parts:
   - ID: PLAYER_PANT_JEAN
     Frame: {fileID: 11400000, guid: e2cb6d580b84cb043bc7d8b9929a4d6b, type: 2}
+  - ID: PLAYER_PANT_SHORT
+    Frame: {fileID: 11400000, guid: 385848ecce33ce045afa6175a81b5ab7, type: 2}
+  - ID: PLAYER_PANT_SKIRT
+    Frame: {fileID: 11400000, guid: e3f454f93dca89d46881bd8a9b49f04e, type: 2}

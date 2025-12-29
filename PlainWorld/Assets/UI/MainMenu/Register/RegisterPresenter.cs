@@ -1,6 +1,6 @@
 ﻿using Assets.Network.NetworkException;
 using Assets.Service;
-using Assets.State;
+using Assets.State.Game;
 using Assets.UI.Enum;
 using Assets.Utility;
 using System;
@@ -15,7 +15,6 @@ namespace Assets.UI.MainMenu.Register
         private readonly GameService gameService;
         private readonly RegisterView registerView;
 
-        private bool disposed;
         private bool isEmailValid;
         private bool isPasswordValid;
         private bool isNameValid;
@@ -30,6 +29,8 @@ namespace Assets.UI.MainMenu.Register
         private string month;
         private string year;
         private string gender;
+
+        private bool disposed;
         #endregion
 
         #region Properties
@@ -55,17 +56,20 @@ namespace Assets.UI.MainMenu.Register
             if (disposed) return;
             disposed = true;
 
+            // Inbound
+            registerView.OnBackClicked -= OnBack;
+            registerView.OnRegisterClicked -= OnRegister;
+            registerView.OnFemaleClicked -= OnFemaleChanged;
+            registerView.OnMaleClicked -= OnMaleChanged;
+
             registerView.OnEmailChanged -= OnEmailChanged;
             registerView.OnPasswordChanged -= OnPasswordChanged;
             registerView.OnFullNameChanged -= OnFullNameChanged;
             registerView.OnDayDobChanged -= OnDayDobChanged;
             registerView.OnMonthDobChanged -= OnMonthDobChanged;
             registerView.OnYearDobChanged -= OnYearDobChanged;
-            registerView.OnBackClicked -= OnBack;
-            registerView.OnRegisterClicked -= OnRegister;
-            registerView.OnFemaleClicked -= OnFemaleChanged;
-            registerView.OnMaleClicked -= OnMaleChanged;
 
+            // Outbound
             uiService.UIState.OnUIStateChanged -= registerView.HandleUIState;
         }
 
@@ -74,76 +78,24 @@ namespace Assets.UI.MainMenu.Register
             if (disposed)
                 throw new ObjectDisposedException(nameof(RegisterPresenter));
 
+            // Inbound
+            registerView.OnBackClicked += OnBack;
+            registerView.OnRegisterClicked += OnRegister;
+            registerView.OnFemaleClicked += OnFemaleChanged;
+            registerView.OnMaleClicked += OnMaleChanged;
+
             registerView.OnEmailChanged += OnEmailChanged;
             registerView.OnPasswordChanged += OnPasswordChanged;
             registerView.OnFullNameChanged += OnFullNameChanged;
             registerView.OnDayDobChanged += OnDayDobChanged;
             registerView.OnMonthDobChanged += OnMonthDobChanged;
             registerView.OnYearDobChanged += OnYearDobChanged;
-            registerView.OnBackClicked += OnBack;
-            registerView.OnRegisterClicked += OnRegister;
-            registerView.OnFemaleClicked += OnFemaleChanged;
-            registerView.OnMaleClicked += OnMaleChanged;
 
+            // Outbound
             uiService.UIState.OnUIStateChanged += registerView.HandleUIState;
         }
 
-        private void OnEmailChanged(string v)
-        {
-            email = v;
-            ValidateEmail();
-            UpdateRegisterButton();
-        }
-
-        private void OnPasswordChanged(string v)
-        {
-            password = v;
-            ValidatePassword();
-            UpdateRegisterButton();
-        }
-
-        private void OnFullNameChanged(string v)
-        {
-            fullName = v;
-            ValidateFullName();
-            UpdateRegisterButton();
-        }
-
-        private void OnFemaleChanged()
-        {
-            gender = Gender.Female;
-            ValidateGender();
-            UpdateRegisterButton();
-        }
-
-        private void OnMaleChanged()
-        {
-            gender = Gender.Male;
-            ValidateGender();
-            UpdateRegisterButton();
-        }
-
-        private void OnDayDobChanged(string v)
-        {
-            day = v;
-            ValidateDob();
-            UpdateRegisterButton();
-        }
-
-        private void OnMonthDobChanged(string v)
-        {
-            month = v;
-            ValidateDob();
-            UpdateRegisterButton();
-        }
-
-        private void OnYearDobChanged(string v)
-        {
-            year = v;
-            ValidateDob();
-            UpdateRegisterButton();
-        }
-
+        #region Buttons
         private void OnBack()
         {
             gameService.GameState.SetPhase(GamePhase.Login);
@@ -187,6 +139,65 @@ namespace Assets.UI.MainMenu.Register
                 }
             });
         }
+
+        private void OnFemaleChanged()
+        {
+            gender = Gender.Female;
+            ValidateGender();
+            UpdateRegisterButton();
+        }
+
+        private void OnMaleChanged()
+        {
+            gender = Gender.Male;
+            ValidateGender();
+            UpdateRegisterButton();
+        }
+        #endregion
+
+        #region Inputs
+        private void OnEmailChanged(string v)
+        {
+            email = v;
+            ValidateEmail();
+            UpdateRegisterButton();
+        }
+
+        private void OnPasswordChanged(string v)
+        {
+            password = v;
+            ValidatePassword();
+            UpdateRegisterButton();
+        }
+
+        private void OnFullNameChanged(string v)
+        {
+            fullName = v;
+            ValidateFullName();
+            UpdateRegisterButton();
+        }
+
+        private void OnDayDobChanged(string v)
+        {
+            day = v;
+            ValidateDob();
+            UpdateRegisterButton();
+        }
+
+        private void OnMonthDobChanged(string v)
+        {
+            month = v;
+            ValidateDob();
+            UpdateRegisterButton();
+        }
+
+        private void OnYearDobChanged(string v)
+        {
+            year = v;
+            ValidateDob();
+            UpdateRegisterButton();
+        }
+        #endregion
         #endregion
 
         #region Private Helpers

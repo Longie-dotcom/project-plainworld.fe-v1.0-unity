@@ -16,3 +16,9 @@ MonoBehaviour:
   parts:
   - ID: PLAYER_EYE_THIN
     Frame: {fileID: 11400000, guid: 98d478bfec522a24e81d0952a2a1a01a, type: 2}
+  - ID: PLAYER_EYE_SMALL
+    Frame: {fileID: 11400000, guid: a57733e16e9de7944b4870782b68e135, type: 2}
+  - ID: PLAYER_EYE_DUMB
+    Frame: {fileID: 11400000, guid: f198ebe6e9ab32c43be29376acb44412, type: 2}
+  - ID: PLAYER_EYE_BIG
+    Frame: {fileID: 11400000, guid: 6b4a81dffdcea9d43a0a9d5fe0be550c, type: 2}

@@ -16,3 +16,11 @@ MonoBehaviour:
   parts:
   - ID: PLAYER_GLASSES_BLACK
     Frame: {fileID: 11400000, guid: 9967dbccd69a7b44b8fa5192df5eada2, type: 2}
+  - ID: PLAYER_GLASSES_CIRCLE
+    Frame: {fileID: 11400000, guid: 0d3c58e791d3b7546b16d5fda3c25638, type: 2}
+  - ID: PLAYER_GLASSES_DENSE
+    Frame: {fileID: 11400000, guid: 97f5e3229b1ee314e8a2761ac4ea9db6, type: 2}
+  - ID: PLAYER_GLASSES_NONE
+    Frame: {fileID: 11400000, guid: 41d92de3f469c82409f5560118ce3772, type: 2}
+  - ID: PLAYER_GLASSES_SQUARE
+    Frame: {fileID: 11400000, guid: 6d22865a95dd9c345b00342371d27704, type: 2}

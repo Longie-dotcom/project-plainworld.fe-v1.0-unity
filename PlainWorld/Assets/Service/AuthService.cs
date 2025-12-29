@@ -1,7 +1,5 @@
 ﻿using Assets.Core;
 using Assets.Network.Interface.Command;
-using Assets.Utility;
-using System;
 using System.Threading.Tasks;
 
 namespace Assets.Service
@@ -14,7 +12,7 @@ namespace Assets.Service
         #region Properties
         public bool IsInitialized { get; private set; } = false;
         public IAuthNetworkCommand AuthNetworkCommand { get; private set; }
-        public JwtClaims Claims { get; private set; }
+        public string Token { get; private set; }
         #endregion
 
         public AuthService() { }
@@ -45,9 +43,7 @@ namespace Assets.Service
                 password);
 
             // Parse claims
-            Claims = JwtHelper.ParseClaims(
-                JwtHelper.DecodePayload(
-                    result.payload.accessToken));
+            Token = result.payload.accessToken;
         }
 
         public async Task Register(

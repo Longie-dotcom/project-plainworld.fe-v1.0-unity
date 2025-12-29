@@ -90,7 +90,7 @@ public class EntityPartCatalog : ScriptableObject
         }
     }
 
-    public EntityPartFrame Get(string id)
+    public EntityPartFrame GetDescriptor(string id)
     {
         if (lookup == null)
             BuildLookup();
@@ -124,6 +124,15 @@ public class EntityPartCatalog : ScriptableObject
         }
 
         return list;
+    }
+
+    public EntityPartFrame GetDefault()
+    {
+        if (parts == null || parts.Count == 0)
+            return null;
+
+        var entry = parts[0];
+        return entry != null ? entry.Frame : null;
     }
     #endregion
 }

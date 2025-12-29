@@ -17,43 +17,21 @@ namespace Assets.Network
         private readonly Dictionary<Type, Queue<Action>> pendingEvents = new();
 
         private HubConnection connection;
-        private bool isConnected = false;
-        private const string HUB_URL = "http://26.92.115.30:5020/hubs/game";
+        private const string HUB_URL = "http://26.92.115.30:5020/hubs/game"; // 192.168.1.135:5020
         #endregion
 
         #region Properties
+        public bool IsConnected { get; private set; } = false;
         public bool IsInitialized { get; private set; } = false;
         #endregion
 
         public NetworkService() { }
 
         #region Methods
-        public async Task InitializeAsync()
+        public Task InitializeAsync()
         {
-            GameLogger.Info(Channel.Network, "The network is initializing");
-
-            connection = new HubConnectionBuilder()
-                .WithUrl(HUB_URL)
-                .WithAutomaticReconnect()
-                .Build();
-
-            BindServerEvents();
-
-            try
-            {
-                await connection.StartAsync();
-                isConnected = true;
-
-                GameLogger.Info(
-                    Channel.Network, "The network connected successfully");
-            }
-            catch (Exception ex)
-            {
-                GameLogger.Error(
-                    Channel.Network, $"The network connection has an exception: {ex.Message}");
-            }
-
             IsInitialized = true;
+            return Task.CompletedTask;
         }
 
         public async Task ShutdownAsync()
@@ -65,8 +43,28 @@ namespace Assets.Network
 
                 await connection.StopAsync();
                 await connection.DisposeAsync();
-                isConnected = false;
+                IsConnected = false;
             }
+        }
+
+        public async Task ConnectAsync(string accessToken)
+        {
+            if (string.IsNullOrEmpty(accessToken))
+                throw new InvalidOperationException("AccessToken missing");
+
+            connection = new HubConnectionBuilder()
+                .WithUrl(HUB_URL, options =>
+                {
+                    options.AccessTokenProvider =
+                        () => Task.FromResult(accessToken);
+                })
+                .WithAutomaticReconnect()
+                .Build();
+
+            BindServerEvents();
+
+            await connection.StartAsync();
+            IsConnected = true;
         }
 
         public void Register<T>(T receiver) where T : class
@@ -126,11 +124,18 @@ namespace Assets.Network
                         id, (r, d) => r.OnPlayerLogout(d));
                 });
 
-            connection.On<PlayerPositionDTO>(
+            connection.On<PlayerMovementDTO>(
                 OnReceive.OnPlayerMove, dto =>
                 {
-                    Dispatch<IPlayerNetworkReceiver, PlayerPositionDTO>(
+                    Dispatch<IPlayerNetworkReceiver, PlayerMovementDTO>(
                         dto, (r, d) => r.OnPlayerMoved(d));
+                });
+
+            connection.On<PlayerAppearanceDTO>(
+                OnReceive.OnPlayerCreateAppearance, dto =>
+                {
+                    Dispatch<IPlayerNetworkReceiver, PlayerAppearanceDTO>(
+                        dto, (r, d) => r.OnPlayerCreatedAppearance(d));
                 });
 
             // --- Entity Service ---
@@ -145,14 +150,21 @@ namespace Assets.Network
                 OnReceive.OnPlayerEntityLogout, id =>
                 {
                     Dispatch<IEntityNetworkReceiver, Guid>(
-                        id, (r, d) => r.OnEntityLeft(d));
+                        id, (r, d) => r.OnPlayerEntityLogout(d));
                 });
 
-            connection.On<PlayerEntityPositionDTO>(
+            connection.On<PlayerEntityMovementDTO>(
                 OnReceive.OnPlayerEntityMove, dto =>
                 {
-                    Dispatch<IEntityNetworkReceiver, PlayerEntityPositionDTO>(
+                    Dispatch<IEntityNetworkReceiver, PlayerEntityMovementDTO>(
                         dto, (r, d) => r.OnPlayerEntityMoved(d));
+                });
+
+            connection.On<PlayerEntityAppearanceDTO>(
+                OnReceive.OnPlayerEntityCreateAppearance, dto =>
+                {
+                    Dispatch<IEntityNetworkReceiver, PlayerEntityAppearanceDTO>(
+                        dto, (r, d) => r.OnPlayerEntityCreatedAppearance(d));
                 });
 
             connection.On<IEnumerable<PlayerEntityDTO>>(

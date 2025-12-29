@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Utility;
+using System;
 using UnityEngine;
 
 public class HSVCollector : MonoBehaviour
@@ -7,6 +8,8 @@ public class HSVCollector : MonoBehaviour
     [SerializeField] private BarDrag H;
     [SerializeField] private BarDrag S;
     [SerializeField] private BarDrag V;
+
+    private bool suppressEvents;
     #endregion
 
     #region Properties
@@ -19,8 +22,6 @@ public class HSVCollector : MonoBehaviour
         H.OnValueChanged += UpdateAll;
         S.OnValueChanged += UpdateAll;
         V.OnValueChanged += UpdateAll;
-
-        UpdateAll();
     }
 
     void Start()
@@ -28,20 +29,40 @@ public class HSVCollector : MonoBehaviour
 
     }
 
-    void Update()
+    public void SetCurrentByColor(Color color)
     {
+        suppressEvents = true;
 
+        var (h, s, v) = ColorHelper.ColorToHSV(color);
+        H.SetValue(h);
+        S.SetValue(s);
+        V.SetValue(v);
+
+        UpdateGradientsOnly();
+
+        suppressEvents = false;
+
+        EmitColor(); // single, controlled emit
     }
 
     void UpdateAll()
     {
-        Color color = Color.HSVToRGB(H.Value, S.Value, V.Value);
+        if (suppressEvents) return;
+        EmitColor();
+    }
 
+    private void EmitColor()
+    {
+        Color color = Color.HSVToRGB(H.Value, S.Value, V.Value);
+        UpdateGradientsOnly();
+        OnColorChanged?.Invoke(color);
+    }
+
+    private void UpdateGradientsOnly()
+    {
         H.UpdateGradient(H.Value, S.Value, V.Value);
         S.UpdateGradient(H.Value, S.Value, V.Value);
         V.UpdateGradient(H.Value, S.Value, V.Value);
-
-        OnColorChanged?.Invoke(color);
     }
     #endregion
 }

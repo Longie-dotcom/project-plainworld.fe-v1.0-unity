@@ -14,5 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partType: 4
   parts:
-  - ID: PLAYER_SHIRT
+  - ID: PLAYER_SHIRT_HOODIE
     Frame: {fileID: 11400000, guid: bbd0429637e38a042941229b1df69765, type: 2}
+  - ID: PLAYER_SHIRT_POLO
+    Frame: {fileID: 11400000, guid: 5ded0c4f371f2a543a3c74069cc35f73, type: 2}
+  - ID: PLAYER_SHIRT_PURPLE
+    Frame: {fileID: 11400000, guid: 2799a22e0c9487242904082395088d3d, type: 2}
+  - ID: PLAYER_SHIRT_STAR
+    Frame: {fileID: 11400000, guid: da0cc0121c5e85a499339ef09f80083b, type: 2}

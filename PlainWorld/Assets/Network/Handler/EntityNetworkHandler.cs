@@ -35,14 +35,19 @@ namespace Assets.Network.Handler
             entityService.OnPlayerEntityJoined(dto);
         }
 
-        public void OnPlayerEntityMoved(PlayerEntityPositionDTO dto)
+        public void OnPlayerEntityLogout(Guid id)
+        {
+            entityService.OnPlayerEntityLogout(id);
+        }
+
+        public void OnPlayerEntityMoved(PlayerEntityMovementDTO dto)
         {
             entityService.OnPlayerEntityMoved(dto);
         }
 
-        public void OnEntityLeft(Guid id)
+        public void OnPlayerEntityCreatedAppearance(PlayerEntityAppearanceDTO dto)
         {
-            entityService.OnEntityLeft(id);
+            entityService.OnPlayerEntityCreatedAppearance(dto);
         }
         #endregion
 

@@ -16,3 +16,9 @@ MonoBehaviour:
   parts:
   - ID: PLAYER_HAIR_SHROOM
     Frame: {fileID: 11400000, guid: bfdadec5e6d21da4bbb8deef1b784c97, type: 2}
+  - ID: PLAYER_HAIR_LONG
+    Frame: {fileID: 11400000, guid: 1c05e17a2ec78974cae4f9d114ca1fcf, type: 2}
+  - ID: PLAYER_HAIR_SHORT
+    Frame: {fileID: 11400000, guid: 431ea46f683ce8e4390e4a965c62cee0, type: 2}
+  - ID: PLAYER_HAIR_CHUNLI
+    Frame: {fileID: 11400000, guid: 1d667783d4edd6243b461f126f856838, type: 2}

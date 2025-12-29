@@ -8,6 +8,7 @@ namespace Assets.Network.Interface.Receiver
     {
         void OnPlayerJoined(PlayerDTO dto);
         void OnPlayerLogout(Guid id);
-        void OnPlayerMoved(PlayerPositionDTO dto);
+        void OnPlayerMoved(PlayerMovementDTO dto);
+        void OnPlayerCreatedAppearance(PlayerAppearanceDTO dto);
     }
 }

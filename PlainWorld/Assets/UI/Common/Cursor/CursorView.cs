@@ -1,5 +1,4 @@
 using Assets.UI.Enum;
-using Assets.Utility;
 using UnityEngine;
 
 public class CursorView : MonoBehaviour

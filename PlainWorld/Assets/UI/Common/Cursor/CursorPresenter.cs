@@ -25,6 +25,7 @@ namespace Assets.UI.Common.Popup
             this.cursorView = cursorView;
 
             Bind();
+
             cursorView.Apply(CursorType.Default);
         }
 
@@ -34,10 +35,16 @@ namespace Assets.UI.Common.Popup
             if (disposed) return;
             disposed = true;
 
+            // Outbound
             cursorService.CursorState.OnChanged -= cursorView.Apply;
         }
 
-        // Target objects
+        private void Bind()
+        {
+            cursorService.CursorState.OnChanged += cursorView.Apply;
+        }
+
+        #region Source Bindings
         public void BindTarget(CursorTarget target)
         {
             target.Bind(cursorService.CursorState.Set);
@@ -47,13 +54,7 @@ namespace Assets.UI.Common.Popup
         {
             target.Bind(null);
         }
-
-
-        // Cursor (Source)
-        private void Bind()
-        {
-            cursorService.CursorState.OnChanged += cursorView.Apply;
-        }
+        #endregion
         #endregion
     }
 }

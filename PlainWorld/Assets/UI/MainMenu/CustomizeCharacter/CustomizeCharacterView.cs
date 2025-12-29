@@ -1,4 +1,4 @@
-﻿using Assets.State;
+﻿using Assets.State.UI;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,10 +20,19 @@ public class CustomizeCharacterView : MonoBehaviour
     [SerializeField] private ScrollCollector eyesScroll;
 
     [Header("HSVs")]
-    [SerializeField] private HSVCollector skinColor;
-    [SerializeField] private HSVCollector hairColor;
-    [SerializeField] private HSVCollector pantColor;
-    [SerializeField] private HSVCollector eyeColor;
+    [SerializeField] private HSVCollector hairColorCollector;
+    [SerializeField] private HSVCollector pantColorCollector;
+    [SerializeField] private HSVCollector eyeColorCollector;
+    [SerializeField] private HSVCollector skinColorCollector;
+
+    [Header("Previews")]
+    [SerializeField] private Image hair;
+    [SerializeField] private Image glasses;
+    [SerializeField] private Image shirt;
+    [SerializeField] private Image pant;
+    [SerializeField] private Image shoe;
+    [SerializeField] private Image eyes;
+    [SerializeField] private Image skin;
     #endregion
 
     #region Properties
@@ -37,10 +46,10 @@ public class CustomizeCharacterView : MonoBehaviour
     public event Action<string> OnShoeChanged;
     public event Action<string> OnEyesChanged;
 
-    public event Action<Color> OnSkinColorChanged;
     public event Action<Color> OnHairColorChanged;
     public event Action<Color> OnPantColorChanged;
     public event Action<Color> OnEyeColorChanged;
+    public event Action<Color> OnSkinColorChanged;
     #endregion
 
     #region Methods
@@ -59,10 +68,10 @@ public class CustomizeCharacterView : MonoBehaviour
         eyesScroll.OnValueChanged += v => OnEyesChanged?.Invoke(v);
 
         // Colors
-        skinColor.OnColorChanged += c => OnSkinColorChanged?.Invoke(c);
-        hairColor.OnColorChanged += c => OnHairColorChanged?.Invoke(c);
-        pantColor.OnColorChanged += c => OnPantColorChanged?.Invoke(c);
-        eyeColor.OnColorChanged += c => OnEyeColorChanged?.Invoke(c);
+        hairColorCollector.OnColorChanged += c => OnHairColorChanged?.Invoke(c);
+        pantColorCollector.OnColorChanged += c => OnPantColorChanged?.Invoke(c);
+        eyeColorCollector.OnColorChanged += c => OnEyeColorChanged?.Invoke(c);
+        skinColorCollector.OnColorChanged += c => OnSkinColorChanged?.Invoke(c);
     }
 
     void Start()
@@ -78,6 +87,32 @@ public class CustomizeCharacterView : MonoBehaviour
     public void HandleUIState(UIState state)
     {
         gameObject.SetActive(state.ShowCustomizeCharacter);
+    }
+
+    public void ApplyCurrentSelection(
+        string hairId,
+        string glassesId,
+        string shirtId,
+        string pantId,
+        string shoeId,
+        string eyesId,
+
+        Color hairColor,
+        Color pantColor,
+        Color eyeColor,
+        Color skinColor)
+    {
+        hairScroll.SetCurrentByID(hairId);
+        glassesScroll.SetCurrentByID(glassesId);
+        shirtScroll.SetCurrentByID(shirtId);
+        pantScroll.SetCurrentByID(pantId);
+        shoeScroll.SetCurrentByID(shoeId);
+        eyesScroll.SetCurrentByID(eyesId);
+
+        hairColorCollector.SetCurrentByColor(hairColor);
+        pantColorCollector.SetCurrentByColor(pantColor);
+        eyeColorCollector.SetCurrentByColor(eyeColor);
+        skinColorCollector.SetCurrentByColor(skinColor);
     }
 
     public void SetHairValues(List<ScrollValue> values, int startIndex = 0)
@@ -108,6 +143,52 @@ public class CustomizeCharacterView : MonoBehaviour
     public void SetEyesValues(List<ScrollValue> values, int startIndex = 0)
     {
         eyesScroll.SetValues(values, startIndex);
+    }
+
+    public void SetHairPreview(Sprite sprite, Color color)
+    {
+        hair.sprite = sprite;
+        hair.color = color;
+        hair.enabled = sprite != null;
+    }
+
+    public void SetGlassesPreview(Sprite sprite)
+    {
+        glasses.sprite = sprite;
+        glasses.enabled = sprite != null;
+    }
+
+    public void SetShirtPreview(Sprite sprite)
+    {
+        shirt.sprite = sprite;
+        shirt.enabled = sprite != null;
+    }
+
+    public void SetPantPreview(Sprite sprite, Color color)
+    {
+        pant.sprite = sprite;
+        pant.color = color;
+        pant.enabled = sprite != null;
+    }
+
+    public void SetShoePreview(Sprite sprite)
+    {
+        shoe.sprite = sprite;
+        shoe.enabled = sprite != null;
+    }
+
+    public void SetEyesPreview(Sprite sprite, Color color)
+    {
+        eyes.sprite = sprite;
+        eyes.color = color;
+        eyes.enabled = sprite != null;
+    }
+
+    public void SetSkinPreview(Sprite sprite, Color color)
+    {
+        skin.sprite = sprite;
+        skin.color = color;
+        skin.enabled = sprite != null;
     }
     #endregion
 }

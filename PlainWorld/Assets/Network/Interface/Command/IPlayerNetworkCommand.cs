@@ -5,8 +5,9 @@ namespace Assets.Network.Interface.Command
 {
     public interface IPlayerNetworkCommand
     {
-        Task Join(PlayerJoinDTO dto);
+        Task Join();
+        Task Logout();
         Task Move(PlayerMoveDTO dto);
-        Task Logout(PlayerLogoutDTO dto);
+        Task CreateAppearance(PlayerCreateAppearanceDTO dto);
     }
 }

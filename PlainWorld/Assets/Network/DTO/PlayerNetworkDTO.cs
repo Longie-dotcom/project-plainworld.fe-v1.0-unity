@@ -3,24 +3,15 @@
 namespace Assets.Network.DTO
 {
     // Request DTO
-    public class PlayerJoinDTO
-    {
-        public Guid ID { get; set; }
-        public string Name { get; set; } = string.Empty;
-    }
-
-    public class PlayerLogoutDTO
-    {
-        public Guid ID { get; set; }
-        public string Name { get; set; } = string.Empty;
-    }
-
     public class PlayerMoveDTO
     {
-        public Guid ID { get; set; }
-        public PositionDTO Position { get; set; } = new PositionDTO();
+        public PlayerMovement Movement { get; set; } = new PlayerMovement();
     }
 
+    public class PlayerCreateAppearanceDTO
+    {
+        public PlayerAppearance Appearance { get; set; } = new PlayerAppearance();
+    }
 
     // Response DTO
     public class PlayerDTO
@@ -30,7 +21,8 @@ namespace Assets.Network.DTO
         public string FullName { get; set; } = string.Empty;
         public string Gender { get; set; } = string.Empty;
         public DateTime Dob { get; set; }
-        public PositionDTO Position { get; set; } = new PositionDTO();
+        public PlayerMovement Movement { get; set; } = new PlayerMovement();
+        public PlayerAppearance Appearance { get; set; } = new PlayerAppearance();
     }
 
     public class PlayerEntityDTO
@@ -38,24 +30,32 @@ namespace Assets.Network.DTO
         public Guid ID { get; set; } = Guid.Empty;
         public string FullName { get; set; } = string.Empty;
         public string Gender { get; set; } = string.Empty;
-        public PositionDTO Position { get; set; } = new PositionDTO();
+        public PlayerMovement Movement { get; set; } = new PlayerMovement();
+        public PlayerAppearance Appearance { get; set; } = new PlayerAppearance();
     }
 
-    public class PlayerPositionDTO
+    public class PlayerMovementDTO
     {
         public Guid ID { get; set; } = Guid.Empty;
-        public PositionDTO Position { get; set; } = new PositionDTO();
+        public PlayerMovement Movement { get; set; } = new PlayerMovement();
     }
 
-    public class PlayerEntityPositionDTO
+    public class PlayerEntityMovementDTO
     {
         public Guid ID { get; set; } = Guid.Empty;
-        public PositionDTO Position { get; set; } = new PositionDTO();
+        public PlayerMovement Movement { get; set; } = new PlayerMovement();
     }
 
-    public class PositionDTO
+    public class PlayerAppearanceDTO
     {
-        public float X { get; set; }
-        public float Y { get; set; }
+        public Guid ID { get; set; } = Guid.Empty;
+        public PlayerAppearance Appearance { get; set; } = new PlayerAppearance();
+    }
+
+
+    public class PlayerEntityAppearanceDTO
+    {
+        public Guid ID { get; set; } = Guid.Empty;
+        public PlayerAppearance Appearance { get; set; } = new PlayerAppearance();
     }
 }

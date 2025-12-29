@@ -1,4 +1,4 @@
-﻿using Assets.State;
+﻿using Assets.State.UI;
 using System;
 using TMPro;
 using UnityEngine;
@@ -10,6 +10,7 @@ public class RegisterView : MonoBehaviour
     [Header("Icons")]
     [SerializeField] private Sprite tickIcon;
     [SerializeField] private Sprite crossIcon;
+
     [SerializeField] private Image emailWarnIcon;
     [SerializeField] private Image passwordWarnIcon;
     [SerializeField] private Image genderWarnIcon;
@@ -54,7 +55,7 @@ public class RegisterView : MonoBehaviour
         femaleButton.onClick.AddListener(() => OnFemaleClicked?.Invoke());
         maleButton.onClick.AddListener(() => OnMaleClicked?.Invoke());
 
-        // Input
+        // Inputs
         emailTextField.onValueChanged.AddListener(v => OnEmailChanged?.Invoke(v));
         passwordTextField.onValueChanged.AddListener(v => OnPasswordChanged?.Invoke(v));
         fullNameTextField.onValueChanged.AddListener(v => OnFullNameChanged?.Invoke(v));
