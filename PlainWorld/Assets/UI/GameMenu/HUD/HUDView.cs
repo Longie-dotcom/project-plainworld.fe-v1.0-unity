@@ -8,10 +8,12 @@ public class HUDView : MonoBehaviour
     #region Attributes
     [Header("Buttons")]
     [SerializeField] private Button logoutButton;
+    [SerializeField] private Button customizeCharacterButton;
     #endregion
 
     #region Properties
     public event Action OnLogoutClicked;
+    public event Action OnCustomizeCharacterClicked;
     #endregion
 
     #region Methods
@@ -19,6 +21,7 @@ public class HUDView : MonoBehaviour
     {
         // Buttons
         logoutButton.onClick.AddListener(() => OnLogoutClicked?.Invoke());
+        customizeCharacterButton.onClick.AddListener(() => OnCustomizeCharacterClicked?.Invoke());
     }
 
     void Start()

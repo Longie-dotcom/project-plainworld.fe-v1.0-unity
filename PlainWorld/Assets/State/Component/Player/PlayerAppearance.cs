@@ -82,8 +82,6 @@ namespace Assets.State.Component.Player
         #region Methods
         public void ApplySnapshot(PlayerAppearanceSnapshot s)
         {
-            if (!s.IsCreated) return;
-
             IsCreated = s.IsCreated;
 
             HairID = s.HairID;
@@ -122,80 +120,6 @@ namespace Assets.State.Component.Player
                 EyeColor,
                 SkinColor
             );
-        }
-
-        public void EnsureDefaults(PlayerAppearanceSnapshot s)
-        {
-            bool changed = false;
-
-            if (string.IsNullOrEmpty(HairID)) 
-            { 
-                HairID = s.HairID; 
-                changed = true; 
-            }
-
-            if (string.IsNullOrEmpty(GlassesID)) 
-            { 
-                GlassesID = s.GlassesID; 
-                changed = true; 
-            }
-
-            if (string.IsNullOrEmpty(ShirtID)) 
-            { 
-                ShirtID = s.ShirtID;
-                changed = true; 
-            }
-
-            if (string.IsNullOrEmpty(PantID)) 
-            { 
-                PantID = s.PantID; 
-                changed = true; 
-            }
-
-            if (string.IsNullOrEmpty(ShoeID)) 
-            { 
-                ShoeID = s.ShoeID; 
-                changed = true;
-            }
-
-            if (string.IsNullOrEmpty(EyesID)) 
-            { 
-                EyesID = s.EyesID; 
-                changed = true; 
-            }
-
-            if (string.IsNullOrEmpty(SkinID)) 
-            { 
-                SkinID = s.SkinID; 
-                changed = true; 
-            }
-
-            if (HairColor.a == 0f) 
-            { 
-                HairColor = s.HairColor; 
-                changed = true; 
-            }
-
-            if (PantColor.a == 0f) 
-            { 
-                PantColor = s.PantColor;
-                changed = true; 
-            }
-
-            if (EyeColor.a == 0f) 
-            { 
-                EyeColor = s.EyeColor; 
-                changed = true; 
-            }
-
-            if (SkinColor.a == 0f) 
-            { 
-                SkinColor = s.SkinColor; 
-                changed = true; 
-            }
-
-            if (changed)
-                OnChanged?.Invoke();
         }
 
         public void SetHair(string id)
@@ -262,6 +186,26 @@ namespace Assets.State.Component.Player
         {
             SkinColor = ColorHelper.HSVToColor(h, s, v);
             OnChanged?.Invoke();
+        }
+
+        public void ApplyNormalizedSnapshot(
+            PlayerAppearanceSnapshot snapshot,
+            PlayerAppearanceSnapshot defaults)
+        {
+            IsCreated = snapshot.IsCreated;
+
+            HairID = snapshot.HairID ?? defaults.HairID;
+            GlassesID = snapshot.GlassesID ?? defaults.GlassesID;
+            ShirtID = snapshot.ShirtID ?? defaults.ShirtID;
+            PantID = snapshot.PantID ?? defaults.PantID;
+            ShoeID = snapshot.ShoeID ?? defaults.ShoeID;
+            EyesID = snapshot.EyesID ?? defaults.EyesID;
+            SkinID = snapshot.SkinID ?? defaults.SkinID;
+
+            HairColor = snapshot.HairColor == default ? defaults.HairColor : snapshot.HairColor;
+            PantColor = snapshot.PantColor == default ? defaults.PantColor : snapshot.PantColor;
+            EyeColor = snapshot.EyeColor == default ? defaults.EyeColor : snapshot.EyeColor;
+            SkinColor = snapshot.SkinColor == default ? defaults.SkinColor : snapshot.SkinColor;
         }
 
         public void MarkCreated()

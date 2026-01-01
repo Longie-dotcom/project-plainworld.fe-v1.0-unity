@@ -37,6 +37,7 @@ namespace Assets.UI.GameMenu.HUD
 
             // Inbound
             hudView.OnLogoutClicked -= OnLogoutClicked;
+            hudView.OnCustomizeCharacterClicked -= OnCharacterCustomizeClicked;
 
             // Outbound
             uiService.UIState.OnUIStateChanged -= hudView.HandleUIState;
@@ -49,6 +50,7 @@ namespace Assets.UI.GameMenu.HUD
 
             // Inbound
             hudView.OnLogoutClicked += OnLogoutClicked;
+            hudView.OnCustomizeCharacterClicked += OnCharacterCustomizeClicked;
 
             // Outbound
             uiService.UIState.OnUIStateChanged += hudView.HandleUIState;
@@ -58,6 +60,11 @@ namespace Assets.UI.GameMenu.HUD
         private void OnLogoutClicked()
         {
             AsyncHelper.Run(async () => await playerService.LogoutAsync());
+        }
+
+        private void OnCharacterCustomizeClicked()
+        {
+            playerService.RequireCreateAppearance();
         }
         #endregion
         #endregion

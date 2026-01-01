@@ -1,6 +1,7 @@
 using Assets.Network;
 using Assets.Service;
 using Assets.Service.Enum;
+using Assets.State.Component.Player;
 using Assets.UI.Enum;
 using Assets.Utility;
 using System;
@@ -112,19 +113,52 @@ namespace Assets.Gameplay.Player
 
             var appearance = playerService.PlayerState.Appearance;
 
-            playerView.ApplyAppearance(
-                hairCatalog.GetPartFrame(appearance.HairID),
-                glassesCatalog.GetPartFrame(appearance.GlassesID),
-                shirtCatalog.GetPartFrame(appearance.ShirtID),
-                pantCatalog.GetPartFrame(appearance.PantID),
-                shoeCatalog.GetPartFrame(appearance.ShoeID),
-                eyesCatalog.GetPartFrame(appearance.EyesID),
-                skinCatalog.GetPartFrame(appearance.SkinID),
-
+            var snapshot = new PlayerAppearanceSnapshot(
+                appearance.IsCreated,
+                appearance.HairID,
+                appearance.GlassesID,
+                appearance.ShirtID,
+                appearance.PantID,
+                appearance.ShoeID,
+                appearance.EyesID,
+                appearance.SkinID,
                 appearance.HairColor,
                 appearance.PantColor,
                 appearance.EyeColor,
                 appearance.SkinColor
+            );
+
+            var defaults = new PlayerAppearanceSnapshot(
+                false,
+                hairCatalog.GetDescriptors()[0].ID,
+                glassesCatalog.GetDescriptors()[0].ID,
+                shirtCatalog.GetDescriptors()[0].ID,
+                pantCatalog.GetDescriptors()[0].ID,
+                shoeCatalog.GetDescriptors()[0].ID,
+                eyesCatalog.GetDescriptors()[0].ID,
+                skinCatalog.GetDescriptors()[0].ID,
+                Color.white,
+                Color.white,
+                Color.white,
+                Color.white
+            );
+
+            playerService.ApplyDefaultAppearance(snapshot, defaults);
+
+            var a = playerService.PlayerState.Appearance;
+
+            playerView.ApplyAppearance(
+                hairCatalog.GetPartFrame(a.HairID),
+                glassesCatalog.GetPartFrame(a.GlassesID),
+                shirtCatalog.GetPartFrame(a.ShirtID),
+                pantCatalog.GetPartFrame(a.PantID),
+                shoeCatalog.GetPartFrame(a.ShoeID),
+                eyesCatalog.GetPartFrame(a.EyesID),
+                skinCatalog.GetPartFrame(a.SkinID),
+                a.HairColor,
+                a.PantColor,
+                a.EyeColor,
+                a.SkinColor
             );
         }
         #endregion
@@ -233,11 +267,16 @@ namespace Assets.Gameplay.Player
             playerView.OnSendMoveToServer += OnSendMoveToServer;
 
             // Outbound
-            playerService.PlayerState.Appearance.OnChanged += ApplyAppearance; ApplyAppearance();
-            playerService.PlayerState.Movement.OnMoveSpeedChanged += playerView.SetAnimationSpeed;
+            playerService.PlayerState.Appearance.OnChanged += ApplyAppearance;
+            ApplyAppearance();
+            playerService.PlayerState.Movement.OnMoveSpeedChanged += playerView.SetAnimationSpeed; 
+            playerView.SetAnimationSpeed(playerService.PlayerState.Movement.MoveSpeed);
             playerService.PlayerState.Movement.OnPositionChanged += playerView.ApplyPosition;
+            playerView.ApplyPosition(playerService.PlayerState.Movement.Position);
             playerService.PlayerState.Movement.OnDirectionChanged += playerView.SetDirection;
+            playerView.SetDirection(playerService.PlayerState.Movement.CurrentDirection);
             playerService.PlayerState.Movement.OnActionChanged += playerView.SetAction;
+            playerView.SetAction(playerService.PlayerState.Movement.CurrentAction);
         }
         #endregion
     }

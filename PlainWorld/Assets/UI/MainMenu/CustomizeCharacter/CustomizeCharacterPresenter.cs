@@ -2,6 +2,7 @@
 using Assets.Service;
 using Assets.Service.Enum;
 using Assets.State.Component.Player;
+using Assets.UI.Enum;
 using Assets.Utility;
 using System;
 using System.Collections.Generic;
@@ -134,7 +135,31 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
         {
             AsyncHelper.Run(async () => 
             {
-                await playerService.CreateAppearanceAsync();
+                try
+                {
+                    // Request create appearance
+                    await playerService.CreateAppearanceAsync();
+
+                    // Show success and return to login view
+                    uiService.ShowPopUp(
+                        PopUpType.Information,
+                        "Registration successful!"
+                    );
+
+                    // Show success and return to previous view
+                    uiService.ShowPopUp(
+                        PopUpType.Information,
+                        "Change character successful!"
+                    );
+                    gameService.PopPhase();
+                }
+                catch (Exception)
+                {
+                    uiService.ShowPopUp(
+                        PopUpType.Error,
+                        "Unexpected error. Please try again."
+                    );
+                }
             });
         }
 
@@ -232,24 +257,6 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
 
             // Prevent user ignores customization when there has no customization before
             customizeCharacterView.SetBackButtonVisible(appearance.IsCreated);
-
-            // Ensure appearance has values
-            appearance.EnsureDefaults(
-                new PlayerAppearanceSnapshot(
-                    false,
-                    hairCatalog.GetDescriptors()[0].ID,
-                    glassesCatalog.GetDescriptors()[0].ID,
-                    shirtCatalog.GetDescriptors()[0].ID,
-                    pantCatalog.GetDescriptors()[0].ID,
-                    shoeCatalog.GetDescriptors()[0].ID,
-                    eyesCatalog.GetDescriptors()[0].ID,
-                    skinCatalog.GetDescriptors()[0].ID,
-
-                    Color.white,
-                    Color.white,
-                    Color.white,
-                    Color.white)
-            );
 
             // Apply on the UI components
             customizeCharacterView.ApplyCurrentSelection(

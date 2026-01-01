@@ -47,16 +47,16 @@ namespace Assets.State
             PlayerName = playerName;
             HasJoined = true;
             this.appearance.ApplySnapshot(appearance);
-
-            // Domain flow decision
-            if (!Appearance.IsCreated)
-            {
-                OnPlayerCustomization?.Invoke(this.appearance);
-            }
+            this.movement.ApplySnapshot(movement);
 
             // Load context
             OnPlayerReady?.Invoke();
-            this.movement.ApplySnapshot(movement);
+
+            // Require customize character
+            if (!this.appearance.IsCreated)
+            {
+                RequireCreateAppearance();
+            }
         }
 
         public void Logout(Guid playerId)
@@ -71,16 +71,6 @@ namespace Assets.State
             if (!HasJoined) return;
             OnPlayerForcedLogout?.Invoke();
             HasJoined = false;
-        }
-
-        public void ConfirmAppearanceCreated()
-        {
-            if (!HasJoined)
-                return;
-
-            appearance.MarkCreated();
-
-            OnPlayerReady?.Invoke();
         }
         #endregion
 
@@ -109,7 +99,7 @@ namespace Assets.State
             movement.ApplyPredictedPosition(inputDir);
         }
 
-        public void ApplyServerPosition(Guid id, PlayerMovementSnapshot snapshot)
+        public void ApplyServerMovement(Guid id, PlayerMovementSnapshot snapshot)
         {
             if (!HasJoined || id != PlayerID) return;
             movement.ApplySnapshot(snapshot);
@@ -193,6 +183,28 @@ namespace Assets.State
         {
             if (!HasJoined) return;
             appearance.SetSkinHSV(h, s, v);
+        }
+
+        public void ApplyServerAppearance(
+            Guid id, 
+            PlayerAppearanceSnapshot snapshot)
+        {
+            if (!HasJoined || id != PlayerID) return;
+            appearance.ApplySnapshot(snapshot);
+        }
+
+        public void RequireCreateAppearance()
+        {
+            if (!HasJoined) return;
+            OnPlayerCustomization?.Invoke(appearance);
+        }
+
+        public void NormalizeAppearance(
+            PlayerAppearanceSnapshot snapshot,
+            PlayerAppearanceSnapshot defaults)
+        {
+            if (!HasJoined) return;
+            appearance.ApplyNormalizedSnapshot(snapshot, defaults);
         }
         #endregion
     }

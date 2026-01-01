@@ -3,6 +3,7 @@ using Assets.Network.DTO;
 using Assets.Network.Interface.Command;
 using Assets.Service.Interface;
 using Assets.State;
+using Assets.State.Component.Player;
 using Assets.State.Interface.IReadOnlyState;
 using Assets.Utility;
 using System;
@@ -109,6 +110,18 @@ namespace Assets.Service
         {
             playerState.SetSkinColor(h, s, v);
         }
+
+        public void ApplyDefaultAppearance(
+            PlayerAppearanceSnapshot snapshot, 
+            PlayerAppearanceSnapshot defaults)
+        {
+            playerState.NormalizeAppearance(snapshot, defaults);
+        }
+
+        public void RequireCreateAppearance()
+        {
+            playerState.RequireCreateAppearance();
+        }
         #endregion
 
         #region Senders
@@ -177,7 +190,7 @@ namespace Assets.Service
         public void OnPlayerMoved(PlayerMovementDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                playerState.ApplyServerPosition(
+                playerState.ApplyServerMovement(
                     dto.ID,
                     PlayerMovementMapper.ToSnapshot(dto.Movement))
             );
@@ -186,7 +199,9 @@ namespace Assets.Service
         public void OnPlayerCreatedAppearance(PlayerAppearanceDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                playerState.ConfirmAppearanceCreated()
+                playerState.ApplyServerAppearance(
+                    dto.ID,
+                    PlayerAppearanceMapper.ToSnapshot(dto.Appearance))
             );
         }
 

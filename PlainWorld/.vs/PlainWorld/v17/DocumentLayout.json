@@ -3,16 +3,136 @@
   "WorkspaceRootPath": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\player\\playerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\player\\playerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\component\\player\\playerappearance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\component\\player\\playerappearance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\component\\visual\\visualview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\component\\visual\\visualview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|d:\\github\\project-plainworld.fe-v1.0-unity\\plainworld\\assets\\service\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\entity\\entitypresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\entity\\entitypresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\register\\registerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\register\\registerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\customizecharacter\\customizecharacterpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\customizecharacter\\customizecharacterpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\utility\\colorhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\utility\\colorhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\data\\script\\entitypartframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\data\\script\\entitypartframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\data\\script\\entitypartcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\data\\script\\entitypartcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\playernetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\playernetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\register\\registerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\register\\registerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\login\\loginpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\login\\loginpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\login\\loginview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\login\\loginview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\authnetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\authnetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\networkexception\\authexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\networkexception\\authexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\customizecharacter\\customizecharacterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\customizecharacter\\customizecharacterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\gamemenu\\hud\\hudpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\gamemenu\\hud\\hudpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\gamemenu\\hud\\hudview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\gamemenu\\hud\\hudview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\component\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\component\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\binder\\customizecharacterbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\binder\\customizecharacterbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\component\\entity\\playerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\component\\entity\\playerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\interface\\ireadonlycomponent\\ireadonlyplayercomponent\\ireadonlyplayermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\interface\\ireadonlycomponent\\ireadonlyplayercomponent\\ireadonlyplayermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\common\\popup\\popuppresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\common\\popup\\popuppresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\component\\scroll\\scrollcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\component\\scroll\\scrollcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\entityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\entityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\command\\iplayernetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\command\\iplayernetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\common\\popup\\popupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\common\\popup\\popupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\UIState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:Assets\\State\\UIState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\uiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\uiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\component\\visual\\visualview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\component\\visual\\visualview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\entity\\entityview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,24 +147,12 @@
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\entity\\player\\playerentityview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\player\\playerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\player\\playerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\networksessioncoordinator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\networksessioncoordinator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|d:\\github\\project-plainworld.fe-v1.0-unity\\plainworld\\assets\\service\\enum\\gamephase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\enum\\gamephase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\enum\\gamephase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\entityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\entityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\cursorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,24 +163,8 @@
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\service\\uiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\service\\uiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\component\\entity\\playerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\component\\entity\\playerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\component\\entity\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\component\\entity\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\component\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\component\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\interface\\ireadonlycomponent\\ireadonlyentitycomponent\\ireadonlybaseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,10 +179,6 @@
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\interface\\ireadonlycomponent\\ireadonlyplayercomponent\\ireadonlyplayerappearance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\interface\\ireadonlycomponent\\ireadonlyplayercomponent\\ireadonlyplayermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\interface\\ireadonlycomponent\\ireadonlyplayercomponent\\ireadonlyplayermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\interface\\ireadonlystate\\ireadonlyauthstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\interface\\ireadonlystate\\ireadonlyauthstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -99,7 +187,7 @@
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\interface\\ireadonlystate\\ireadonlycursorstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|d:\\github\\project-plainworld.fe-v1.0-unity\\plainworld\\assets\\state\\interface\\ireadonlystate\\ireadonlyentitystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\interface\\ireadonlystate\\ireadonlyentitystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\interface\\ireadonlystate\\ireadonlyentitystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -113,18 +201,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\interface\\ireadonlystate\\ireadonlyuistate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\interface\\ireadonlystate\\ireadonlyuistate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\UIState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:Assets\\State\\UIState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\state\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|d:\\github\\project-plainworld.fe-v1.0-unity\\plainworld\\assets\\state\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\state\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\EntityState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -141,10 +217,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\binder\\cursorbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\binder\\cursorbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\binder\\customizecharacterbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\binder\\customizecharacterbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\binder\\hudbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -171,24 +243,12 @@
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\common\\cursor\\cursorview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\common\\popup\\popuppresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\common\\popup\\popuppresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\common\\popup\\popupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\common\\popup\\popupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\component\\hsv\\bardrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\component\\hsv\\bardrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\component\\hsv\\hsvcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\component\\hsv\\hsvcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\component\\scroll\\scrollcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\component\\scroll\\scrollcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\enum\\cursortype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -207,48 +267,12 @@
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\enum\\popuptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\gamemenu\\hud\\hudpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\gamemenu\\hud\\hudpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\gamemenu\\hud\\hudview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\gamemenu\\hud\\hudview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\customizecharacter\\customizecharacterpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\customizecharacter\\customizecharacterpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\customizecharacter\\customizecharacterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\customizecharacter\\customizecharacterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\login\\loginpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\login\\loginpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\login\\loginview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\login\\loginview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\register\\registerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\register\\registerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\mainmenu\\register\\registerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\mainmenu\\register\\registerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\coroutinerunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\coroutinerunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\core\\bootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\bootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\command\\iplayernetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\command\\iplayernetworkcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -279,20 +303,8 @@
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\interface\\receiver\\igamenetworkreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\authnetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\authnetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\gameplay\\component\\input\\playermoveview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay\\component\\input\\playermoveview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\data\\script\\entitypartframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\data\\script\\entitypartframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\data\\script\\entitypartcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\data\\script\\entitypartcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\data\\enum\\entityparttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -315,10 +327,6 @@
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\utility\\asynchelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\utility\\colorhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\utility\\colorhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\utility\\coroutinetaskextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\utility\\coroutinetaskextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -333,10 +341,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\ui\\common\\cursor\\cursortargetview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\common\\cursor\\cursortargetview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\playernetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\playernetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\cursornetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -361,10 +365,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\handler\\uinetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\handler\\uinetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\networkexception\\authexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\networkexception\\authexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096651ED-EDB5-37F7-D297-0B284DDA4944}|Assembly-CSharp.csproj|D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\assets\\network\\interface\\receiver\\icursornetworkreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -518,11 +518,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 760,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 55,
               "Title": "LoginBinder.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\LoginBinder.cs",
               "RelativeDocumentMoniker": "Assets\\UI\\Binder\\LoginBinder.cs",
@@ -531,18 +531,17 @@
               "ViewState": "AgIAACwAAAAAAAAAAAAgwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-16T16:33:51.467Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 12,
               "Title": "RegisterView.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Register\\RegisterView.cs",
               "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Register\\RegisterView.cs",
               "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Register\\RegisterView.cs",
               "RelativeToolTip": "Assets\\UI\\MainMenu\\Register\\RegisterView.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAowEcAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswEcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T07:13:28.986Z",
               "IsPinned": true,
@@ -559,383 +558,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EntityPresenter.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityPresenter.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay\\Entity\\EntityPresenter.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityPresenter.cs",
-              "RelativeToolTip": "Assets\\Gameplay\\Entity\\EntityPresenter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T19:03:47.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerEntityPresenter.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\Player\\PlayerEntityPresenter.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay\\Entity\\Player\\PlayerEntityPresenter.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\Player\\PlayerEntityPresenter.cs",
-              "RelativeToolTip": "Assets\\Gameplay\\Entity\\Player\\PlayerEntityPresenter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T03:26:59.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlayerEntityView.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\Player\\PlayerEntityView.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay\\Entity\\Player\\PlayerEntityView.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\Player\\PlayerEntityView.cs",
-              "RelativeToolTip": "Assets\\Gameplay\\Entity\\Player\\PlayerEntityView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T15:17:40.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EntityView.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityView.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay\\Entity\\EntityView.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityView.cs",
-              "RelativeToolTip": "Assets\\Gameplay\\Entity\\EntityView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T19:04:41.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VisualView.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Component\\Visual\\VisualView.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay\\Component\\Visual\\VisualView.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Component\\Visual\\VisualView.cs",
-              "RelativeToolTip": "Assets\\Gameplay\\Component\\Visual\\VisualView.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T06:12:31.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "PlayerAppearance.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Component\\Player\\PlayerAppearance.cs",
               "RelativeDocumentMoniker": "Assets\\State\\Component\\Player\\PlayerAppearance.cs",
               "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Component\\Player\\PlayerAppearance.cs",
               "RelativeToolTip": "Assets\\State\\Component\\Player\\PlayerAppearance.cs",
-              "ViewState": "AgIAAOMAAAAAAAAAAAAswEEAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAALkAAAAAAAAAAAAnwL4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-28T16:43:25.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PlayerPresenter.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\PlayerPresenter.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay\\Player\\PlayerPresenter.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\PlayerPresenter.cs",
-              "RelativeToolTip": "Assets\\Gameplay\\Player\\PlayerPresenter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T17:12:42.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NetworkSessionCoordinator.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkSessionCoordinator.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\NetworkSessionCoordinator.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkSessionCoordinator.cs",
-              "RelativeToolTip": "Assets\\Network\\NetworkSessionCoordinator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T03:07:19.747Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GamePhase.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\Enum\\GamePhase.cs",
-              "RelativeDocumentMoniker": "Assets\\Service\\Enum\\GamePhase.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\Enum\\GamePhase.cs",
-              "RelativeToolTip": "Assets\\Service\\Enum\\GamePhase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T15:18:40.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GameService.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\GameService.cs",
-              "RelativeDocumentMoniker": "Assets\\Service\\GameService.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\GameService.cs",
-              "RelativeToolTip": "Assets\\Service\\GameService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T06:46:51.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EntityService.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\EntityService.cs",
-              "RelativeDocumentMoniker": "Assets\\Service\\EntityService.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\EntityService.cs",
-              "RelativeToolTip": "Assets\\Service\\EntityService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T09:11:26.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CursorService.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\CursorService.cs",
-              "RelativeDocumentMoniker": "Assets\\Service\\CursorService.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\CursorService.cs",
-              "RelativeToolTip": "Assets\\Service\\CursorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T03:07:36.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PlayerService.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\PlayerService.cs",
-              "RelativeDocumentMoniker": "Assets\\Service\\PlayerService.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\PlayerService.cs",
-              "RelativeToolTip": "Assets\\Service\\PlayerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T16:57:28.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UIService.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\UIService.cs",
-              "RelativeDocumentMoniker": "Assets\\Service\\UIService.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\UIService.cs",
-              "RelativeToolTip": "Assets\\Service\\UIService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T12:41:01.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\AuthService.cs",
-              "RelativeDocumentMoniker": "Assets\\Service\\AuthService.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\AuthService.cs",
-              "RelativeToolTip": "Assets\\Service\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T16:39:05.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PlayerEntity.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Component\\Entity\\PlayerEntity.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\Component\\Entity\\PlayerEntity.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Component\\Entity\\PlayerEntity.cs",
-              "RelativeToolTip": "Assets\\State\\Component\\Entity\\PlayerEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T07:24:55.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Component\\Entity\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\Component\\Entity\\BaseEntity.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Component\\Entity\\BaseEntity.cs",
-              "RelativeToolTip": "Assets\\State\\Component\\Entity\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T07:24:57.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Component\\Player\\PlayerMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\Component\\Player\\PlayerMovement.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Component\\Player\\PlayerMovement.cs",
-              "RelativeToolTip": "Assets\\State\\Component\\Player\\PlayerMovement.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T08:36:46.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IReadOnlyBaseEntity.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyBaseEntity.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyBaseEntity.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyBaseEntity.cs",
-              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyBaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T14:22:29.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IReadOnlyPlayerEntity.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyPlayerEntity.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyPlayerEntity.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyPlayerEntity.cs",
-              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyPlayerEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T14:23:24.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IReadOnlyPlayerAppearance.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerAppearance.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerAppearance.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerAppearance.cs",
-              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerAppearance.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T13:51:06.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IReadOnlyPlayerMovement.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerMovement.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerMovement.cs",
-              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T14:13:55.147Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IReadOnlyAuthState.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyAuthState.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyAuthState.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyAuthState.cs",
-              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyAuthState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T13:45:18.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IReadOnlyCursorState.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyCursorState.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyCursorState.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyCursorState.cs",
-              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyCursorState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T13:54:36.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IReadOnlyEntityState.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyEntityState.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyEntityState.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyEntityState.cs",
-              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyEntityState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T15:14:47.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "IReadOnlyPlayerState.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyPlayerState.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyPlayerState.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyPlayerState.cs",
-              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyPlayerState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T14:30:27.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "IReadOnlyUIState.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyUIState.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyUIState.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyUIState.cs",
-              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyUIState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T14:37:25.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UIState.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\UIState.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\UIState.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\UIState.cs",
-              "RelativeToolTip": "Assets\\State\\UIState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T02:59:24.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "PlayerState.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\PlayerState.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\PlayerState.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\PlayerState.cs",
-              "RelativeToolTip": "Assets\\State\\PlayerState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T07:23:07.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 5,
               "Title": "GameState.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\GameState.cs",
               "RelativeDocumentMoniker": "Assets\\State\\GameState.cs",
@@ -948,202 +583,301 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IReadOnlyGameState.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyGameState.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyGameState.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyGameState.cs",
-              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyGameState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PlayerState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\PlayerState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\PlayerState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\PlayerState.cs",
+              "RelativeToolTip": "Assets\\State\\PlayerState.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAjwM4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T14:41:34.666Z",
+              "WhenOpened": "2025-12-30T07:23:07.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "EntityState.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\EntityState.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\EntityState.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\EntityState.cs",
-              "RelativeToolTip": "Assets\\State\\EntityState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "PlayerService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\PlayerService.cs",
+              "RelativeDocumentMoniker": "Assets\\Service\\PlayerService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\PlayerService.cs",
+              "RelativeToolTip": "Assets\\Service\\PlayerService.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAewHUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T19:00:53.054Z",
+              "WhenOpened": "2025-12-05T16:57:28.245Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CursorState.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\CursorState.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\CursorState.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\CursorState.cs",
-              "RelativeToolTip": "Assets\\State\\CursorState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PlayerPresenter.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\PlayerPresenter.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay\\Player\\PlayerPresenter.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Player\\PlayerPresenter.cs",
+              "RelativeToolTip": "Assets\\Gameplay\\Player\\PlayerPresenter.cs",
+              "ViewState": "AgIAAAQBAAAAAAAAAADwvw4BAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T03:14:26.592Z",
+              "WhenOpened": "2025-12-16T17:12:42.214Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "AuthState.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\AuthState.cs",
-              "RelativeDocumentMoniker": "Assets\\State\\AuthState.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\AuthState.cs",
-              "RelativeToolTip": "Assets\\State\\AuthState.cs",
+              "DocumentIndex": 4,
+              "Title": "EntityPresenter.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityPresenter.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay\\Entity\\EntityPresenter.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityPresenter.cs",
+              "RelativeToolTip": "Assets\\Gameplay\\Entity\\EntityPresenter.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAzwBMAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T19:03:47.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterPresenter.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
+              "RelativeToolTip": "Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAArwH4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T07:13:46.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomizeCharacterPresenter.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterPresenter.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterPresenter.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterPresenter.cs",
+              "RelativeToolTip": "Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterPresenter.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAArwJcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T16:24:57.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ColorHelper.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\ColorHelper.cs",
+              "RelativeDocumentMoniker": "Assets\\Utility\\ColorHelper.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\ColorHelper.cs",
+              "RelativeToolTip": "Assets\\Utility\\ColorHelper.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T06:50:47.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EntityPartFrame.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Data\\Script\\EntityPartFrame.cs",
+              "RelativeDocumentMoniker": "Assets\\Data\\Script\\EntityPartFrame.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Data\\Script\\EntityPartFrame.cs",
+              "RelativeToolTip": "Assets\\Data\\Script\\EntityPartFrame.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T07:07:02.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EntityPartCatalog.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Data\\Script\\EntityPartCatalog.cs",
+              "RelativeDocumentMoniker": "Assets\\Data\\Script\\EntityPartCatalog.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Data\\Script\\EntityPartCatalog.cs",
+              "RelativeToolTip": "Assets\\Data\\Script\\EntityPartCatalog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T17:08:53.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlayerNetworkHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
+              "RelativeToolTip": "Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAzwBgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T07:09:28.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginPresenter.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
+              "RelativeToolTip": "Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAArwGkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T16:00:42.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginView.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Login\\LoginView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginView.cs",
+              "RelativeToolTip": "Assets\\UI\\MainMenu\\Login\\LoginView.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAcwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T09:25:38.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthNetworkHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\AuthNetworkHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\AuthNetworkHandler.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\AuthNetworkHandler.cs",
+              "RelativeToolTip": "Assets\\Network\\Handler\\AuthNetworkHandler.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAIwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T08:52:39.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthException.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkException\\AuthException.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\NetworkException\\AuthException.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkException\\AuthException.cs",
+              "RelativeToolTip": "Assets\\Network\\NetworkException\\AuthException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T07:36:52.903Z",
+              "WhenOpened": "2025-12-22T15:54:44.453Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "CursorBinder.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\CursorBinder.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Binder\\CursorBinder.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\CursorBinder.cs",
-              "RelativeToolTip": "Assets\\UI\\Binder\\CursorBinder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "CustomizeCharacterView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterView.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterView.cs",
+              "RelativeToolTip": "Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterView.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAmwNAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T03:45:01.522Z",
+              "WhenOpened": "2025-12-27T16:23:54.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 18,
+              "Title": "HUDPresenter.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\GameMenu\\HUD\\HUDPresenter.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\GameMenu\\HUD\\HUDPresenter.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\GameMenu\\HUD\\HUDPresenter.cs",
+              "RelativeToolTip": "Assets\\UI\\GameMenu\\HUD\\HUDPresenter.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwDQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T17:40:53.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\GameService.cs",
+              "RelativeDocumentMoniker": "Assets\\Service\\GameService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\GameService.cs",
+              "RelativeToolTip": "Assets\\Service\\GameService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwA8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T06:46:51.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HUDView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\GameMenu\\HUD\\HUDView.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\GameMenu\\HUD\\HUDView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\GameMenu\\HUD\\HUDView.cs",
+              "RelativeToolTip": "Assets\\UI\\GameMenu\\HUD\\HUDView.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T17:41:52.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Component\\Player\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\Component\\Player\\PlayerMovement.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Component\\Player\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\State\\Component\\Player\\PlayerMovement.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAA2wDgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T08:36:46.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "CustomizeCharacterBinder.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\CustomizeCharacterBinder.cs",
               "RelativeDocumentMoniker": "Assets\\UI\\Binder\\CustomizeCharacterBinder.cs",
               "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\CustomizeCharacterBinder.cs",
               "RelativeToolTip": "Assets\\UI\\Binder\\CustomizeCharacterBinder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwAoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T17:45:19.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-27T17:45:19.844Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "HUDBinder.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\HUDBinder.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Binder\\HUDBinder.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\HUDBinder.cs",
-              "RelativeToolTip": "Assets\\UI\\Binder\\HUDBinder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "PlayerEntity.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Component\\Entity\\PlayerEntity.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\Component\\Entity\\PlayerEntity.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Component\\Entity\\PlayerEntity.cs",
+              "RelativeToolTip": "Assets\\State\\Component\\Entity\\PlayerEntity.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAswCYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T17:58:25.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-30T07:24:55.575Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "PopUpBinder.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\PopUpBinder.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Binder\\PopUpBinder.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\PopUpBinder.cs",
-              "RelativeToolTip": "Assets\\UI\\Binder\\PopUpBinder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAArAAAAAAAAAA==",
+              "DocumentIndex": 24,
+              "Title": "IReadOnlyPlayerMovement.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerMovement.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerMovement.cs",
+              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerMovement.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAMwAoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T15:17:40.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-01T14:13:55.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "RegisterBinder.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\RegisterBinder.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Binder\\RegisterBinder.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\RegisterBinder.cs",
-              "RelativeToolTip": "Assets\\UI\\Binder\\RegisterBinder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T07:35:14.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "CursorPresenter.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorPresenter.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Common\\Cursor\\CursorPresenter.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorPresenter.cs",
-              "RelativeToolTip": "Assets\\UI\\Common\\Cursor\\CursorPresenter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T03:39:28.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "CursorView.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorView.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Common\\Cursor\\CursorView.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorView.cs",
-              "RelativeToolTip": "Assets\\UI\\Common\\Cursor\\CursorView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T03:37:42.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 25,
               "Title": "PopUpPresenter.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\PopUp\\PopUpPresenter.cs",
               "RelativeDocumentMoniker": "Assets\\UI\\Common\\PopUp\\PopUpPresenter.cs",
               "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\PopUp\\PopUpPresenter.cs",
               "RelativeToolTip": "Assets\\UI\\Common\\PopUp\\PopUpPresenter.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAnwEIAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAwwGEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T14:37:52.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-22T14:37:52.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "PopUpView.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\PopUp\\PopUpView.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Common\\PopUp\\PopUpView.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\PopUp\\PopUpView.cs",
-              "RelativeToolTip": "Assets\\UI\\Common\\PopUp\\PopUpView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T14:38:22.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "BarDrag.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Component\\HSV\\BarDrag.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Component\\HSV\\BarDrag.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Component\\HSV\\BarDrag.cs",
-              "RelativeToolTip": "Assets\\UI\\Component\\HSV\\BarDrag.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T16:46:38.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "HSVCollector.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Component\\HSV\\HSVCollector.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Component\\HSV\\HSVCollector.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Component\\HSV\\HSVCollector.cs",
-              "RelativeToolTip": "Assets\\UI\\Component\\HSV\\HSVCollector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T17:06:44.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 26,
               "Title": "ScrollCollector.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Component\\Scroll\\ScrollCollector.cs",
               "RelativeDocumentMoniker": "Assets\\UI\\Component\\Scroll\\ScrollCollector.cs",
@@ -1151,179 +885,23 @@
               "RelativeToolTip": "Assets\\UI\\Component\\Scroll\\ScrollCollector.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T16:29:33.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-27T16:29:33.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "CursorType.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\CursorType.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Enum\\CursorType.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\CursorType.cs",
-              "RelativeToolTip": "Assets\\UI\\Enum\\CursorType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 27,
+              "Title": "EntityService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\EntityService.cs",
+              "RelativeDocumentMoniker": "Assets\\Service\\EntityService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\EntityService.cs",
+              "RelativeToolTip": "Assets\\Service\\EntityService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAUwDgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T03:41:15.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-15T09:11:26.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Gender.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\Gender.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Enum\\Gender.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\Gender.cs",
-              "RelativeToolTip": "Assets\\UI\\Enum\\Gender.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T06:56:37.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "HSVChannel.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\HSVChannel.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Enum\\HSVChannel.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\HSVChannel.cs",
-              "RelativeToolTip": "Assets\\UI\\Enum\\HSVChannel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T17:38:46.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "PopUpType.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\PopUpType.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\Enum\\PopUpType.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\PopUpType.cs",
-              "RelativeToolTip": "Assets\\UI\\Enum\\PopUpType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T14:58:12.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "HUDPresenter.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\GameMenu\\HUD\\HUDPresenter.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\GameMenu\\HUD\\HUDPresenter.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\GameMenu\\HUD\\HUDPresenter.cs",
-              "RelativeToolTip": "Assets\\UI\\GameMenu\\HUD\\HUDPresenter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T17:40:53.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "HUDView.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\GameMenu\\HUD\\HUDView.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\GameMenu\\HUD\\HUDView.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\GameMenu\\HUD\\HUDView.cs",
-              "RelativeToolTip": "Assets\\UI\\GameMenu\\HUD\\HUDView.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T17:41:52.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "CustomizeCharacterPresenter.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterPresenter.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterPresenter.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterPresenter.cs",
-              "RelativeToolTip": "Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterPresenter.cs",
-              "ViewState": "AgIAAA0BAAAAAAAAAAAnwBIBAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T16:24:57.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "CustomizeCharacterView.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterView.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterView.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterView.cs",
-              "RelativeToolTip": "Assets\\UI\\MainMenu\\CustomizeCharacter\\CustomizeCharacterView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMcAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T16:23:54.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "LoginPresenter.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
-              "RelativeToolTip": "Assets\\UI\\MainMenu\\Login\\LoginPresenter.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAnwFsAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T16:00:42.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "LoginView.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginView.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Login\\LoginView.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Login\\LoginView.cs",
-              "RelativeToolTip": "Assets\\UI\\MainMenu\\Login\\LoginView.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAcwDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T09:25:38.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "RegisterPresenter.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
-              "RelativeDocumentMoniker": "Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
-              "RelativeToolTip": "Assets\\UI\\MainMenu\\Register\\RegisterPresenter.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAnwF4AAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T07:13:46.519Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "CoroutineRunner.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\CoroutineRunner.cs",
-              "RelativeDocumentMoniker": "Assets\\Core\\CoroutineRunner.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\CoroutineRunner.cs",
-              "RelativeToolTip": "Assets\\Core\\CoroutineRunner.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T16:54:31.025Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "Bootstrapper.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\Bootstrapper.cs",
-              "RelativeDocumentMoniker": "Assets\\Core\\Bootstrapper.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\Bootstrapper.cs",
-              "RelativeToolTip": "Assets\\Core\\Bootstrapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T03:08:50.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 28,
               "Title": "IPlayerNetworkCommand.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IPlayerNetworkCommand.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Command\\IPlayerNetworkCommand.cs",
@@ -1335,7 +913,463 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PopUpView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\PopUp\\PopUpView.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Common\\PopUp\\PopUpView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\PopUp\\PopUpView.cs",
+              "RelativeToolTip": "Assets\\UI\\Common\\PopUp\\PopUpView.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAIAwwDQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T14:38:22.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UIState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\UIState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\UIState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\UIState.cs",
+              "RelativeToolTip": "Assets\\State\\UIState.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwB4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T02:59:24.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UIService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\UIService.cs",
+              "RelativeDocumentMoniker": "Assets\\Service\\UIService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\UIService.cs",
+              "RelativeToolTip": "Assets\\Service\\UIService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAADMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:41:01.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "VisualView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Component\\Visual\\VisualView.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay\\Component\\Visual\\VisualView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Component\\Visual\\VisualView.cs",
+              "RelativeToolTip": "Assets\\Gameplay\\Component\\Visual\\VisualView.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T06:12:31.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "EntityView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityView.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay\\Entity\\EntityView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\EntityView.cs",
+              "RelativeToolTip": "Assets\\Gameplay\\Entity\\EntityView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T19:04:41.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PlayerEntityView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\Player\\PlayerEntityView.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay\\Entity\\Player\\PlayerEntityView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\Player\\PlayerEntityView.cs",
+              "RelativeToolTip": "Assets\\Gameplay\\Entity\\Player\\PlayerEntityView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T15:17:40.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PlayerEntityPresenter.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\Player\\PlayerEntityPresenter.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay\\Entity\\Player\\PlayerEntityPresenter.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Entity\\Player\\PlayerEntityPresenter.cs",
+              "RelativeToolTip": "Assets\\Gameplay\\Entity\\Player\\PlayerEntityPresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T03:26:59.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "NetworkSessionCoordinator.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkSessionCoordinator.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\NetworkSessionCoordinator.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkSessionCoordinator.cs",
+              "RelativeToolTip": "Assets\\Network\\NetworkSessionCoordinator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T03:07:19.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "GamePhase.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\Enum\\GamePhase.cs",
+              "RelativeDocumentMoniker": "Assets\\Service\\Enum\\GamePhase.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\Enum\\GamePhase.cs",
+              "RelativeToolTip": "Assets\\Service\\Enum\\GamePhase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T15:18:40.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CursorService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\CursorService.cs",
+              "RelativeDocumentMoniker": "Assets\\Service\\CursorService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\CursorService.cs",
+              "RelativeToolTip": "Assets\\Service\\CursorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:07:36.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "Assets\\Service\\AuthService.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\AuthService.cs",
+              "RelativeToolTip": "Assets\\Service\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T16:39:05.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Component\\Entity\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\Component\\Entity\\BaseEntity.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Component\\Entity\\BaseEntity.cs",
+              "RelativeToolTip": "Assets\\State\\Component\\Entity\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:24:57.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IReadOnlyBaseEntity.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyBaseEntity.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyBaseEntity.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyBaseEntity.cs",
+              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyBaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T14:22:29.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IReadOnlyPlayerEntity.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyPlayerEntity.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyPlayerEntity.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyPlayerEntity.cs",
+              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyEntityComponent\\IReadOnlyPlayerEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T14:23:24.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IReadOnlyPlayerAppearance.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerAppearance.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerAppearance.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerAppearance.cs",
+              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyComponent\\IReadOnlyPlayerComponent\\IReadOnlyPlayerAppearance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T13:51:06.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IReadOnlyAuthState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyAuthState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyAuthState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyAuthState.cs",
+              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyAuthState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T13:45:18.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IReadOnlyCursorState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyCursorState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyCursorState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyCursorState.cs",
+              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyCursorState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T13:54:36.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "IReadOnlyEntityState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyEntityState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyEntityState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyEntityState.cs",
+              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyEntityState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T15:14:47.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "IReadOnlyPlayerState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyPlayerState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyPlayerState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyPlayerState.cs",
+              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyPlayerState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T14:30:27.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IReadOnlyUIState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyUIState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyUIState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyUIState.cs",
+              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyUIState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T14:37:25.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "IReadOnlyGameState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyGameState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyGameState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyGameState.cs",
+              "RelativeToolTip": "Assets\\State\\Interface\\IReadOnlyState\\IReadOnlyGameState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T14:41:34.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "EntityState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\EntityState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\EntityState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\EntityState.cs",
+              "RelativeToolTip": "Assets\\State\\EntityState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T19:00:53.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "CursorState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\CursorState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\CursorState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\CursorState.cs",
+              "RelativeToolTip": "Assets\\State\\CursorState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:14:26.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "AuthState.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\AuthState.cs",
+              "RelativeDocumentMoniker": "Assets\\State\\AuthState.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\State\\AuthState.cs",
+              "RelativeToolTip": "Assets\\State\\AuthState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:36:52.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CursorBinder.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\CursorBinder.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Binder\\CursorBinder.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\CursorBinder.cs",
+              "RelativeToolTip": "Assets\\UI\\Binder\\CursorBinder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:45:01.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "HUDBinder.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\HUDBinder.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Binder\\HUDBinder.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\HUDBinder.cs",
+              "RelativeToolTip": "Assets\\UI\\Binder\\HUDBinder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T17:58:25.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "PopUpBinder.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\PopUpBinder.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Binder\\PopUpBinder.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\PopUpBinder.cs",
+              "RelativeToolTip": "Assets\\UI\\Binder\\PopUpBinder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T15:17:40.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "RegisterBinder.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\RegisterBinder.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Binder\\RegisterBinder.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Binder\\RegisterBinder.cs",
+              "RelativeToolTip": "Assets\\UI\\Binder\\RegisterBinder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T07:35:14.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "CursorPresenter.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorPresenter.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Common\\Cursor\\CursorPresenter.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorPresenter.cs",
+              "RelativeToolTip": "Assets\\UI\\Common\\Cursor\\CursorPresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:39:28.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "CursorView.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorView.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Common\\Cursor\\CursorView.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorView.cs",
+              "RelativeToolTip": "Assets\\UI\\Common\\Cursor\\CursorView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:37:42.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "BarDrag.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Component\\HSV\\BarDrag.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Component\\HSV\\BarDrag.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Component\\HSV\\BarDrag.cs",
+              "RelativeToolTip": "Assets\\UI\\Component\\HSV\\BarDrag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T16:46:38.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "HSVCollector.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Component\\HSV\\HSVCollector.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Component\\HSV\\HSVCollector.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Component\\HSV\\HSVCollector.cs",
+              "RelativeToolTip": "Assets\\UI\\Component\\HSV\\HSVCollector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T17:06:44.575Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 62,
+              "Title": "CursorType.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\CursorType.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Enum\\CursorType.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\CursorType.cs",
+              "RelativeToolTip": "Assets\\UI\\Enum\\CursorType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:41:15.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Gender.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\Gender.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Enum\\Gender.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\Gender.cs",
+              "RelativeToolTip": "Assets\\UI\\Enum\\Gender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T06:56:37.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "HSVChannel.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\HSVChannel.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Enum\\HSVChannel.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\HSVChannel.cs",
+              "RelativeToolTip": "Assets\\UI\\Enum\\HSVChannel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T17:38:46.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "PopUpType.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\PopUpType.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Enum\\PopUpType.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Enum\\PopUpType.cs",
+              "RelativeToolTip": "Assets\\UI\\Enum\\PopUpType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T14:58:12.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "CoroutineRunner.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\CoroutineRunner.cs",
+              "RelativeDocumentMoniker": "Assets\\Core\\CoroutineRunner.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\CoroutineRunner.cs",
+              "RelativeToolTip": "Assets\\Core\\CoroutineRunner.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T16:54:31.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Bootstrapper.cs",
+              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\Bootstrapper.cs",
+              "RelativeDocumentMoniker": "Assets\\Core\\Bootstrapper.cs",
+              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\Bootstrapper.cs",
+              "RelativeToolTip": "Assets\\Core\\Bootstrapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T03:08:50.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
               "Title": "NetworkService.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkService.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\NetworkService.cs",
@@ -1347,7 +1381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 69,
               "Title": "ComponentBinder.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\ComponentBinder.cs",
               "RelativeDocumentMoniker": "Assets\\Core\\ComponentBinder.cs",
@@ -1359,7 +1393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 70,
               "Title": "PlayerBinder.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Binder\\PlayerBinder.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay\\Binder\\PlayerBinder.cs",
@@ -1371,7 +1405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 71,
               "Title": "EntityBinder.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Binder\\EntityBinder.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay\\Binder\\EntityBinder.cs",
@@ -1383,7 +1417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 72,
               "Title": "NetworkMethod.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkMethod.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\NetworkMethod.cs",
@@ -1395,7 +1429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 73,
               "Title": "NetworkCommandSender.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkCommandSender.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\NetworkCommandSender.cs",
@@ -1407,7 +1441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 74,
               "Title": "IGameNetworkReceiver.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IGameNetworkReceiver.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\IGameNetworkReceiver.cs",
@@ -1419,19 +1453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "AuthNetworkHandler.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\AuthNetworkHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\AuthNetworkHandler.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\AuthNetworkHandler.cs",
-              "RelativeToolTip": "Assets\\Network\\Handler\\AuthNetworkHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T08:52:39.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 75,
               "Title": "PlayerMoveView.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Gameplay\\Component\\Input\\PlayerMoveView.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay\\Component\\Input\\PlayerMoveView.cs",
@@ -1443,31 +1465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
-              "Title": "EntityPartFrame.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Data\\Script\\EntityPartFrame.cs",
-              "RelativeDocumentMoniker": "Assets\\Data\\Script\\EntityPartFrame.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Data\\Script\\EntityPartFrame.cs",
-              "RelativeToolTip": "Assets\\Data\\Script\\EntityPartFrame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T07:07:02.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 72,
-              "Title": "EntityPartCatalog.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Data\\Script\\EntityPartCatalog.cs",
-              "RelativeDocumentMoniker": "Assets\\Data\\Script\\EntityPartCatalog.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Data\\Script\\EntityPartCatalog.cs",
-              "RelativeToolTip": "Assets\\Data\\Script\\EntityPartCatalog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T17:08:53.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 76,
               "Title": "EntityPartType.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Data\\Enum\\EntityPartType.cs",
               "RelativeDocumentMoniker": "Assets\\Data\\Enum\\EntityPartType.cs",
@@ -1479,7 +1477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 77,
               "Title": "EntityDirection.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Data\\Enum\\EntityDirection.cs",
               "RelativeDocumentMoniker": "Assets\\Data\\Enum\\EntityDirection.cs",
@@ -1491,7 +1489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 78,
               "Title": "EntityAction.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Data\\Enum\\EntityAction.cs",
               "RelativeDocumentMoniker": "Assets\\Data\\Enum\\EntityAction.cs",
@@ -1503,7 +1501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 79,
               "Title": "ServiceLocator.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Core\\ServiceLocator.cs",
               "RelativeDocumentMoniker": "Assets\\Core\\ServiceLocator.cs",
@@ -1515,7 +1513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 80,
               "Title": "AsyncHelper.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\AsyncHelper.cs",
               "RelativeDocumentMoniker": "Assets\\Utility\\AsyncHelper.cs",
@@ -1527,19 +1525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
-              "Title": "ColorHelper.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\ColorHelper.cs",
-              "RelativeDocumentMoniker": "Assets\\Utility\\ColorHelper.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\ColorHelper.cs",
-              "RelativeToolTip": "Assets\\Utility\\ColorHelper.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T06:50:47.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 81,
               "Title": "CoroutineTaskExtension.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\CoroutineTaskExtension.cs",
               "RelativeDocumentMoniker": "Assets\\Utility\\CoroutineTaskExtension.cs",
@@ -1551,7 +1537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 82,
               "Title": "GameLogger.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\GameLogger.cs",
               "RelativeDocumentMoniker": "Assets\\Utility\\GameLogger.cs",
@@ -1563,7 +1549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 83,
               "Title": "Mapper.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Utility\\Mapper.cs",
               "RelativeDocumentMoniker": "Assets\\Utility\\Mapper.cs",
@@ -1575,7 +1561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 84,
               "Title": "CursorTargetView.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\UI\\Common\\Cursor\\CursorTargetView.cs",
               "RelativeDocumentMoniker": "Assets\\UI\\Common\\Cursor\\CursorTargetView.cs",
@@ -1587,19 +1573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
-              "Title": "PlayerNetworkHandler.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
-              "RelativeToolTip": "Assets\\Network\\Handler\\PlayerNetworkHandler.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwBgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T07:09:28.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 85,
               "Title": "CursorNetworkHandler.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\CursorNetworkHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\Handler\\CursorNetworkHandler.cs",
@@ -1611,7 +1585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 86,
               "Title": "IAuthNetworkReceiver.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Receiver\\IAuthNetworkReceiver.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Receiver\\IAuthNetworkReceiver.cs",
@@ -1623,7 +1597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 88,
               "Title": "IAuthNetworkCommand.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Command\\IAuthNetworkCommand.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Command\\IAuthNetworkCommand.cs",
@@ -1635,7 +1609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 87,
               "Title": "INetworkBase.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Interface\\Base\\INetworkBase.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\Interface\\Base\\INetworkBase.cs",
@@ -1647,7 +1621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 89,
               "Title": "IService.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Service\\Interface\\IService.cs",
               "RelativeDocumentMoniker": "Assets\\Service\\Interface\\IService.cs",
@@ -1659,7 +1633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 90,
               "Title": "UINetworkHandler.cs",
               "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\Handler\\UINetworkHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\Handler\\UINetworkHandler.cs",
@@ -1668,18 +1642,6 @@
               "ViewState": "AgIAABUAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-16T08:15:11.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 90,
-              "Title": "AuthException.cs",
-              "DocumentMoniker": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkException\\AuthException.cs",
-              "RelativeDocumentMoniker": "Assets\\Network\\NetworkException\\AuthException.cs",
-              "ToolTip": "D:\\GitHub\\project-plainworld.fe-v1.0-unity\\PlainWorld\\Assets\\Network\\NetworkException\\AuthException.cs",
-              "RelativeToolTip": "Assets\\Network\\NetworkException\\AuthException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T15:54:44.453Z"
             },
             {
               "$type": "Document",
@@ -1751,8 +1713,7 @@
               "RelativeToolTip": "Assets\\Core\\IService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T02:54:38.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T02:54:38.22Z"
             },
             {
               "$type": "Document",
@@ -1800,8 +1761,7 @@
               "RelativeToolTip": "Assets\\State\\Player\\PlayerState.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAIwAsAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T08:55:02.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T08:55:02.735Z"
             },
             {
               "$type": "Document",
@@ -1813,8 +1773,7 @@
               "RelativeToolTip": "Assets\\State\\UI\\UIState.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T07:12:14.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-30T07:12:14.842Z"
             },
             {
               "$type": "Document",
@@ -1826,8 +1785,7 @@
               "RelativeToolTip": "Assets\\Gameplay\\Player\\PlayerMoveView.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwAcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T03:21:13.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T03:21:13.234Z"
             },
             {
               "$type": "Document",
@@ -1839,8 +1797,7 @@
               "RelativeToolTip": "Assets\\State\\Entity\\EntityState.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAnwA4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T13:51:27.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-29T13:51:27.084Z"
             },
             {
               "$type": "Document",
@@ -1852,8 +1809,7 @@
               "RelativeToolTip": "Assets\\State\\Entity\\Player\\PlayerEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T14:05:30.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-29T14:05:30.528Z"
             },
             {
               "$type": "Document",
@@ -1865,8 +1821,7 @@
               "RelativeToolTip": "Assets\\State\\Entity\\BaseEntity.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T14:07:12.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-29T14:07:12.801Z"
             },
             {
               "$type": "Document",
@@ -1914,8 +1869,7 @@
               "RelativeToolTip": "Assets\\Gameplay\\Entity\\PlayerEntity\\EntityPlayerView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T03:29:28.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-19T03:29:28.017Z"
             },
             {
               "$type": "Document",
@@ -1927,8 +1881,7 @@
               "RelativeToolTip": "Assets\\Gameplay\\Entity\\Player\\EntityPlayerView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T15:16:40.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-29T15:16:40.342Z"
             },
             {
               "$type": "Document",
@@ -1940,8 +1893,7 @@
               "RelativeToolTip": "Assets\\State\\Entity\\Entity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T14:03:28.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-29T14:03:28.768Z"
             },
             {
               "$type": "Document",
@@ -1953,8 +1905,7 @@
               "RelativeToolTip": "Assets\\State\\Game\\GameState.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T08:40:22.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-29T08:40:22.461Z"
             },
             {
               "$type": "Document",
@@ -1978,8 +1929,7 @@
               "RelativeToolTip": "Assets\\Data\\Enum\\CharacterAction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T07:11:01.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-27T07:11:01.353Z"
             },
             {
               "$type": "Document",
@@ -1991,8 +1941,7 @@
               "RelativeToolTip": "Assets\\Data\\Enum\\PartType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T07:11:56.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-27T07:11:56.394Z"
             },
             {
               "$type": "Document",
@@ -2004,8 +1953,7 @@
               "RelativeToolTip": "Assets\\Data\\Enum\\PlayerPartType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T07:09:49.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-27T07:09:49.487Z"
             },
             {
               "$type": "Document",
@@ -2017,8 +1965,7 @@
               "RelativeToolTip": "Assets\\UI\\Common\\Cursor\\CursorBinder.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwBgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T03:38:16.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T03:38:16.203Z"
             },
             {
               "$type": "Document",
@@ -2078,8 +2025,7 @@
               "RelativeToolTip": "Assets\\Network\\Handler\\StateNetworkHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T08:16:47.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T08:16:47.954Z"
             },
             {
               "$type": "Document",
@@ -2091,8 +2037,7 @@
               "RelativeToolTip": "Assets\\Network\\Interface\\Receiver\\IStateNetworkReceiver.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T06:47:30.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T06:47:30.935Z"
             },
             {
               "$type": "Document",
@@ -2104,8 +2049,7 @@
               "RelativeToolTip": "Assets\\Gameplay\\Player\\ViewPresentor.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAUwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T03:24:09.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T03:24:09.469Z"
             },
             {
               "$type": "Document",
@@ -2117,8 +2061,7 @@
               "RelativeToolTip": "Assets\\Gameplay\\Player\\ViewView.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAiwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T17:12:43.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T17:12:43.885Z"
             },
             {
               "$type": "Document",
@@ -2130,8 +2073,7 @@
               "RelativeToolTip": "Assets\\Network\\Interface\\Command\\IStateNetworkCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T08:13:32.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T08:13:32.356Z"
             }
           ]
         },
