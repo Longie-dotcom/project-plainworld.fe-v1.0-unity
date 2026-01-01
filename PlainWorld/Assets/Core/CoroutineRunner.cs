@@ -22,9 +22,6 @@ namespace Assets.Core
                         .AddComponent<CoroutineRunner>();
 
                     DontDestroyOnLoad(instance.gameObject);
-
-                    // Initialize Global Error Handling
-                    GlobalExceptionHandler.Initialize();
                 }
                 return instance;
             }

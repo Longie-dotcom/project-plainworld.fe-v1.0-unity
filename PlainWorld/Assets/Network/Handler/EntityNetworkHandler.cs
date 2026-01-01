@@ -30,6 +30,9 @@ namespace Assets.Network.Handler
         #endregion
 
         #region Send Commands
+        #endregion
+
+        #region Receive Handlers
         public void OnPlayerEntityJoined(PlayerEntityDTO dto)
         {
             entityService.OnPlayerEntityJoined(dto);
@@ -49,9 +52,6 @@ namespace Assets.Network.Handler
         {
             entityService.OnPlayerEntityCreatedAppearance(dto);
         }
-        #endregion
-
-        #region Receive Handlers
         #endregion
     }
 }

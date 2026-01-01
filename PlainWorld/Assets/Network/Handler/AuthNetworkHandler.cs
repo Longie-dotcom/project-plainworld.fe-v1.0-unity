@@ -20,7 +20,11 @@ namespace Assets.Network.Handler
         private NetworkCommandSender sender = new();
 
         private const string BASE_URL = "http://26.92.115.30:7000/";
-        private HttpClient httpClient;
+        private HttpClient httpClient = new HttpClient()
+        {
+            BaseAddress = new Uri(BASE_URL),
+            Timeout = TimeSpan.FromSeconds(10)
+        };
         #endregion
 
         #region Properties
@@ -34,12 +38,6 @@ namespace Assets.Network.Handler
         {
             authService = service;
             sender.BindNetwork(network);
-
-            httpClient = new HttpClient
-            {
-                BaseAddress = new Uri(BASE_URL),
-                Timeout = TimeSpan.FromSeconds(10)
-            };
         }
         #endregion
 

@@ -1,7 +1,8 @@
-﻿using Assets.Core;
-using Assets.Network.Interface.Command;
-using Assets.State.Game;
-using System;
+﻿using Assets.Network.Interface.Command;
+using Assets.Service.Enum;
+using Assets.Service.Interface;
+using Assets.State;
+using Assets.State.Interface.IReadOnlyState;
 using System.Threading.Tasks;
 
 namespace Assets.Service
@@ -9,23 +10,23 @@ namespace Assets.Service
     public class GameService : IService
     {
         #region Attributes
+        private readonly GameState gameState;
         #endregion
 
         #region Properties
         public bool IsInitialized { get; private set; } = false;
-        public IGameNetworkCommand StateNetworkCommand { get; private set; }
-        public GameState GameState { get; private set; } = new GameState(GamePhase.Loading);
+        public IGameNetworkCommand GameNetworkCommand { get; private set; }
+        public IReadOnlyGameState GameState { get { return gameState; } }
         #endregion
 
-        public GameService() { }
+        public GameService()
+        {
+            gameState = new GameState(GamePhase.Login);
+        }
 
         #region Methods
         public Task InitializeAsync()
         {
-            if (StateNetworkCommand == null)
-                throw new InvalidOperationException(
-                    "StateNetworkCommand not bound before Initialize");
-
             IsInitialized = true;
             return Task.CompletedTask;
         }
@@ -37,8 +38,28 @@ namespace Assets.Service
 
         public void BindNetworkCommand(IGameNetworkCommand command)
         {
-            StateNetworkCommand = command;
+            GameNetworkCommand = command;
         }
+
+        public void SetPhase(GamePhase gamePhase)
+        {
+            gameState.SetPhase(gamePhase);
+        }
+
+        public void PushPhase(GamePhase overlay)
+        {
+            gameState.PushPhase(overlay);
+        }
+
+        public void PopPhase()
+        {
+            gameState.PopPhase();
+        }
+        #region Senders
+        #endregion
+
+        #region Receivers
+        #endregion
         #endregion
     }
 }

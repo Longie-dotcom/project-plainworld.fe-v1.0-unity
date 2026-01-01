@@ -1,4 +1,4 @@
-﻿using Assets.State.UI;
+﻿using Assets.State;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +10,8 @@ public class CustomizeCharacterView : MonoBehaviour
     [Header("Buttons")]
     [SerializeField] private Button finishButton;
     [SerializeField] private Button backButton;
+    [SerializeField] private Button skinToLeftButton;
+    [SerializeField] private Button skinToRightButton;
 
     [Header("Scrolls")]
     [SerializeField] private ScrollCollector hairScroll;
@@ -38,6 +40,8 @@ public class CustomizeCharacterView : MonoBehaviour
     #region Properties
     public event Action OnFinishClicked;
     public event Action OnBackClicked;
+    public event Action OnSkinToLeftClicked;
+    public event Action OnSkinToRightClicked;
 
     public event Action<string> OnHairChanged;
     public event Action<string> OnGlassesChanged;
@@ -58,6 +62,8 @@ public class CustomizeCharacterView : MonoBehaviour
         // Button
         finishButton.onClick.AddListener(() => OnFinishClicked?.Invoke());
         backButton.onClick.AddListener(() => OnBackClicked?.Invoke());
+        skinToLeftButton.onClick.AddListener(() => OnSkinToLeftClicked?.Invoke());
+        skinToRightButton.onClick.AddListener(() => OnSkinToRightClicked?.Invoke());
 
         // Scrolls
         hairScroll.OnValueChanged += v => OnHairChanged?.Invoke(v);
@@ -189,6 +195,14 @@ public class CustomizeCharacterView : MonoBehaviour
         skin.sprite = sprite;
         skin.color = color;
         skin.enabled = sprite != null;
+    }
+
+    public void SetBackButtonVisible(bool visible)
+    {
+        if (backButton != null)
+        {
+            backButton.gameObject.SetActive(visible);
+        }
     }
     #endregion
 }

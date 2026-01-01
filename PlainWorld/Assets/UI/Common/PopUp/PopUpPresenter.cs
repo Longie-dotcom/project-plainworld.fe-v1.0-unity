@@ -47,8 +47,8 @@ namespace Assets.UI.Common.Popup
             disposed = true;
 
             // Inbound
-            popUpView.OnOkClicked -= OnOk;
-            popUpView.OnCancelClicked -= OnCancel;
+            popUpView.OnOkClicked -= OnOkClicked;
+            popUpView.OnCancelClicked -= OnCancelClicked;
 
             // Outbound
             uiService.UIState.OnPopUpRequested -= OnPopUpRequested;
@@ -60,21 +60,21 @@ namespace Assets.UI.Common.Popup
                 throw new ObjectDisposedException(nameof(PopUpPresenter));
 
             // Inbound
-            popUpView.OnOkClicked += OnOk;
-            popUpView.OnCancelClicked += OnCancel;
+            popUpView.OnOkClicked += OnOkClicked;
+            popUpView.OnCancelClicked += OnCancelClicked;
 
             // Outbound
             uiService.UIState.OnPopUpRequested += OnPopUpRequested;
         }
 
         #region Buttons
-        private void OnOk()
+        private void OnOkClicked()
         {
             current = null;
             popUpView.Hide();
         }
 
-        private void OnCancel()
+        private void OnCancelClicked()
         {
             current = null;
             popUpView.Hide();

@@ -1,7 +1,19 @@
 ﻿using Assets.Data.Enum;
 using Assets.Network.DTO;
-using Assets.State.Player;
+using Assets.State.Component.Player;
 using UnityEngine;
+
+/*
+ * Network ↔ Domain mapping helpers.
+ *
+ * Purpose:
+ * - Convert network DTOs into immutable domain snapshots.
+ * - Convert domain snapshots back into DTOs for transport.
+ *
+ * Notes:
+ * - Keeps networking concerns isolated from gameplay/domain logic.
+ * - Color data is transported in HSV and converted to Unity Color locally.
+ */
 
 namespace Assets.Utility
 {

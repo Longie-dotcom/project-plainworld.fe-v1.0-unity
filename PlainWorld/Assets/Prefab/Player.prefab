@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 3974467765152736257}
   - component: {fileID: 3930057668448624178}
   - component: {fileID: 4206764533120165603}
-  - component: {fileID: -8394381404707849408}
+  - component: {fileID: 7615952439053595492}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -289,7 +289,7 @@ Transform:
   m_GameObject: {fileID: 2894818110940504274}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.647883, y: 0.5877528, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -298,8 +298,8 @@ Transform:
   - {fileID: 7781118698183124438}
   - {fileID: 2884889189177612409}
   - {fileID: 2495008026884559778}
-  - {fileID: 6570506928722490463}
   - {fileID: 5945624668788928466}
+  - {fileID: 6570506928722490463}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3930057668448624178
@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveView: {fileID: 4206764533120165603}
-  visualView: {fileID: -8394381404707849408}
+  visualView: {fileID: 7615952439053595492}
 --- !u!114 &4206764533120165603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0b0c7e198dab842b7b71ed344d8b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-8394381404707849408
+--- !u!114 &7615952439053595492
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -337,22 +337,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2894818110940504274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e2bf709b06c47044b1bd890182ccd4a, type: 3}
+  m_Script: {fileID: 11500000, guid: d6d56b893d1eae04d8b886e3435e9dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hairFrame: {fileID: 11400000, guid: bfdadec5e6d21da4bbb8deef1b784c97, type: 2}
   hairRenderer: {fileID: 3476674738906886127}
-  glassesFrame: {fileID: 11400000, guid: 9967dbccd69a7b44b8fa5192df5eada2, type: 2}
   glassesRenderer: {fileID: 2133880978108163350}
-  shirtFrame: {fileID: 11400000, guid: bbd0429637e38a042941229b1df69765, type: 2}
   shirtRenderer: {fileID: 1064592237813731319}
-  pantFrame: {fileID: 11400000, guid: e2cb6d580b84cb043bc7d8b9929a4d6b, type: 2}
   pantRenderer: {fileID: 7246534127462684369}
-  shoeFrame: {fileID: 11400000, guid: 6ebd5f6b42eb9344d95a32558f028184, type: 2}
   shoeRenderer: {fileID: 7562742642958800849}
-  eyeFrame: {fileID: 11400000, guid: 98d478bfec522a24e81d0952a2a1a01a, type: 2}
   eyeRenderer: {fileID: 5663380350950296609}
-  skinFrame: {fileID: 11400000, guid: aab916c76c58de8409f8dfbf4e08a162, type: 2}
   skinRenderer: {fileID: 3581137499246477202}
 --- !u!1 &4741549292422489222
 GameObject:
@@ -438,7 +431,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4776513940679686718

@@ -1,6 +1,6 @@
 ﻿using Assets.Service;
-using Assets.State.Entity.Player;
-using Assets.State.Player;
+using Assets.State.Component.Entity;
+using Assets.State.Interface.IReadOnlyComponent.IReadOnlyPlayerComponent;
 using System;
 using UnityEngine;
 
@@ -25,7 +25,7 @@ namespace Assets.Gameplay.Entity.Player
         #endregion
 
         public PlayerEntityPresenter(
-            EntityService entityService, 
+            EntityService entityService,
             PlayerEntityView prefab,
 
             EntityPartCatalog hairCatalog,
@@ -62,64 +62,74 @@ namespace Assets.Gameplay.Entity.Player
             base.Dispose();
         }
 
-        public override void SpawnEntity(PlayerEntity entity)
+        protected override void SpawnEntity(PlayerEntity entity)
         {
             if (entityViews.ContainsKey(entity.ID)) return;
 
             var view = GameObject.Instantiate(
-                entityPlayerPrefab, 
-                entity.Movement.Position, 
+                entityPlayerPrefab,
+                entity.Movement.Position,
                 Quaternion.identity);
             view.Initialize(
-                entity.ID, 
+                entity.ID,
                 entity.Movement.Position);
 
             entityViews[entity.ID] = view;
             BindView(view, entity);
         }
 
-        public override void RemoveEntity(Guid id)
+        protected override void RemoveEntity(Guid id, PlayerEntity entity)
         {
             if (entityViews.TryGetValue(id, out var view))
             {
-                if (entityService.EntityState.TryGetPlayer(id, out var entity))
-                {
-                    UnbindView(view, entity);
-                    GameObject.Destroy(view.gameObject);
-                    entityViews.Remove(id);
-                }
+                GameObject.Destroy(view.gameObject);
+                UnbindView(view, entity);
+                entityViews.Remove(id);
             }
         }
 
         protected override void BindView(PlayerEntityView view, PlayerEntity entity)
         {
+            void ApplyAppearance()
+            {
+                ApplyAppearanceToView(entity.ID, entity.Appearance);
+            };
+
+            // Outbound
+            entity.Appearance.OnChanged += ApplyAppearance; ApplyAppearance();
             entity.Movement.OnMoveSpeedChanged += view.SetAnimationSpeed;
             entity.Movement.OnPositionChanged += view.ApplyPosition;
             entity.Movement.OnDirectionChanged += view.SetDirection;
             entity.Movement.OnActionChanged += view.SetAction;
-
-            // Subscribe
-            entityService.EntityState.OnPlayerEntityAppearanceLoaded += ApplyAppearanceToView;
         }
 
         protected override void UnbindView(PlayerEntityView view, PlayerEntity entity)
         {
-            // Execute cleanup
+            void ApplyAppearance()
+            {
+                ApplyAppearanceToView(entity.ID, entity.Appearance);
+            };
+
+            // Outbound
+            entity.Appearance.OnChanged -= ApplyAppearance;
+            entity.Movement.OnMoveSpeedChanged -= view.SetAnimationSpeed;
+            entity.Movement.OnPositionChanged -= view.ApplyPosition;
+            entity.Movement.OnDirectionChanged -= view.SetDirection;
+            entity.Movement.OnActionChanged -= view.SetAction;
         }
 
-        // Helper to immediately apply appearance
-        private void ApplyAppearanceToView(Guid id, PlayerAppearance appearance)
+        private void ApplyAppearanceToView(Guid id, IReadOnlyPlayerAppearance appearance)
         {
             if (!TryGetView(id, out var view)) return;
 
             view.ApplyAppearance(
-                ResolveFrame(hairCatalog, appearance.HairID),
-                ResolveFrame(glassesCatalog, appearance.GlassesID),
-                ResolveFrame(shirtCatalog, appearance.ShirtID),
-                ResolveFrame(pantCatalog, appearance.PantID),
-                ResolveFrame(shoeCatalog, appearance.ShoeID),
-                ResolveFrame(eyesCatalog, appearance.EyesID),
-                ResolveFrame(skinCatalog, appearance.SkinID),
+                hairCatalog.GetPartFrame(appearance.HairID),
+                glassesCatalog.GetPartFrame(appearance.GlassesID),
+                shirtCatalog.GetPartFrame(appearance.ShirtID),
+                pantCatalog.GetPartFrame(appearance.PantID),
+                shoeCatalog.GetPartFrame(appearance.ShoeID),
+                eyesCatalog.GetPartFrame(appearance.EyesID),
+                skinCatalog.GetPartFrame(appearance.SkinID),
 
                 appearance.HairColor,
                 appearance.PantColor,
@@ -130,14 +140,6 @@ namespace Assets.Gameplay.Entity.Player
         #endregion
 
         #region Private Helpers
-        private EntityPartFrame ResolveFrame(EntityPartCatalog catalog, string id)
-        {
-            if (string.IsNullOrEmpty(id))
-                return null;
-
-            var descriptor = catalog.GetDescriptor(id);
-            return descriptor != null ? descriptor : null;
-        }
         #endregion
     }
 }

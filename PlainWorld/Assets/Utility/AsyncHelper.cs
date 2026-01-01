@@ -7,8 +7,8 @@ using Assets.Core;
  *
  * Purpose:
  * - Safely run fire-and-forget async workflows from Unity callbacks.
- * - Catch both sync and async exceptions.
- * - Report errors on the Unity main thread.
+ * - Catch both sync and async exceptions. (MAIN REASON)
+ * - Report errors on the Unity main thread. (MAIN REASON)
  *
  * NOT intended for:
  * - Service layer

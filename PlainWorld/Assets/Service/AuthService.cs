@@ -1,21 +1,27 @@
-﻿using Assets.Core;
+﻿using Assets.Service.Interface;
 using Assets.Network.Interface.Command;
+using Assets.State;
 using System.Threading.Tasks;
+using Assets.State.Interface.IReadOnlyState;
 
 namespace Assets.Service
 {
     public class AuthService : IService
     {
         #region Attributes
+        private readonly AuthState authState;
         #endregion
 
         #region Properties
         public bool IsInitialized { get; private set; } = false;
         public IAuthNetworkCommand AuthNetworkCommand { get; private set; }
-        public string Token { get; private set; }
+        public IReadOnlyAuthState AuthState { get { return authState; } }
         #endregion
 
-        public AuthService() { }
+        public AuthService()
+        {
+            authState = new AuthState();
+        }
 
         #region Methods
         public Task InitializeAsync()
@@ -34,6 +40,7 @@ namespace Assets.Service
             AuthNetworkCommand = command;
         }
 
+        #region Senders
         public async Task Login(
             string email, 
             string password)
@@ -43,7 +50,7 @@ namespace Assets.Service
                 password);
 
             // Parse claims
-            Token = result.payload.accessToken;
+            authState.Set(result.payload.accessToken);
         }
 
         public async Task Register(
@@ -60,6 +67,10 @@ namespace Assets.Service
                 gender,
                 dob);
         }
+        #endregion
+
+        #region Receivers
+        #endregion
         #endregion
     }
 }

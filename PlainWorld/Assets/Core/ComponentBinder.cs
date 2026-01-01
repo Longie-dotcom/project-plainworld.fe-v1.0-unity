@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using Assets.Service.Interface;
 
 public abstract class ComponentBinder : MonoBehaviour
 {

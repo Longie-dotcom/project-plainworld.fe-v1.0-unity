@@ -10,5 +10,6 @@ namespace Assets.Network.Interface.Receiver
         void OnPlayerLogout(Guid id);
         void OnPlayerMoved(PlayerMovementDTO dto);
         void OnPlayerCreatedAppearance(PlayerAppearanceDTO dto);
+        void OnPlayerForcedLogout();
     }
 }

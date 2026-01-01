@@ -1,33 +1,36 @@
 ﻿using Assets.Core;
 using Assets.Network.DTO;
 using Assets.Network.Interface.Command;
-using Assets.State.Player;
+using Assets.Service.Interface;
+using Assets.State;
+using Assets.State.Interface.IReadOnlyState;
 using Assets.Utility;
 using System;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Assets.Service
 {
     public class PlayerService : IService
     {
         #region Attributes
+        private readonly PlayerState playerState;
         #endregion
 
         #region Properties
         public bool IsInitialized { get; private set; } = false;
         public IPlayerNetworkCommand PlayerNetworkCommand { get; private set; }
-        public PlayerState PlayerState { get; private set; } = new PlayerState();
+        public IReadOnlyPlayerState PlayerState { get { return playerState; } }
         #endregion
 
-        public PlayerService() { }
+        public PlayerService()
+        {
+            playerState = new PlayerState();
+        }
 
         #region Methods
         public Task InitializeAsync()
         {
-            if (PlayerNetworkCommand == null)
-                throw new InvalidOperationException(
-                    "PlayerNetworkCommand not bound before Initialize");
-
             ServiceLocator.OnExiting += LogoutAsync;
 
             IsInitialized = true;
@@ -44,7 +47,71 @@ namespace Assets.Service
             PlayerNetworkCommand = command;
         }
 
-        // Senders
+        #region Movement
+        public void ApplyPredictedPosition(Vector2 dir)
+        {
+            playerState.ApplyPredictedPosition(dir);
+        }
+        #endregion
+
+        #region Appearance
+        public void SetHair(string id)
+        {
+            playerState.SetHair(id);
+        }
+
+        public void SetGlasses(string id)
+        {
+            playerState.SetGlasses(id);
+        }
+
+        public void SetShirt(string id)
+        {
+            playerState.SetShirt(id);
+        }
+
+        public void SetPant(string id)
+        {
+            playerState.SetPant(id);
+        }
+
+        public void SetShoe(string id)
+        {
+            playerState.SetShoe(id);
+        }
+
+        public void SetEyes(string id)
+        {
+            playerState.SetEyes(id);
+        }
+
+        public void SetSkin(string id)
+        {
+            playerState.SetSkin(id);
+        }
+
+        public void SetHairColor(float h, float s, float v)
+        {
+            playerState.SetHairColor(h, s, v);
+        }
+
+        public void SetPantColor(float h, float s, float v)
+        {
+            playerState.SetPantColor(h, s, v);
+        }
+
+        public void SetEyeColor(float h, float s, float v)
+        {
+            playerState.SetEyeColor(h, s, v);
+        }
+
+        public void SetSkinColor(float h, float s, float v)
+        {
+            playerState.SetSkinColor(h, s, v);
+        }
+        #endregion
+
+        #region Senders
         public async Task JoinAsync()
         {
             if (PlayerState.HasJoined)
@@ -63,7 +130,7 @@ namespace Assets.Service
 
         public async Task MoveAsync()
         {
-            if (!PlayerState.TryCreateMovementCreation(out var snapshot))
+            if (!playerState.TryCreateMovementCreation(out var snapshot))
                 return;
 
             var dto = new PlayerMoveDTO
@@ -75,7 +142,7 @@ namespace Assets.Service
 
         public async Task CreateAppearanceAsync()
         {
-            if (!PlayerState.TryPrepareAppearanceCreation(out var snapshot))
+            if (!playerState.TryPrepareAppearanceCreation(out var snapshot))
                 return;
 
             var dto = new PlayerCreateAppearanceDTO
@@ -84,13 +151,14 @@ namespace Assets.Service
             };
             await PlayerNetworkCommand.CreateAppearance(dto);
         }
+        #endregion
 
-        // Receivers
+        #region Receivers
         public void OnPlayerJoined(PlayerDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
             {
-                PlayerState.LoadPlayerData(
+                playerState.LoadPlayerData(
                     dto.ID,
                     dto.FullName,
                     PlayerMovementMapper.ToSnapshot(dto.Movement),
@@ -102,16 +170,14 @@ namespace Assets.Service
         public void OnPlayerLogout(Guid id)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                GameLogger.Info(
-                    Channel.Service,
-                    $"Player with ID: {id} has logout")
+                playerState.Logout(id)
             );
         }
 
         public void OnPlayerMoved(PlayerMovementDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                PlayerState.ApplyServerPosition(
+                playerState.ApplyServerPosition(
                     dto.ID,
                     PlayerMovementMapper.ToSnapshot(dto.Movement))
             );
@@ -120,9 +186,17 @@ namespace Assets.Service
         public void OnPlayerCreatedAppearance(PlayerAppearanceDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                PlayerState.ConfirmAppearanceCreated()
+                playerState.ConfirmAppearanceCreated()
             );
         }
+
+        public void OnPlayerForcedLogout()
+        {
+            CoroutineRunner.Instance.Schedule(() => 
+                playerState.ForcedLogout()
+            );
+        }
+        #endregion
         #endregion
     }
 }

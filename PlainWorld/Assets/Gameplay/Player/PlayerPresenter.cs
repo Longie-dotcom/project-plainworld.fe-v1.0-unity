@@ -1,6 +1,7 @@
-using Assets.Data.Enum;
+using Assets.Network;
 using Assets.Service;
-using Assets.State.Game;
+using Assets.Service.Enum;
+using Assets.UI.Enum;
 using Assets.Utility;
 using System;
 using UnityEngine;
@@ -10,8 +11,10 @@ namespace Assets.Gameplay.Player
     public class PlayerPresenter : IDisposable
     {
         #region Attributes
+        private readonly NetworkService networkService;
         private readonly PlayerService playerService;
         private readonly GameService gameService;
+        private readonly UIService uiService;
         private PlayerView playerView;
         private readonly PlayerView playerViewPrefab;
 
@@ -23,6 +26,8 @@ namespace Assets.Gameplay.Player
         private readonly EntityPartCatalog eyesCatalog;
         private readonly EntityPartCatalog skinCatalog;
 
+        private bool isActive;
+
         private bool disposed;
         #endregion
 
@@ -30,8 +35,10 @@ namespace Assets.Gameplay.Player
         #endregion
 
         public PlayerPresenter(
+            NetworkService networkService,
             PlayerService playerService,
             GameService gameService,
+            UIService uiService,
             PlayerView playerViewPrefab,
 
             EntityPartCatalog hairCatalog,
@@ -42,8 +49,10 @@ namespace Assets.Gameplay.Player
             EntityPartCatalog eyesCatalog,
             EntityPartCatalog skinCatalog)
         {
+            this.networkService = networkService;
             this.playerService = playerService;
             this.gameService = gameService;
+            this.uiService = uiService;
             this.playerViewPrefab = playerViewPrefab;
 
             this.hairCatalog = hairCatalog;
@@ -63,25 +72,12 @@ namespace Assets.Gameplay.Player
             if (disposed) return;
             disposed = true;
 
-            // Inbound
-            if (playerView != null)
-            {
-                playerView.OnUpdateVisualMove -= OnUpdateVisualMove;
-                playerView.OnSendMoveToServer -= OnSendMoveToServer;
-            }
+            UnbindPlayer();
 
             // Outbound
-            if (playerView != null)
-            {
-                playerService.PlayerState.Appearance.OnChanged -= ApplyAppearance;
-                playerService.PlayerState.Movement.OnPositionChanged -= playerView.ApplyPosition;
-                playerService.PlayerState.Movement.OnDirectionChanged -= playerView.SetDirection;
-                playerService.PlayerState.Movement.OnActionChanged -= playerView.SetAction;
-                playerService.PlayerState.Movement.OnMoveSpeedChanged -= playerView.SetAnimationSpeed;
-
-            }
-            playerService.PlayerState.OnPlayerNeedsCustomization -= OnPlayerNeedsCustomization;
             playerService.PlayerState.OnPlayerReady -= OnPlayerReady;
+            playerService.PlayerState.OnPlayerLogout -= OnPlayerLogout;
+            playerService.PlayerState.OnPlayerForcedLogout -= OnPlayerForcedLogout;
         }
 
         private void Bind()
@@ -90,52 +86,20 @@ namespace Assets.Gameplay.Player
                 throw new ObjectDisposedException(nameof(PlayerPresenter));
 
             // Outbound
-            playerService.PlayerState.OnPlayerNeedsCustomization += OnPlayerNeedsCustomization;
             playerService.PlayerState.OnPlayerReady += OnPlayerReady;
-        }
-
-        private void OnPlayerNeedsCustomization()
-        {
-            gameService.GameState.SetPhase(GamePhase.CustomizeCharacter);
-        }
-
-        private void OnPlayerReady()
-        {
-            if (playerView != null)
-                return; // already spawned
-
-            // Instantiate
-            var instance = GameObject.Instantiate(playerViewPrefab);
-            instance.name = $"MainPlayer_{playerService.PlayerState.PlayerName}";
-
-            // Replace with new instance
-            playerView = instance;
-
-            // Bind view events
-            // Inbound
-            playerView.OnUpdateVisualMove += OnUpdateVisualMove;
-            playerView.OnSendMoveToServer += OnSendMoveToServer;
-
-            // Outbound
-            playerService.PlayerState.Appearance.OnChanged += ApplyAppearance; ApplyAppearance();
-            playerService.PlayerState.Movement.OnPositionChanged += playerView.ApplyPosition;
-            playerService.PlayerState.Movement.OnDirectionChanged += playerView.SetDirection;
-            playerService.PlayerState.Movement.OnActionChanged += playerView.SetAction;
-            playerService.PlayerState.Movement.OnMoveSpeedChanged += playerView.SetAnimationSpeed;
-
-            // Start the game
-            gameService.GameState.SetPhase(GamePhase.InGame);
+            playerService.PlayerState.OnPlayerLogout += OnPlayerLogout;
+            playerService.PlayerState.OnPlayerForcedLogout += OnPlayerForcedLogout;
         }
 
         #region Movement
         private void OnUpdateVisualMove(Vector2 dir)
         {
-            if (playerView == null) return;
-            playerService.PlayerState.ApplyPredictedPosition(dir);
+            playerService.ApplyPredictedPosition(dir);
         }
 
         private void OnSendMoveToServer()
         {
+            if (!isActive) return;
             AsyncHelper.Run(() => playerService.MoveAsync());
         }
         #endregion
@@ -149,13 +113,13 @@ namespace Assets.Gameplay.Player
             var appearance = playerService.PlayerState.Appearance;
 
             playerView.ApplyAppearance(
-                ResolveFrame(hairCatalog, appearance.HairID),
-                ResolveFrame(glassesCatalog, appearance.GlassesID),
-                ResolveFrame(shirtCatalog, appearance.ShirtID),
-                ResolveFrame(pantCatalog, appearance.PantID),
-                ResolveFrame(shoeCatalog, appearance.ShoeID),
-                ResolveFrame(eyesCatalog, appearance.EyesID),
-                ResolveFrame(skinCatalog, appearance.SkinID),
+                hairCatalog.GetPartFrame(appearance.HairID),
+                glassesCatalog.GetPartFrame(appearance.GlassesID),
+                shirtCatalog.GetPartFrame(appearance.ShirtID),
+                pantCatalog.GetPartFrame(appearance.PantID),
+                shoeCatalog.GetPartFrame(appearance.ShoeID),
+                eyesCatalog.GetPartFrame(appearance.EyesID),
+                skinCatalog.GetPartFrame(appearance.SkinID),
 
                 appearance.HairColor,
                 appearance.PantColor,
@@ -164,16 +128,116 @@ namespace Assets.Gameplay.Player
             );
         }
         #endregion
+
+        #region Outbound
+        private void OnPlayerReady()
+        {
+            isActive = true;
+
+            if (playerView != null)
+                return; // already spawned
+
+            // Instantiate
+            var instance = GameObject.Instantiate(playerViewPrefab);
+            instance.name = $"MainPlayer_{playerService.PlayerState.PlayerName}";
+
+            // Replace with new instance
+            playerView = instance;
+
+            // Bind view events
+            BindPlayer();
+
+            // Start the game
+            gameService.SetPhase(GamePhase.InGame);
+        }
+
+        private void OnPlayerLogout()
+        {
+            AsyncHelper.Run(async () =>
+            {
+                isActive = false;
+
+                if (playerView == null)
+                    return; // nothing to clean up
+
+                // Destroy view instance
+                GameObject.Destroy(playerView.gameObject);
+
+                // Unbind view events
+                UnbindPlayer();
+
+                // Back to the login and show pop up
+                gameService.SetPhase(GamePhase.Login);
+                uiService.ShowPopUp(
+                    PopUpType.Information,
+                    "Player logout successfully");
+
+                // Disconnect network
+                await networkService.ShutdownAsync();
+            });
+        }
+
+        private void OnPlayerForcedLogout()
+        {
+            AsyncHelper.Run(async () =>
+            {
+                isActive = false;
+
+                if (playerView == null)
+                    return; // nothing to clean up
+
+                // Destroy view instance
+                GameObject.Destroy(playerView.gameObject);
+
+                // Unbind view events
+                UnbindPlayer();
+
+                // Back to the login and show pop up
+                gameService.SetPhase(GamePhase.Login);
+                uiService.ShowPopUp(
+                    PopUpType.Information,
+                    "Player logout successfully");
+
+                // Disconnect network
+                await networkService.ShutdownAsync();
+            });
+        }
+        #endregion
         #endregion
 
         #region Private Helpers
-        private EntityPartFrame ResolveFrame(EntityPartCatalog catalog, string id)
+        private void UnbindPlayer()
         {
-            if (string.IsNullOrEmpty(id))
-                return null;
+            if (playerView == null) return;
 
-            var descriptor = catalog.GetDescriptor(id);
-            return descriptor != null ? descriptor : null;
+            // Inbound
+            playerView.OnUpdateVisualMove -= OnUpdateVisualMove;
+            playerView.OnSendMoveToServer -= OnSendMoveToServer;
+
+            // Outbound
+            playerService.PlayerState.Appearance.OnChanged -= ApplyAppearance;
+            playerService.PlayerState.Movement.OnPositionChanged -= playerView.ApplyPosition;
+            playerService.PlayerState.Movement.OnDirectionChanged -= playerView.SetDirection;
+            playerService.PlayerState.Movement.OnActionChanged -= playerView.SetAction;
+            playerService.PlayerState.Movement.OnMoveSpeedChanged -= playerView.SetAnimationSpeed;
+
+            playerView = null;
+        }
+
+        private void BindPlayer()
+        {
+            if (playerView == null) return;
+
+            // Inbound
+            playerView.OnUpdateVisualMove += OnUpdateVisualMove;
+            playerView.OnSendMoveToServer += OnSendMoveToServer;
+
+            // Outbound
+            playerService.PlayerState.Appearance.OnChanged += ApplyAppearance; ApplyAppearance();
+            playerService.PlayerState.Movement.OnMoveSpeedChanged += playerView.SetAnimationSpeed;
+            playerService.PlayerState.Movement.OnPositionChanged += playerView.ApplyPosition;
+            playerService.PlayerState.Movement.OnDirectionChanged += playerView.SetDirection;
+            playerService.PlayerState.Movement.OnActionChanged += playerView.SetAction;
         }
         #endregion
     }

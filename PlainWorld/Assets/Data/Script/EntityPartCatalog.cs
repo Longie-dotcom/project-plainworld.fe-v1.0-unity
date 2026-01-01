@@ -90,7 +90,7 @@ public class EntityPartCatalog : ScriptableObject
         }
     }
 
-    public EntityPartFrame GetDescriptor(string id)
+    public EntityPartFrame GetPartFrame(string id)
     {
         if (lookup == null)
             BuildLookup();

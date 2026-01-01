@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Assets.Service.Interface;
 
 namespace Assets.Core
 {

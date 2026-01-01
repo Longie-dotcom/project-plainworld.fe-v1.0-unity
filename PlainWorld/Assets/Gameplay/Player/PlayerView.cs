@@ -61,14 +61,14 @@ public class PlayerView : MonoBehaviour
             skinColor);
     }
 
+    public void SetAnimationSpeed(float moveSpeed)
+    {
+        visualView.SetAnimationSpeed(moveSpeed);
+    }
+
     public void ApplyPosition(Vector2 pos)
     {
         transform.position = new Vector3(pos.x, pos.y, 0);
-    }
-
-    public void SetAction(EntityAction action)
-    {
-        visualView.SetAction(action);
     }
 
     public void SetDirection(Vector2 dir)
@@ -76,9 +76,9 @@ public class PlayerView : MonoBehaviour
         visualView.SetDirection(dir);
     }
 
-    public void SetAnimationSpeed(float moveSpeed)
+    public void SetAction(EntityAction action)
     {
-        visualView.SetAnimationSpeed(moveSpeed);
+        visualView.SetAction(action);
     }
     #endregion
 }

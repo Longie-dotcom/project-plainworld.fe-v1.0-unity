@@ -32,7 +32,7 @@ public class PopUpBinder : ComponentBinder
 
         GameLogger.Info(
             Channel.System,
-            "Pop Up UI components binded successfully");
+            "Pop-up UI components binded successfully");
     }
 
     private void OnDestroy()

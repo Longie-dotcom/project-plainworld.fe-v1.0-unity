@@ -29,9 +29,6 @@ namespace Assets.Gameplay.Entity
             entityViews.Clear();
         }
 
-        public abstract void SpawnEntity(TEntity entity);
-        public abstract void RemoveEntity(Guid id);
-
         public bool TryGetView(Guid id, out TEntityView view)
         {
             return entityViews.TryGetValue(id, out view);
@@ -44,6 +41,8 @@ namespace Assets.Gameplay.Entity
             return view;
         }
 
+        protected abstract void SpawnEntity(TEntity entity);
+        protected abstract void RemoveEntity(Guid id, TEntity entity);
         protected abstract void BindView(TEntityView view, TEntity entity);
         protected abstract void UnbindView(TEntityView view, TEntity entity);
         #endregion

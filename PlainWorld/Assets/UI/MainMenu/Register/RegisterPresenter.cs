@@ -1,6 +1,6 @@
 ﻿using Assets.Network.NetworkException;
 using Assets.Service;
-using Assets.State.Game;
+using Assets.Service.Enum;
 using Assets.UI.Enum;
 using Assets.Utility;
 using System;
@@ -57,10 +57,10 @@ namespace Assets.UI.MainMenu.Register
             disposed = true;
 
             // Inbound
-            registerView.OnBackClicked -= OnBack;
-            registerView.OnRegisterClicked -= OnRegister;
-            registerView.OnFemaleClicked -= OnFemaleChanged;
-            registerView.OnMaleClicked -= OnMaleChanged;
+            registerView.OnBackClicked -= OnBackClicked;
+            registerView.OnRegisterClicked -= OnRegisterClicked;
+            registerView.OnFemaleClicked -= OnFemaleClicked;
+            registerView.OnMaleClicked -= OnMaleClicked;
 
             registerView.OnEmailChanged -= OnEmailChanged;
             registerView.OnPasswordChanged -= OnPasswordChanged;
@@ -79,10 +79,10 @@ namespace Assets.UI.MainMenu.Register
                 throw new ObjectDisposedException(nameof(RegisterPresenter));
 
             // Inbound
-            registerView.OnBackClicked += OnBack;
-            registerView.OnRegisterClicked += OnRegister;
-            registerView.OnFemaleClicked += OnFemaleChanged;
-            registerView.OnMaleClicked += OnMaleChanged;
+            registerView.OnBackClicked += OnBackClicked;
+            registerView.OnRegisterClicked += OnRegisterClicked;
+            registerView.OnFemaleClicked += OnFemaleClicked;
+            registerView.OnMaleClicked += OnMaleClicked;
 
             registerView.OnEmailChanged += OnEmailChanged;
             registerView.OnPasswordChanged += OnPasswordChanged;
@@ -96,12 +96,12 @@ namespace Assets.UI.MainMenu.Register
         }
 
         #region Buttons
-        private void OnBack()
+        private void OnBackClicked()
         {
-            gameService.GameState.SetPhase(GamePhase.Login);
+            gameService.SetPhase(GamePhase.Login);
         }
 
-        private void OnRegister()
+        private void OnRegisterClicked()
         {
             AsyncHelper.Run(async () =>
             {
@@ -117,22 +117,23 @@ namespace Assets.UI.MainMenu.Register
                     );
 
                     // Show success and return to login view
-                    uiService.UIState.ShowPopUp(
+                    uiService.ShowPopUp(
                         PopUpType.Information,
                         "Registration successful!"
                     );
-                    gameService.GameState.SetPhase(GamePhase.Login);
+
+                    gameService.SetPhase(GamePhase.Login);
                 }
                 catch (AuthException ex)
                 {
-                    uiService.UIState.ShowPopUp(
+                    uiService.ShowPopUp(
                         PopUpType.Error,
                         ex.Message
                     );
                 }
                 catch (Exception)
                 {
-                    uiService.UIState.ShowPopUp(
+                    uiService.ShowPopUp(
                         PopUpType.Error,
                         "Unexpected error. Please try again."
                     );
@@ -140,14 +141,14 @@ namespace Assets.UI.MainMenu.Register
             });
         }
 
-        private void OnFemaleChanged()
+        private void OnFemaleClicked()
         {
             gender = Gender.Female;
             ValidateGender();
             UpdateRegisterButton();
         }
 
-        private void OnMaleChanged()
+        private void OnMaleClicked()
         {
             gender = Gender.Male;
             ValidateGender();

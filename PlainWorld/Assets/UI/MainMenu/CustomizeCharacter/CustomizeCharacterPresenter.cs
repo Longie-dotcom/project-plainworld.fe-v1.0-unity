@@ -1,7 +1,7 @@
 ﻿using Assets.Data.Enum;
 using Assets.Service;
-using Assets.State.Game;
-using Assets.State.Player;
+using Assets.Service.Enum;
+using Assets.State.Component.Player;
 using Assets.Utility;
 using System;
 using System.Collections.Generic;
@@ -77,8 +77,10 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
             disposed = true;
 
             // Inbound
-            customizeCharacterView.OnFinishClicked -= OnFinish;
-            customizeCharacterView.OnBackClicked -= OnBack;
+            customizeCharacterView.OnFinishClicked -= OnFinishClicked;
+            customizeCharacterView.OnBackClicked -= OnBackClicked;
+            customizeCharacterView.OnSkinToLeftClicked -= OnSkinToLeftClicked;
+            customizeCharacterView.OnSkinToRightClicked -= OnSkinToRightClicked;
 
             customizeCharacterView.OnHairChanged -= OnHairChanged;
             customizeCharacterView.OnGlassesChanged -= OnGlassesChanged;
@@ -94,7 +96,7 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
 
             // Outbound
             uiService.UIState.OnUIStateChanged -= customizeCharacterView.HandleUIState;
-            playerService.PlayerState.OnAppearanceLoaded -= OnAppearanceLoaded;
+            playerService.PlayerState.OnPlayerCustomization -= OnPlayerCustomization;
             playerService.PlayerState.Appearance.OnChanged -= RefreshPreview;
         }
 
@@ -104,8 +106,10 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
                 throw new ObjectDisposedException(nameof(CustomizeCharacterPresenter));
 
             // Inbound
-            customizeCharacterView.OnFinishClicked += OnFinish;
-            customizeCharacterView.OnBackClicked += OnBack;
+            customizeCharacterView.OnFinishClicked += OnFinishClicked;
+            customizeCharacterView.OnBackClicked += OnBackClicked;
+            customizeCharacterView.OnSkinToLeftClicked += OnSkinToLeftClicked;
+            customizeCharacterView.OnSkinToRightClicked += OnSkinToRightClicked;
 
             customizeCharacterView.OnHairChanged += OnHairChanged;
             customizeCharacterView.OnGlassesChanged += OnGlassesChanged;
@@ -121,12 +125,12 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
 
             // Outbound
             uiService.UIState.OnUIStateChanged += customizeCharacterView.HandleUIState;
-            playerService.PlayerState.OnAppearanceLoaded += OnAppearanceLoaded;
+            playerService.PlayerState.OnPlayerCustomization += OnPlayerCustomization;
             playerService.PlayerState.Appearance.OnChanged += RefreshPreview;
         }
 
         #region Buttons
-        private void OnFinish()
+        private void OnFinishClicked()
         {
             AsyncHelper.Run(async () => 
             {
@@ -134,41 +138,63 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
             });
         }
 
-        private void OnBack()
+        private void OnBackClicked()
         {
-            gameService.GameState.SetPhase(GamePhase.Login);
+            gameService.PopPhase();
+        }
+
+        private void OnSkinToLeftClicked()
+        {
+            RotateDirection(-1);
+        }
+
+        private void OnSkinToRightClicked()
+        {
+            RotateDirection(+1);
+        }
+
+        private void RotateDirection(int delta)
+        {
+            int count = 4;
+
+            int value = ((int)direction + delta) % count;
+            if (value < 0) value += count;
+
+            direction = (EntityDirection)value;
+
+            RefreshPreview();
         }
         #endregion
 
         #region Scrolls
         private void OnHairChanged(string id)
         {
-            playerService.PlayerState.SetHair(id);
+            playerService.SetHair(id);
         }
 
         private void OnGlassesChanged(string id)
         {
-            playerService.PlayerState.SetGlasses(id);
+            playerService.SetGlasses(id);
         }
 
         private void OnShirtChanged(string id)
         {
-            playerService.PlayerState.SetShirt(id);
+            playerService.SetShirt(id);
         }
 
         private void OnPantChanged(string id)
         {
-            playerService.PlayerState.SetPant(id);
+            playerService.SetPant(id);
         }
 
         private void OnShoeChanged(string id)
         {
-            playerService.PlayerState.SetShoe(id);
+            playerService.SetShoe(id);
         }
 
         private void OnEyesChanged(string id)
         {
-            playerService.PlayerState.SetEyes(id);
+            playerService.SetEyes(id);
         }
         #endregion
 
@@ -176,45 +202,53 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
         private void OnHairColorChanged(Color color)
         {
             var (h, s, v) = ColorHelper.ColorToHSV(color);
-            playerService.PlayerState.SetHairColor(h, s, v);
+            playerService.SetHairColor(h, s, v);
         }
 
         private void OnPantColorChanged(Color color)
         {
             var (h, s, v) = ColorHelper.ColorToHSV(color);
-            playerService.PlayerState.SetPantColor(h, s, v);
+            playerService.SetPantColor(h, s, v);
         }
 
         private void OnEyeColorChanged(Color color)
         {
             var (h, s, v) = ColorHelper.ColorToHSV(color);
-            playerService.PlayerState.SetEyeColor(h, s, v);
+            playerService.SetEyeColor(h, s, v);
         }
 
         private void OnSkinColorChanged(Color color)
         {
             var (h, s, v) = ColorHelper.ColorToHSV(color);
-            playerService.PlayerState.SetSkinColor(h, s, v);
+            playerService.SetSkinColor(h, s, v);
         }
         #endregion
 
         #region Outbound
-        private void OnAppearanceLoaded(PlayerAppearance appearance)
+        private void OnPlayerCustomization(PlayerAppearance appearance)
         {
+            // Change state to show the customization UI
+            gameService.PushPhase(GamePhase.CustomizeCharacter);
+
+            // Prevent user ignores customization when there has no customization before
+            customizeCharacterView.SetBackButtonVisible(appearance.IsCreated);
+
             // Ensure appearance has values
             appearance.EnsureDefaults(
-                hairCatalog.GetDescriptors()[0].ID,
-                glassesCatalog.GetDescriptors()[0].ID,
-                shirtCatalog.GetDescriptors()[0].ID,
-                pantCatalog.GetDescriptors()[0].ID,
-                shoeCatalog.GetDescriptors()[0].ID,
-                eyesCatalog.GetDescriptors()[0].ID,
-                skinCatalog.GetDescriptors()[0].ID,
+                new PlayerAppearanceSnapshot(
+                    false,
+                    hairCatalog.GetDescriptors()[0].ID,
+                    glassesCatalog.GetDescriptors()[0].ID,
+                    shirtCatalog.GetDescriptors()[0].ID,
+                    pantCatalog.GetDescriptors()[0].ID,
+                    shoeCatalog.GetDescriptors()[0].ID,
+                    eyesCatalog.GetDescriptors()[0].ID,
+                    skinCatalog.GetDescriptors()[0].ID,
 
-                Color.white,
-                Color.white,
-                Color.white,
-                Color.white
+                    Color.white,
+                    Color.white,
+                    Color.white,
+                    Color.white)
             );
 
             // Apply on the UI components
@@ -285,7 +319,7 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
         {
             if (!string.IsNullOrEmpty(id))
             {
-                var descriptor = catalog.GetDescriptor(id);
+                var descriptor = catalog.GetPartFrame(id);
                 var sprite = descriptor != null ? descriptor
                     .Sprites[descriptor.FramesPerAction * (int)direction] : null;
 

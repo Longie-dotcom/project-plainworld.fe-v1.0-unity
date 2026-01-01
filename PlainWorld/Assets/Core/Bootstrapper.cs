@@ -1,6 +1,5 @@
 using Assets.Network;
 using Assets.Network.Handler;
-using Assets.Network.Interface.Receiver;
 using Assets.Service;
 using Assets.Utility;
 using System.Collections;
@@ -39,47 +38,13 @@ namespace Assets.Core
                 Channel.System,
                 "Instantiate services successfully");
 
-            // --- Instantiate network handlers ---
-            var playerNetworkHandler = new PlayerNetworkHandler();
-            var entityNetworkHandler = new EntityNetworkHandler();
-            var uiNetworkHandler = new UINetworkHandler();
-            var gameNetworkHandler = new GameNetworkHandler();
-            var authNetworkHandler = new AuthNetworkHandler();
-            var cursorNetworkHandler = new CursorNetworkHandler();
+            // --- Pre-session Auth (HTTP) ---
+            var preAuthSession = new AuthNetworkHandler();
+            authService.BindNetworkCommand(preAuthSession);
 
             GameLogger.Info(
                 Channel.System,
-                "Instantiate network handlers successfully");
-
-            // --- Bind dependencies ---
-            gameService.BindNetworkCommand(gameNetworkHandler);
-            gameNetworkHandler.BindService(gameService, networkService);
-            playerService.BindNetworkCommand(playerNetworkHandler);
-            playerNetworkHandler.BindService(playerService, networkService);
-            entityService.BindNetworkCommand(entityNetworkHandler);
-            entityNetworkHandler.BindService(entityService, networkService);
-            uiService.BindNetworkCommand(uiNetworkHandler);
-            uiNetworkHandler.BindService(uiService, networkService);
-            authService.BindNetworkCommand(authNetworkHandler);
-            authNetworkHandler.BindService(authService, networkService);
-            cursorService.BindNetworkCommand(cursorNetworkHandler);
-            cursorNetworkHandler.BindService(cursorService, networkService);
-
-            GameLogger.Info(
-                Channel.System,
-                "Bind network handlers and services successfully");
-
-            // --- Register receivers ---
-            networkService.Register<IGameNetworkReceiver>(gameNetworkHandler);
-            networkService.Register<IPlayerNetworkReceiver>(playerNetworkHandler);
-            networkService.Register<IEntityNetworkReceiver>(entityNetworkHandler);
-            networkService.Register<IUINetworkReceiver>(uiNetworkHandler);
-            networkService.Register<IAuthNetworkReceiver>(authNetworkHandler);
-            networkService.Register<ICursorNetworkReceiver>(cursorNetworkHandler);
-
-            GameLogger.Info(
-                Channel.System,
-                "Register network hanlders successfully");
+                "Bind http pre-session for Auth Service successfully");
 
             // --- Register services --- 
             ServiceLocator.Register<NetworkService>(networkService);

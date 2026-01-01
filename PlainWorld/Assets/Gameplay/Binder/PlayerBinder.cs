@@ -1,4 +1,5 @@
 ﻿using Assets.Gameplay.Player;
+using Assets.Network;
 using Assets.Service;
 using Assets.Utility;
 using System.Collections;
@@ -20,8 +21,10 @@ public class PlayerBinder : ComponentBinder
     private PlayerView playerView;
     private PlayerPresenter playerPresenter;
 
+    private NetworkService networkService;
     private PlayerService playerService;
     private GameService gameService;
+    private UIService uiService;
     #endregion
 
     #region Properties
@@ -30,6 +33,11 @@ public class PlayerBinder : ComponentBinder
     #region Methods
     private IEnumerator Start()
     {
+        yield return BindWhenReady<NetworkService>(network =>
+        {
+            networkService = network;
+        });
+
         yield return BindWhenReady<PlayerService>(player =>
         {
             playerService = player;
@@ -40,10 +48,17 @@ public class PlayerBinder : ComponentBinder
             gameService = game;
         });
 
+        yield return BindWhenReady<UIService>(ui =>
+        {
+            uiService = ui;
+        });
+
         // Resolve dependencies
         playerPresenter = new PlayerPresenter(
+            networkService,
             playerService,
             gameService,
+            uiService,
             playerView,
 
             hairCatalog,

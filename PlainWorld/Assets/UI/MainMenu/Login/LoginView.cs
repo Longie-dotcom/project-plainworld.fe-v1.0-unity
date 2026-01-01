@@ -1,4 +1,4 @@
-using Assets.State.UI;
+using Assets.State;
 using System;
 using TMPro;
 using UnityEngine;

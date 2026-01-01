@@ -1,4 +1,5 @@
-﻿using Assets.Service;
+﻿using Assets.Network;
+using Assets.Service;
 using Assets.UI.MainMenu.Login;
 using Assets.Utility;
 using System.Collections;
@@ -11,6 +12,7 @@ public class LoginBinder : ComponentBinder
     private LoginView loginView;
     private LoginPresenter loginPresenter;
 
+    private NetworkService networkService;
     private AuthService authService;
     private PlayerService playerService;
     private UIService uiService;
@@ -23,6 +25,11 @@ public class LoginBinder : ComponentBinder
     #region Methods
     private IEnumerator Start()
     {
+        yield return BindWhenReady<NetworkService>(network =>
+        {
+            networkService = network;
+        });
+
         yield return BindWhenReady<AuthService>(auth =>
         {
             authService = auth;
@@ -45,6 +52,7 @@ public class LoginBinder : ComponentBinder
 
         // Resolve dependencies
         loginPresenter = new LoginPresenter(
+            networkService,
             authService,
             playerService,
             uiService,

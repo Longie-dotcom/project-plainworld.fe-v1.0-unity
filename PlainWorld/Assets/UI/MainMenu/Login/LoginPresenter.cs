@@ -1,8 +1,7 @@
-﻿using Assets.Core;
-using Assets.Network;
+﻿using Assets.Network;
 using Assets.Network.NetworkException;
 using Assets.Service;
-using Assets.State.Game;
+using Assets.Service.Enum;
 using Assets.UI.Enum;
 using Assets.Utility;
 using System;
@@ -12,6 +11,7 @@ namespace Assets.UI.MainMenu.Login
     public class LoginPresenter : IDisposable
     {
         #region Attributes
+        private readonly NetworkService networkService;
         private readonly AuthService authService;
         private readonly PlayerService playerService;
         private readonly UIService uiService;
@@ -28,12 +28,14 @@ namespace Assets.UI.MainMenu.Login
         #endregion
 
         public LoginPresenter(
+            NetworkService networkService,
             AuthService authService,
             PlayerService playerService,
             UIService uiService, 
             GameService gameService,
             LoginView loginView)
         {
+            this.networkService = networkService;
             this.authService = authService;
             this.playerService = playerService;
             this.uiService = uiService;
@@ -50,8 +52,8 @@ namespace Assets.UI.MainMenu.Login
             disposed = true;
 
             // Inbound
-            loginView.OnJoinClicked -= OnLogin;
-            loginView.OnRegisterClicked -= OnRegister;
+            loginView.OnJoinClicked -= OnLoginClicked;
+            loginView.OnRegisterClicked -= OnRegisterClicked;
 
             loginView.OnEmailChanged -= OnEmailChanged;
             loginView.OnPasswordChanged -= OnPasswordChanged;
@@ -66,8 +68,8 @@ namespace Assets.UI.MainMenu.Login
                 throw new ObjectDisposedException(nameof(LoginPresenter));
 
             // Inbound
-            loginView.OnJoinClicked += OnLogin;
-            loginView.OnRegisterClicked += OnRegister;
+            loginView.OnJoinClicked += OnLoginClicked;
+            loginView.OnRegisterClicked += OnRegisterClicked;
 
             loginView.OnEmailChanged += OnEmailChanged;
             loginView.OnPasswordChanged += OnPasswordChanged;
@@ -77,7 +79,7 @@ namespace Assets.UI.MainMenu.Login
         }
 
         #region Buttons
-        private void OnLogin()
+        private void OnLoginClicked()
         {
             AsyncHelper.Run(async () =>
             {
@@ -86,23 +88,23 @@ namespace Assets.UI.MainMenu.Login
                     // Authenticate players
                     await authService.Login(email, password);
 
-                    // Connect to the game service
-                    var networkService = ServiceLocator.Get<NetworkService>();
-                    await networkService.ConnectAsync(authService.Token);
+                    // Connect to the game service and start session
+                    await networkService.ConnectAsync(authService.AuthState.Token);
+                    await networkService.Session.StartSessionAsync();
 
                     // Request spawning players
                     await playerService.JoinAsync();
                 }
                 catch (AuthException ex)
                 {
-                    uiService.UIState.ShowPopUp(
+                    uiService.ShowPopUp(
                         PopUpType.Error,
                         ex.Message
                     );
                 }
                 catch (Exception)
                 {
-                    uiService.UIState.ShowPopUp(
+                    uiService.ShowPopUp(
                         PopUpType.Error,
                         "Something went wrong. Please try again."
                     );
@@ -110,9 +112,9 @@ namespace Assets.UI.MainMenu.Login
             });
         }
 
-        private void OnRegister()
+        private void OnRegisterClicked()
         {
-            gameService.GameState.SetPhase(GamePhase.Register);
+            gameService.SetPhase(GamePhase.Register);
         }
         #endregion
 

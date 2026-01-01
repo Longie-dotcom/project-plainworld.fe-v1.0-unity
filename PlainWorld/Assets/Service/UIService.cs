@@ -1,7 +1,9 @@
 ﻿using Assets.Core;
 using Assets.Network.Interface.Command;
-using Assets.State.UI;
-using System;
+using Assets.Service.Interface;
+using Assets.State;
+using Assets.State.Interface.IReadOnlyState;
+using Assets.UI.Enum;
 using System.Threading.Tasks;
 
 namespace Assets.Service
@@ -9,25 +11,25 @@ namespace Assets.Service
     public class UIService : IService
     {
         #region Attributes
+        private readonly UIState uiState;
         #endregion
 
         #region Properties
         public bool IsInitialized { get; private set; } = false;
         public IUINetworkCommand UINetworkCommand { get; private set; }
-        public UIState UIState { get; private set; } = new UIState();
+        public IReadOnlyUIState UIState { get { return uiState; } }
         #endregion
 
-        public UIService() { }
+        public UIService()
+        { 
+            uiState = new UIState();
+        }
 
         #region Methods
         public Task InitializeAsync()
         {
-            if (UINetworkCommand == null)
-                throw new InvalidOperationException(
-                    "UINetworkCommand not bound before Initialize");
-
             var gameService = ServiceLocator.Get<GameService>();
-            gameService.GameState.OnChanged += UIState.ApplyGameState;
+            gameService.GameState.OnChanged += uiState.ApplyGameState;
 
             IsInitialized = true;
             return Task.CompletedTask;
@@ -36,7 +38,7 @@ namespace Assets.Service
         public Task ShutdownAsync()
         {
             var gameService = ServiceLocator.Get<GameService>();
-            gameService.GameState.OnChanged -= UIState.ApplyGameState;
+            gameService.GameState.OnChanged -= uiState.ApplyGameState;
             return Task.CompletedTask;
         }
 
@@ -44,6 +46,17 @@ namespace Assets.Service
         {
             UINetworkCommand = command;
         }
+
+        public void ShowPopUp(PopUpType type, string message)
+        {
+            uiState.ShowPopUp(type, message);
+        }
+
+        #region Senders
+        #endregion
+
+        #region Receivers
+        #endregion
         #endregion
     }
 }

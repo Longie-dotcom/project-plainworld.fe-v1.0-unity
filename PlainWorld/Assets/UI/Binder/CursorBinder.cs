@@ -46,7 +46,7 @@ public class CursorBinder : ComponentBinder
         
         GameLogger.Info(
             Channel.System,
-            "Cursor components binded successfully");
+            "Cursor and cursor targets components binded successfully");
     }
 
     private void OnDestroy()

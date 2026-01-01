@@ -1,34 +1,36 @@
 ﻿using Assets.Core;
+using Assets.Service.Interface;
 using Assets.Network.DTO;
 using Assets.Network.Interface.Command;
-using Assets.State.Entity;
-using Assets.State.Entity.Player;
+using Assets.State;
+using Assets.State.Component.Entity;
 using Assets.Utility;
 using System;
 using System.Threading.Tasks;
+using Assets.State.Interface.IReadOnlyState;
 
 namespace Assets.Service
 {
     public class EntityService : IService
     {
         #region Attributes
+        private readonly EntityState entityState;
         #endregion
 
         #region Properties
         public bool IsInitialized { get; private set; } = false;
         public IEntityNetworkCommand EntityNetworkCommand { get; private set; }
-        public EntityState EntityState { get; } = new EntityState();
+        public IReadOnlyEntityState EntityState { get { return entityState; } }
         #endregion
 
-        public EntityService() { }
+        public EntityService()
+        {
+            entityState = new EntityState();
+        }
 
         #region Methods
         public Task InitializeAsync()
         {
-            if (EntityNetworkCommand == null)
-                throw new InvalidOperationException(
-                    "EntityNetworkCommand not bound before Initialize");
-
             IsInitialized = true;
             return Task.CompletedTask;
         }
@@ -43,14 +45,15 @@ namespace Assets.Service
             EntityNetworkCommand = command;
         }
 
-        // Senders
+        #region Senders
+        #endregion
 
-        // Receivers
+        #region Receivers
         #region Player Entity
         public void OnPlayerEntityJoined(PlayerEntityDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                EntityState.AddPlayerEntity(
+                entityState.AddPlayerEntity(
                     new PlayerEntity(
                         dto.ID,
                         dto.FullName,
@@ -62,7 +65,7 @@ namespace Assets.Service
         public void OnPlayerEntityMoved(PlayerEntityMovementDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                EntityState.UpdatePlayerEntityPosition(
+                entityState.UpdatePlayerEntityPosition(
                     dto.ID,
                     PlayerMovementMapper.ToSnapshot(dto.Movement))
             );
@@ -71,20 +74,21 @@ namespace Assets.Service
         public void OnPlayerEntityCreatedAppearance(PlayerEntityAppearanceDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                GameLogger.Info(
-                    Channel.Service,
-                    $"CREATED!!!!: with the SHIRT ID: {dto.Appearance.ShirtID}")
+                entityState.UpdatePlayerEntityAppearance(
+                    dto.ID,
+                    PlayerAppearanceMapper.ToSnapshot(dto.Appearance))
             );
         }
-        #endregion
 
         public void OnPlayerEntityLogout(Guid id)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                EntityState.RemovePlayerEntity(
+                entityState.RemovePlayerEntity(
                     id)
             );
         }
+        #endregion
+        #endregion
         #endregion
     }
 }

@@ -2,7 +2,6 @@
 using Assets.Network.Interface.Command;
 using Assets.Network.Interface.Receiver;
 using Assets.Service;
-using Assets.Utility;
 using System;
 using System.Threading.Tasks;
 
@@ -80,6 +79,11 @@ namespace Assets.Network.Handler
         public void OnPlayerCreatedAppearance(PlayerAppearanceDTO dto)
         {
             playerService.OnPlayerCreatedAppearance(dto);
+        }
+
+        public void OnPlayerForcedLogout()
+        {
+            playerService.OnPlayerForcedLogout();
         }
         #endregion
     }

@@ -14,7 +14,6 @@ namespace Assets.UI.Common.Popup
         #endregion
 
         #region Properties
-
         #endregion
 
         public CursorPresenter(
@@ -41,13 +40,17 @@ namespace Assets.UI.Common.Popup
 
         private void Bind()
         {
+            if (disposed)
+                throw new ObjectDisposedException(nameof(CursorPresenter));
+
+            // Outbound
             cursorService.CursorState.OnChanged += cursorView.Apply;
         }
 
         #region Source Bindings
         public void BindTarget(CursorTarget target)
         {
-            target.Bind(cursorService.CursorState.Set);
+            target.Bind(cursorService.Set);
         }
 
         public void UnbindTarget(CursorTarget target)
