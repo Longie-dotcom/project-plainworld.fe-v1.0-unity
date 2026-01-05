@@ -1,4 +1,5 @@
 ﻿using Assets.Service;
+using Assets.Service.Enum;
 using Assets.Utility;
 using System;
 
@@ -8,6 +9,7 @@ namespace Assets.UI.GameMenu.HUD
     {
         #region Attributes
         private readonly PlayerService playerService;
+        private readonly GameService gameService;
         private readonly UIService uiService;
         private readonly HUDView hudView;
 
@@ -19,10 +21,12 @@ namespace Assets.UI.GameMenu.HUD
 
         public HUDPresenter(
             PlayerService playerService,
+            GameService gameService,
             UIService uiService,
             HUDView hudView)
         {
             this.playerService = playerService;
+            this.gameService = gameService;
             this.uiService = uiService;
             this.hudView = hudView;
 
@@ -38,6 +42,7 @@ namespace Assets.UI.GameMenu.HUD
             // Inbound
             hudView.OnLogoutClicked -= OnLogoutClicked;
             hudView.OnCustomizeCharacterClicked -= OnCharacterCustomizeClicked;
+            hudView.OnSettingClicked -= OnSettingClicked;
 
             // Outbound
             uiService.UIState.OnUIStateChanged -= hudView.HandleUIState;
@@ -51,6 +56,7 @@ namespace Assets.UI.GameMenu.HUD
             // Inbound
             hudView.OnLogoutClicked += OnLogoutClicked;
             hudView.OnCustomizeCharacterClicked += OnCharacterCustomizeClicked;
+            hudView.OnSettingClicked += OnSettingClicked;
 
             // Outbound
             uiService.UIState.OnUIStateChanged += hudView.HandleUIState;
@@ -65,6 +71,11 @@ namespace Assets.UI.GameMenu.HUD
         private void OnCharacterCustomizeClicked()
         {
             playerService.RequireCreateAppearance();
+        }
+
+        private void OnSettingClicked()
+        {
+            gameService.PushPhase(GamePhase.Setting);
         }
         #endregion
         #endregion

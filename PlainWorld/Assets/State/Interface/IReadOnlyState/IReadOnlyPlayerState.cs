@@ -13,7 +13,7 @@ namespace Assets.State.Interface.IReadOnlyState
         IReadOnlyPlayerMovement Movement { get; }
         IReadOnlyPlayerAppearance Appearance { get; }
 
-        event Action OnPlayerReady;
+        event Action OnPlayerDataReady;
         event Action OnPlayerLogout;
         event Action OnPlayerForcedLogout;
         event Action<PlayerAppearance> OnPlayerCustomization;

@@ -150,8 +150,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38e63247f9543eb4d876f87d5c2bfee6
-      internalID: 1741970068
+      spriteID: b6ee25a668cac794592280709e29e2d0
+      internalID: -54979415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finish-button_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 192
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a91ebcdc952c614098de6095e39a3cd
+      internalID: -740797449
       vertices: []
       indices: 
       edges: []
@@ -160,7 +182,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 297d903a0fc8f254c9520c2285113da4
+    spriteID: 609a07bffde19f24fb93e39ab702c548
     internalID: 0
     vertices: []
     indices: 
@@ -171,7 +193,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       finish-button_0: 1077235718487381961
-      finish-button_1: 1741970068
+      finish-button_1: -54979415
+      finish-button_2: -740797449
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

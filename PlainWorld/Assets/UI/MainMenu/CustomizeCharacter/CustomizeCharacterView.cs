@@ -204,5 +204,13 @@ public class CustomizeCharacterView : MonoBehaviour
             backButton.gameObject.SetActive(visible);
         }
     }
+
+    public void SetFinishButtonEnabled(bool enabled)
+    {
+        if (finishButton == null)
+            return;
+
+        finishButton.interactable = enabled;
+    }
     #endregion
 }

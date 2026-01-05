@@ -150,8 +150,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c5dacff5f8288c40a1c5bc1355830d1
-      internalID: -305284202
+      spriteID: d6d1eba441185234781ffa30068e351e
+      internalID: 1828369670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ok-button_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 108
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b16148c98659c045a7a04bc4ef1b4b4
+      internalID: -1842994574
       vertices: []
       indices: 
       edges: []
@@ -160,7 +182,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 944fbc8446b825f4591d029144a2a6b1
+    spriteID: 29a7310cc031d8e4d85b32121295d764
     internalID: 0
     vertices: []
     indices: 
@@ -171,7 +193,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       ok-button_0: -8580177973876093333
-      ok-button_1: -305284202
+      ok-button_1: 1828369670
+      ok-button_2: -1842994574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

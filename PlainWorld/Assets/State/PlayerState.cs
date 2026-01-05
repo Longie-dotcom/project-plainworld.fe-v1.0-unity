@@ -9,8 +9,8 @@ namespace Assets.State
     public class PlayerState : IReadOnlyPlayerState
     {
         #region Attributes
-        private readonly PlayerMovement movement;
-        private readonly PlayerAppearance appearance;
+        private PlayerMovement movement;
+        private PlayerAppearance appearance;
         #endregion
 
         #region Properties
@@ -21,7 +21,7 @@ namespace Assets.State
         public IReadOnlyPlayerMovement Movement { get { return movement; } }
         public IReadOnlyPlayerAppearance Appearance { get { return appearance; } }
 
-        public event Action OnPlayerReady;
+        public event Action OnPlayerDataReady;
         public event Action OnPlayerLogout;
         public event Action OnPlayerForcedLogout;
         public event Action<PlayerAppearance> OnPlayerCustomization;
@@ -42,48 +42,53 @@ namespace Assets.State
         {
             if (HasJoined) return;
 
-            // Load identity
+            // Load data
             PlayerID = playerId;
             PlayerName = playerName;
             HasJoined = true;
             this.appearance.ApplySnapshot(appearance);
             this.movement.ApplySnapshot(movement);
 
-            // Load context
-            OnPlayerReady?.Invoke();
-
-            // Require customize character
-            if (!this.appearance.IsCreated)
-            {
-                RequireCreateAppearance();
-            }
+            // Load scene
+            OnPlayerDataReady?.Invoke();
         }
+
+        public void UnloadPlayerData()
+        {
+            if (!HasJoined) return;
+
+            // Unload data
+            PlayerID = Guid.Empty;
+            PlayerName = null;
+            HasJoined = false;
+            movement = new PlayerMovement();
+            appearance = new PlayerAppearance();
+        }
+
 
         public void Logout(Guid playerId)
         {
             if (!HasJoined || playerId != PlayerID) return;
             OnPlayerLogout?.Invoke();
-            HasJoined = false;
         }
 
         public void ForcedLogout()
         {
             if (!HasJoined) return;
             OnPlayerForcedLogout?.Invoke();
-            HasJoined = false;
         }
         #endregion
 
         #region Movement
         public bool TryCreateMovementCreation(
-            out PlayerMovementSnapshot snapshot)
+            out (Vector2 direction, int action) snapshot)
         {
             snapshot = default;
 
             if (!HasJoined)
                 return false;
 
-            snapshot = movement.CreateSnapshot();
+            snapshot = movement.CreateMovement();
             return true;
         }
 
@@ -191,6 +196,14 @@ namespace Assets.State
         {
             if (!HasJoined || id != PlayerID) return;
             appearance.ApplySnapshot(snapshot);
+        }
+
+        public void ValidateAppearanceCreated()
+        {
+            if (!appearance.IsCreated)
+            {
+                RequireCreateAppearance();
+            }
         }
 
         public void RequireCreateAppearance()

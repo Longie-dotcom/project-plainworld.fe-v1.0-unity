@@ -13,67 +13,85 @@ namespace Assets.State
         #endregion
 
         #region Properties
-        public GamePhase Phase { get; private set; }
+        public GamePhase Phase { get; private set; } = GamePhase.Paused;
+        public GamePhase? PendingPhase { get; private set; }
         public bool IsLoading { get; private set; }
 
-        public event Action<GameState> OnChanged;
+        public event Action<IReadOnlyGameState> OnRequestedNewScene;
+        public event Action<IReadOnlyGameState> OnChangedPhase;
         #endregion
 
-        public GameState(GamePhase initialPhase)
-        {
-            Phase = initialPhase;
-        }
+        public GameState() { }
 
         #region Methods
-        public void SetPhase(GamePhase next)
+        public void RequestNewScene(GamePhase target)
         {
+            if (Phase == target || IsLoading)
+                return;
+
+            PendingPhase = target;
+            IsLoading = true;
+
+            OnRequestedNewScene?.Invoke(this);
+        }
+
+        public void NotifySceneReady()
+        {
+            if (!IsLoading || PendingPhase == null)
+                return;
+
+            var next = PendingPhase.Value;
+
+            PendingPhase = null;
+            IsLoading = false;
+
             if (Phase == next)
                 return;
 
             GameLogger.Info(
                 Channel.Service,
-                $"Phase change: {Phase} to {next}");
+                $"Phase committed: {Phase} to {next}");
 
             phaseStack.Clear();
             Phase = next;
 
-            OnChanged?.Invoke(this);
+            OnChangedPhase?.Invoke(this);
         }
 
         public void PushPhase(GamePhase overlay)
         {
-            if (Phase == overlay || phaseStack.Contains(overlay))
+            if (IsLoading)
             {
                 GameLogger.Warning(
                     Channel.Service,
-                    $"PushPhase ignored: phase {overlay} already active or in stack");
+                    $"PushPhase ignored during loading: {overlay}");
                 return;
             }
 
-            GameLogger.Info(
-                Channel.Service,
-                $"Push phase: {Phase} to {overlay}");
+            if (Phase == overlay || phaseStack.Contains(overlay))
+                return;
 
             phaseStack.Push(Phase);
             Phase = overlay;
 
-            OnChanged?.Invoke(this);
+            OnChangedPhase?.Invoke(this);
         }
 
         public void PopPhase()
         {
+            if (IsLoading)
+            {
+                GameLogger.Warning(
+                    Channel.Service,
+                    $"PopPhase ignored during loading");
+                return;
+            }
+
             if (phaseStack.Count == 0)
                 return;
 
-            var previous = phaseStack.Pop();
-
-            GameLogger.Info(
-                Channel.Service,
-                $"Pop phase: {Phase} to {previous}");
-
-            Phase = previous;
-
-            OnChanged?.Invoke(this);
+            Phase = phaseStack.Pop();
+            OnChangedPhase?.Invoke(this);
         }
         #endregion
     }

@@ -1,6 +1,4 @@
-using Assets.Network;
 using Assets.Service;
-using Assets.Service.Enum;
 using Assets.State.Component.Player;
 using Assets.UI.Enum;
 using Assets.Utility;
@@ -12,10 +10,10 @@ namespace Assets.Gameplay.Player
     public class PlayerPresenter : IDisposable
     {
         #region Attributes
-        private readonly NetworkService networkService;
         private readonly PlayerService playerService;
         private readonly GameService gameService;
         private readonly UIService uiService;
+        private readonly SettingService settingService;
         private PlayerView playerView;
         private readonly PlayerView playerViewPrefab;
 
@@ -27,8 +25,6 @@ namespace Assets.Gameplay.Player
         private readonly EntityPartCatalog eyesCatalog;
         private readonly EntityPartCatalog skinCatalog;
 
-        private bool isActive;
-
         private bool disposed;
         #endregion
 
@@ -36,10 +32,10 @@ namespace Assets.Gameplay.Player
         #endregion
 
         public PlayerPresenter(
-            NetworkService networkService,
             PlayerService playerService,
             GameService gameService,
             UIService uiService,
+            SettingService settingService,
             PlayerView playerViewPrefab,
 
             EntityPartCatalog hairCatalog,
@@ -50,10 +46,10 @@ namespace Assets.Gameplay.Player
             EntityPartCatalog eyesCatalog,
             EntityPartCatalog skinCatalog)
         {
-            this.networkService = networkService;
             this.playerService = playerService;
             this.gameService = gameService;
             this.uiService = uiService;
+            this.settingService = settingService;
             this.playerViewPrefab = playerViewPrefab;
 
             this.hairCatalog = hairCatalog;
@@ -65,6 +61,7 @@ namespace Assets.Gameplay.Player
             this.skinCatalog = skinCatalog;
 
             Bind();
+            OnPlayerReady();
         }
 
         #region Methods
@@ -76,7 +73,6 @@ namespace Assets.Gameplay.Player
             UnbindPlayer();
 
             // Outbound
-            playerService.PlayerState.OnPlayerReady -= OnPlayerReady;
             playerService.PlayerState.OnPlayerLogout -= OnPlayerLogout;
             playerService.PlayerState.OnPlayerForcedLogout -= OnPlayerForcedLogout;
         }
@@ -87,7 +83,6 @@ namespace Assets.Gameplay.Player
                 throw new ObjectDisposedException(nameof(PlayerPresenter));
 
             // Outbound
-            playerService.PlayerState.OnPlayerReady += OnPlayerReady;
             playerService.PlayerState.OnPlayerLogout += OnPlayerLogout;
             playerService.PlayerState.OnPlayerForcedLogout += OnPlayerForcedLogout;
         }
@@ -100,7 +95,6 @@ namespace Assets.Gameplay.Player
 
         private void OnSendMoveToServer()
         {
-            if (!isActive) return;
             AsyncHelper.Run(() => playerService.MoveAsync());
         }
         #endregion
@@ -166,8 +160,6 @@ namespace Assets.Gameplay.Player
         #region Outbound
         private void OnPlayerReady()
         {
-            isActive = true;
-
             if (playerView != null)
                 return; // already spawned
 
@@ -180,34 +172,27 @@ namespace Assets.Gameplay.Player
 
             // Bind view events
             BindPlayer();
-
-            // Start the game
-            gameService.SetPhase(GamePhase.InGame);
         }
 
         private void OnPlayerLogout()
         {
             AsyncHelper.Run(async () =>
             {
-                isActive = false;
-
                 if (playerView == null)
                     return; // nothing to clean up
-
-                // Destroy view instance
-                GameObject.Destroy(playerView.gameObject);
 
                 // Unbind view events
                 UnbindPlayer();
 
-                // Back to the login and show pop up
-                gameService.SetPhase(GamePhase.Login);
+                // Destroy view instance
+                GameObject.Destroy(playerView.gameObject);
+
                 uiService.ShowPopUp(
                     PopUpType.Information,
                     "Player logout successfully");
 
-                // Disconnect network
-                await networkService.ShutdownAsync();
+                // Player logout is a player life-cycle phase
+                await gameService.PlayerLogout();
             });
         }
 
@@ -215,25 +200,21 @@ namespace Assets.Gameplay.Player
         {
             AsyncHelper.Run(async () =>
             {
-                isActive = false;
-
                 if (playerView == null)
                     return; // nothing to clean up
-
-                // Destroy view instance
-                GameObject.Destroy(playerView.gameObject);
 
                 // Unbind view events
                 UnbindPlayer();
 
-                // Back to the login and show pop up
-                gameService.SetPhase(GamePhase.Login);
+                // Destroy view instance
+                GameObject.Destroy(playerView.gameObject);
+
                 uiService.ShowPopUp(
                     PopUpType.Information,
-                    "Player logout successfully");
+                    "Player was forced to logout");
 
-                // Disconnect network
-                await networkService.ShutdownAsync();
+                // Player logout is a player life-cycle phase
+                await gameService.PlayerLogout();
             });
         }
         #endregion
@@ -250,12 +231,11 @@ namespace Assets.Gameplay.Player
 
             // Outbound
             playerService.PlayerState.Appearance.OnChanged -= ApplyAppearance;
+            playerService.PlayerState.Movement.OnMoveSpeedChanged -= playerView.SetPlayerSpeed;
             playerService.PlayerState.Movement.OnPositionChanged -= playerView.ApplyPosition;
             playerService.PlayerState.Movement.OnDirectionChanged -= playerView.SetDirection;
             playerService.PlayerState.Movement.OnActionChanged -= playerView.SetAction;
-            playerService.PlayerState.Movement.OnMoveSpeedChanged -= playerView.SetAnimationSpeed;
-
-            playerView = null;
+            settingService.SettingState.OnChanged -= playerView.ApplySettings;
         }
 
         private void BindPlayer()
@@ -269,14 +249,16 @@ namespace Assets.Gameplay.Player
             // Outbound
             playerService.PlayerState.Appearance.OnChanged += ApplyAppearance;
             ApplyAppearance();
-            playerService.PlayerState.Movement.OnMoveSpeedChanged += playerView.SetAnimationSpeed; 
-            playerView.SetAnimationSpeed(playerService.PlayerState.Movement.MoveSpeed);
+            playerService.PlayerState.Movement.OnMoveSpeedChanged += playerView.SetPlayerSpeed;
+            playerView.SetPlayerSpeed(playerService.PlayerState.Movement.MoveSpeed);
             playerService.PlayerState.Movement.OnPositionChanged += playerView.ApplyPosition;
             playerView.ApplyPosition(playerService.PlayerState.Movement.Position);
             playerService.PlayerState.Movement.OnDirectionChanged += playerView.SetDirection;
             playerView.SetDirection(playerService.PlayerState.Movement.CurrentDirection);
             playerService.PlayerState.Movement.OnActionChanged += playerView.SetAction;
             playerView.SetAction(playerService.PlayerState.Movement.CurrentAction);
+            settingService.SettingState.OnChanged += playerView.ApplySettings;
+            playerView.ApplySettings(settingService.SettingState);
         }
         #endregion
     }

@@ -21,24 +21,35 @@ public class EntityBinder : ComponentBinder
     private PlayerEntityPresenter entityPlayerPresenter;
 
     private EntityService entityService;
+    private SettingService settingService;
     #endregion
 
     #region Properties
+    public override string StepName
+    {
+        get { return "Entities Components"; }
+    }
     #endregion
 
     #region Methods
-    private IEnumerator Start()
+
+    public override IEnumerator BindAllServices()
     {
         yield return BindWhenReady<EntityService>(entity =>
         {
             entityService = entity;
         });
 
+        yield return BindWhenReady<SettingService>(setting =>
+        {
+            settingService = setting;
+        });
+
         // Resolve dependencies
         entityPlayerPresenter = new PlayerEntityPresenter(
             entityService,
+            settingService,
             entityPlayerView,
-
             hairCatalog,
             glassesCatalog,
             shirtCatalog,
@@ -56,5 +67,6 @@ public class EntityBinder : ComponentBinder
     {
         entityPlayerPresenter?.Dispose();
     }
+
     #endregion
 }

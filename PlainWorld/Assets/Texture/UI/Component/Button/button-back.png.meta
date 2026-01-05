@@ -150,8 +150,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74987e89e8925c241bf5d0f8f87205a4
-      internalID: 832885167
+      spriteID: 36d180f83f763f14189b7c1e1ba6554b
+      internalID: -110887152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button-back_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7bc603e0cdd5844ab38f765b51546e7
+      internalID: -610546069
       vertices: []
       indices: 
       edges: []
@@ -160,7 +182,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 87f72eea348d76245b7394ab5df3ccc8
+    spriteID: 94844c9c7c2c58b4296e3dbe3f156389
     internalID: 0
     vertices: []
     indices: 
@@ -171,7 +193,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       button-back_0: -1187444245057489131
-      button-back_1: 832885167
+      button-back_1: -110887152
+      button-back_2: -610546069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

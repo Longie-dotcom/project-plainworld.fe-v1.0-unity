@@ -1,6 +1,7 @@
 ﻿using Assets.State.Component.Entity;
 using Assets.State.Component.Player;
 using Assets.State.Interface.IReadOnlyState;
+using Assets.Utility;
 using System;
 using System.Collections.Generic;
 
@@ -20,7 +21,20 @@ namespace Assets.State
         public EntityState() { }
 
         #region Methods
+        public void UnloadEntitiesData()
+        {
+            foreach (var kvp in new Dictionary<Guid, PlayerEntity>(playerEntities))
+            {
+                RemovePlayerEntity(kvp.Key);
+            }
+        }
+
         #region Player Entity
+        public IReadOnlyCollection<PlayerEntity> GetAllPlayerEntities()
+        {
+            return playerEntities.Values;
+        }
+
         public bool TryGetPlayer(Guid id, out PlayerEntity player)
         {
             return playerEntities.TryGetValue(id, out player);
@@ -30,6 +44,8 @@ namespace Assets.State
         {
             if (playerEntities.ContainsKey(playerEntity.ID)) return;
             playerEntities[playerEntity.ID] = playerEntity;
+
+            // Note: First fired will be re-called later
             OnPlayerEntityAdded?.Invoke(playerEntity);
         }
 

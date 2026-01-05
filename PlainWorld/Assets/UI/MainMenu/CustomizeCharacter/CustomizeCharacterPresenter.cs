@@ -10,12 +10,33 @@ using UnityEngine;
 
 namespace Assets.UI.MainMenu.CustomizeCharacter
 {
+    public class CharacterAppearancePreview
+    {
+        public string HairID;
+        public string GlassesID;
+        public string ShirtID;
+        public string PantID;
+        public string ShoeID;
+        public string EyesID;
+        public string SkinID;
+
+        public Color HairColor;
+        public Color PantColor;
+        public Color EyeColor;
+        public Color SkinColor;
+
+        public CharacterAppearancePreview Clone()
+        {
+            return (CharacterAppearancePreview)MemberwiseClone();
+        }
+    }
+
     public class CustomizeCharacterPresenter
     {
         #region Attributes
-        private readonly PlayerService playerService;
         private readonly UIService uiService;
         private readonly GameService gameService;
+        private readonly PlayerService playerService;
         private readonly CustomizeCharacterView customizeCharacterView;
 
         private readonly EntityPartCatalog hairCatalog;
@@ -27,6 +48,9 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
         private readonly EntityPartCatalog skinCatalog;
 
         private EntityDirection direction = EntityDirection.DOWN;
+        private CharacterAppearancePreview preview;
+        private CharacterAppearancePreview original;
+        private bool isCreated;
 
         private bool disposed;
         #endregion
@@ -35,9 +59,9 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
         #endregion
 
         public CustomizeCharacterPresenter(
-            PlayerService playerService,
             UIService uiService,
             GameService gameService,
+            PlayerService playerService,
             CustomizeCharacterView customizeCharacterView,
 
             EntityPartCatalog hairCatalog,
@@ -48,9 +72,9 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
             EntityPartCatalog eyesCatalog,
             EntityPartCatalog skinCatalog)
         {
-            this.playerService = playerService;
             this.uiService = uiService;
             this.gameService = gameService;
+            this.playerService = playerService;
             this.customizeCharacterView = customizeCharacterView;
 
             this.hairCatalog = hairCatalog;
@@ -98,7 +122,6 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
             // Outbound
             uiService.UIState.OnUIStateChanged -= customizeCharacterView.HandleUIState;
             playerService.PlayerState.OnPlayerCustomization -= OnPlayerCustomization;
-            playerService.PlayerState.Appearance.OnChanged -= RefreshPreview;
         }
 
         private void Bind()
@@ -127,7 +150,6 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
             // Outbound
             uiService.UIState.OnUIStateChanged += customizeCharacterView.HandleUIState;
             playerService.PlayerState.OnPlayerCustomization += OnPlayerCustomization;
-            playerService.PlayerState.Appearance.OnChanged += RefreshPreview;
         }
 
         #region Buttons
@@ -137,20 +159,18 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
             {
                 try
                 {
+                    // Commit changes
+                    CommitPreview();
+
                     // Request create appearance
                     await playerService.CreateAppearanceAsync();
-
-                    // Show success and return to login view
-                    uiService.ShowPopUp(
-                        PopUpType.Information,
-                        "Registration successful!"
-                    );
 
                     // Show success and return to previous view
                     uiService.ShowPopUp(
                         PopUpType.Information,
                         "Change character successful!"
                     );
+
                     gameService.PopPhase();
                 }
                 catch (Exception)
@@ -165,6 +185,11 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
 
         private void OnBackClicked()
         {
+            // Ignore all changes
+            preview = null;
+            original = null;
+
+            // Back to previous phase
             gameService.PopPhase();
         }
 
@@ -194,58 +219,74 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
         #region Scrolls
         private void OnHairChanged(string id)
         {
-            playerService.SetHair(id);
+            if (preview == null) return;
+            preview.HairID = id;
+            RefreshPreview();
         }
 
         private void OnGlassesChanged(string id)
         {
-            playerService.SetGlasses(id);
+            if (preview == null) return;
+            preview.GlassesID = id;
+            RefreshPreview();
         }
 
         private void OnShirtChanged(string id)
         {
-            playerService.SetShirt(id);
+            if (preview == null) return;
+            preview.ShirtID = id;
+            RefreshPreview();
         }
 
         private void OnPantChanged(string id)
         {
-            playerService.SetPant(id);
+            if (preview == null) return;
+            preview.PantID = id;
+            RefreshPreview();
         }
 
         private void OnShoeChanged(string id)
         {
-            playerService.SetShoe(id);
+            if (preview == null) return;
+            preview.ShoeID = id;
+            RefreshPreview();
         }
 
         private void OnEyesChanged(string id)
         {
-            playerService.SetEyes(id);
+            if (preview == null) return;
+            preview.EyesID = id;
+            RefreshPreview();
         }
         #endregion
 
         #region HSV Collectors
         private void OnHairColorChanged(Color color)
         {
-            var (h, s, v) = ColorHelper.ColorToHSV(color);
-            playerService.SetHairColor(h, s, v);
+            if (preview == null) return;
+            preview.HairColor = color;
+            RefreshPreview();
         }
 
         private void OnPantColorChanged(Color color)
         {
-            var (h, s, v) = ColorHelper.ColorToHSV(color);
-            playerService.SetPantColor(h, s, v);
+            if (preview == null) return;
+            preview.PantColor = color;
+            RefreshPreview();
         }
 
         private void OnEyeColorChanged(Color color)
         {
-            var (h, s, v) = ColorHelper.ColorToHSV(color);
-            playerService.SetEyeColor(h, s, v);
+            if (preview == null) return;
+            preview.EyeColor = color;
+            RefreshPreview();
         }
 
         private void OnSkinColorChanged(Color color)
         {
-            var (h, s, v) = ColorHelper.ColorToHSV(color);
-            playerService.SetSkinColor(h, s, v);
+            if (preview == null) return;
+            preview.SkinColor = color;
+            RefreshPreview();
         }
         #endregion
 
@@ -255,8 +296,9 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
             // Change state to show the customization UI
             gameService.PushPhase(GamePhase.CustomizeCharacter);
 
-            // Prevent user ignores customization when there has no customization before
-            customizeCharacterView.SetBackButtonVisible(appearance.IsCreated);
+            // Clone preview
+            original = FromAppearance(appearance);
+            preview = original.Clone();
 
             // Apply on the UI components
             customizeCharacterView.ApplyCurrentSelection(
@@ -277,32 +319,30 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
             RefreshPreview();
         }
 
-        private void RefreshPreview()
+        private void CommitPreview()
         {
-            var a = playerService.PlayerState.Appearance;
+            playerService.SetHair(preview.HairID);
+            playerService.SetGlasses(preview.GlassesID);
+            playerService.SetShirt(preview.ShirtID);
+            playerService.SetPant(preview.PantID);
+            playerService.SetShoe(preview.ShoeID);
+            playerService.SetEyes(preview.EyesID);
+            playerService.SetSkin(preview.SkinID);
 
-            customizeCharacterView.SetHairPreview(
-                GetSprite(hairCatalog, a.HairID), a.HairColor);
+            var (h, s, v) = ColorHelper.ColorToHSV(preview.HairColor);
+            playerService.SetHairColor(h, s, v);
 
-            customizeCharacterView.SetGlassesPreview(
-                GetSprite(glassesCatalog, a.GlassesID));
+            (h, s, v) = ColorHelper.ColorToHSV(preview.PantColor);
+            playerService.SetPantColor(h, s, v);
 
-            customizeCharacterView.SetShirtPreview(
-                GetSprite(shirtCatalog, a.ShirtID));
+            (h, s, v) = ColorHelper.ColorToHSV(preview.EyeColor);
+            playerService.SetEyeColor(h, s, v);
 
-            customizeCharacterView.SetPantPreview(
-                GetSprite(pantCatalog, a.PantID), a.PantColor);
-
-            customizeCharacterView.SetShoePreview(
-                GetSprite(shoeCatalog, a.ShoeID));
-
-            customizeCharacterView.SetEyesPreview(
-                GetSprite(eyesCatalog, a.EyesID), a.EyeColor);
-
-            customizeCharacterView.SetSkinPreview(
-                GetSprite(skinCatalog, a.SkinID), a.SkinColor);
+            (h, s, v) = ColorHelper.ColorToHSV(preview.SkinColor);
+            playerService.SetSkinColor(h, s, v);
         }
         #endregion
+
         #endregion
 
         #region Private Helpers
@@ -340,6 +380,83 @@ namespace Assets.UI.MainMenu.CustomizeCharacter
 
                 return sprite;
             }
+        }
+
+        private CharacterAppearancePreview FromAppearance(PlayerAppearance a)
+        {
+            return new CharacterAppearancePreview
+            {
+                HairID = a.HairID,
+                GlassesID = a.GlassesID,
+                ShirtID = a.ShirtID,
+                PantID = a.PantID,
+                ShoeID = a.ShoeID,
+                EyesID = a.EyesID,
+                SkinID = a.SkinID,
+
+                HairColor = a.HairColor,
+                PantColor = a.PantColor,
+                EyeColor = a.EyeColor,
+                SkinColor = a.SkinColor
+            };
+        }
+
+        private void RefreshPreview()
+        {
+            var a = preview;
+            if (a == null) return;
+
+            customizeCharacterView.SetHairPreview(
+                GetSprite(hairCatalog, a.HairID), a.HairColor);
+
+            customizeCharacterView.SetGlassesPreview(
+                GetSprite(glassesCatalog, a.GlassesID));
+
+            customizeCharacterView.SetShirtPreview(
+                GetSprite(shirtCatalog, a.ShirtID));
+
+            customizeCharacterView.SetPantPreview(
+                GetSprite(pantCatalog, a.PantID), a.PantColor);
+
+            customizeCharacterView.SetShoePreview(
+                GetSprite(shoeCatalog, a.ShoeID));
+
+            customizeCharacterView.SetEyesPreview(
+                GetSprite(eyesCatalog, a.EyesID), a.EyeColor);
+
+            customizeCharacterView.SetSkinPreview(
+                GetSprite(skinCatalog, a.SkinID), a.SkinColor);
+
+            customizeCharacterView.SetFinishButtonEnabled(CanFinish());
+        }
+
+        private bool IsDirty()
+        {
+            if (preview == null || original == null)
+                return false;
+
+            return
+                preview.HairID != original.HairID ||
+                preview.GlassesID != original.GlassesID ||
+                preview.ShirtID != original.ShirtID ||
+                preview.PantID != original.PantID ||
+                preview.ShoeID != original.ShoeID ||
+                preview.EyesID != original.EyesID ||
+
+                preview.HairColor != original.HairColor ||
+                preview.PantColor != original.PantColor ||
+                preview.EyeColor != original.EyeColor ||
+                preview.SkinColor != original.SkinColor;
+        }
+
+        private bool CanFinish()
+        {
+            // First time: always allowed
+            if (!isCreated)
+                return true;
+
+            // Editing existing character: must change something
+            return IsDirty();
         }
         #endregion
     }

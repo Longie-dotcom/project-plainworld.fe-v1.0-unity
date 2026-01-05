@@ -1,11 +1,18 @@
+using Assets.State.Interface.IReadOnlyState;
+using Assets.Utility;
 using System;
 using UnityEngine;
 
 public class PlayerMoveView : MonoBehaviour
 {
     #region Attributes
+    private const float DIR_EPSILON = 0.01f;
+
     private float moveSendTimer = 0f;
-    private float moveSendRate = 0.01f; // 100 times per second
+    private float moveSendRate;
+    
+    private Vector2 lastSentDir = Vector2.zero;
+    private bool lastWasMoving = false;
     #endregion
 
     #region Properties
@@ -28,18 +35,40 @@ public class PlayerMoveView : MonoBehaviour
     {
         Vector2 dir = new Vector2(
             Input.GetAxisRaw("Horizontal"),
-            Input.GetAxisRaw("Vertical"));
+            Input.GetAxisRaw("Vertical")
+        ).normalized;
 
-        // Update and predict visuals immediately
-        OnUpdateVisualMove?.Invoke(dir.normalized);
+        bool isMoving = dir != Vector2.zero;
 
-        // Throttle sending predicted moves to the server
+        // Visual prediction (always)
+        OnUpdateVisualMove?.Invoke(dir);
+
         moveSendTimer += Time.deltaTime;
-        if (moveSendTimer >= moveSendRate)
+
+        bool directionChanged =
+            isMoving &&
+            Vector2.SqrMagnitude(dir - lastSentDir) > DIR_EPSILON * DIR_EPSILON;
+
+        bool stateChanged =
+            isMoving != lastWasMoving; // RUN <-> IDLE
+
+        bool shouldSend =
+            stateChanged ||                 // send once on start/stop
+            (isMoving && moveSendTimer >= moveSendRate); // throttle ONLY when moving
+
+        if (shouldSend)
         {
             moveSendTimer = 0f;
+            lastSentDir = dir;
+            lastWasMoving = isMoving;
+
             OnSendMoveToServer?.Invoke();
         }
+    }
+
+    public void ApplySettings(IReadOnlySettingState settings)
+    {
+        moveSendRate = settings.MoveSendRate;
     }
     #endregion
 }

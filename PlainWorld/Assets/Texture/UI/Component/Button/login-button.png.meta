@@ -150,8 +150,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 058a74331e8d7e044a8dd612bff9ee99
-      internalID: 1967739966
+      spriteID: f34a2de07b39f9145a1fbd5d4d94080a
+      internalID: 810477577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: login-button_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 108
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f576e86b65d905645b40c0cbf7403914
+      internalID: 898408859
       vertices: []
       indices: 
       edges: []
@@ -160,7 +182,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7d6b4dada69116943ad037af404c85b2
+    spriteID: 2eff39abfd29db042891da69ba43b2f2
     internalID: 0
     vertices: []
     indices: 
@@ -171,7 +193,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       login-button_0: -5744131981091413309
-      login-button_1: 1967739966
+      login-button_1: 810477577
+      login-button_2: 898408859
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

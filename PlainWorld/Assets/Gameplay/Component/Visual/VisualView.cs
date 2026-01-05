@@ -1,5 +1,5 @@
 using Assets.Data.Enum;
-using Assets.Utility;
+using Assets.State.Interface.IReadOnlyState;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,7 +22,8 @@ public class VisualView : MonoBehaviour
     protected EntityAction currentAction;
     protected EntityDirection currentDirection;
     protected float animationTimer;
-    protected float animationSpeed = 8 / 5f;
+    protected float animationSpeedMultiplier;
+    protected float currentPlayerSpeed = 0f;
     #endregion
 
     #region Properties
@@ -44,9 +45,9 @@ public class VisualView : MonoBehaviour
         ApplySprite();
     }
 
-    public virtual void SetAnimationSpeed(float speed)
+    public void SetPlayerSpeed(float speed)
     {
-        animationSpeed = (8f / 5f) * speed;
+        currentPlayerSpeed = speed;
     }
 
     public virtual void SetDirection(Vector2 dir)
@@ -62,6 +63,8 @@ public class VisualView : MonoBehaviour
     protected void ApplySprite()
     {
         if (parts.Count == 0) return;
+
+        float animationSpeed = currentPlayerSpeed * animationSpeedMultiplier;
 
         animationTimer += Time.deltaTime * animationSpeed;
         // Assume at least one valid frame defines timing
@@ -90,6 +93,11 @@ public class VisualView : MonoBehaviour
             return dir.y > 0 ? EntityDirection.UP : EntityDirection.DOWN;
         else
             return dir.x > 0 ? EntityDirection.RIGHT : EntityDirection.LEFT;
+    }
+
+    public void ApplySettings(IReadOnlySettingState settings)
+    {
+        animationSpeedMultiplier = settings.AnimationSpeedMultiplier;
     }
     #endregion
 }

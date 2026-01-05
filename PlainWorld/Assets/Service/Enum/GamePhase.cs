@@ -8,6 +8,7 @@
         CustomizeCharacter,
         Loading,
         InGame,
+        Setting,
 
         Paused,
         GameOver,

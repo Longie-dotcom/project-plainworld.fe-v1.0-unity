@@ -6,8 +6,10 @@ namespace Assets.State.Interface.IReadOnlyState
     public interface IReadOnlyGameState
     {
         GamePhase Phase { get; }
+        GamePhase? PendingPhase { get; }
         bool IsLoading { get; }
 
-        event Action<GameState> OnChanged;
+        event Action<IReadOnlyGameState> OnRequestedNewScene;
+        event Action<IReadOnlyGameState> OnChangedPhase;
     }
 }

@@ -11,6 +11,12 @@ TextureImporter:
   - first:
       213: 8445699043486431192
     second: register-button_2
+  - first:
+      213: -6200342396448454502
+    second: register-button_3
+  - first:
+      213: 5266710644725202470
+    second: register-button_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -162,11 +168,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: register-button_2
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 230
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d77dd66886253570800000000000000
+      internalID: 8445699043486431192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ee15ec09ce616cf47bc9394c4f23dac2
+    spriteID: b1293b22f1d25614eb6e7ff14129253b
     internalID: 0
     vertices: []
     indices: 
@@ -178,6 +206,7 @@ TextureImporter:
     nameFileIdTable:
       register-button_0: 6769551928829256463
       register-button_1: -3311470048148622314
+      register-button_2: 8445699043486431192
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

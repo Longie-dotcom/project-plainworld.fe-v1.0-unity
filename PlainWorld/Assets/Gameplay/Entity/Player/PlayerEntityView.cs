@@ -1,4 +1,5 @@
 ﻿using Assets.Data.Enum;
+using Assets.State.Interface.IReadOnlyState;
 using UnityEngine;
 
 public class PlayerEntityView : EntityView
@@ -69,9 +70,14 @@ public class PlayerEntityView : EntityView
         visualView.SetDirection(dir);
     }
 
-    public void SetAnimationSpeed(float speed)
+    public void SetPlayerSpeed(float speed)
     {
-        visualView.SetAnimationSpeed(speed);
+        visualView.SetPlayerSpeed(speed);
+    }
+
+    public void ApplySettings(IReadOnlySettingState readOnlySettingState)
+    {
+        visualView.ApplySettings(readOnlySettingState);
     }
     #endregion
 }

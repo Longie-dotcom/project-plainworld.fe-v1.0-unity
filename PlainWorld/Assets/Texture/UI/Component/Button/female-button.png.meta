@@ -150,8 +150,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e8c66aa63326684392855c3f6db7654
-      internalID: 829378077
+      spriteID: 1e21436865bc9894fb489606f84ddffd
+      internalID: 900107727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-button_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14090ab0b0e8bca4ca26060651e2d530
+      internalID: 2136946735
       vertices: []
       indices: 
       edges: []
@@ -160,7 +182,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2185aae6deb83214cab109c77be59dea
+    spriteID: 248bff48b7d36544db139afb01a67bde
     internalID: 0
     vertices: []
     indices: 
@@ -171,7 +193,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       female-button_0: -5466530883743707131
-      female-button_1: 829378077
+      female-button_1: 900107727
+      female-button_2: 2136946735
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

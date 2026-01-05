@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Assets.Service;
 using Assets.Service.Interface;
+using Assets.Utility;
 
 namespace Assets.Core
 {
@@ -12,7 +14,6 @@ namespace Assets.Core
         #endregion
 
         #region Properties
-        public static event Func<Task> OnExiting;
         #endregion
 
         #region Methods
@@ -28,13 +29,8 @@ namespace Assets.Core
 
         public static async Task ShutdownAll()
         {
-            if (OnExiting != null)
-            {
-                foreach (Func<Task> handler in OnExiting.GetInvocationList())
-                {
-                    await handler();
-                }
-            }
+            var playerService = Get<PlayerService>();
+            await playerService.LogoutAsync();
 
             foreach (var service in services.Values)
             {

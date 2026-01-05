@@ -10,6 +10,10 @@ public abstract class ComponentBinder : MonoBehaviour
     #endregion
 
     #region Properties
+    public virtual string StepName 
+    {
+        get { return name; }
+    }
     #endregion
 
     #region Methods
@@ -29,5 +33,11 @@ public abstract class ComponentBinder : MonoBehaviour
         // 3. Safe to bind
         onReady(service);
     }
+
+    /// <summary>
+    /// Each binder overrides this to bind its services.
+    /// Called by LoadingUI to orchestrate all binders.
+    /// </summary>
+    public abstract IEnumerator BindAllServices();
     #endregion
 }

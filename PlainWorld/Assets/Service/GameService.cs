@@ -1,4 +1,6 @@
-﻿using Assets.Network.Interface.Command;
+﻿using Assets.Core;
+using Assets.Network;
+using Assets.Network.Interface.Command;
 using Assets.Service.Enum;
 using Assets.Service.Interface;
 using Assets.State;
@@ -21,18 +23,30 @@ namespace Assets.Service
 
         public GameService()
         {
-            gameState = new GameState(GamePhase.Login);
+            gameState = new GameState();
         }
 
         #region Methods
         public Task InitializeAsync()
         {
+            var playerService = ServiceLocator.Get<PlayerService>();
+            playerService.PlayerState.OnPlayerDataReady += PlayerReady;
+
+            var uiService = ServiceLocator.Get<UIService>();
+            GameState.OnChangedPhase += uiService.ApplyGameState;
+
             IsInitialized = true;
             return Task.CompletedTask;
         }
 
         public Task ShutdownAsync()
         {
+            var playerService = ServiceLocator.Get<PlayerService>();
+            playerService.PlayerState.OnPlayerDataReady -= PlayerReady;
+
+            var uiService = ServiceLocator.Get<UIService>();
+            GameState.OnChangedPhase -= uiService.ApplyGameState;
+
             return Task.CompletedTask;
         }
 
@@ -41,9 +55,9 @@ namespace Assets.Service
             GameNetworkCommand = command;
         }
 
-        public void SetPhase(GamePhase gamePhase)
+        public void NotifySceneReady()
         {
-            gameState.SetPhase(gamePhase);
+            gameState.NotifySceneReady();
         }
 
         public void PushPhase(GamePhase overlay)
@@ -55,6 +69,54 @@ namespace Assets.Service
         {
             gameState.PopPhase();
         }
+
+        #region App Life-cycle
+        public void StartGame()
+        {
+            gameState.RequestNewScene(GamePhase.Login);
+        }
+        #endregion
+
+        #region Player Life-cycle
+        public async Task PlayerLogin(string email, string password)
+        {
+            var authService = ServiceLocator.Get<AuthService>();
+            var networkService = ServiceLocator.Get<NetworkService>();
+            var playerService = ServiceLocator.Get<PlayerService>();
+
+            // Authenticate players
+            await authService.Login(email, password);
+
+            // Connect to the game service and start session
+            await networkService.ConnectAsync(authService.AuthState.Token);
+            await networkService.Session.StartSessionAsync();
+
+            // Request spawning players
+            await playerService.JoinAsync();
+        }
+
+        public void PlayerReady()
+        {
+            gameState.RequestNewScene(GamePhase.InGame);
+        }
+
+        public async Task PlayerLogout()
+        {
+            var networkService = ServiceLocator.Get<NetworkService>();
+            var playerService = ServiceLocator.Get<PlayerService>();
+            var entityService = ServiceLocator.Get<EntityService>();
+
+            // Disconnect network
+            await networkService.ShutdownAsync();
+
+            // Unload data
+            playerService.UnloadPlayerData();
+            entityService.UnloadEntitiesData();
+
+            gameState.RequestNewScene(GamePhase.Login);
+        }
+        #endregion
+
         #region Senders
         #endregion
 

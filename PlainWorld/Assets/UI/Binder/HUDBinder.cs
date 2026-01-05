@@ -12,18 +12,28 @@ public class HUDBinder : ComponentBinder
     private HUDPresenter hudPresenter;
 
     private PlayerService playerService;
+    private GameService gameService;
     private UIService uiService;
     #endregion
 
     #region Properties
+    public override string StepName
+    {
+        get { return "HUD UI"; }
+    }
     #endregion
 
     #region Methods
-    private IEnumerator Start()
+    public override IEnumerator BindAllServices()
     {
         yield return BindWhenReady<PlayerService>(player =>
         {
             playerService = player;
+        });
+
+        yield return BindWhenReady<GameService>(game =>
+        {
+            gameService = game;
         });
 
         yield return BindWhenReady<UIService>(ui =>
@@ -34,6 +44,7 @@ public class HUDBinder : ComponentBinder
         // Resolve dependencies
         hudPresenter = new HUDPresenter(
             playerService,
+            gameService,
             uiService,
             hudView);
 

@@ -15,10 +15,14 @@ public class PopUpBinder : ComponentBinder
     #endregion
 
     #region Properties
+    public override string StepName
+    {
+        get { return "Popup UI"; }
+    }
     #endregion
 
     #region Methods
-    private IEnumerator Start()
+    public override IEnumerator BindAllServices()
     {
         yield return BindWhenReady<UIService>(ui =>
         {

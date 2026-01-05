@@ -10,6 +10,7 @@ public class LoginView : MonoBehaviour
     [Header("Buttons")]
     [SerializeField] private Button joinButton;
     [SerializeField] private Button registerButton;
+    [SerializeField] private Button settingButton;
 
     [Header("Inputs")]
     [SerializeField] private TMP_InputField emailTextField;
@@ -19,6 +20,7 @@ public class LoginView : MonoBehaviour
     #region Properties
     public event Action OnJoinClicked;
     public event Action OnRegisterClicked;
+    public event Action OnSettingClicked;
 
     public event Action<string> OnEmailChanged;
     public event Action<string> OnPasswordChanged;
@@ -30,6 +32,7 @@ public class LoginView : MonoBehaviour
         // Buttons
         joinButton.onClick.AddListener(() => OnJoinClicked?.Invoke());
         registerButton.onClick.AddListener(() => OnRegisterClicked?.Invoke());
+        settingButton.onClick.AddListener(() => OnSettingClicked?.Invoke());
 
         // Inputs
         emailTextField.onValueChanged.AddListener(v => OnEmailChanged?.Invoke(v));

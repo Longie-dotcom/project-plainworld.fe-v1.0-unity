@@ -1,5 +1,4 @@
-﻿using Assets.Core;
-using Assets.Network.Interface.Command;
+﻿using Assets.Network.Interface.Command;
 using Assets.Service.Interface;
 using Assets.State;
 using Assets.State.Interface.IReadOnlyState;
@@ -28,17 +27,12 @@ namespace Assets.Service
         #region Methods
         public Task InitializeAsync()
         {
-            var gameService = ServiceLocator.Get<GameService>();
-            gameService.GameState.OnChanged += uiState.ApplyGameState;
-
             IsInitialized = true;
             return Task.CompletedTask;
         }
 
         public Task ShutdownAsync()
         {
-            var gameService = ServiceLocator.Get<GameService>();
-            gameService.GameState.OnChanged -= uiState.ApplyGameState;
             return Task.CompletedTask;
         }
 
@@ -52,6 +46,10 @@ namespace Assets.Service
             uiState.ShowPopUp(type, message);
         }
 
+        public void ApplyGameState(IReadOnlyGameState game)
+        {
+            uiState.ApplyGameState(game);
+        }
         #region Senders
         #endregion
 

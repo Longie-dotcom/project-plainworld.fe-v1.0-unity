@@ -1,13 +1,14 @@
 ﻿using Assets.Core;
-using Assets.Service.Interface;
 using Assets.Network.DTO;
 using Assets.Network.Interface.Command;
+using Assets.Service.Interface;
 using Assets.State;
 using Assets.State.Component.Entity;
+using Assets.State.Interface.IReadOnlyState;
 using Assets.Utility;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
-using Assets.State.Interface.IReadOnlyState;
 
 namespace Assets.Service
 {
@@ -44,6 +45,18 @@ namespace Assets.Service
         {
             EntityNetworkCommand = command;
         }
+
+        public void UnloadEntitiesData()
+        {
+            entityState.UnloadEntitiesData();
+        }
+
+        #region Player Entity
+        public IReadOnlyCollection<PlayerEntity> GetAllPlayerEntities()
+        {
+            return entityState.GetAllPlayerEntities();
+        }
+        #endregion
 
         #region Senders
         #endregion

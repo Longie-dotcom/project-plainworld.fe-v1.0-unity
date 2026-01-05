@@ -150,8 +150,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edd0e579431a07b41a01da6d0dad8ad0
-      internalID: 454508351
+      spriteID: c6d6e47e1ef14f64086a55965e5bf2c9
+      internalID: -768079936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male-button_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e269027bde10d4693087852bd38bdb
+      internalID: 1200215850
       vertices: []
       indices: 
       edges: []
@@ -160,7 +182,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7ac2d9dcb008cf64a8d228257b9d6101
+    spriteID: 3921a1ea79f495b4e9bf81ec20eb83cf
     internalID: 0
     vertices: []
     indices: 
@@ -171,7 +193,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       male-button_0: 8515749293653073836
-      male-button_1: 454508351
+      male-button_1: -768079936
+      male-button_2: 1200215850
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

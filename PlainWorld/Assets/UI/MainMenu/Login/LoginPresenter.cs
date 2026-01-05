@@ -1,5 +1,4 @@
-﻿using Assets.Network;
-using Assets.Network.NetworkException;
+﻿using Assets.Network.NetworkException;
 using Assets.Service;
 using Assets.Service.Enum;
 using Assets.UI.Enum;
@@ -11,9 +10,6 @@ namespace Assets.UI.MainMenu.Login
     public class LoginPresenter : IDisposable
     {
         #region Attributes
-        private readonly NetworkService networkService;
-        private readonly AuthService authService;
-        private readonly PlayerService playerService;
         private readonly UIService uiService;
         private readonly GameService gameService;
         private readonly LoginView loginView;
@@ -28,16 +24,10 @@ namespace Assets.UI.MainMenu.Login
         #endregion
 
         public LoginPresenter(
-            NetworkService networkService,
-            AuthService authService,
-            PlayerService playerService,
             UIService uiService, 
             GameService gameService,
             LoginView loginView)
         {
-            this.networkService = networkService;
-            this.authService = authService;
-            this.playerService = playerService;
             this.uiService = uiService;
             this.gameService = gameService;
             this.loginView = loginView;
@@ -54,6 +44,7 @@ namespace Assets.UI.MainMenu.Login
             // Inbound
             loginView.OnJoinClicked -= OnLoginClicked;
             loginView.OnRegisterClicked -= OnRegisterClicked;
+            loginView.OnSettingClicked -= OnSettingClicked;
 
             loginView.OnEmailChanged -= OnEmailChanged;
             loginView.OnPasswordChanged -= OnPasswordChanged;
@@ -70,6 +61,7 @@ namespace Assets.UI.MainMenu.Login
             // Inbound
             loginView.OnJoinClicked += OnLoginClicked;
             loginView.OnRegisterClicked += OnRegisterClicked;
+            loginView.OnSettingClicked += OnSettingClicked;
 
             loginView.OnEmailChanged += OnEmailChanged;
             loginView.OnPasswordChanged += OnPasswordChanged;
@@ -85,15 +77,8 @@ namespace Assets.UI.MainMenu.Login
             {
                 try
                 {
-                    // Authenticate players
-                    await authService.Login(email, password);
-
-                    // Connect to the game service and start session
-                    await networkService.ConnectAsync(authService.AuthState.Token);
-                    await networkService.Session.StartSessionAsync();
-
-                    // Request spawning players
-                    await playerService.JoinAsync();
+                    // Player login is a player life-cycle phase
+                    await gameService.PlayerLogin(email, password);
                 }
                 catch (AuthException ex)
                 {
@@ -114,7 +99,12 @@ namespace Assets.UI.MainMenu.Login
 
         private void OnRegisterClicked()
         {
-            gameService.SetPhase(GamePhase.Register);
+            gameService.PushPhase(GamePhase.Register);
+        }
+
+        private void OnSettingClicked()
+        {
+            gameService.PushPhase(GamePhase.Setting);
         }
         #endregion
 

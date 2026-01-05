@@ -53,6 +53,11 @@ namespace Assets.Core
                 a.Invoke();
             }
         }
+
+        private void OnApplicationQuit()
+        {
+            _ = ServiceLocator.ShutdownAll();
+        }
         #endregion
     }
 }

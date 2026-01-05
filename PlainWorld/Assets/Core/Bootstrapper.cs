@@ -33,6 +33,7 @@ namespace Assets.Core
             var uiService = new UIService();
             var authService = new AuthService();
             var cursorService = new CursorService();
+            var settingService = new SettingService();
 
             GameLogger.Info(
                 Channel.System,
@@ -54,6 +55,7 @@ namespace Assets.Core
             ServiceLocator.Register<UIService>(uiService);
             ServiceLocator.Register<AuthService>(authService);
             ServiceLocator.Register<CursorService>(cursorService);
+            ServiceLocator.Register<SettingService>(settingService);
 
             GameLogger.Info(
                 Channel.System,
@@ -68,12 +70,8 @@ namespace Assets.Core
                     entityService,
                     uiService,
                     authService,
-                    cursorService));
-        }
-
-        private void OnApplicationQuit()
-        {
-            ServiceLocator.ShutdownAll().Wait(1000);
+                    cursorService,
+                    settingService));
         }
         #endregion
 
@@ -85,7 +83,8 @@ namespace Assets.Core
             EntityService entityService,
             UIService uiService,
             AuthService authService,
-            CursorService cursorService)
+            CursorService cursorService,
+            SettingService settingService)
         {
             // Network is ready first
             yield return networkService.InitializeAsync().AsCoroutine();
@@ -97,10 +96,14 @@ namespace Assets.Core
             yield return uiService.InitializeAsync().AsCoroutine();
             yield return authService.InitializeAsync().AsCoroutine();
             yield return cursorService.InitializeAsync().AsCoroutine();
+            yield return settingService.InitializeAsync().AsCoroutine();
 
             GameLogger.Info(
                 Channel.System, 
                 "All services initialized successfully");
+
+            // --- Start game ---
+            gameService.StartGame();
         }
         #endregion
     }

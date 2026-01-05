@@ -9,6 +9,7 @@ namespace Assets.Gameplay.Entity
     {
         #region Attributes
         protected readonly EntityService entityService;
+        protected readonly SettingService settingService;
         protected readonly Dictionary<Guid, TEntityView> entityViews = new();
 
         protected bool disposed = false;
@@ -17,15 +18,27 @@ namespace Assets.Gameplay.Entity
         #region Properties
         #endregion
 
-        public EntityPresenter(EntityService entityService)
+        protected EntityPresenter(EntityService entityService, SettingService settingService)
         {
             this.entityService = entityService;
+            this.settingService = settingService;
         }
 
         #region Methods
+        public void Initialize()
+        {
+            foreach (var entity in GetExistingEntities())
+            {
+                SpawnEntity(entity);
+            }
+
+            SubscribeEvents();
+        }
+
         public virtual void Dispose()
         {
             disposed = true;
+            UnsubscribeEvents();
             entityViews.Clear();
         }
 
@@ -41,8 +54,16 @@ namespace Assets.Gameplay.Entity
             return view;
         }
 
+        // Derived classes provide the source of existing entities
+        protected abstract IEnumerable<TEntity> GetExistingEntities();
+
+        // Derived classes handle runtime event subscriptions
+        protected abstract void SubscribeEvents();
+        protected abstract void UnsubscribeEvents();
+
         protected abstract void SpawnEntity(TEntity entity);
         protected abstract void RemoveEntity(Guid id, TEntity entity);
+
         protected abstract void BindView(TEntityView view, TEntity entity);
         protected abstract void UnbindView(TEntityView view, TEntity entity);
         #endregion

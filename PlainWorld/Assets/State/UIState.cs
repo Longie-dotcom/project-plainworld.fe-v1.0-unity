@@ -15,6 +15,7 @@ namespace Assets.State
         public bool ShowRegister { get; private set; }
         public bool ShowCustomizeCharacter { get; private set; }
         public bool ShowHUD { get; private set; }
+        public bool ShowSetting { get; private set; }
 
         public bool ShowLobby { get; private set; }
         public bool ShowLoading { get; private set; }
@@ -31,14 +32,15 @@ namespace Assets.State
             OnPopUpRequested?.Invoke((type, message));
         }
 
-        public void ApplyGameState(GameState game)
+        public void ApplyGameState(IReadOnlyGameState game)
         {
             ShowLogin = game.Phase == GamePhase.Login;
             ShowRegister = game.Phase == GamePhase.Register;
             ShowCustomizeCharacter = game.Phase == GamePhase.CustomizeCharacter;
+            ShowHUD = game.Phase == GamePhase.InGame;
+            ShowSetting = game.Phase == GamePhase.Setting;
 
             ShowLoading = game.Phase == GamePhase.Loading;
-            ShowHUD = game.Phase == GamePhase.InGame;
 
             OnUIStateChanged?.Invoke(this);
         }

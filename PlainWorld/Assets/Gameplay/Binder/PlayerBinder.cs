@@ -21,23 +21,22 @@ public class PlayerBinder : ComponentBinder
     private PlayerView playerView;
     private PlayerPresenter playerPresenter;
 
-    private NetworkService networkService;
     private PlayerService playerService;
     private GameService gameService;
     private UIService uiService;
+    private SettingService settingService;
     #endregion
 
     #region Properties
+    public override string StepName
+    {
+        get { return "Spawning Player"; }
+    }
     #endregion
 
     #region Methods
-    private IEnumerator Start()
+    public override IEnumerator BindAllServices()
     {
-        yield return BindWhenReady<NetworkService>(network =>
-        {
-            networkService = network;
-        });
-
         yield return BindWhenReady<PlayerService>(player =>
         {
             playerService = player;
@@ -53,12 +52,17 @@ public class PlayerBinder : ComponentBinder
             uiService = ui;
         });
 
+        yield return BindWhenReady<SettingService>(setting =>
+        {
+            settingService = setting;
+        });
+
         // Resolve dependencies
         playerPresenter = new PlayerPresenter(
-            networkService,
             playerService,
             gameService,
             uiService,
+            settingService,
             playerView,
 
             hairCatalog,

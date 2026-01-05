@@ -12,6 +12,8 @@ public class CursorView : MonoBehaviour
     [SerializeField] private Texture2D dragCursor;
 
     [SerializeField] private Vector2 hotSpot = Vector2.zero;
+
+    private static CursorView instance;
     #endregion
 
     #region Properties
@@ -20,7 +22,14 @@ public class CursorView : MonoBehaviour
     #region Methods
     void Awake()
     {
-        
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     void Start()

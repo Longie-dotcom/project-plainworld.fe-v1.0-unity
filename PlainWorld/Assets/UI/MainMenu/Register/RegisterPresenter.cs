@@ -1,6 +1,5 @@
 ﻿using Assets.Network.NetworkException;
 using Assets.Service;
-using Assets.Service.Enum;
 using Assets.UI.Enum;
 using Assets.Utility;
 using System;
@@ -10,9 +9,9 @@ namespace Assets.UI.MainMenu.Register
     public class RegisterPresenter : IDisposable
     {
         #region Attributes
-        private readonly AuthService authService;
         private readonly UIService uiService;
         private readonly GameService gameService;
+        private readonly AuthService authService;
         private readonly RegisterView registerView;
 
         private bool isEmailValid;
@@ -37,14 +36,14 @@ namespace Assets.UI.MainMenu.Register
         #endregion
 
         public RegisterPresenter(
-            AuthService authService, 
             UIService uiService,
             GameService gameService,
+            AuthService authService,
             RegisterView registerView)
         {
-            this.authService = authService;
             this.uiService = uiService;
             this.gameService = gameService;
+            this.authService = authService;
             this.registerView = registerView;
 
             Bind();
@@ -98,7 +97,7 @@ namespace Assets.UI.MainMenu.Register
         #region Buttons
         private void OnBackClicked()
         {
-            gameService.SetPhase(GamePhase.Login);
+            gameService.PopPhase();
         }
 
         private void OnRegisterClicked()
@@ -122,7 +121,7 @@ namespace Assets.UI.MainMenu.Register
                         "Registration successful!"
                     );
 
-                    gameService.SetPhase(GamePhase.Login);
+                    gameService.PopPhase();
                 }
                 catch (AuthException ex)
                 {

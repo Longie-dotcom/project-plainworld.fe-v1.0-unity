@@ -2,6 +2,7 @@
 using Assets.State.Component.Entity;
 using Assets.State.Interface.IReadOnlyComponent.IReadOnlyPlayerComponent;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.Gameplay.Entity.Player
@@ -10,7 +11,7 @@ namespace Assets.Gameplay.Entity.Player
         : EntityPresenter<PlayerEntityView, PlayerEntity>
     {
         #region Attributes
-        private readonly PlayerEntityView entityPlayerPrefab;
+        private readonly PlayerEntityView playerEntityPrefab;
 
         private readonly EntityPartCatalog hairCatalog;
         private readonly EntityPartCatalog glassesCatalog;
@@ -26,6 +27,7 @@ namespace Assets.Gameplay.Entity.Player
 
         public PlayerEntityPresenter(
             EntityService entityService,
+            SettingService settingService,
             PlayerEntityView prefab,
 
             EntityPartCatalog hairCatalog,
@@ -35,9 +37,9 @@ namespace Assets.Gameplay.Entity.Player
             EntityPartCatalog shoeCatalog,
             EntityPartCatalog eyesCatalog,
             EntityPartCatalog skinCatalog)
-            : base(entityService)
+            : base(entityService, settingService)
         {
-            entityPlayerPrefab = prefab;
+            playerEntityPrefab = prefab;
 
             this.hairCatalog = hairCatalog;
             this.glassesCatalog = glassesCatalog;
@@ -47,81 +49,86 @@ namespace Assets.Gameplay.Entity.Player
             this.eyesCatalog = eyesCatalog;
             this.skinCatalog = skinCatalog;
 
+            Initialize();
+        }
+
+        #region Methods
+        protected override IEnumerable<PlayerEntity> GetExistingEntities()
+        {
+            return entityService.GetAllPlayerEntities();
+        }
+
+        protected override void SubscribeEvents()
+        {
             entityService.EntityState.OnPlayerEntityAdded += SpawnEntity;
             entityService.EntityState.OnPlayerEntityRemoved += RemoveEntity;
         }
 
-        #region Methods
-        public override void Dispose()
+        protected override void UnsubscribeEvents()
         {
-            if (disposed) return;
-
             entityService.EntityState.OnPlayerEntityAdded -= SpawnEntity;
             entityService.EntityState.OnPlayerEntityRemoved -= RemoveEntity;
-
-            base.Dispose();
         }
 
-        protected override void SpawnEntity(PlayerEntity entity)
+        protected override void SpawnEntity(PlayerEntity playerEntity)
         {
-            if (entityViews.ContainsKey(entity.ID)) return;
+            // Make sure all entities are not duplicated
+            if (entityViews.ContainsKey(playerEntity.ID)) return;
+
+            // First fired does not catch up with the prefab so re-call later in the initialize
+            if (playerEntityPrefab == null) return;
 
             var view = GameObject.Instantiate(
-                entityPlayerPrefab,
-                entity.Movement.Position,
+                playerEntityPrefab,
+                playerEntity.Movement.Position,
                 Quaternion.identity);
             view.Initialize(
-                entity.ID,
-                entity.Movement.Position);
+                playerEntity.ID,
+                playerEntity.Movement.Position);
 
-            entityViews[entity.ID] = view;
-            BindView(view, entity);
+            entityViews[playerEntity.ID] = view;
+            BindView(view, playerEntity);
         }
 
-        protected override void RemoveEntity(Guid id, PlayerEntity entity)
+        protected override void RemoveEntity(Guid id, PlayerEntity playerEntity)
         {
             if (entityViews.TryGetValue(id, out var view))
             {
+                UnbindView(view, playerEntity);
                 GameObject.Destroy(view.gameObject);
-                UnbindView(view, entity);
                 entityViews.Remove(id);
             }
         }
 
-        protected override void BindView(PlayerEntityView view, PlayerEntity entity)
+        protected override void BindView(PlayerEntityView view, PlayerEntity playerEntity)
         {
-            void ApplyAppearance()
-            {
-                ApplyAppearanceToView(entity.ID, entity.Appearance);
-            };
-
             // Outbound
-            entity.Appearance.OnChanged += ApplyAppearance; ApplyAppearance();
-            entity.Movement.OnMoveSpeedChanged += view.SetAnimationSpeed;
-            entity.Movement.OnPositionChanged += view.ApplyPosition;
-            entity.Movement.OnDirectionChanged += view.SetDirection;
-            entity.Movement.OnActionChanged += view.SetAction;
+            playerEntity.Appearance.OnChanged += () => ApplyAppearanceToView(view, playerEntity.Appearance); 
+            ApplyAppearanceToView(view, playerEntity.Appearance);
+            playerEntity.Movement.OnMoveSpeedChanged += view.SetPlayerSpeed;
+            playerEntity.Movement.OnPositionChanged += view.ApplyPosition;
+            playerEntity.Movement.OnDirectionChanged += view.SetDirection;
+            playerEntity.Movement.OnActionChanged += view.SetAction;
+            settingService.SettingState.OnChanged += view.ApplySettings;
         }
 
-        protected override void UnbindView(PlayerEntityView view, PlayerEntity entity)
+        protected override void UnbindView(PlayerEntityView view, PlayerEntity playerEntity)
         {
-            void ApplyAppearance()
-            {
-                ApplyAppearanceToView(entity.ID, entity.Appearance);
-            };
-
             // Outbound
-            entity.Appearance.OnChanged -= ApplyAppearance;
-            entity.Movement.OnMoveSpeedChanged -= view.SetAnimationSpeed;
-            entity.Movement.OnPositionChanged -= view.ApplyPosition;
-            entity.Movement.OnDirectionChanged -= view.SetDirection;
-            entity.Movement.OnActionChanged -= view.SetAction;
+            playerEntity.Appearance.OnChanged -= () => ApplyAppearanceToView(view, playerEntity.Appearance);
+            playerEntity.Movement.OnMoveSpeedChanged -= view.SetPlayerSpeed;
+            playerEntity.Movement.OnPositionChanged -= view.ApplyPosition;
+            playerEntity.Movement.OnDirectionChanged -= view.SetDirection;
+            playerEntity.Movement.OnActionChanged -= view.SetAction;
+            settingService.SettingState.OnChanged -= view.ApplySettings;
         }
+        #endregion
 
-        private void ApplyAppearanceToView(Guid id, IReadOnlyPlayerAppearance appearance)
+        #region Private Helpers
+        private void ApplyAppearanceToView(
+            PlayerEntityView view,
+            IReadOnlyPlayerAppearance appearance)
         {
-            if (!TryGetView(id, out var view)) return;
-
             view.ApplyAppearance(
                 hairCatalog.GetPartFrame(appearance.HairID),
                 glassesCatalog.GetPartFrame(appearance.GlassesID),
@@ -137,9 +144,6 @@ namespace Assets.Gameplay.Entity.Player
                 appearance.SkinColor
             );
         }
-        #endregion
-
-        #region Private Helpers
         #endregion
     }
 }

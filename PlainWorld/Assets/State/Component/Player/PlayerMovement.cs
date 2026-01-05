@@ -64,14 +64,9 @@ namespace Assets.State.Component.Player
             OnActionChanged?.Invoke(CurrentAction);
         }
 
-        public PlayerMovementSnapshot CreateSnapshot()
+        public (Vector2 direction, int action) CreateMovement()
         {
-            return new PlayerMovementSnapshot(
-                MoveSpeed,
-                Position,
-                CurrentDirection,
-                CurrentAction
-            );
+            return (CurrentDirection, (int)CurrentAction);
         }
 
         public void ApplyPredictedPosition(Vector2 inputDir)

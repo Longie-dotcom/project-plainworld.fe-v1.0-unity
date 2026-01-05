@@ -32,8 +32,6 @@ namespace Assets.Service
         #region Methods
         public Task InitializeAsync()
         {
-            ServiceLocator.OnExiting += LogoutAsync;
-
             IsInitialized = true;
             return Task.CompletedTask;
         }
@@ -46,6 +44,11 @@ namespace Assets.Service
         public void BindNetworkCommand(IPlayerNetworkCommand command)
         {
             PlayerNetworkCommand = command;
+        }
+
+        public void UnloadPlayerData()
+        {
+            playerState.UnloadPlayerData();
         }
 
         #region Movement
@@ -118,6 +121,11 @@ namespace Assets.Service
             playerState.NormalizeAppearance(snapshot, defaults);
         }
 
+        public void ValidateAppearanceCreated()
+        {
+            playerState.ValidateAppearanceCreated();
+        }
+
         public void RequireCreateAppearance()
         {
             playerState.RequireCreateAppearance();
@@ -148,7 +156,9 @@ namespace Assets.Service
 
             var dto = new PlayerMoveDTO
             {
-                Movement = PlayerMovementMapper.ToDTO(snapshot)
+                Direction = PositionMapper.ToDTO(snapshot.direction),
+                Action = snapshot.action,
+                DeltaTime = Time.deltaTime,
             };
             await PlayerNetworkCommand.Move(dto);
         }

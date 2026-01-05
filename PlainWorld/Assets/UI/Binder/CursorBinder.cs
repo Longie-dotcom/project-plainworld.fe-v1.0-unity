@@ -15,10 +15,14 @@ public class CursorBinder : ComponentBinder
     #endregion
 
     #region Properties
+    public override string StepName
+    {
+        get { return "Cursor and Cursor Targets"; }
+    }
     #endregion
 
     #region Methods
-    private IEnumerator Start()
+    public override IEnumerator BindAllServices()
     {
         yield return BindWhenReady<CursorService>(cursor =>
         {
@@ -43,7 +47,7 @@ public class CursorBinder : ComponentBinder
                 cursorPresenter.BindTarget(target);
             }
         }
-        
+
         GameLogger.Info(
             Channel.System,
             "Cursor and cursor targets components binded successfully");

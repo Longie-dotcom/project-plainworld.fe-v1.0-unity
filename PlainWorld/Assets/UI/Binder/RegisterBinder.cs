@@ -11,22 +11,21 @@ public class RegisterBinder : ComponentBinder
     private RegisterView registerView;
     private RegisterPresenter registerPresenter;
 
-    private AuthService authService;
     private UIService uiService;
     private GameService gameService;
+    private AuthService authService;
     #endregion
 
     #region Properties
+    public override string StepName
+    {
+        get { return "Register UI"; }
+    }
     #endregion
 
     #region Methods
-    private IEnumerator Start()
+    public override IEnumerator BindAllServices()
     {
-        yield return BindWhenReady<AuthService>(auth =>
-        {
-            authService = auth;
-        });
-
         yield return BindWhenReady<UIService>(ui =>
         {
             uiService = ui;
@@ -37,11 +36,16 @@ public class RegisterBinder : ComponentBinder
             gameService = game;
         });
 
+        yield return BindWhenReady<AuthService>(auth =>
+        {
+            authService = auth;
+        });
+
         // Resolve dependencies
         registerPresenter = new RegisterPresenter(
-            authService,
             uiService,
             gameService,
+            authService,
             registerView);
 
         GameLogger.Info(

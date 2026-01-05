@@ -1,4 +1,5 @@
 ﻿using Assets.Data.Enum;
+using Assets.State.Interface.IReadOnlyState;
 using System;
 using UnityEngine;
 
@@ -61,9 +62,9 @@ public class PlayerView : MonoBehaviour
             skinColor);
     }
 
-    public void SetAnimationSpeed(float moveSpeed)
+    public void SetPlayerSpeed(float moveSpeed)
     {
-        visualView.SetAnimationSpeed(moveSpeed);
+        visualView.SetPlayerSpeed(moveSpeed);
     }
 
     public void ApplyPosition(Vector2 pos)
@@ -79,6 +80,12 @@ public class PlayerView : MonoBehaviour
     public void SetAction(EntityAction action)
     {
         visualView.SetAction(action);
+    }
+
+    public void ApplySettings(IReadOnlySettingState settings)
+    {
+        visualView.ApplySettings(settings);
+        moveView.ApplySettings(settings);
     }
     #endregion
 }

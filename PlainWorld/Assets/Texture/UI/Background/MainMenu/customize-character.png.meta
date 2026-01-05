@@ -35,6 +35,9 @@ TextureImporter:
   - first:
       213: -2154778210944828912
     second: customize-character_10
+  - first:
+      213: 2629274363987206808
+    second: customize-character_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -146,9 +149,9 @@ TextureImporter:
       name: customize-character_0
       rect:
         serializedVersion: 2
-        x: 51
+        x: 3
         y: 639
-        width: 116
+        width: 44
         height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -168,9 +171,9 @@ TextureImporter:
       name: customize-character_1
       rect:
         serializedVersion: 2
-        x: 671
+        x: 51
         y: 639
-        width: 112
+        width: 116
         height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -190,9 +193,9 @@ TextureImporter:
       name: customize-character_2
       rect:
         serializedVersion: 2
-        x: 51
-        y: 511
-        width: 114
+        x: 671
+        y: 639
+        width: 112
         height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -212,10 +215,10 @@ TextureImporter:
       name: customize-character_3
       rect:
         serializedVersion: 2
-        x: 415
-        y: 255
-        width: 130
-        height: 258
+        x: 51
+        y: 511
+        width: 114
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +237,10 @@ TextureImporter:
       name: customize-character_4
       rect:
         serializedVersion: 2
-        x: 671
-        y: 511
-        width: 114
-        height: 46
+        x: 415
+        y: 255
+        width: 130
+        height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,9 +259,9 @@ TextureImporter:
       name: customize-character_5
       rect:
         serializedVersion: 2
-        x: 51
-        y: 383
-        width: 156
+        x: 671
+        y: 511
+        width: 114
         height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -278,9 +281,9 @@ TextureImporter:
       name: customize-character_6
       rect:
         serializedVersion: 2
-        x: 671
+        x: 51
         y: 383
-        width: 118
+        width: 156
         height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -300,9 +303,9 @@ TextureImporter:
       name: customize-character_7
       rect:
         serializedVersion: 2
-        x: 51
-        y: 255
-        width: 172
+        x: 671
+        y: 383
+        width: 118
         height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -322,9 +325,9 @@ TextureImporter:
       name: customize-character_8
       rect:
         serializedVersion: 2
-        x: 671
+        x: 51
         y: 255
-        width: 176
+        width: 172
         height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -344,9 +347,9 @@ TextureImporter:
       name: customize-character_9
       rect:
         serializedVersion: 2
-        x: 51
-        y: 97
-        width: 178
+        x: 671
+        y: 255
+        width: 176
         height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -366,6 +369,28 @@ TextureImporter:
       name: customize-character_10
       rect:
         serializedVersion: 2
+        x: 51
+        y: 97
+        width: 178
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ab1e632a0b812e0800000000000000
+      internalID: -2154778210944828912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: customize-character_11
+      rect:
+        serializedVersion: 2
         x: 671
         y: 97
         width: 168
@@ -378,8 +403,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01ab1e632a0b812e0800000000000000
-      internalID: -2154778210944828912
+      spriteID: 892af728a1f0d7420800000000000000
+      internalID: 2629274363987206808
       vertices: []
       indices: 
       edges: []
@@ -401,6 +426,7 @@ TextureImporter:
       customize-character_0: 6374508278828809036
       customize-character_1: -336830659776219583
       customize-character_10: -2154778210944828912
+      customize-character_11: 2629274363987206808
       customize-character_2: -4509961717849495830
       customize-character_3: -1566579437439162098
       customize-character_4: -2973990601730223270
