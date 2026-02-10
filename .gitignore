@@ -1,24 +1,22 @@
-# =============== #
-# Unity generated #
-# =============== #
+# ================= #
+# Unity generated  #
+# ================= #
 
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Mm]emoryCaptures/
+PlainWorld/[Ll]ibrary/
+PlainWorld/[Tt]emp/
+PlainWorld/[Oo]bj/
+PlainWorld/[Bb]uild/
+PlainWorld/[Bb]uilds/
+PlainWorld/[Ll]ogs/
+PlainWorld/[Mm]emoryCaptures/
+PlainWorld/UserSettings/
 
 # Asset meta data should be tracked
 # *.meta
 
-# Uncomment if you have crash reports you don't want to track
-# [Cc]rashReports/
-
-# ===================================== #
-# Visual Studio / Rider / VSCode stuff #
-# ===================================== #
+# =============================== #
+# Visual Studio / Rider / VSCode #
+# =============================== #
 
 # Visual Studio
 *.csproj
@@ -36,16 +34,17 @@
 *.opendb
 *.VC.db
 *.VC.opendb
+.vs/
 
 # Rider
 .idea/
 *.sln.iml
 
-# VSCode
+# VS Code
 .vscode/
 
 # =================== #
-# OS generated files  #
+# OS generated files #
 # =================== #
 
 .DS_Store
@@ -55,15 +54,3 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-
-# Visual Studio
-.vs/
-
-# Unity
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-UserSettings/
