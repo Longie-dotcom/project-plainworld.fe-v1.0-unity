@@ -20,7 +20,7 @@ namespace Assets.State.Component.Entity
         #endregion
 
         public PlayerEntity(
-            Guid id, 
+            Guid id,
             string name,
             PlayerMovementSnapshot movement,
             PlayerAppearanceSnapshot appearance) : base(id)

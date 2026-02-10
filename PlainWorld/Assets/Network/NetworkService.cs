@@ -17,7 +17,7 @@ namespace Assets.Network
         private readonly Dictionary<Type, Queue<Action>> pendingHandlers = new();
 
         private HubConnection connection;
-        private const string HUB_URL = "http://192.168.1.135:5020/hubs/game"; // 192.168.1.135:5020
+        private const string HUB_URL = "http://172.30.186.23:5020/hubs/game"; // 192.168.1.135:5020
         #endregion
 
         #region Properties

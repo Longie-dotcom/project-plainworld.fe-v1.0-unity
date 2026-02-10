@@ -59,7 +59,6 @@ public class PlayerVisualView : VisualView
             Frame = frame
         });
     }
-
     #endregion
 }
 

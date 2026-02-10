@@ -1,5 +1,6 @@
 ﻿using Assets.Service;
 using Assets.State.Component.Entity;
+using Assets.State.Component.Player;
 using Assets.State.Interface.IReadOnlyComponent.IReadOnlyPlayerComponent;
 using System;
 using System.Collections.Generic;
@@ -106,10 +107,15 @@ namespace Assets.Gameplay.Entity.Player
             playerEntity.Appearance.OnChanged += () => ApplyAppearanceToView(view, playerEntity.Appearance); 
             ApplyAppearanceToView(view, playerEntity.Appearance);
             playerEntity.Movement.OnMoveSpeedChanged += view.SetPlayerSpeed;
+            view.SetPlayerSpeed(playerEntity.Movement.MoveSpeed);
             playerEntity.Movement.OnPositionChanged += view.ApplyPosition;
+            view.ApplyPosition(playerEntity.Movement.Position);
             playerEntity.Movement.OnDirectionChanged += view.SetDirection;
+            view.SetDirection(playerEntity.Movement.CurrentDirection);
             playerEntity.Movement.OnActionChanged += view.SetAction;
+            view.SetAction(playerEntity.Movement.CurrentAction);
             settingService.SettingState.OnChanged += view.ApplySettings;
+            view.ApplySettings(settingService.SettingState);
         }
 
         protected override void UnbindView(PlayerEntityView view, PlayerEntity playerEntity)
@@ -129,19 +135,37 @@ namespace Assets.Gameplay.Entity.Player
             PlayerEntityView view,
             IReadOnlyPlayerAppearance appearance)
         {
-            view.ApplyAppearance(
-                hairCatalog.GetPartFrame(appearance.HairID),
-                glassesCatalog.GetPartFrame(appearance.GlassesID),
-                shirtCatalog.GetPartFrame(appearance.ShirtID),
-                pantCatalog.GetPartFrame(appearance.PantID),
-                shoeCatalog.GetPartFrame(appearance.ShoeID),
-                eyesCatalog.GetPartFrame(appearance.EyesID),
-                skinCatalog.GetPartFrame(appearance.SkinID),
+            if (view == null)
+                return;
 
-                appearance.HairColor,
-                appearance.PantColor,
-                appearance.EyeColor,
-                appearance.SkinColor
+            var defaults = new PlayerAppearanceSnapshot(
+                false,
+                hairCatalog.GetDescriptors()[0].ID,
+                glassesCatalog.GetDescriptors()[0].ID,
+                shirtCatalog.GetDescriptors()[0].ID,
+                pantCatalog.GetDescriptors()[0].ID,
+                shoeCatalog.GetDescriptors()[0].ID,
+                eyesCatalog.GetDescriptors()[0].ID,
+                skinCatalog.GetDescriptors()[0].ID,
+                Color.white,
+                Color.white,
+                Color.white,
+                Color.white
+            );
+
+            view.ApplyAppearance(
+                hairCatalog.GetPartFrame(appearance.HairID ?? defaults.HairID),
+                glassesCatalog.GetPartFrame(appearance.GlassesID ?? defaults.GlassesID),
+                shirtCatalog.GetPartFrame(appearance.ShirtID ?? defaults.ShirtID),
+                pantCatalog.GetPartFrame(appearance.PantID ?? defaults.PantID),
+                shoeCatalog.GetPartFrame(appearance.ShoeID ?? defaults.ShoeID),
+                eyesCatalog.GetPartFrame(appearance.EyesID ?? defaults.EyesID),
+                skinCatalog.GetPartFrame(appearance.SkinID ?? defaults.SkinID),
+
+                appearance.HairColor == default ? defaults.HairColor : appearance.HairColor,
+                appearance.PantColor == default ? defaults.PantColor : appearance.PantColor,
+                appearance.EyeColor == default ? defaults.EyeColor : appearance.EyeColor,
+                appearance.SkinColor == default ? defaults.SkinColor : appearance.SkinColor
             );
         }
         #endregion

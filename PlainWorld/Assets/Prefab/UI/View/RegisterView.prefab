@@ -901,6 +901,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackButton
       objectReference: {fileID: 0}
+    - target: {fileID: 7176819294058062390, guid: c7fe01d48e787f34f9243f39cfe04cfc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1187444245057489131, guid: 20ab50891332d69419be2ff44b113d3c, type: 3}
     - target: {fileID: 8262229558500718689, guid: c7fe01d48e787f34f9243f39cfe04cfc, type: 3}
       propertyPath: m_SpriteState.m_PressedSprite
       value: 
