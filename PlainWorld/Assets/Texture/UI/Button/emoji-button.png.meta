@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 65295b93de855614c9e7b4e8c51449f8
+guid: f1077068254ec0c4c8bf5e5fd0a0003b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5587936550377283037
-    second: logout-button 2_0
-  - first:
-      213: -3780399728512000066
-    second: logout-button 2_1
-  - first:
-      213: -5955557459546744228
-    second: logout-button 2_2
+      213: -521176808948325193
+    second: emoji-button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: logout-button 2_0
+      name: emoji-button_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 24
-        height: 32
+        width: 46
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +115,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dddd8a8bfa65c8d40800000000000000
-      internalID: 5587936550377283037
+      spriteID: 7b4a67d147864c8f0800000000000000
+      internalID: -521176808948325193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: logout-button 2_1
+      name: emoji-button_1
       rect:
         serializedVersion: 2
-        x: 33
+        x: 46
         y: 0
-        width: 26
-        height: 32
+        width: 46
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ebf1f01f972598bc0800000000000000
-      internalID: -3780399728512000066
+      spriteID: bcf37b252ed2a97439551f0584ac2efd
+      internalID: -195931686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: logout-button 2_2
+      name: emoji-button_2
       rect:
         serializedVersion: 2
-        x: 65
+        x: 92
         y: 0
-        width: 26
-        height: 32
+        width: 46
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c5ad9406b0c995da0800000000000000
-      internalID: -5955557459546744228
+      spriteID: 2640b8d791e760d4c9317ac99e80c86d
+      internalID: -2100428106
       vertices: []
       indices: 
       edges: []
@@ -188,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b231185d2ebdde34bbf98cda89bbac26
     internalID: 0
     vertices: []
     indices: 
@@ -197,7 +178,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      emoji-button_0: -521176808948325193
+      emoji-button_1: -195931686
+      emoji-button_2: -2100428106
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
