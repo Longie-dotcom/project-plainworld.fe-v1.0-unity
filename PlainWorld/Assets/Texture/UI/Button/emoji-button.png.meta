@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcf37b252ed2a97439551f0584ac2efd
-      internalID: -195931686
+      spriteID: ecd459c8a53745e42a66d535978cc24e
+      internalID: 205586047
       vertices: []
       indices: 
       edges: []
@@ -159,8 +159,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2640b8d791e760d4c9317ac99e80c86d
-      internalID: -2100428106
+      spriteID: f62d2c8f915f82340b101ad5e5c5d736
+      internalID: -1000681724
       vertices: []
       indices: 
       edges: []
@@ -169,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b231185d2ebdde34bbf98cda89bbac26
+    spriteID: 321f98729cea1074db59bb792a34c23b
     internalID: 0
     vertices: []
     indices: 
@@ -180,8 +180,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       emoji-button_0: -521176808948325193
-      emoji-button_1: -195931686
-      emoji-button_2: -2100428106
+      emoji-button_1: 205586047
+      emoji-button_2: -1000681724
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -3,14 +3,10 @@
     public enum GamePhase
     {
         // --- UI States ---
-        Login,
-        Register,
-        CustomizeCharacter,
-        Loading,
+        Menu,
         InGame,
-        Setting,
+        Loading,
 
         Paused,
-        GameOver,
     }
 }

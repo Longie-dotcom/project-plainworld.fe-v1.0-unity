@@ -19,6 +19,7 @@ namespace Assets.Network
         private AuthNetworkHandler auth;
         private CursorNetworkHandler cursor;
         private SettingNetworkHandler setting;
+        private ConsoleNetworkHandler console;
         #endregion
 
         #region Properties
@@ -40,6 +41,7 @@ namespace Assets.Network
             var authService = ServiceLocator.Get<AuthService>();
             var cursorService = ServiceLocator.Get<CursorService>();
             var settingService = ServiceLocator.Get<SettingService>();
+            var consoleService = ServiceLocator.Get<ConsoleService>();
 
             // --- Instantiate handlers (session-scoped) ---
             player = new PlayerNetworkHandler();
@@ -49,6 +51,7 @@ namespace Assets.Network
             auth = new AuthNetworkHandler();
             cursor = new CursorNetworkHandler();
             setting = new SettingNetworkHandler();
+            console = new ConsoleNetworkHandler();
 
             // --- Bind services to handlers to network ---
             playerService.BindNetworkCommand(player);
@@ -72,6 +75,9 @@ namespace Assets.Network
             settingService.BindNetworkCommand(setting);
             setting.BindService(settingService, network);
 
+            consoleService.BindNetworkCommand(console);
+            console.BindService(consoleService, network);
+
             // --- Register receivers ---
             network.Register<IPlayerNetworkReceiver>(player);
             network.Register<IEntityNetworkReceiver>(entity);
@@ -80,6 +86,7 @@ namespace Assets.Network
             network.Register<IAuthNetworkReceiver>(auth);
             network.Register<ICursorNetworkReceiver>(cursor);
             network.Register<ISettingNetworkReceiver>(setting);
+            network.Register<IConsoleNetworkReceiver>(console);
 
             // --- Ensure everything is ready ---
             await network.WaitUntilReady();
@@ -99,6 +106,7 @@ namespace Assets.Network
             network.Unregister<IAuthNetworkReceiver>();
             network.Unregister<ICursorNetworkReceiver>();
             network.Unregister<ISettingNetworkReceiver>();
+            network.Unregister<IConsoleNetworkReceiver>();
 
             // --- Clear all handlers ---
             player = null;
@@ -108,6 +116,7 @@ namespace Assets.Network
             auth = null;
             cursor = null;
             setting = null;
+            console = null;
 
             GameLogger.Info(
                 Channel.System, 

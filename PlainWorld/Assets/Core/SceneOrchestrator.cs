@@ -38,7 +38,7 @@ public class SceneOrchestrator : MonoBehaviour
 
         switch (state.PendingPhase)
         {
-            case GamePhase.Login:
+            case GamePhase.Menu:
                 StartCoroutine(LoadLobby());
                 break;
 

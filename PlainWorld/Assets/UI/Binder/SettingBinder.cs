@@ -1,5 +1,5 @@
 ﻿using Assets.Service;
-using Assets.UI.MainMenu.Login;
+using Assets.UI.HUD.Setting;
 using Assets.Utility;
 using System.Collections;
 using UnityEngine;
@@ -11,8 +11,6 @@ public class SettingBinder : ComponentBinder
     private SettingView settingView;
     private SettingPresenter settingPresenter;
 
-    private UIService uiService;
-    private GameService gameService;
     private SettingService settingService;
     #endregion
 
@@ -26,16 +24,6 @@ public class SettingBinder : ComponentBinder
     #region Methods
     public override IEnumerator BindAllServices()
     {
-        yield return BindWhenReady<UIService>(ui =>
-        {
-            uiService = ui;
-        });
-
-        yield return BindWhenReady<GameService>(game =>
-        {
-            gameService = game;
-        });
-
         yield return BindWhenReady<SettingService>(setting =>
         {
             settingService = setting;
@@ -43,8 +31,6 @@ public class SettingBinder : ComponentBinder
 
         // Resolve dependencies
         settingPresenter = new SettingPresenter(
-            uiService,
-            gameService,
             settingService,
             settingView);
 

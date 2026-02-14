@@ -8,6 +8,7 @@ namespace Assets.Network
         public const string OnPlayerMove = "OnPlayerMove";
         public const string OnPlayerCreateAppearance = "OnPlayerCreateAppearance";
         public const string OnPlayerForcedLogout = "OnPlayerForcedLogout";
+        public const string OnPlayerChat = "OnPlayerChat";
 
         // --- Entity Service ---
         public const string OnPlayerEntityJoin = "OnPlayerEntityJoin";
@@ -15,6 +16,7 @@ namespace Assets.Network
         public const string OnPlayerEntityMove = "OnPlayerEntityMove";
         public const string OnPlayerEntityCreateAppearance = "OnPlayerEntityCreateAppearance";
         public const string OnPlayerEntityOnline = "OnPlayerEntityOnline";
+        public const string OnPlayerEntityChat = "OnPlayerEntityChat";
     }
 
     public static class OnSend
@@ -27,5 +29,6 @@ namespace Assets.Network
         public const string PlayerLogout = "PlayerLogout";
         public const string PlayerMove = "PlayerMove";
         public const string PlayerCreateAppearance = "PlayerCreateAppearance";
+        public const string PlayerChat = "PlayerChat";
     }
 }

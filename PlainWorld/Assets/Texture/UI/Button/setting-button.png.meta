@@ -3,8 +3,8 @@ guid: 6dad6bf2ebb0e0f49b68d9b95558ef19
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 932767096572507911
-    second: setting-button 1_0
+      213: 5093450023774108884
+    second: setting-button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,19 +96,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,18 +105,18 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8b0718b7259f6a745895088814b7b5e8
-      internalID: 1413781402
+      spriteID: 4dcb2447fc19fa640800000000000000
+      internalID: 5093450023774108884
       vertices: []
       indices: 
       edges: []
@@ -138,10 +125,10 @@ TextureImporter:
       name: setting-button_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12466dbd8ab28f541a9609d3a70426be
-      internalID: -335879654
+      spriteID: 69483a507b35d3a40bfc354dd16be50e
+      internalID: -607824772
       vertices: []
       indices: 
       edges: []
@@ -160,10 +147,10 @@ TextureImporter:
       name: setting-button_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 128
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,8 +159,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9790219ff29f4943977d84550114ee2
-      internalID: 1553343633
+      spriteID: c656ff6620b1127498ccf3dc5d26ba3c
+      internalID: 1849938550
       vertices: []
       indices: 
       edges: []
@@ -182,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c88576a68c3380a498e35cc68ab620fe
+    spriteID: 94e6a22a780cfc646b2df2c9df68029a
     internalID: 0
     vertices: []
     indices: 
@@ -192,9 +179,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      setting-button_0: 1413781402
-      setting-button_1: -335879654
-      setting-button_2: 1553343633
+      setting-button_0: 5093450023774108884
+      setting-button_1: -607824772
+      setting-button_2: 1849938550
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

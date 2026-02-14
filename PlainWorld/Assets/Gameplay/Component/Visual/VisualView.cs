@@ -1,6 +1,5 @@
 using Assets.Data.Enum;
 using Assets.State.Interface.IReadOnlyState;
-using Assets.Utility;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -71,7 +70,7 @@ public class VisualView : MonoBehaviour
         // Assume at least one valid frame defines timing
         var reference = parts.Find(p => p.IsValid);
         if (reference == null) return;
-        GameLogger.Warning(Channel.Service, $"animation speed:{animationSpeed}, currentPlayerSpeed: {currentPlayerSpeed}, animationSpeedMultiplier: {animationSpeedMultiplier}");
+
         int frame =
             Mathf.FloorToInt(animationTimer) %
             reference.Frame.FramesPerAction;

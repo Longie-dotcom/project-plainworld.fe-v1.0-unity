@@ -1,5 +1,4 @@
-﻿using Assets.State.Component.Player;
-using Assets.State.Interface.IReadOnlyComponent.IReadOnlyPlayerComponent;
+﻿using Assets.State.Interface.IReadOnlyComponent.IReadOnlyPlayerComponent;
 using System;
 
 namespace Assets.State.Interface.IReadOnlyState
@@ -16,6 +15,5 @@ namespace Assets.State.Interface.IReadOnlyState
         event Action OnPlayerDataReady;
         event Action OnPlayerLogout;
         event Action OnPlayerForcedLogout;
-        event Action<PlayerAppearance> OnPlayerCustomization;
     }
 }

@@ -1,5 +1,5 @@
 ﻿using Assets.Service;
-using Assets.UI.MainMenu.CustomizeCharacter;
+using Assets.UI.HUD.CustomizeCharacter;
 using Assets.Utility;
 using System.Collections;
 using UnityEngine;

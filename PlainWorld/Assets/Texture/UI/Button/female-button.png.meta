@@ -5,6 +5,57 @@ TextureImporter:
   - first:
       213: -5466530883743707131
     second: female-button_0
+  - first:
+      213: -6448926716346085976
+    second: female-button_1
+  - first:
+      213: 970518419863268858
+    second: female-button_2
+  - first:
+      213: 4743065547382115964
+    second: female-button_3
+  - first:
+      213: 6723709465378089395
+    second: female-button_4
+  - first:
+      213: -8614651642403335515
+    second: female-button_5
+  - first:
+      213: 7305837142066796747
+    second: female-button_6
+  - first:
+      213: -7028464097838188646
+    second: female-button_7
+  - first:
+      213: 8682667686764433674
+    second: female-button_8
+  - first:
+      213: -8712107648977086540
+    second: female-button_9
+  - first:
+      213: -3694221399418908184
+    second: female-button_10
+  - first:
+      213: -5769773484036880
+    second: female-button_11
+  - first:
+      213: 802708710911585174
+    second: female-button_12
+  - first:
+      213: -2864636331374648530
+    second: female-button_13
+  - first:
+      213: 5808872399236277208
+    second: female-button_14
+  - first:
+      213: 3273354734463351669
+    second: female-button_15
+  - first:
+      213: -6180922424718480108
+    second: female-button_16
+  - first:
+      213: 3039847695284947493
+    second: female-button_17
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,19 +147,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,8 +156,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 50
-        height: 70
+        width: 44
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +176,20 @@ TextureImporter:
       name: female-button_1
       rect:
         serializedVersion: 2
-        x: 50
+        x: 44
         y: 0
-        width: 50
-        height: 70
+        width: 44
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1e21436865bc9894fb489606f84ddffd
-      internalID: 900107727
+      spriteID: 8ad4aa1c15fc086a0800000000000000
+      internalID: -6448926716346085976
       vertices: []
       indices: 
       edges: []
@@ -160,20 +198,20 @@ TextureImporter:
       name: female-button_2
       rect:
         serializedVersion: 2
-        x: 100
+        x: 88
         y: 0
-        width: 50
-        height: 70
+        width: 44
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 14090ab0b0e8bca4ca26060651e2d530
-      internalID: 2136946735
+      spriteID: afd6cef5c59f77d00800000000000000
+      internalID: 970518419863268858
       vertices: []
       indices: 
       edges: []
@@ -182,7 +220,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 248bff48b7d36544db139afb01a67bde
+    spriteID: 87073abf5a09e2047ae9d1e417020799
     internalID: 0
     vertices: []
     indices: 
@@ -193,8 +231,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       female-button_0: -5466530883743707131
-      female-button_1: 900107727
-      female-button_2: 2136946735
+      female-button_1: -6448926716346085976
+      female-button_2: 970518419863268858
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

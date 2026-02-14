@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2f2983ac297520245b342ca798449dfe
+guid: ca0351577fcf0ab4b818ad2d8570f00d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5907179523915290216
-    second: hud-frame_0
+      213: -5377092325000172201
+    second: HUD-frame 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hud-frame_0
+      name: HUD-frame 1_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 993
-        width: 46
-        height: 46
+        x: 0
+        y: 0
+        width: 1058
+        height: 695
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8669e6bba748af150800000000000000
-      internalID: 5907179523915290216
+      spriteID: 75da2ebf40bb065b0800000000000000
+      internalID: -5377092325000172201
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      hud-frame_0: 5907179523915290216
+      HUD-frame 1_0: -5377092325000172201
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

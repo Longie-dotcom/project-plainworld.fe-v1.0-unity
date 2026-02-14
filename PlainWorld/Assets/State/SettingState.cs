@@ -28,7 +28,7 @@ namespace Assets.State
 
         public SettingState()
         {
-            AnimationSpeedMultiplier = 8 / 5f;
+            AnimationSpeedMultiplier = 3 / 5f;
             MoveSendRate = 0.01f;
         }
 

@@ -73,7 +73,7 @@ namespace Assets.Service
         #region App Life-cycle
         public void StartGame()
         {
-            gameState.RequestNewScene(GamePhase.Login);
+            gameState.RequestNewScene(GamePhase.Menu);
         }
         #endregion
 
@@ -113,7 +113,7 @@ namespace Assets.Service
             playerService.UnloadPlayerData();
             entityService.UnloadEntitiesData();
 
-            gameState.RequestNewScene(GamePhase.Login);
+            gameState.RequestNewScene(GamePhase.Menu);
         }
         #endregion
 

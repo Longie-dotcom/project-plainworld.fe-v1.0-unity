@@ -34,6 +34,7 @@ namespace Assets.Core
             var authService = new AuthService();
             var cursorService = new CursorService();
             var settingService = new SettingService();
+            var consoleService = new ConsoleService();
 
             GameLogger.Info(
                 Channel.System,
@@ -56,6 +57,7 @@ namespace Assets.Core
             ServiceLocator.Register<AuthService>(authService);
             ServiceLocator.Register<CursorService>(cursorService);
             ServiceLocator.Register<SettingService>(settingService);
+            ServiceLocator.Register<ConsoleService>(consoleService);
 
             GameLogger.Info(
                 Channel.System,
@@ -71,7 +73,8 @@ namespace Assets.Core
                     uiService,
                     authService,
                     cursorService,
-                    settingService));
+                    settingService,
+                    consoleService));
         }
         #endregion
 
@@ -84,7 +87,8 @@ namespace Assets.Core
             UIService uiService,
             AuthService authService,
             CursorService cursorService,
-            SettingService settingService)
+            SettingService settingService,
+            ConsoleService consoleService)
         {
             // Network is ready first
             yield return networkService.InitializeAsync().AsCoroutine();
@@ -97,6 +101,7 @@ namespace Assets.Core
             yield return authService.InitializeAsync().AsCoroutine();
             yield return cursorService.InitializeAsync().AsCoroutine();
             yield return settingService.InitializeAsync().AsCoroutine();
+            yield return consoleService.InitializeAsync().AsCoroutine();
 
             GameLogger.Info(
                 Channel.System, 

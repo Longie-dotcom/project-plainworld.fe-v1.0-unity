@@ -5,21 +5,6 @@ TextureImporter:
   - first:
       213: -1766680433919911918
     second: customize-character-button_0
-  - first:
-      213: 5006154730665969158
-    second: customize-character-button_1
-  - first:
-      213: -3296115617649231823
-    second: customize-character-button_2
-  - first:
-      213: -8382973451788474659
-    second: customize-character-button_3
-  - first:
-      213: -6889447181358732727
-    second: customize-character-button_4
-  - first:
-      213: -8588766997310168968
-    second: customize-character-button_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,19 +96,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -133,17 +105,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9417de9a4af910e44abeaf6a3f130556
+      spriteID: 2181290718d7b77e0800000000000000
       internalID: -1766680433919911918
       vertices: []
       indices: 
@@ -153,10 +125,10 @@ TextureImporter:
       name: customize-character-button_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bfa53f81990c33478ab00dec77d52df
-      internalID: 5006154730665969158
+      spriteID: 870b67dd5be9bf04ca586c6ea011ae2b
+      internalID: 1027638571
       vertices: []
       indices: 
       edges: []
@@ -175,10 +147,10 @@ TextureImporter:
       name: customize-character-button_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 128
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +159,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 264623fe29b3d274ab2222e7f1d0ce89
-      internalID: -3296115617649231823
+      spriteID: 94c16d698a3eb024ebcfd1b9b4b6947f
+      internalID: -1730462000
       vertices: []
       indices: 
       edges: []
@@ -197,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4c3d85d791103444e961983546110ca6
+    spriteID: 427148c7558221040b47cd5f91e5778b
     internalID: 0
     vertices: []
     indices: 
@@ -208,8 +180,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       customize-character-button_0: -1766680433919911918
-      customize-character-button_1: 5006154730665969158
-      customize-character-button_2: -3296115617649231823
+      customize-character-button_1: 1027638571
+      customize-character-button_2: -1730462000
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5,12 +5,6 @@ TextureImporter:
   - first:
       213: 4216997553495785993
     second: logout-button_0
-  - first:
-      213: 124838270883401388
-    second: logout-button_1
-  - first:
-      213: 6985653310987405734
-    second: logout-button_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,19 +96,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -124,8 +105,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +125,20 @@ TextureImporter:
       name: logout-button_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cae0166feb38bb100800000000000000
-      internalID: 124838270883401388
+      spriteID: b6a23a6bbf6f4b04fbc6d0f2606a65af
+      internalID: -911640583
       vertices: []
       indices: 
       edges: []
@@ -166,20 +147,20 @@ TextureImporter:
       name: logout-button_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 128
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6a98f6dbca602f060800000000000000
-      internalID: 6985653310987405734
+      spriteID: f18e10e2bc5780643a934d3922fb3a5b
+      internalID: 204782653
       vertices: []
       indices: 
       edges: []
@@ -188,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e3e92cbc9070f5449a1a8c6fe0ad83ab
+    spriteID: 7d80cb5f6c82e6249bb3c2b87e1bc6aa
     internalID: 0
     vertices: []
     indices: 
@@ -199,8 +180,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       logout-button_0: 4216997553495785993
-      logout-button_1: 124838270883401388
-      logout-button_2: 6985653310987405734
+      logout-button_1: -911640583
+      logout-button_2: 204782653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

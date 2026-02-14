@@ -106,7 +106,7 @@ TextureImporter:
         x: 0
         y: 0
         width: 124
-        height: 40
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,7 +128,7 @@ TextureImporter:
         x: 124
         y: 0
         width: 124
-        height: 40
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c99235a1f72a7c545b3ac42163e751ac
-      internalID: -693758868
+      spriteID: bdd08d9e95f7cfa4380b334c09aa9586
+      internalID: -1858365895
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bccb5ce6645139242be5088d8d2d5395
+    spriteID: be73d2b1074224d4199a39840b1d2125
     internalID: 0
     vertices: []
     indices: 
@@ -158,7 +158,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       emote-search-field_0: -3759378761785798892
-      emote-search-field_1: -693758868
+      emote-search-field_1: -1858365895
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

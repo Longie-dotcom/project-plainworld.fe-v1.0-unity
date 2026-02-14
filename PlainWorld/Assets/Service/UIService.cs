@@ -50,6 +50,7 @@ namespace Assets.Service
         {
             uiState.ApplyGameState(game);
         }
+
         #region Senders
         #endregion
 

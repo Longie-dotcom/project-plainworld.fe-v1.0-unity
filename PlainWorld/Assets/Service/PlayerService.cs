@@ -120,16 +120,6 @@ namespace Assets.Service
         {
             playerState.NormalizeAppearance(snapshot, defaults);
         }
-
-        public void ValidateAppearanceCreated()
-        {
-            playerState.ValidateAppearanceCreated();
-        }
-
-        public void RequireCreateAppearance()
-        {
-            playerState.RequireCreateAppearance();
-        }
         #endregion
 
         #region Senders

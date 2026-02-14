@@ -1,4 +1,6 @@
-﻿using Assets.Network.Interface.Command;
+﻿using Assets.Core;
+using Assets.Network.DTO;
+using Assets.Network.Interface.Command;
 using Assets.Service.Interface;
 using Assets.State;
 using Assets.State.Interface.IReadOnlyState;
@@ -41,9 +43,39 @@ namespace Assets.Service
         }
 
         #region Senders
+        public async Task PlayerChat(string message)
+        {
+            if (!ServiceLocator.Get<PlayerService>().PlayerState.HasJoined)
+                return;
+
+            var dto = new ChatSendDTO()
+            {
+                Content = message
+            };
+            await ConsoleNetworkCommand.Chat(dto);
+        }
         #endregion
 
         #region Receivers
+        public void OnPlayerChatted(ChatDTO dto)
+        {
+            CoroutineRunner.Instance.Schedule(() =>
+            {
+                consoleState.OnPlayerChatted(
+                    dto.UserName,
+                    dto.Content);
+            });
+        }
+
+        public void OnPlayerEntityChatted(ChatDTO dto)
+        {
+            CoroutineRunner.Instance.Schedule(() =>
+            {
+                consoleState.OnPlayerEntityChatted(
+                    dto.UserName,
+                    dto.Content);
+            });
+        }
         #endregion
         #endregion
     }

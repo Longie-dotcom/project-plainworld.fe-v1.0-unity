@@ -11,13 +11,8 @@ namespace Assets.State
         #endregion
 
         #region Properites
-        public bool ShowLogin { get; private set; }
-        public bool ShowRegister { get; private set; }
-        public bool ShowCustomizeCharacter { get; private set; }
+        public bool ShowMenu { get; private set; }
         public bool ShowHUD { get; private set; }
-        public bool ShowSetting { get; private set; }
-
-        public bool ShowLobby { get; private set; }
         public bool ShowLoading { get; private set; }
 
         public event Action<UIState> OnUIStateChanged;
@@ -34,12 +29,8 @@ namespace Assets.State
 
         public void ApplyGameState(IReadOnlyGameState game)
         {
-            ShowLogin = game.Phase == GamePhase.Login;
-            ShowRegister = game.Phase == GamePhase.Register;
-            ShowCustomizeCharacter = game.Phase == GamePhase.CustomizeCharacter;
+            ShowMenu = game.Phase == GamePhase.Menu;
             ShowHUD = game.Phase == GamePhase.InGame;
-            ShowSetting = game.Phase == GamePhase.Setting;
-
             ShowLoading = game.Phase == GamePhase.Loading;
 
             OnUIStateChanged?.Invoke(this);

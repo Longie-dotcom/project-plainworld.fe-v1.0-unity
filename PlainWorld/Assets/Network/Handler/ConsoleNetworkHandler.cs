@@ -1,6 +1,8 @@
-﻿using Assets.Network.Interface.Command;
+﻿using Assets.Network.DTO;
+using Assets.Network.Interface.Command;
 using Assets.Network.Interface.Receiver;
 using Assets.Service;
+using System.Threading.Tasks;
 
 namespace Assets.Network.Handler
 {
@@ -28,9 +30,25 @@ namespace Assets.Network.Handler
         #endregion
 
         #region Send Commands
+        public Task Chat(ChatSendDTO dto)
+        {
+            return sender.Send(
+                OnSend.PlayerChat,
+                dto
+            );
+        }
         #endregion
 
         #region Receive Handlers
+        public void OnPlayerChatted(ChatDTO dto)
+        {
+            consoleService.OnPlayerChatted(dto);
+        }
+
+        public void OnPlayerEntityChatted(ChatDTO dto)
+        {
+            consoleService.OnPlayerEntityChatted(dto);
+        }
         #endregion
     }
 }

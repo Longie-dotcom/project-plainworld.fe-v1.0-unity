@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b8515b49b7d707408cd7ab3704b9315
-      internalID: -2143028958
+      spriteID: 005998d14fb4a114dadcae08730eff66
+      internalID: 1467522
       vertices: []
       indices: 
       edges: []
@@ -159,8 +159,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bf373d6028672743970a542f678c545
-      internalID: 1181679493
+      spriteID: 9f207e1c00a596e448e04f64dc3b843a
+      internalID: 1096494060
       vertices: []
       indices: 
       edges: []
@@ -169,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d886ed18b3e4a6f408a3cc69d60a8160
+    spriteID: 7dcbf89a45077f7468c09c9bf29cc3f0
     internalID: 0
     vertices: []
     indices: 
@@ -180,8 +180,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       send-chat-button_0: -3681062922522747608
-      send-chat-button_1: -2143028958
-      send-chat-button_2: 1181679493
+      send-chat-button_1: 1467522
+      send-chat-button_2: 1096494060
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9961eef9bd66146bb79f2c55da752d, type: 3}
+  m_Name: EmojiCatalog
+  m_EditorClassIdentifier: 
+  emojis:
+  - id: normal
+    icon: {fileID: -2193337173666419102, guid: 006bf83ad5859a54791669bd066c119d, type: 3}
+    unicode: ':normal:'
+  - id: happy
+    icon: {fileID: -6473849603278687528, guid: 006bf83ad5859a54791669bd066c119d, type: 3}
+    unicode: ':happy:'
+  - id: sad
+    icon: {fileID: -8149732574740152383, guid: 006bf83ad5859a54791669bd066c119d, type: 3}
+    unicode: ':sad:'
+  - id: disgusted
+    icon: {fileID: 1332059697497141186, guid: 006bf83ad5859a54791669bd066c119d, type: 3}
+    unicode: ':disgusted:'
+  - id: angry
+    icon: {fileID: -1599893074279573242, guid: 006bf83ad5859a54791669bd066c119d, type: 3}
+    unicode: ':angry:'
+  - id: cute
+    icon: {fileID: 4411878715597055153, guid: 006bf83ad5859a54791669bd066c119d, type: 3}
+    unicode: ':cute:'
+  - id: dumb
+    icon: {fileID: 5447211269739861249, guid: 006bf83ad5859a54791669bd066c119d, type: 3}
+    unicode: ':dumb:'
+  - id: bored
+    icon: {fileID: 7237455238737652033, guid: 006bf83ad5859a54791669bd066c119d, type: 3}
+    unicode: ':bored:'
+  - id: tiep
+    icon: {fileID: 1317274808099593152, guid: 006bf83ad5859a54791669bd066c119d, type: 3}
+    unicode: ':tiep:'
+  - id: tuan
+    icon: {fileID: 676108537048876466, guid: 006bf83ad5859a54791669bd066c119d, type: 3}
+    unicode: ':tuan:'

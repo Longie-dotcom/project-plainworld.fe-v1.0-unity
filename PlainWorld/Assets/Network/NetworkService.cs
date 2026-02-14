@@ -4,8 +4,8 @@ using Assets.Network.Interface.Base;
 using Assets.Network.Interface.Receiver;
 using Assets.Utility;
 using Microsoft.AspNetCore.SignalR.Client;
-using System;
 using System.Collections.Generic;
+using System;
 using System.Threading.Tasks;
 
 namespace Assets.Network
@@ -17,7 +17,7 @@ namespace Assets.Network
         private readonly Dictionary<Type, Queue<Action>> pendingHandlers = new();
 
         private HubConnection connection;
-        private const string HUB_URL = "http://172.30.186.23:5020/hubs/game"; // 192.168.1.135:5020
+        private const string HUB_URL = "http://26.92.115.30:5020/hubs/game"; // 192.168.1.135:5020
         #endregion
 
         #region Properties
@@ -189,6 +189,13 @@ namespace Assets.Network
                          null, (r, _) => r.OnPlayerForcedLogout());
                 });
 
+            connection.On<ChatDTO>(
+                OnReceive.OnPlayerChat, dto =>
+                {
+                    Dispatch<IConsoleNetworkReceiver, ChatDTO>(
+                         dto, (r, d) => r.OnPlayerChatted(d));
+                });
+
             // --- Entity Service ---
             connection.On<PlayerEntityDTO>(
                 OnReceive.OnPlayerEntityJoin, dto =>
@@ -226,6 +233,13 @@ namespace Assets.Network
                         Dispatch<IEntityNetworkReceiver, PlayerEntityDTO>(
                             dto, (r, d) => r.OnPlayerEntityJoined(d));
                     }
+                });
+
+            connection.On<ChatDTO>(
+                OnReceive.OnPlayerEntityChat, dto =>
+                {
+                    Dispatch<IConsoleNetworkReceiver, ChatDTO>(
+                         dto, (r, d) => r.OnPlayerEntityChatted(d));
                 });
 
             IsBinded = true;

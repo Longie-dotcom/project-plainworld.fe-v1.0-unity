@@ -24,7 +24,6 @@ namespace Assets.State
         public event Action OnPlayerDataReady;
         public event Action OnPlayerLogout;
         public event Action OnPlayerForcedLogout;
-        public event Action<PlayerAppearance> OnPlayerCustomization;
         #endregion
 
         public PlayerState()
@@ -196,20 +195,6 @@ namespace Assets.State
         {
             if (!HasJoined || id != PlayerID) return;
             appearance.ApplySnapshot(snapshot);
-        }
-
-        public void ValidateAppearanceCreated()
-        {
-            if (!appearance.IsCreated)
-            {
-                RequireCreateAppearance();
-            }
-        }
-
-        public void RequireCreateAppearance()
-        {
-            if (!HasJoined) return;
-            OnPlayerCustomization?.Invoke(appearance);
         }
 
         public void NormalizeAppearance(

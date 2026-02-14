@@ -1,6 +1,8 @@
 using Assets.State.Interface.IReadOnlyState;
 using System;
+using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerMoveView : MonoBehaviour
 {
@@ -32,6 +34,9 @@ public class PlayerMoveView : MonoBehaviour
 
     void Update()
     {
+        if (IsTyping())
+            return;
+
         Vector2 dir = new Vector2(
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical")
@@ -68,6 +73,18 @@ public class PlayerMoveView : MonoBehaviour
     public void ApplySettings(IReadOnlySettingState settings)
     {
         moveSendRate = settings.MoveSendRate;
+    }
+
+    private bool IsTyping()
+    {
+        if (EventSystem.current == null)
+            return false;
+
+        var selected = EventSystem.current.currentSelectedGameObject;
+        if (selected == null)
+            return false;
+
+        return selected.GetComponent<TMP_InputField>() != null;
     }
     #endregion
 }

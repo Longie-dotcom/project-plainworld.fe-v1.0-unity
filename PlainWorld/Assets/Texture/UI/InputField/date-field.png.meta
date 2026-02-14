@@ -5,6 +5,39 @@ TextureImporter:
   - first:
       213: 3833253267940471328
     second: date-field_0
+  - first:
+      213: 7632860828069060009
+    second: date-field_1
+  - first:
+      213: -3663383472885195411
+    second: date-field_2
+  - first:
+      213: -962582727562169265
+    second: date-field_3
+  - first:
+      213: 965159292973437534
+    second: date-field_4
+  - first:
+      213: 990702178322750838
+    second: date-field_5
+  - first:
+      213: -9037718399615794001
+    second: date-field_6
+  - first:
+      213: -3279471787915635901
+    second: date-field_7
+  - first:
+      213: 971386118896903810
+    second: date-field_8
+  - first:
+      213: 1167413850037147400
+    second: date-field_9
+  - first:
+      213: -3722859705005875031
+    second: date-field_10
+  - first:
+      213: 6133723880056879792
+    second: date-field_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +57,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -96,19 +129,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,7 +138,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 108
+        width: 106
         height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -138,9 +158,9 @@ TextureImporter:
       name: date-field_1
       rect:
         serializedVersion: 2
-        x: 108
+        x: 106
         y: 0
-        width: 108
+        width: 106
         height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -148,10 +168,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2b535aa2e0771634b96aa72a23ed034a
-      internalID: -162000047
+      spriteID: 9addc058b7e5de960800000000000000
+      internalID: 7632860828069060009
       vertices: []
       indices: 
       edges: []
@@ -160,7 +180,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d12938571f42c1346b84dfe71e931c59
+    spriteID: b652456d620d5104b93a34025985d5c9
     internalID: 0
     vertices: []
     indices: 
@@ -171,7 +191,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       date-field_0: 3833253267940471328
-      date-field_1: -162000047
+      date-field_1: 7632860828069060009
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

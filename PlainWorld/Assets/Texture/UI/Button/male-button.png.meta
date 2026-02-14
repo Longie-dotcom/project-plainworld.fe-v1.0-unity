@@ -5,6 +5,57 @@ TextureImporter:
   - first:
       213: 8515749293653073836
     second: male-button_0
+  - first:
+      213: 5287101113461917482
+    second: male-button_1
+  - first:
+      213: 5223356509490617629
+    second: male-button_2
+  - first:
+      213: -7744739289745476450
+    second: male-button_3
+  - first:
+      213: 3647464453662871306
+    second: male-button_4
+  - first:
+      213: 6732744378202411406
+    second: male-button_5
+  - first:
+      213: 3808087377253423079
+    second: male-button_6
+  - first:
+      213: 7155696091607815677
+    second: male-button_7
+  - first:
+      213: -6116228488210362609
+    second: male-button_8
+  - first:
+      213: 1758788458700342678
+    second: male-button_9
+  - first:
+      213: 1995667135287119134
+    second: male-button_10
+  - first:
+      213: -7564960377769556950
+    second: male-button_11
+  - first:
+      213: 4965412041825552607
+    second: male-button_12
+  - first:
+      213: 4503654686427378571
+    second: male-button_13
+  - first:
+      213: -5613742035811189223
+    second: male-button_14
+  - first:
+      213: -8707455848266410076
+    second: male-button_15
+  - first:
+      213: 756934782261711279
+    second: male-button_16
+  - first:
+      213: 7014750929431111734
+    second: male-button_17
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,19 +147,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,8 +156,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 50
-        height: 70
+        width: 44
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +176,20 @@ TextureImporter:
       name: male-button_1
       rect:
         serializedVersion: 2
-        x: 50
+        x: 44
         y: 0
-        width: 50
-        height: 70
+        width: 44
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c6d6e47e1ef14f64086a55965e5bf2c9
-      internalID: -768079936
+      spriteID: a27487f437e8f5940800000000000000
+      internalID: 5287101113461917482
       vertices: []
       indices: 
       edges: []
@@ -160,20 +198,20 @@ TextureImporter:
       name: male-button_2
       rect:
         serializedVersion: 2
-        x: 100
+        x: 88
         y: 0
-        width: 50
-        height: 70
+        width: 44
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 59e269027bde10d4693087852bd38bdb
-      internalID: 1200215850
+      spriteID: d1d996322171d7840800000000000000
+      internalID: 5223356509490617629
       vertices: []
       indices: 
       edges: []
@@ -182,7 +220,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3921a1ea79f495b4e9bf81ec20eb83cf
+    spriteID: 84bcefc45ea59d94fa1d683337ac6281
     internalID: 0
     vertices: []
     indices: 
@@ -193,8 +231,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       male-button_0: 8515749293653073836
-      male-button_1: -768079936
-      male-button_2: 1200215850
+      male-button_1: 5287101113461917482
+      male-button_2: 5223356509490617629
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
