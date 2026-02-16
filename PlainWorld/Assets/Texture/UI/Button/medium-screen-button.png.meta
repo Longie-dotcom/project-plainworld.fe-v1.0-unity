@@ -5,6 +5,45 @@ TextureImporter:
   - first:
       213: -2019675149979095970
     second: medium-screen-button_0
+  - first:
+      213: -1908967717232276282
+    second: medium-screen-button_1
+  - first:
+      213: -7066053330015815174
+    second: medium-screen-button_2
+  - first:
+      213: -415698673522280348
+    second: medium-screen-button_3
+  - first:
+      213: -3504131112044677478
+    second: medium-screen-button_4
+  - first:
+      213: 936082152946918763
+    second: medium-screen-button_5
+  - first:
+      213: -213567173618002086
+    second: medium-screen-button_6
+  - first:
+      213: -4493507507915499416
+    second: medium-screen-button_7
+  - first:
+      213: -6327317953203557975
+    second: medium-screen-button_8
+  - first:
+      213: -6448798088146611638
+    second: medium-screen-button_9
+  - first:
+      213: 6747806629455271900
+    second: medium-screen-button_10
+  - first:
+      213: -7875094400141781881
+    second: medium-screen-button_11
+  - first:
+      213: -4315826594516346618
+    second: medium-screen-button_12
+  - first:
+      213: 6945853357639754234
+    second: medium-screen-button_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,19 +135,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,8 +144,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 44
-        height: 44
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +164,20 @@ TextureImporter:
       name: medium-screen-button_1
       rect:
         serializedVersion: 2
-        x: 44
+        x: 50
         y: 0
-        width: 44
-        height: 44
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5265263d4bb3d564ba7eb32930c3b68a
-      internalID: -908309327
+      spriteID: 6cc8eaea9fbf185e0800000000000000
+      internalID: -1908967717232276282
       vertices: []
       indices: 
       edges: []
@@ -160,20 +186,20 @@ TextureImporter:
       name: medium-screen-button_2
       rect:
         serializedVersion: 2
-        x: 88
+        x: 100
         y: 0
-        width: 44
-        height: 44
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fc8d1fcbc443d834bac88dd2743c815e
-      internalID: -1069686193
+      spriteID: af9f0741fe550fd90800000000000000
+      internalID: -7066053330015815174
       vertices: []
       indices: 
       edges: []
@@ -182,7 +208,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d04de54b24d033a42b260e9ec9445bec
+    spriteID: 06dcc4fc9d7b05f4ebbd4066194486ee
     internalID: 0
     vertices: []
     indices: 
@@ -193,8 +219,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       medium-screen-button_0: -2019675149979095970
-      medium-screen-button_1: -908309327
-      medium-screen-button_2: -1069686193
+      medium-screen-button_1: -1908967717232276282
+      medium-screen-button_2: -7066053330015815174
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

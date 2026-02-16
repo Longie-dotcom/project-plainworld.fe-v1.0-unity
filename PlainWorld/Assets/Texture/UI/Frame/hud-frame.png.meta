@@ -3,8 +3,8 @@ guid: ca0351577fcf0ab4b818ad2d8570f00d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5377092325000172201
-    second: HUD-frame 1_0
+      213: -2622430103900718995
+    second: HUD-frame_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HUD-frame 1_0
+      name: HUD-frame_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 1058
-        height: 695
+        height: 704
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75da2ebf40bb065b0800000000000000
-      internalID: -5377092325000172201
+      spriteID: d68f4b8f6b14b9bd0800000000000000
+      internalID: -2622430103900718995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD-frame_1
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 0
+        width: 1058
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55187aa28196bc43af9aa0c67eaa0fc
+      internalID: -2102843696
       vertices: []
       indices: 
       edges: []
@@ -125,7 +147,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: a29a992c8fa966a438fe27c484d79326
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +157,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HUD-frame 1_0: -5377092325000172201
+      HUD-frame_0: -2622430103900718995
+      HUD-frame_1: -2102843696
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

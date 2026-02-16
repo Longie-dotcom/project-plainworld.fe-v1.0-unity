@@ -5,6 +5,45 @@ TextureImporter:
   - first:
       213: -1721291024730690245
     second: full-screen_0
+  - first:
+      213: -1397545693260102143
+    second: full-screen_1
+  - first:
+      213: 1369693026066963037
+    second: full-screen_2
+  - first:
+      213: -1968917747023865335
+    second: full-screen_3
+  - first:
+      213: 9113464621437018972
+    second: full-screen_4
+  - first:
+      213: -8247127883913851508
+    second: full-screen_5
+  - first:
+      213: 2693018233566604615
+    second: full-screen_6
+  - first:
+      213: -5300825956954238156
+    second: full-screen_7
+  - first:
+      213: -4278783985278666331
+    second: full-screen_8
+  - first:
+      213: 1803525574142165704
+    second: full-screen_9
+  - first:
+      213: -811370520004635274
+    second: full-screen_10
+  - first:
+      213: 825670831067375802
+    second: full-screen_11
+  - first:
+      213: -7699346139443379848
+    second: full-screen_12
+  - first:
+      213: 1993116386503741916
+    second: full-screen_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,19 +135,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,8 +144,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 44
-        height: 44
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +164,20 @@ TextureImporter:
       name: full-screen_1
       rect:
         serializedVersion: 2
-        x: 44
+        x: 50
         y: 0
-        width: 44
-        height: 44
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2357e4682103e0348b78efd76fdb4991
-      internalID: -2133470218
+      spriteID: 106cad3b89bea9ce0800000000000000
+      internalID: -1397545693260102143
       vertices: []
       indices: 
       edges: []
@@ -160,20 +186,20 @@ TextureImporter:
       name: full-screen_2
       rect:
         serializedVersion: 2
-        x: 88
+        x: 100
         y: 0
-        width: 44
-        height: 44
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e2f3bdeed95811946b81dfb8e03532d9
-      internalID: 817610667
+      spriteID: d5a1d0edc80220310800000000000000
+      internalID: 1369693026066963037
       vertices: []
       indices: 
       edges: []
@@ -182,7 +208,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5ff9ca62a296d7f4dbdf7e561647c0ea
+    spriteID: b0857a3a68bdb8748b716bd8e4e09639
     internalID: 0
     vertices: []
     indices: 
@@ -193,8 +219,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       full-screen_0: -1721291024730690245
-      full-screen_1: -2133470218
-      full-screen_2: 817610667
+      full-screen_1: -1397545693260102143
+      full-screen_2: 1369693026066963037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

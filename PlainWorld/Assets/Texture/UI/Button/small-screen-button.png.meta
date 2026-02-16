@@ -5,6 +5,45 @@ TextureImporter:
   - first:
       213: 1242010612817870465
     second: small-screen-button_0
+  - first:
+      213: 1355233842061378605
+    second: small-screen-button_1
+  - first:
+      213: 1697762594284604499
+    second: small-screen-button_2
+  - first:
+      213: -3201697556245199172
+    second: small-screen-button_3
+  - first:
+      213: 3409103046988460862
+    second: small-screen-button_4
+  - first:
+      213: -5387106480534350992
+    second: small-screen-button_5
+  - first:
+      213: -3615152514438601902
+    second: small-screen-button_6
+  - first:
+      213: -638621573352446401
+    second: small-screen-button_7
+  - first:
+      213: 7632983473819971904
+    second: small-screen-button_8
+  - first:
+      213: 5484362649258542651
+    second: small-screen-button_9
+  - first:
+      213: -2069510201381322747
+    second: small-screen-button_10
+  - first:
+      213: 946130071653083239
+    second: small-screen-button_11
+  - first:
+      213: 5441427374093322640
+    second: small-screen-button_12
+  - first:
+      213: -2019164350429766665
+    second: small-screen-button_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,19 +135,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,8 +144,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 44
-        height: 44
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +164,20 @@ TextureImporter:
       name: small-screen-button_1
       rect:
         serializedVersion: 2
-        x: 44
+        x: 50
         y: 0
-        width: 44
-        height: 44
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0083be08830753d4b87f0a5165a09b9d
-      internalID: -377675807
+      spriteID: d2408afbff1cec210800000000000000
+      internalID: 1355233842061378605
       vertices: []
       indices: 
       edges: []
@@ -160,20 +186,20 @@ TextureImporter:
       name: small-screen-button_2
       rect:
         serializedVersion: 2
-        x: 88
+        x: 100
         y: 0
-        width: 44
-        height: 44
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 43aba68af7ab65f41bb751bdd514312e
-      internalID: -1100458485
+      spriteID: 35c8749951aaf8710800000000000000
+      internalID: 1697762594284604499
       vertices: []
       indices: 
       edges: []
@@ -182,7 +208,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b9418ecf8ed615f4ab360723fe1d872e
+    spriteID: 099e9bc4e6d91a8458de63ad8dcb6244
     internalID: 0
     vertices: []
     indices: 
@@ -193,8 +219,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       small-screen-button_0: 1242010612817870465
-      small-screen-button_1: -377675807
-      small-screen-button_2: -1100458485
+      small-screen-button_1: 1355233842061378605
+      small-screen-button_2: 1697762594284604499
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
