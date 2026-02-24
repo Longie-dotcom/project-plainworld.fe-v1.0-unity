@@ -28,7 +28,6 @@ public class HUDUtilsView : MonoBehaviour
         settingButton.onClick.AddListener(() => Open(settingView, settingButton));
     }
 
-
     void Start()
     {
 
