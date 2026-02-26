@@ -80,6 +80,72 @@ TextureImporter:
   - first:
       213: -6402585044357109232
     second: shoe-sandal_25
+  - first:
+      213: 5354451558064255025
+    second: shoe-sandal_26
+  - first:
+      213: -6545010988065997506
+    second: shoe-sandal_27
+  - first:
+      213: 5413984115113173870
+    second: shoe-sandal_28
+  - first:
+      213: -8141118854589683605
+    second: shoe-sandal_29
+  - first:
+      213: -573979638731023602
+    second: shoe-sandal_30
+  - first:
+      213: -8790957656210607368
+    second: shoe-sandal_31
+  - first:
+      213: 735864024786167040
+    second: shoe-sandal_32
+  - first:
+      213: 2153819023167609801
+    second: shoe-sandal_33
+  - first:
+      213: 3504959658324640430
+    second: shoe-sandal_34
+  - first:
+      213: 6759419584536760281
+    second: shoe-sandal_35
+  - first:
+      213: 5780994760916818913
+    second: shoe-sandal_36
+  - first:
+      213: 8500138257067903955
+    second: shoe-sandal_37
+  - first:
+      213: -5441833575556654822
+    second: shoe-sandal_38
+  - first:
+      213: 3391249385120644508
+    second: shoe-sandal_39
+  - first:
+      213: -2103654985188684129
+    second: shoe-sandal_40
+  - first:
+      213: 1107786682093161738
+    second: shoe-sandal_41
+  - first:
+      213: 5464926984697191382
+    second: shoe-sandal_42
+  - first:
+      213: 4513597335562182571
+    second: shoe-sandal_43
+  - first:
+      213: -1342480926145193347
+    second: shoe-sandal_44
+  - first:
+      213: 4177743950960139624
+    second: shoe-sandal_45
+  - first:
+      213: -2147110634359737282
+    second: shoe-sandal_46
+  - first:
+      213: 6925393499109984346
+    second: shoe-sandal_47
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +192,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,7 +215,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -171,19 +237,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -193,8 +246,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +266,10 @@ TextureImporter:
       name: shoe-sandal_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 32
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,10 +288,10 @@ TextureImporter:
       name: shoe-sandal_2
       rect:
         serializedVersion: 2
-        x: 96
+        x: 64
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +310,10 @@ TextureImporter:
       name: shoe-sandal_3
       rect:
         serializedVersion: 2
-        x: 144
+        x: 96
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,10 +332,10 @@ TextureImporter:
       name: shoe-sandal_4
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,10 +354,10 @@ TextureImporter:
       name: shoe-sandal_5
       rect:
         serializedVersion: 2
-        x: 240
+        x: 160
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +376,10 @@ TextureImporter:
       name: shoe-sandal_6
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,10 +398,10 @@ TextureImporter:
       name: shoe-sandal_7
       rect:
         serializedVersion: 2
-        x: 336
+        x: 224
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,10 +420,10 @@ TextureImporter:
       name: shoe-sandal_8
       rect:
         serializedVersion: 2
-        x: 384
+        x: 256
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,10 +442,10 @@ TextureImporter:
       name: shoe-sandal_9
       rect:
         serializedVersion: 2
-        x: 432
+        x: 288
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,10 +464,10 @@ TextureImporter:
       name: shoe-sandal_10
       rect:
         serializedVersion: 2
-        x: 480
+        x: 320
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,10 +486,10 @@ TextureImporter:
       name: shoe-sandal_11
       rect:
         serializedVersion: 2
-        x: 528
+        x: 352
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,10 +508,10 @@ TextureImporter:
       name: shoe-sandal_12
       rect:
         serializedVersion: 2
-        x: 576
+        x: 384
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,10 +530,10 @@ TextureImporter:
       name: shoe-sandal_13
       rect:
         serializedVersion: 2
-        x: 624
+        x: 416
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,10 +552,10 @@ TextureImporter:
       name: shoe-sandal_14
       rect:
         serializedVersion: 2
-        x: 672
+        x: 448
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,10 +574,10 @@ TextureImporter:
       name: shoe-sandal_15
       rect:
         serializedVersion: 2
-        x: 720
+        x: 480
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -543,10 +596,10 @@ TextureImporter:
       name: shoe-sandal_16
       rect:
         serializedVersion: 2
-        x: 768
+        x: 512
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,10 +618,10 @@ TextureImporter:
       name: shoe-sandal_17
       rect:
         serializedVersion: 2
-        x: 816
+        x: 544
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -587,10 +640,10 @@ TextureImporter:
       name: shoe-sandal_18
       rect:
         serializedVersion: 2
-        x: 864
+        x: 576
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,10 +662,10 @@ TextureImporter:
       name: shoe-sandal_19
       rect:
         serializedVersion: 2
-        x: 912
+        x: 608
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -627,11 +680,363 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2dc17ed8d133d00800000000000000
+      internalID: 951136441610326700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_21
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaea764828219ffc0800000000000000
+      internalID: -3460714486881079638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2440a0e4e96e910800000000000000
+      internalID: 1866353153604338398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_23
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64bf7d8949151ae40800000000000000
+      internalID: 5665899504870095686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_24
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fec7bf225197b150800000000000000
+      internalID: 5888334819984133874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01aadd213d27527a0800000000000000
+      internalID: -6402585044357109232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_26
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130f47da255de4a40800000000000000
+      internalID: 5354451558064255025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_27
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d3c4dee237b25a0800000000000000
+      internalID: -6545010988065997506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_28
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e63ade04ed5522b40800000000000000
+      internalID: 5413984115113173870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_29
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6862f5098fe40f80800000000000000
+      internalID: -8141118854589683605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_30
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b51254f80d808f0800000000000000
+      internalID: -573979638731023602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_31
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2f012969e300680800000000000000
+      internalID: -8790957656210607368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_32
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0056e588e60563a00800000000000000
+      internalID: 735864024786167040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_33
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb526a7df6e3ed10800000000000000
+      internalID: 2153819023167609801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_34
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2c38a3d3e14a030800000000000000
+      internalID: 3504959658324640430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-sandal_35
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dfc1289c484ecd50800000000000000
+      internalID: 6759419584536760281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b763fd61bb8985d4ba051dc95fbb0e02
+    spriteID: f6742a9b45dede543b993b77ef2a98de
     internalID: 0
     vertices: []
     indices: 
@@ -654,7 +1059,23 @@ TextureImporter:
       shoe-sandal_18: 6992919369161720192
       shoe-sandal_19: 2661304303137104657
       shoe-sandal_2: -732988414016707001
+      shoe-sandal_20: 951136441610326700
+      shoe-sandal_21: -3460714486881079638
+      shoe-sandal_22: 1866353153604338398
+      shoe-sandal_23: 5665899504870095686
+      shoe-sandal_24: 5888334819984133874
+      shoe-sandal_25: -6402585044357109232
+      shoe-sandal_26: 5354451558064255025
+      shoe-sandal_27: -6545010988065997506
+      shoe-sandal_28: 5413984115113173870
+      shoe-sandal_29: -8141118854589683605
       shoe-sandal_3: 1308034565757024889
+      shoe-sandal_30: -573979638731023602
+      shoe-sandal_31: -8790957656210607368
+      shoe-sandal_32: 735864024786167040
+      shoe-sandal_33: 2153819023167609801
+      shoe-sandal_34: 3504959658324640430
+      shoe-sandal_35: 6759419584536760281
       shoe-sandal_4: -8282450270166823413
       shoe-sandal_5: 2462330362810831527
       shoe-sandal_6: 9052619750625254474

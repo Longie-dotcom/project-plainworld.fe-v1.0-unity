@@ -62,6 +62,54 @@ TextureImporter:
   - first:
       213: -5032472131128889867
     second: pant-skirt_19
+  - first:
+      213: -5822434276805528166
+    second: pant-skirt_20
+  - first:
+      213: -83880366034899577
+    second: pant-skirt_21
+  - first:
+      213: -3828849558416211956
+    second: pant-skirt_22
+  - first:
+      213: 5481853834725602595
+    second: pant-skirt_23
+  - first:
+      213: 2473158593551591434
+    second: pant-skirt_24
+  - first:
+      213: -2736809118104990199
+    second: pant-skirt_25
+  - first:
+      213: -933684485275588841
+    second: pant-skirt_26
+  - first:
+      213: -1593248479053611642
+    second: pant-skirt_27
+  - first:
+      213: 4768330685257544805
+    second: pant-skirt_28
+  - first:
+      213: 8091894207263235579
+    second: pant-skirt_29
+  - first:
+      213: 8269593464789826458
+    second: pant-skirt_30
+  - first:
+      213: -6308868608750177767
+    second: pant-skirt_31
+  - first:
+      213: -4715955811280690861
+    second: pant-skirt_32
+  - first:
+      213: 8490868314999065646
+    second: pant-skirt_33
+  - first:
+      213: -1178539952415279231
+    second: pant-skirt_34
+  - first:
+      213: 7949392562854095430
+    second: pant-skirt_35
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,7 +156,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,7 +179,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -153,19 +201,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -175,8 +210,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,10 +230,10 @@ TextureImporter:
       name: pant-skirt_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 32
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +252,10 @@ TextureImporter:
       name: pant-skirt_2
       rect:
         serializedVersion: 2
-        x: 96
+        x: 64
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +274,10 @@ TextureImporter:
       name: pant-skirt_3
       rect:
         serializedVersion: 2
-        x: 144
+        x: 96
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,10 +296,10 @@ TextureImporter:
       name: pant-skirt_4
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,10 +318,10 @@ TextureImporter:
       name: pant-skirt_5
       rect:
         serializedVersion: 2
-        x: 240
+        x: 160
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,10 +340,10 @@ TextureImporter:
       name: pant-skirt_6
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,10 +362,10 @@ TextureImporter:
       name: pant-skirt_7
       rect:
         serializedVersion: 2
-        x: 336
+        x: 224
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,10 +384,10 @@ TextureImporter:
       name: pant-skirt_8
       rect:
         serializedVersion: 2
-        x: 384
+        x: 256
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,10 +406,10 @@ TextureImporter:
       name: pant-skirt_9
       rect:
         serializedVersion: 2
-        x: 432
+        x: 288
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,10 +428,10 @@ TextureImporter:
       name: pant-skirt_10
       rect:
         serializedVersion: 2
-        x: 480
+        x: 320
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +450,10 @@ TextureImporter:
       name: pant-skirt_11
       rect:
         serializedVersion: 2
-        x: 528
+        x: 352
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,10 +472,10 @@ TextureImporter:
       name: pant-skirt_12
       rect:
         serializedVersion: 2
-        x: 576
+        x: 384
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -459,10 +494,10 @@ TextureImporter:
       name: pant-skirt_13
       rect:
         serializedVersion: 2
-        x: 624
+        x: 416
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,10 +516,10 @@ TextureImporter:
       name: pant-skirt_14
       rect:
         serializedVersion: 2
-        x: 672
+        x: 448
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -503,10 +538,10 @@ TextureImporter:
       name: pant-skirt_15
       rect:
         serializedVersion: 2
-        x: 720
+        x: 480
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,10 +560,10 @@ TextureImporter:
       name: pant-skirt_16
       rect:
         serializedVersion: 2
-        x: 768
+        x: 512
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -547,10 +582,10 @@ TextureImporter:
       name: pant-skirt_17
       rect:
         serializedVersion: 2
-        x: 816
+        x: 544
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -569,10 +604,10 @@ TextureImporter:
       name: pant-skirt_18
       rect:
         serializedVersion: 2
-        x: 864
+        x: 576
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -591,10 +626,10 @@ TextureImporter:
       name: pant-skirt_19
       rect:
         serializedVersion: 2
-        x: 912
+        x: 608
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,11 +644,363 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: pant-skirt_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95b2f2bfde823fa0800000000000000
+      internalID: -5822434276805528166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_21
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d2cd2604ff5def0800000000000000
+      internalID: -83880366034899577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00c03cdc913ddac0800000000000000
+      internalID: -3828849558416211956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_23
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325be61c405731c40800000000000000
+      internalID: 5481853834725602595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_24
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08e8d133ac625220800000000000000
+      internalID: 2473158593551591434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e4d497b96e40ad0800000000000000
+      internalID: -2736809118104990199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_26
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717ead258e2ea03f0800000000000000
+      internalID: -933684485275588841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_27
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68df31f13f4a3e9e0800000000000000
+      internalID: -1593248479053611642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_28
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564fe5a9e738c2240800000000000000
+      internalID: 4768330685257544805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_29
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd57f7a8ee2c4070800000000000000
+      internalID: 8091894207263235579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_30
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b70b9217f73c270800000000000000
+      internalID: 8269593464789826458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_31
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91235d81d656278a0800000000000000
+      internalID: -6308868608750177767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_32
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 351ec240d2f8d8eb0800000000000000
+      internalID: -4715955811280690861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_33
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c8326febf95d570800000000000000
+      internalID: 8490868314999065646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_34
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1877eae482cf4afe0800000000000000
+      internalID: -1178539952415279231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-skirt_35
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64aec011b6ae15e60800000000000000
+      internalID: 7949392562854095430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f86f6f6a38a7f8140a7b066460af33d6
+    spriteID: bc9b5a2fc6c14c04ca6180c8e33287c1
     internalID: 0
     vertices: []
     indices: 
@@ -636,7 +1023,23 @@ TextureImporter:
       pant-skirt_18: 6897700474892350754
       pant-skirt_19: -5032472131128889867
       pant-skirt_2: 672443237831497658
+      pant-skirt_20: -5822434276805528166
+      pant-skirt_21: -83880366034899577
+      pant-skirt_22: -3828849558416211956
+      pant-skirt_23: 5481853834725602595
+      pant-skirt_24: 2473158593551591434
+      pant-skirt_25: -2736809118104990199
+      pant-skirt_26: -933684485275588841
+      pant-skirt_27: -1593248479053611642
+      pant-skirt_28: 4768330685257544805
+      pant-skirt_29: 8091894207263235579
       pant-skirt_3: 5497805607291691554
+      pant-skirt_30: 8269593464789826458
+      pant-skirt_31: -6308868608750177767
+      pant-skirt_32: -4715955811280690861
+      pant-skirt_33: 8490868314999065646
+      pant-skirt_34: -1178539952415279231
+      pant-skirt_35: 7949392562854095430
       pant-skirt_4: -3276756395924522027
       pant-skirt_5: -218615271564997044
       pant-skirt_6: -2676275925651158845

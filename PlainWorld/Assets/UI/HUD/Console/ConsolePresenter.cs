@@ -11,7 +11,6 @@ namespace Assets.UI.HUD.Console
         private ConsoleService consoleService;
         private ConsoleView consoleView;
 
-        //private string inputText;
         private bool disposed;
         #endregion
 
@@ -38,7 +37,6 @@ namespace Assets.UI.HUD.Console
 
             // Inbound
             consoleView.OnSendClicked -= OnSendChatClicked;
-            //consoleView.OnInputChanged -= OnInputChanged;
 
             // Outbound
             consoleService.ConsoleState.OnReceivedChat -= consoleView.AppendMessage;
@@ -52,7 +50,6 @@ namespace Assets.UI.HUD.Console
 
             // Inbound
             consoleView.OnSendClicked += OnSendChatClicked;
-            //consoleView.OnInputChanged += OnInputChanged;
 
             // Outbound
             consoleService.ConsoleState.OnReceivedChat += consoleView.AppendMessage;
@@ -67,13 +64,6 @@ namespace Assets.UI.HUD.Console
                 await consoleService.PlayerChat(message); 
             });
         }
-        #endregion
-
-        #region Inputs
-        //private void OnInputChanged(string text)
-        //{
-        //    inputText = text;
-        //}
         #endregion
         #endregion
     }

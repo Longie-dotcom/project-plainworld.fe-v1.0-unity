@@ -62,6 +62,54 @@ TextureImporter:
   - first:
       213: -6721131892145984715
     second: pant-jean_19
+  - first:
+      213: 1676929691233085233
+    second: pant-jean_20
+  - first:
+      213: -164086175906935880
+    second: pant-jean_21
+  - first:
+      213: -8370444266639232362
+    second: pant-jean_22
+  - first:
+      213: 1966475354105831318
+    second: pant-jean_23
+  - first:
+      213: 8534371775033182525
+    second: pant-jean_24
+  - first:
+      213: 3073080770868139025
+    second: pant-jean_25
+  - first:
+      213: -7784914260277190166
+    second: pant-jean_26
+  - first:
+      213: 6595399802795741740
+    second: pant-jean_27
+  - first:
+      213: -7678047991324395933
+    second: pant-jean_28
+  - first:
+      213: 8199583038800357114
+    second: pant-jean_29
+  - first:
+      213: -7600675984156482209
+    second: pant-jean_30
+  - first:
+      213: -7244861893650111134
+    second: pant-jean_31
+  - first:
+      213: -5250644102787112002
+    second: pant-jean_32
+  - first:
+      213: 8866743154721075865
+    second: pant-jean_33
+  - first:
+      213: 500586898436756890
+    second: pant-jean_34
+  - first:
+      213: -19874281062652657
+    second: pant-jean_35
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,7 +156,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,7 +179,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -153,19 +201,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -175,8 +210,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,10 +230,10 @@ TextureImporter:
       name: pant-jean_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 32
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +252,10 @@ TextureImporter:
       name: pant-jean_2
       rect:
         serializedVersion: 2
-        x: 96
+        x: 64
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +274,10 @@ TextureImporter:
       name: pant-jean_3
       rect:
         serializedVersion: 2
-        x: 144
+        x: 96
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,10 +296,10 @@ TextureImporter:
       name: pant-jean_4
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,10 +318,10 @@ TextureImporter:
       name: pant-jean_5
       rect:
         serializedVersion: 2
-        x: 240
+        x: 160
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,10 +340,10 @@ TextureImporter:
       name: pant-jean_6
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,10 +362,10 @@ TextureImporter:
       name: pant-jean_7
       rect:
         serializedVersion: 2
-        x: 336
+        x: 224
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,10 +384,10 @@ TextureImporter:
       name: pant-jean_8
       rect:
         serializedVersion: 2
-        x: 384
+        x: 256
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,10 +406,10 @@ TextureImporter:
       name: pant-jean_9
       rect:
         serializedVersion: 2
-        x: 432
+        x: 288
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,10 +428,10 @@ TextureImporter:
       name: pant-jean_10
       rect:
         serializedVersion: 2
-        x: 480
+        x: 320
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +450,10 @@ TextureImporter:
       name: pant-jean_11
       rect:
         serializedVersion: 2
-        x: 528
+        x: 352
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,10 +472,10 @@ TextureImporter:
       name: pant-jean_12
       rect:
         serializedVersion: 2
-        x: 576
+        x: 384
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -459,10 +494,10 @@ TextureImporter:
       name: pant-jean_13
       rect:
         serializedVersion: 2
-        x: 624
+        x: 416
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,10 +516,10 @@ TextureImporter:
       name: pant-jean_14
       rect:
         serializedVersion: 2
-        x: 672
+        x: 448
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -503,10 +538,10 @@ TextureImporter:
       name: pant-jean_15
       rect:
         serializedVersion: 2
-        x: 720
+        x: 480
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,10 +560,10 @@ TextureImporter:
       name: pant-jean_16
       rect:
         serializedVersion: 2
-        x: 768
+        x: 512
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -547,10 +582,10 @@ TextureImporter:
       name: pant-jean_17
       rect:
         serializedVersion: 2
-        x: 816
+        x: 544
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -569,10 +604,10 @@ TextureImporter:
       name: pant-jean_18
       rect:
         serializedVersion: 2
-        x: 864
+        x: 576
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -591,10 +626,10 @@ TextureImporter:
       name: pant-jean_19
       rect:
         serializedVersion: 2
-        x: 912
+        x: 608
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,11 +644,363 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: pant-jean_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 137e04f5ba6a54710800000000000000
+      internalID: 1676929691233085233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_21
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bbc38c0e7c09bdf0800000000000000
+      internalID: -164086175906935880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69273cab94536db80800000000000000
+      internalID: -8370444266639232362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_23
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69fd90d6ae25a4b10800000000000000
+      internalID: 1966475354105831318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_24
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3909ff89ed207670800000000000000
+      internalID: 8534371775033182525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114dda1eda6c5aa20800000000000000
+      internalID: 3073080770868139025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_26
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae12e4df9bd66f390800000000000000
+      internalID: -7784914260277190166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_27
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c22525d3d21978b50800000000000000
+      internalID: 6595399802795741740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_28
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36635bc2808127590800000000000000
+      internalID: -7678047991324395933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_29
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6630e9455cac170800000000000000
+      internalID: 8199583038800357114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_30
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55a2876679f48690800000000000000
+      internalID: -7600675984156482209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_31
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265a83e1e74157b90800000000000000
+      internalID: -7244861893650111134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_32
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3ef53f107f127b0800000000000000
+      internalID: -5250644102787112002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_33
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992b6c3dbeffc0b70800000000000000
+      internalID: 8866743154721075865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_34
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a959984c12172f600800000000000000
+      internalID: 500586898436756890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pant-jean_35
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f052819527469bff0800000000000000
+      internalID: -19874281062652657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8a547233cf785a64fb1e55db78bf6827
+    spriteID: c37548692d64ec24085aa3064a76e5f7
     internalID: 0
     vertices: []
     indices: 
@@ -636,7 +1023,23 @@ TextureImporter:
       pant-jean_18: -4974446171017062740
       pant-jean_19: -6721131892145984715
       pant-jean_2: 1481672709186686678
+      pant-jean_20: 1676929691233085233
+      pant-jean_21: -164086175906935880
+      pant-jean_22: -8370444266639232362
+      pant-jean_23: 1966475354105831318
+      pant-jean_24: 8534371775033182525
+      pant-jean_25: 3073080770868139025
+      pant-jean_26: -7784914260277190166
+      pant-jean_27: 6595399802795741740
+      pant-jean_28: -7678047991324395933
+      pant-jean_29: 8199583038800357114
       pant-jean_3: 436996214397712808
+      pant-jean_30: -7600675984156482209
+      pant-jean_31: -7244861893650111134
+      pant-jean_32: -5250644102787112002
+      pant-jean_33: 8866743154721075865
+      pant-jean_34: 500586898436756890
+      pant-jean_35: -19874281062652657
       pant-jean_4: 2903931872141920001
       pant-jean_5: 510584144957296762
       pant-jean_6: 8001746517474360617

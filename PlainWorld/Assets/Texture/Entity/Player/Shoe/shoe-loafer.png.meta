@@ -80,6 +80,72 @@ TextureImporter:
   - first:
       213: -5788420863397098912
     second: shoe-loafer_25
+  - first:
+      213: -5422559588328665791
+    second: shoe-loafer_26
+  - first:
+      213: 1560197309368325668
+    second: shoe-loafer_27
+  - first:
+      213: -3180848848616711415
+    second: shoe-loafer_28
+  - first:
+      213: -3070666789066174250
+    second: shoe-loafer_29
+  - first:
+      213: -6269987848576044081
+    second: shoe-loafer_30
+  - first:
+      213: -1126266921295291257
+    second: shoe-loafer_31
+  - first:
+      213: -2357587352193571635
+    second: shoe-loafer_32
+  - first:
+      213: -9116877641569946297
+    second: shoe-loafer_33
+  - first:
+      213: 524063984201348558
+    second: shoe-loafer_34
+  - first:
+      213: -1677031496752203307
+    second: shoe-loafer_35
+  - first:
+      213: 3669225415141460862
+    second: shoe-loafer_36
+  - first:
+      213: -658745295699530728
+    second: shoe-loafer_37
+  - first:
+      213: 925896020664665029
+    second: shoe-loafer_38
+  - first:
+      213: 7721993224160489559
+    second: shoe-loafer_39
+  - first:
+      213: 7685477180537477129
+    second: shoe-loafer_40
+  - first:
+      213: 6653540462117674151
+    second: shoe-loafer_41
+  - first:
+      213: -900747810098748247
+    second: shoe-loafer_42
+  - first:
+      213: -3825843165489394862
+    second: shoe-loafer_43
+  - first:
+      213: 2644753232685524089
+    second: shoe-loafer_44
+  - first:
+      213: 2083597203888803257
+    second: shoe-loafer_45
+  - first:
+      213: -8041035492589044785
+    second: shoe-loafer_46
+  - first:
+      213: 7097773440838055673
+    second: shoe-loafer_47
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +192,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,7 +215,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -171,19 +237,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -193,8 +246,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +266,10 @@ TextureImporter:
       name: shoe-loafer_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 32
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,10 +288,10 @@ TextureImporter:
       name: shoe-loafer_2
       rect:
         serializedVersion: 2
-        x: 96
+        x: 64
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +310,10 @@ TextureImporter:
       name: shoe-loafer_3
       rect:
         serializedVersion: 2
-        x: 144
+        x: 96
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,10 +332,10 @@ TextureImporter:
       name: shoe-loafer_4
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,10 +354,10 @@ TextureImporter:
       name: shoe-loafer_5
       rect:
         serializedVersion: 2
-        x: 240
+        x: 160
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +376,10 @@ TextureImporter:
       name: shoe-loafer_6
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,10 +398,10 @@ TextureImporter:
       name: shoe-loafer_7
       rect:
         serializedVersion: 2
-        x: 336
+        x: 224
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,10 +420,10 @@ TextureImporter:
       name: shoe-loafer_8
       rect:
         serializedVersion: 2
-        x: 384
+        x: 256
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,10 +442,10 @@ TextureImporter:
       name: shoe-loafer_9
       rect:
         serializedVersion: 2
-        x: 432
+        x: 288
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,10 +464,10 @@ TextureImporter:
       name: shoe-loafer_10
       rect:
         serializedVersion: 2
-        x: 480
+        x: 320
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,10 +486,10 @@ TextureImporter:
       name: shoe-loafer_11
       rect:
         serializedVersion: 2
-        x: 528
+        x: 352
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,10 +508,10 @@ TextureImporter:
       name: shoe-loafer_12
       rect:
         serializedVersion: 2
-        x: 576
+        x: 384
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,10 +530,10 @@ TextureImporter:
       name: shoe-loafer_13
       rect:
         serializedVersion: 2
-        x: 624
+        x: 416
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,10 +552,10 @@ TextureImporter:
       name: shoe-loafer_14
       rect:
         serializedVersion: 2
-        x: 672
+        x: 448
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,10 +574,10 @@ TextureImporter:
       name: shoe-loafer_15
       rect:
         serializedVersion: 2
-        x: 720
+        x: 480
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -543,10 +596,10 @@ TextureImporter:
       name: shoe-loafer_16
       rect:
         serializedVersion: 2
-        x: 768
+        x: 512
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,10 +618,10 @@ TextureImporter:
       name: shoe-loafer_17
       rect:
         serializedVersion: 2
-        x: 816
+        x: 544
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -587,10 +640,10 @@ TextureImporter:
       name: shoe-loafer_18
       rect:
         serializedVersion: 2
-        x: 864
+        x: 576
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,10 +662,10 @@ TextureImporter:
       name: shoe-loafer_19
       rect:
         serializedVersion: 2
-        x: 912
+        x: 608
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -627,11 +680,363 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559abc1146b045950800000000000000
+      internalID: 6436782291842476373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_21
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a9939c8a65078b0800000000000000
+      internalID: -5156526290408727944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329828a88cbba4c40800000000000000
+      internalID: 5497412765150775587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_23
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a7934dc2ab0d6e0800000000000000
+      internalID: -1814745948128445833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_24
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef9cec3fc88edeac0800000000000000
+      internalID: -3824144816484201986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a81c2a4e56bafa0800000000000000
+      internalID: -5788420863397098912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_26
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d084cc8c23fb4b0800000000000000
+      internalID: -5422559588328665791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_27
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4265b64cf2fe6a510800000000000000
+      internalID: 1560197309368325668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_28
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b9df533da5bd3d0800000000000000
+      internalID: -3180848848616711415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_29
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d01f1e03dcc265d0800000000000000
+      internalID: -3070666789066174250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_30
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3fb9385478cf8a0800000000000000
+      internalID: -6269987848576044081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_31
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78cdbe9c332be50f0800000000000000
+      internalID: -1126266921295291257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_32
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc46c815bca284fd0800000000000000
+      internalID: -2357587352193571635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_33
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 745b58996185a7180800000000000000
+      internalID: -9116877641569946297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_34
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec5b5e1ca69d54700800000000000000
+      internalID: 524063984201348558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoe-loafer_35
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d971fe2dbcf9b8e0800000000000000
+      internalID: -1677031496752203307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5b2b6b8ea202107458a9108c6d5a6619
+    spriteID: 5a7261726233f5949ac5248a2ae120c6
     internalID: 0
     vertices: []
     indices: 
@@ -654,7 +1059,23 @@ TextureImporter:
       shoe-loafer_18: 6353891794140664535
       shoe-loafer_19: 2720459705643610053
       shoe-loafer_2: -6067904461517302379
+      shoe-loafer_20: 6436782291842476373
+      shoe-loafer_21: -5156526290408727944
+      shoe-loafer_22: 5497412765150775587
+      shoe-loafer_23: -1814745948128445833
+      shoe-loafer_24: -3824144816484201986
+      shoe-loafer_25: -5788420863397098912
+      shoe-loafer_26: -5422559588328665791
+      shoe-loafer_27: 1560197309368325668
+      shoe-loafer_28: -3180848848616711415
+      shoe-loafer_29: -3070666789066174250
       shoe-loafer_3: -7585628461894085978
+      shoe-loafer_30: -6269987848576044081
+      shoe-loafer_31: -1126266921295291257
+      shoe-loafer_32: -2357587352193571635
+      shoe-loafer_33: -9116877641569946297
+      shoe-loafer_34: 524063984201348558
+      shoe-loafer_35: -1677031496752203307
       shoe-loafer_4: -3927959865199164049
       shoe-loafer_5: 7783197406957359953
       shoe-loafer_6: 875528219071404069

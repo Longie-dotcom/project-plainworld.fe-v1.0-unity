@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -74,7 +74,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -96,19 +96,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,8 +105,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,10 +125,10 @@ TextureImporter:
       name: eye-dumb_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 32
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47dc5adf637bb2d4b86888b4cd62478b
-      internalID: 614980593
+      spriteID: 6f154993265969c469b0b584fab889bb
+      internalID: -1483919587
       vertices: []
       indices: 
       edges: []
@@ -160,10 +147,10 @@ TextureImporter:
       name: eye-dumb_2
       rect:
         serializedVersion: 2
-        x: 144
+        x: 96
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,8 +159,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb1ee4b4aad90a04793bab7b3cf126e1
-      internalID: -1101705268
+      spriteID: 368c6201f2b68884fa720fca0074a6e9
+      internalID: 369495675
       vertices: []
       indices: 
       edges: []
@@ -182,10 +169,10 @@ TextureImporter:
       name: eye-dumb_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2779c7adc71d1045bf4eb8a8e0c5d2d
-      internalID: 673507435
+      spriteID: 7dcd1bd61bff04642b2fcfe23a0420d9
+      internalID: 1424548483
       vertices: []
       indices: 
       edges: []
@@ -204,10 +191,10 @@ TextureImporter:
       name: eye-dumb_4
       rect:
         serializedVersion: 2
-        x: 240
+        x: 160
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25701bb55019a554eb394ce15c60b596
-      internalID: -1096727812
+      spriteID: 358a066af69c90b40b31dd86266b3776
+      internalID: 146268618
       vertices: []
       indices: 
       edges: []
@@ -226,10 +213,10 @@ TextureImporter:
       name: eye-dumb_5
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,8 +225,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03ed37d2a59f9474a8c9aa66da0d61d2
-      internalID: 218158629
+      spriteID: c97db9af4e9d2ca4c9a78c1957354abe
+      internalID: 1126143505
       vertices: []
       indices: 
       edges: []
@@ -248,10 +235,10 @@ TextureImporter:
       name: eye-dumb_6
       rect:
         serializedVersion: 2
-        x: 336
+        x: 224
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef17b0397e1faf54899e3a5364fa3b22
-      internalID: 1262661335
+      spriteID: 7028f85f77abb0a4cbe74ac7adf9ce51
+      internalID: -886339110
       vertices: []
       indices: 
       edges: []
@@ -270,10 +257,10 @@ TextureImporter:
       name: eye-dumb_7
       rect:
         serializedVersion: 2
-        x: 384
+        x: 256
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,8 +269,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12bfce8247d64814e94aa226424ebf9b
-      internalID: -150752901
+      spriteID: ac029c9fbf49922418f55a6a78be6195
+      internalID: -1517782893
       vertices: []
       indices: 
       edges: []
@@ -292,10 +279,10 @@ TextureImporter:
       name: eye-dumb_8
       rect:
         serializedVersion: 2
-        x: 432
+        x: 288
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -304,8 +291,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6af7a4408f1197247964de2f1dd55b73
-      internalID: -20919004
+      spriteID: b8f8220f4351347478b6259ff6601766
+      internalID: 850426743
       vertices: []
       indices: 
       edges: []
@@ -314,10 +301,10 @@ TextureImporter:
       name: eye-dumb_9
       rect:
         serializedVersion: 2
-        x: 480
+        x: 320
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8f5b64177d4dc547bac3904564ea1c2
-      internalID: -171596457
+      spriteID: dea12346dd972de41b65b051bc6f82f8
+      internalID: 1691312442
       vertices: []
       indices: 
       edges: []
@@ -336,10 +323,10 @@ TextureImporter:
       name: eye-dumb_10
       rect:
         serializedVersion: 2
-        x: 528
+        x: 352
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,8 +335,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e95594af3e5c1414dbbe9807c3c602d2
-      internalID: -1977044272
+      spriteID: 30e988e74c114554ebf7df03f76c1cce
+      internalID: -2067466982
       vertices: []
       indices: 
       edges: []
@@ -358,10 +345,10 @@ TextureImporter:
       name: eye-dumb_11
       rect:
         serializedVersion: 2
-        x: 768
+        x: 512
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,8 +357,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7c9af1306e1fc14091ad070d187b73a
-      internalID: 1341964652
+      spriteID: 2bbc8800b91840b468c00ab39be265e7
+      internalID: -72006234
       vertices: []
       indices: 
       edges: []
@@ -380,10 +367,10 @@ TextureImporter:
       name: eye-dumb_12
       rect:
         serializedVersion: 2
-        x: 816
+        x: 544
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,8 +379,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90248bfd538e01a4fa48d112a0d3eaaa
-      internalID: 421054761
+      spriteID: c34602e84839479409d6ac4bb5b93c5a
+      internalID: 267942979
       vertices: []
       indices: 
       edges: []
@@ -402,10 +389,10 @@ TextureImporter:
       name: eye-dumb_13
       rect:
         serializedVersion: 2
-        x: 864
+        x: 576
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,8 +401,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bab631c9b4fe4224e9c301e7dc968a80
-      internalID: 1554735567
+      spriteID: c98630bf50a0c26409bea54f36547e20
+      internalID: 1630627298
       vertices: []
       indices: 
       edges: []
@@ -424,10 +411,10 @@ TextureImporter:
       name: eye-dumb_14
       rect:
         serializedVersion: 2
-        x: 912
+        x: 608
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,8 +423,272 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bd7cc3836bd9bf47adb04796ec77b88
-      internalID: -338890978
+      spriteID: dee7b2d62fded4a4da078b630d39a4bf
+      internalID: 296704570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-dumb_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbba6c71d6c1aa444b622041439f7f9e
+      internalID: 1819339122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-dumb_16
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ac2140848068143902b9f650658df4
+      internalID: 60443777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-dumb_17
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110152a5ead70ec4ab28713f29dff313
+      internalID: -1617876069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-dumb_18
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d292179dc7ccbf4fbbb3a0e23022349
+      internalID: 1498780166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-dumb_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee43de4ab56254449ce06433ab10c7f
+      internalID: -192016020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-dumb_20
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71517e2bf57b9c24c9cfba5a46945a07
+      internalID: 2035446012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-dumb_21
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5583d957fcdd0274eb80bb4d985f0d16
+      internalID: -331460783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-dumb_22
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce8cb8ded8dd274a8ff2972c8409e1e
+      internalID: -454015768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-dumb_23
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a620d117d670a2d4c8ff41638e95cc08
+      internalID: 83997163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-dumb_24
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3832fa17acbbbd14b9ea591642192c1b
+      internalID: -1177768754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-dumb_25
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e006ed66ea4487b43999f1df1fc7841e
+      internalID: 1482421470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-dumb_26
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4daaa2b6bdd0547aa18b0862333226
+      internalID: -1671999073
       vertices: []
       indices: 
       edges: []
@@ -446,7 +697,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f359321aa43be414990ab0f2ac592e27
+    spriteID: a171f7497c697d0448ddaff8a05b8c72
     internalID: 0
     vertices: []
     indices: 
@@ -457,20 +708,32 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       eye-dumb_0: 8575072234685673492
-      eye-dumb_1: 614980593
-      eye-dumb_10: -1977044272
-      eye-dumb_11: 1341964652
-      eye-dumb_12: 421054761
-      eye-dumb_13: 1554735567
-      eye-dumb_14: -338890978
-      eye-dumb_2: -1101705268
-      eye-dumb_3: 673507435
-      eye-dumb_4: -1096727812
-      eye-dumb_5: 218158629
-      eye-dumb_6: 1262661335
-      eye-dumb_7: -150752901
-      eye-dumb_8: -20919004
-      eye-dumb_9: -171596457
+      eye-dumb_1: -1483919587
+      eye-dumb_10: -2067466982
+      eye-dumb_11: -72006234
+      eye-dumb_12: 267942979
+      eye-dumb_13: 1630627298
+      eye-dumb_14: 296704570
+      eye-dumb_15: 1819339122
+      eye-dumb_16: 60443777
+      eye-dumb_17: -1617876069
+      eye-dumb_18: 1498780166
+      eye-dumb_19: -192016020
+      eye-dumb_2: 369495675
+      eye-dumb_20: 2035446012
+      eye-dumb_21: -331460783
+      eye-dumb_22: -454015768
+      eye-dumb_23: 83997163
+      eye-dumb_24: -1177768754
+      eye-dumb_25: 1482421470
+      eye-dumb_26: -1671999073
+      eye-dumb_3: 1424548483
+      eye-dumb_4: 146268618
+      eye-dumb_5: 1126143505
+      eye-dumb_6: -886339110
+      eye-dumb_7: -1517782893
+      eye-dumb_8: 850426743
+      eye-dumb_9: 1691312442
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

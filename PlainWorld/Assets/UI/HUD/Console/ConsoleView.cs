@@ -36,8 +36,6 @@ public class ConsoleView : MonoBehaviour
 
     #region Properties
     public event Action<string> OnSendClicked;
-
-    //public event Action<string> OnInputChanged;
     #endregion
 
     #region Methods

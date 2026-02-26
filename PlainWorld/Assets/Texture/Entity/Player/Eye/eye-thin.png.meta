@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -74,7 +74,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -96,19 +96,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,8 +105,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,10 +125,10 @@ TextureImporter:
       name: eye-thin_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 32
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ea0e1f7f8a9dd543bb708caf47015f8
-      internalID: -1281080555
+      spriteID: 48b88935fdda02544a02e8f5038d0190
+      internalID: -411712641
       vertices: []
       indices: 
       edges: []
@@ -160,10 +147,10 @@ TextureImporter:
       name: eye-thin_2
       rect:
         serializedVersion: 2
-        x: 144
+        x: 96
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,8 +159,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94cc3aba5a83b7d499945ad442080f5a
-      internalID: -1893991279
+      spriteID: b0ebd8e6260f25846b8638dae6dac1dd
+      internalID: 1342392669
       vertices: []
       indices: 
       edges: []
@@ -182,10 +169,10 @@ TextureImporter:
       name: eye-thin_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2485c56b571c01458e5e9416ac890a4
-      internalID: 1119464454
+      spriteID: c4f9cf6f3b2ab8a46bf22742f3a5c181
+      internalID: -2140336594
       vertices: []
       indices: 
       edges: []
@@ -204,10 +191,10 @@ TextureImporter:
       name: eye-thin_4
       rect:
         serializedVersion: 2
-        x: 240
+        x: 160
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8c2a2e487679fd448f76827e85fd22e
-      internalID: 466483659
+      spriteID: 9daeba15952a8b34da7b16f79066e9c3
+      internalID: -1405823996
       vertices: []
       indices: 
       edges: []
@@ -226,10 +213,10 @@ TextureImporter:
       name: eye-thin_5
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,8 +225,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e25ec5dfb50dbe4b9fc3144e27d919c
-      internalID: 1719613694
+      spriteID: d735bb670e240454aa6ec694e913e39a
+      internalID: -80229219
       vertices: []
       indices: 
       edges: []
@@ -248,10 +235,10 @@ TextureImporter:
       name: eye-thin_6
       rect:
         serializedVersion: 2
-        x: 336
+        x: 224
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e173f2b5ed985045b8ce0391fbbe36c
-      internalID: -809147150
+      spriteID: cf31edbc1370b8243b6b186490586b27
+      internalID: -816249877
       vertices: []
       indices: 
       edges: []
@@ -270,10 +257,10 @@ TextureImporter:
       name: eye-thin_7
       rect:
         serializedVersion: 2
-        x: 384
+        x: 256
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,8 +269,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 168a6d07b9223cc49b2cba46994d219f
-      internalID: 2085902082
+      spriteID: 1db64ffc5ea7d694ea87168242ad5c90
+      internalID: 1884219034
       vertices: []
       indices: 
       edges: []
@@ -292,10 +279,10 @@ TextureImporter:
       name: eye-thin_8
       rect:
         serializedVersion: 2
-        x: 432
+        x: 288
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -304,8 +291,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd30336ad8b21a24389633401b288fcd
-      internalID: 664859367
+      spriteID: 09a9b8737b40e234c9a056aaa193c8db
+      internalID: 943506145
       vertices: []
       indices: 
       edges: []
@@ -314,10 +301,10 @@ TextureImporter:
       name: eye-thin_9
       rect:
         serializedVersion: 2
-        x: 480
+        x: 320
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b83b5eced79f5db49ac64a9845d4ab96
-      internalID: -298345645
+      spriteID: f5c6c046283fb0a439f62f05f456d7b3
+      internalID: -392713607
       vertices: []
       indices: 
       edges: []
@@ -336,10 +323,10 @@ TextureImporter:
       name: eye-thin_10
       rect:
         serializedVersion: 2
-        x: 528
+        x: 352
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,8 +335,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f80e08ac523ce6e4aa5ee1edee8b07a0
-      internalID: -454110758
+      spriteID: 19b9879ffe9915243afdb69b2ae10534
+      internalID: 232082743
       vertices: []
       indices: 
       edges: []
@@ -358,10 +345,10 @@ TextureImporter:
       name: eye-thin_11
       rect:
         serializedVersion: 2
-        x: 768
+        x: 512
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,8 +357,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 269dac53d2132e24c849a8287b03acec
-      internalID: -364171124
+      spriteID: 5b3ce5263834a1342adae7cfbcf8e258
+      internalID: 1137585603
       vertices: []
       indices: 
       edges: []
@@ -380,10 +367,10 @@ TextureImporter:
       name: eye-thin_12
       rect:
         serializedVersion: 2
-        x: 816
+        x: 544
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,8 +379,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79a32e448c0811c4e96d59c39bf8006f
-      internalID: -200904452
+      spriteID: 7c0e5741fe7301840a6786fc5fc0a184
+      internalID: -1505556095
       vertices: []
       indices: 
       edges: []
@@ -402,10 +389,10 @@ TextureImporter:
       name: eye-thin_13
       rect:
         serializedVersion: 2
-        x: 864
+        x: 576
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,8 +401,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d4bd181dccaacd44941f5555a4fc57e
-      internalID: -1770831703
+      spriteID: 50eebbab6a5544b4d84cf57d5dc48858
+      internalID: 814888555
       vertices: []
       indices: 
       edges: []
@@ -424,10 +411,10 @@ TextureImporter:
       name: eye-thin_14
       rect:
         serializedVersion: 2
-        x: 912
+        x: 608
         y: 0
-        width: 48
-        height: 96
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,8 +423,272 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2eb9906cca2fc442af8b79bae070564
-      internalID: 419860864
+      spriteID: 8f2d9b826387cb740b5d837a02f8098e
+      internalID: -1565026546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-thin_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c5050f5b6a13d4aa53baa62baaab22
+      internalID: 1637439064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-thin_16
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0447fdb04b1fc40a5dae839d40ccc1
+      internalID: 1682387908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-thin_17
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2be1869e2b25d46903976b7b65b2ae
+      internalID: 531538470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-thin_18
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580ab5abe7c5f484fa12f5d63901dd82
+      internalID: -613089793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-thin_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94246ebf1c008146af67d82a0bec16c
+      internalID: 845088738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-thin_20
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39626de1c79702942af98969e621b0bc
+      internalID: 92215207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-thin_21
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4a3e0140018cc4aa82c85dc693f54a
+      internalID: 2031811909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-thin_22
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0554cd2f07090784b9ea1f633ded8532
+      internalID: 66095980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-thin_23
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619893d1ac47da14aa1287c089074f6d
+      internalID: 1204826126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-thin_24
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86dddab03f2ff14ca653e27579ba0f5
+      internalID: -1955656730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-thin_25
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4663f5ec9b8039642bf360b005365d80
+      internalID: 57360495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-thin_26
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c707cf972377c7344bd74512b6ff0153
+      internalID: 194687937
       vertices: []
       indices: 
       edges: []
@@ -446,7 +697,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f1aa8df290bc4984d898f2330071be58
+    spriteID: 2219ed24ecffb1b42b39d4f970252466
     internalID: 0
     vertices: []
     indices: 
@@ -457,20 +708,32 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       eye-thin_0: -5243642405969746176
-      eye-thin_1: -1281080555
-      eye-thin_10: -454110758
-      eye-thin_11: -364171124
-      eye-thin_12: -200904452
-      eye-thin_13: -1770831703
-      eye-thin_14: 419860864
-      eye-thin_2: -1893991279
-      eye-thin_3: 1119464454
-      eye-thin_4: 466483659
-      eye-thin_5: 1719613694
-      eye-thin_6: -809147150
-      eye-thin_7: 2085902082
-      eye-thin_8: 664859367
-      eye-thin_9: -298345645
+      eye-thin_1: -411712641
+      eye-thin_10: 232082743
+      eye-thin_11: 1137585603
+      eye-thin_12: -1505556095
+      eye-thin_13: 814888555
+      eye-thin_14: -1565026546
+      eye-thin_15: 1637439064
+      eye-thin_16: 1682387908
+      eye-thin_17: 531538470
+      eye-thin_18: -613089793
+      eye-thin_19: 845088738
+      eye-thin_2: 1342392669
+      eye-thin_20: 92215207
+      eye-thin_21: 2031811909
+      eye-thin_22: 66095980
+      eye-thin_23: 1204826126
+      eye-thin_24: -1955656730
+      eye-thin_25: 57360495
+      eye-thin_26: 194687937
+      eye-thin_3: -2140336594
+      eye-thin_4: -1405823996
+      eye-thin_5: -80229219
+      eye-thin_6: -816249877
+      eye-thin_7: 1884219034
+      eye-thin_8: 943506145
+      eye-thin_9: -392713607
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
