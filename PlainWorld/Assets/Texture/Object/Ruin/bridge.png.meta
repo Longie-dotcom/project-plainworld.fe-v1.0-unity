@@ -5,9 +5,6 @@ TextureImporter:
   - first:
       213: -6265054668056534801
     second: bridge_0
-  - first:
-      213: -376147737124152719
-    second: bridge_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,10 +103,10 @@ TextureImporter:
       name: bridge_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 80
-        width: 70
-        height: 64
+        x: 0
+        y: 0
+        width: 96
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,28 +117,6 @@ TextureImporter:
       bones: []
       spriteID: fe0661c19fd0e09a0800000000000000
       internalID: -6265054668056534801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bridge_1
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 0
-        width: 70
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17ad5a140a7a7caf0800000000000000
-      internalID: -376147737124152719
       vertices: []
       indices: 
       edges: []
@@ -161,7 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       bridge_0: -6265054668056534801
-      bridge_1: -376147737124152719
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
