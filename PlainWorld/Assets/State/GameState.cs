@@ -1,5 +1,5 @@
 using Assets.Service.Enum;
-using Assets.State.Interface.IReadOnlyState;
+using Assets.State.Interface.State;
 using Assets.Utility;
 using System;
 using System.Collections.Generic;

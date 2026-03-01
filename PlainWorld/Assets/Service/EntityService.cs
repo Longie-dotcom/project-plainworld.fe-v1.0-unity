@@ -4,7 +4,7 @@ using Assets.Network.Interface.Command;
 using Assets.Service.Interface;
 using Assets.State;
 using Assets.State.Component.Entity;
-using Assets.State.Interface.IReadOnlyState;
+using Assets.State.Interface.State;
 using Assets.Utility;
 using System;
 using System.Collections.Generic;
@@ -58,6 +58,13 @@ namespace Assets.Service
         }
         #endregion
 
+        #region Gray Shroom Entity
+        public IReadOnlyCollection<GrayShroomEntity> GetAllGrayShroomEntities()
+        {
+            return entityState.GetAllGrayShroomEntities();
+        }
+        #endregion
+
         #region Senders
         #endregion
 
@@ -70,17 +77,17 @@ namespace Assets.Service
                     new PlayerEntity(
                         dto.ID,
                         dto.FullName,
-                        PlayerMovementMapper.ToSnapshot(dto.Movement),
+                        ActMapper.ToSnapshot(dto.Act),
                         PlayerAppearanceMapper.ToSnapshot(dto.Appearance)))
             );
         }
 
-        public void OnPlayerEntityMoved(PlayerEntityMovementDTO dto)
+        public void OnPlayerEntityActed(PlayerEntityActDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                entityState.UpdatePlayerEntityPosition(
+                entityState.UpdatePlayerEntityAction(
                     dto.ID,
-                    PlayerMovementMapper.ToSnapshot(dto.Movement))
+                    ActMapper.ToSnapshot(dto.Act))
             );
         }
 
@@ -97,6 +104,35 @@ namespace Assets.Service
         {
             CoroutineRunner.Instance.Schedule(() =>
                 entityState.RemovePlayerEntity(
+                    id)
+            );
+        }
+        #endregion
+
+        #region Gray Shroom Entity
+        public void OnGrayShroomEntitySpawned(GrayShroomEntityDTO dto)
+        {
+            CoroutineRunner.Instance.Schedule(() =>
+                entityState.AddGrayShroomEntity(
+                    new GrayShroomEntity(
+                        dto.ID,
+                        ActMapper.ToSnapshot(dto.Act)))
+            );
+        }
+
+        public void OnGrayShroomEntityActed(GrayShroomEntityActDTO dto)
+        {
+            CoroutineRunner.Instance.Schedule(() =>
+                entityState.UpdateGrayShroomEntityAction(
+                    dto.ID,
+                    ActMapper.ToSnapshot(dto.Act))
+            );
+        }
+
+        public void OnGrayShroomEntityDespawned(Guid id)
+        {
+            CoroutineRunner.Instance.Schedule(() =>
+                entityState.RemoveGrayShroomEntity(
                     id)
             );
         }

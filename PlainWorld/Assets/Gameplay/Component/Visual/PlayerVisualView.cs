@@ -11,6 +11,7 @@ public class PlayerVisualView : VisualView
     [SerializeField] private SpriteRenderer shoeRenderer;
     [SerializeField] private SpriteRenderer eyeRenderer;
     [SerializeField] private SpriteRenderer skinRenderer;
+    [SerializeField] private SpriteRenderer itemRenderer;
     #endregion
 
     #region Properties
@@ -31,15 +32,15 @@ public class PlayerVisualView : VisualView
         Color eyeColor,
         Color skinColor)
     {
-        parts.Clear();
+        bodyParts.Clear();
 
-        AddPart(hairRenderer, hair);
-        AddPart(glassesRenderer, glasses);
-        AddPart(shirtRenderer, shirt);
-        AddPart(pantRenderer, pant);
-        AddPart(shoeRenderer, shoe);
-        AddPart(eyeRenderer, eyes);
-        AddPart(skinRenderer, skin);
+        AddBodyPart(hairRenderer, hair);
+        AddBodyPart(glassesRenderer, glasses);
+        AddBodyPart(shirtRenderer, shirt);
+        AddBodyPart(pantRenderer, pant);
+        AddBodyPart(shoeRenderer, shoe);
+        AddBodyPart(eyeRenderer, eyes);
+        AddBodyPart(skinRenderer, skin);
 
         hairRenderer.color = hairColor;
         pantRenderer.color = pantColor;
@@ -49,15 +50,17 @@ public class PlayerVisualView : VisualView
         animationTimer = 0f;
     }
 
-    private void AddPart(SpriteRenderer renderer, EntityPartFrame frame)
+    public void HoldItem(EntityPartFrame item)
     {
-        if (renderer == null || frame == null) return;
+        itemParts.Clear();
+        AddItemPart(itemRenderer, item);
+        itemRenderer.enabled = true;
+    }
 
-        parts.Add(new VisualPart
-        {
-            Renderer = renderer,
-            Frame = frame
-        });
+    protected override void OnItemAfterUsed()
+    {
+        if (itemRenderer != null)
+            itemRenderer.enabled = false;
     }
     #endregion
 }

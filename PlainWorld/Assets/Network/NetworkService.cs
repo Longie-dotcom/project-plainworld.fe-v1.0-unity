@@ -17,7 +17,7 @@ namespace Assets.Network
         private readonly Dictionary<Type, Queue<Action>> pendingHandlers = new();
 
         private HubConnection connection;
-        private const string HUB_URL = "http://26.92.115.30:5020/hubs/game"; // 192.168.1.135:5020
+        private const string HUB_URL = "http://192.168.1.135:5020/hubs/game"; // 192.168.1.135:5020
         #endregion
 
         #region Properties
@@ -168,11 +168,11 @@ namespace Assets.Network
                         id, (r, d) => r.OnPlayerLogout(d));
                 });
 
-            connection.On<PlayerMovementDTO>(
-                OnReceive.OnPlayerMove, dto =>
+            connection.On<PlayerActDTO>(
+                OnReceive.OnPlayerAct, dto =>
                 {
-                    Dispatch<IPlayerNetworkReceiver, PlayerMovementDTO>(
-                        dto, (r, d) => r.OnPlayerMoved(d));
+                    Dispatch<IPlayerNetworkReceiver, PlayerActDTO>(
+                        dto, (r, d) => r.OnPlayerActed(d));
                 });
 
             connection.On<PlayerAppearanceDTO>(
@@ -211,11 +211,11 @@ namespace Assets.Network
                         id, (r, d) => r.OnPlayerEntityLogout(d));
                 });
 
-            connection.On<PlayerEntityMovementDTO>(
-                OnReceive.OnPlayerEntityMove, dto =>
+            connection.On<PlayerEntityActDTO>(
+                OnReceive.OnPlayerEntityAct, dto =>
                 {
-                    Dispatch<IEntityNetworkReceiver, PlayerEntityMovementDTO>(
-                        dto, (r, d) => r.OnPlayerEntityMoved(d));
+                    Dispatch<IEntityNetworkReceiver, PlayerEntityActDTO>(
+                        dto, (r, d) => r.OnPlayerEntityActed(d));
                 });
 
             connection.On<PlayerEntityAppearanceDTO>(
@@ -235,6 +235,38 @@ namespace Assets.Network
                     }
                 });
 
+            connection.On<GrayShroomEntityDTO>(
+                OnReceive.OnGrayShroomEntitySpawn, dto =>
+                {
+                    Dispatch<IEntityNetworkReceiver, GrayShroomEntityDTO>(
+                        dto, (r, d) => r.OnGrayShroomEntitySpawned(d));
+                });
+
+            connection.On<GrayShroomEntityActDTO>(
+                OnReceive.OnGrayShroomEntityAct, dto =>
+                {
+                    Dispatch<IEntityNetworkReceiver, GrayShroomEntityActDTO>(
+                        dto, (r, d) => r.OnGrayShroomEntityActed(d));
+                });
+
+            connection.On<Guid>(
+                OnReceive.OnGrayShroomEntityDespawn, id =>
+                {
+                    Dispatch<IEntityNetworkReceiver, Guid>(
+                        id, (r, d) => r.OnGrayShroomEntityDespawned(d));
+                });
+
+            connection.On<IEnumerable<GrayShroomEntityDTO>>(
+                OnReceive.OnGrayShroomEntityOnline, dtos =>
+                {
+                    foreach (var dto in dtos)
+                    {
+                        Dispatch<IEntityNetworkReceiver, GrayShroomEntityDTO>(
+                            dto, (r, d) => r.OnGrayShroomEntitySpawned(d));
+                    }
+                });
+
+            // --- Console Service ---
             connection.On<ChatDTO>(
                 OnReceive.OnPlayerEntityChat, dto =>
                 {

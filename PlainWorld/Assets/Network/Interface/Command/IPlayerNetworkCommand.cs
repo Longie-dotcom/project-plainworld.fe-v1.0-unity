@@ -7,7 +7,7 @@ namespace Assets.Network.Interface.Command
     {
         Task Join();
         Task Logout();
-        Task Move(PlayerMoveDTO dto);
+        Task Act(PlayerActsDTO dto);
         Task CreateAppearance(PlayerCreateAppearanceDTO dto);
     }
 }

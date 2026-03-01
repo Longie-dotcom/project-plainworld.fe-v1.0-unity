@@ -2,6 +2,7 @@
 using Assets.Network.Interface.Command;
 using Assets.Network.Interface.Receiver;
 using Assets.Service;
+using Assets.Utility;
 using System;
 
 namespace Assets.Network.Handler
@@ -33,6 +34,7 @@ namespace Assets.Network.Handler
         #endregion
 
         #region Receive Handlers
+        #region Player Entity
         public void OnPlayerEntityJoined(PlayerEntityDTO dto)
         {
             entityService.OnPlayerEntityJoined(dto);
@@ -43,15 +45,33 @@ namespace Assets.Network.Handler
             entityService.OnPlayerEntityLogout(id);
         }
 
-        public void OnPlayerEntityMoved(PlayerEntityMovementDTO dto)
+        public void OnPlayerEntityActed(PlayerEntityActDTO dto)
         {
-            entityService.OnPlayerEntityMoved(dto);
+            entityService.OnPlayerEntityActed(dto);
         }
 
         public void OnPlayerEntityCreatedAppearance(PlayerEntityAppearanceDTO dto)
         {
             entityService.OnPlayerEntityCreatedAppearance(dto);
         }
+        #endregion
+
+        #region Gray Shroom
+        public void OnGrayShroomEntitySpawned(GrayShroomEntityDTO dto)
+        {
+            entityService.OnGrayShroomEntitySpawned(dto);
+        }
+
+        public void OnGrayShroomEntityActed(GrayShroomEntityActDTO dto)
+        {
+            entityService.OnGrayShroomEntityActed(dto);
+        }
+
+        public void OnGrayShroomEntityDespawned(Guid id)
+        {
+            entityService.OnGrayShroomEntityDespawned(id);
+        }
+        #endregion
         #endregion
     }
 }

@@ -1,7 +1,7 @@
 ﻿using Assets.Core;
 using Assets.Service;
 using Assets.Service.Enum;
-using Assets.State.Interface.IReadOnlyState;
+using Assets.State.Interface.State;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;

@@ -1,5 +1,5 @@
 ﻿using Assets.Data.Enum;
-using Assets.State.Interface.IReadOnlyState;
+using Assets.State.Interface.State;
 using UnityEngine;
 
 public class PlayerEntityView : EntityView
@@ -27,6 +27,11 @@ public class PlayerEntityView : EntityView
 
     }
 
+    public void HoldItem(EntityPartFrame item)
+    {
+        visualView.HoldItem(item);
+    }
+
     public void ApplyAppearance(
         EntityPartFrame hair,
         EntityPartFrame glasses,
@@ -44,7 +49,8 @@ public class PlayerEntityView : EntityView
         visualView.ApplyAppearance(
             hair, 
             glasses, 
-            shirt, pant, 
+            shirt, 
+            pant, 
             shoe, 
             eyes, 
             skin,
@@ -70,9 +76,9 @@ public class PlayerEntityView : EntityView
         visualView.SetDirection(dir);
     }
 
-    public void SetPlayerSpeed(float speed)
+    public void SetSpeed(float speed)
     {
-        visualView.SetPlayerSpeed(speed);
+        visualView.SetSpeed(speed);
     }
 
     public void ApplySettings(IReadOnlySettingState readOnlySettingState)

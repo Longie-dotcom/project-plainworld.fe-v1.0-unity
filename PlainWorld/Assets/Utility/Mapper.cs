@@ -1,6 +1,7 @@
 ﻿using Assets.Data.Enum;
 using Assets.Network.DTO;
 using Assets.State.Component.Player;
+using Assets.State.Component.Shared;
 using UnityEngine;
 
 /*
@@ -98,15 +99,15 @@ namespace Assets.Utility
         }
     }
 
-    public static class PlayerMovementMapper
+    public static class ActMapper
     {
         // DTO to Snapshot
-        public static PlayerMovementSnapshot ToSnapshot(Network.DTO.PlayerMovement dto)
+        public static ActSnapshot ToSnapshot(Network.DTO.Act dto)
         {
 
             if (dto == null)
             {
-                return new PlayerMovementSnapshot(
+                return new ActSnapshot(
                     moveSpeed: 0f,
                     position: Vector2.zero,
                     currentDirection: Vector2.down,
@@ -114,7 +115,7 @@ namespace Assets.Utility
                 );
             }
 
-            return new PlayerMovementSnapshot(
+            return new ActSnapshot(
                 moveSpeed: dto.MoveSpeed,
                 position: dto.Position.ToVector2(),
                 currentDirection: dto.CurrentDirection.ToVector2(),
@@ -123,9 +124,9 @@ namespace Assets.Utility
         }
 
         // Snapshot to DTO
-        public static Network.DTO.PlayerMovement ToDTO(PlayerMovementSnapshot snapshot)
+        public static Network.DTO.Act ToDTO(ActSnapshot snapshot)
         {
-            return new Network.DTO.PlayerMovement
+            return new Network.DTO.Act
             {
                 MoveSpeed = snapshot.MoveSpeed,
                 Position = snapshot.Position.ToDTO(),

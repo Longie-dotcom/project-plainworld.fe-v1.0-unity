@@ -1,7 +1,7 @@
 ﻿using Assets.Service;
 using Assets.State.Component.Entity;
 using Assets.State.Component.Player;
-using Assets.State.Interface.IReadOnlyComponent.IReadOnlyPlayerComponent;
+using Assets.State.Interface.Component.Player;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,6 +21,7 @@ namespace Assets.Gameplay.Entity.Player
         private readonly EntityPartCatalog shoeCatalog;
         private readonly EntityPartCatalog eyesCatalog;
         private readonly EntityPartCatalog skinCatalog;
+        private readonly EntityPartCatalog itemCatalog;
         #endregion
 
         #region Properties
@@ -37,7 +38,8 @@ namespace Assets.Gameplay.Entity.Player
             EntityPartCatalog pantCatalog,
             EntityPartCatalog shoeCatalog,
             EntityPartCatalog eyesCatalog,
-            EntityPartCatalog skinCatalog)
+            EntityPartCatalog skinCatalog,
+            EntityPartCatalog itemCatalog)
             : base(entityService, settingService)
         {
             playerEntityPrefab = prefab;
@@ -49,6 +51,7 @@ namespace Assets.Gameplay.Entity.Player
             this.shoeCatalog = shoeCatalog;
             this.eyesCatalog = eyesCatalog;
             this.skinCatalog = skinCatalog;
+            this.itemCatalog = itemCatalog;
 
             Initialize();
         }
@@ -81,11 +84,11 @@ namespace Assets.Gameplay.Entity.Player
 
             var view = GameObject.Instantiate(
                 playerEntityPrefab,
-                playerEntity.Movement.Position,
+                playerEntity.Act.Position,
                 Quaternion.identity);
             view.Initialize(
                 playerEntity.ID,
-                playerEntity.Movement.Position);
+                playerEntity.Act.Position);
 
             entityViews[playerEntity.ID] = view;
             BindView(view, playerEntity);
@@ -106,14 +109,17 @@ namespace Assets.Gameplay.Entity.Player
             // Outbound
             playerEntity.Appearance.OnChanged += () => ApplyAppearanceToView(view, playerEntity.Appearance); 
             ApplyAppearanceToView(view, playerEntity.Appearance);
-            playerEntity.Movement.OnMoveSpeedChanged += view.SetPlayerSpeed;
-            view.SetPlayerSpeed(playerEntity.Movement.MoveSpeed);
-            playerEntity.Movement.OnPositionChanged += view.ApplyPosition;
-            view.ApplyPosition(playerEntity.Movement.Position);
-            playerEntity.Movement.OnDirectionChanged += view.SetDirection;
-            view.SetDirection(playerEntity.Movement.CurrentDirection);
-            playerEntity.Movement.OnActionChanged += view.SetAction;
-            view.SetAction(playerEntity.Movement.CurrentAction);
+            
+            playerEntity.Act.OnMoveSpeedChanged += view.SetSpeed;
+            view.SetSpeed(playerEntity.Act.MoveSpeed);
+            playerEntity.Act.OnPositionChanged += view.ApplyPosition;
+            view.ApplyPosition(playerEntity.Act.Position);
+            playerEntity.Act.OnDirectionChanged += view.SetDirection;
+            view.SetDirection(playerEntity.Act.CurrentDirection);
+            playerEntity.Act.OnActionChanged += view.SetAction;
+            view.SetAction(playerEntity.Act.CurrentAction);
+            playerEntity.Act.OnItemUsed += () => view.HoldItem(itemCatalog.GetDefault()); // TEST
+
             settingService.SettingState.OnChanged += view.ApplySettings;
             view.ApplySettings(settingService.SettingState);
         }
@@ -122,10 +128,12 @@ namespace Assets.Gameplay.Entity.Player
         {
             // Outbound
             playerEntity.Appearance.OnChanged -= () => ApplyAppearanceToView(view, playerEntity.Appearance);
-            playerEntity.Movement.OnMoveSpeedChanged -= view.SetPlayerSpeed;
-            playerEntity.Movement.OnPositionChanged -= view.ApplyPosition;
-            playerEntity.Movement.OnDirectionChanged -= view.SetDirection;
-            playerEntity.Movement.OnActionChanged -= view.SetAction;
+
+            playerEntity.Act.OnMoveSpeedChanged -= view.SetSpeed;
+            playerEntity.Act.OnPositionChanged -= view.ApplyPosition;
+            playerEntity.Act.OnDirectionChanged -= view.SetDirection;
+            playerEntity.Act.OnActionChanged -= view.SetAction;
+
             settingService.SettingState.OnChanged -= view.ApplySettings;
         }
         #endregion

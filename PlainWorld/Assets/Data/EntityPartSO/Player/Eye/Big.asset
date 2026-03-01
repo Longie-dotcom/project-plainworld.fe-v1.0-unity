@@ -65,4 +65,4 @@ MonoBehaviour:
   - {fileID: 3767672402063258544, guid: 7c534c0661bc3554e9bfaefd0987d823, type: 3}
   - {fileID: 4962814412420578876, guid: 7c534c0661bc3554e9bfaefd0987d823, type: 3}
   - {fileID: 4141792291928496393, guid: 7c534c0661bc3554e9bfaefd0987d823, type: 3}
-  SupportedActions: 0000000001000000
+  SupportedActions: 000000000100000002000000

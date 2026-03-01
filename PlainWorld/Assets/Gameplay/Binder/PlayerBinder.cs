@@ -16,6 +16,7 @@ public class PlayerBinder : ComponentBinder
     [SerializeField] private EntityPartCatalog shoeCatalog;
     [SerializeField] private EntityPartCatalog eyesCatalog;
     [SerializeField] private EntityPartCatalog skinCatalog;
+    [SerializeField] private EntityPartCatalog itemCatalog;
 
     [SerializeField]
     private PlayerView playerView;
@@ -71,7 +72,8 @@ public class PlayerBinder : ComponentBinder
             pantCatalog,
             shoeCatalog,
             eyesCatalog,
-            skinCatalog);
+            skinCatalog,
+            itemCatalog);
 
         GameLogger.Info(
             Channel.System,

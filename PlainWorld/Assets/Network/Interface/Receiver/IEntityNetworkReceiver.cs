@@ -8,7 +8,11 @@ namespace Assets.Network.Interface.Receiver
     {
         void OnPlayerEntityJoined(PlayerEntityDTO dto);
         void OnPlayerEntityLogout(Guid id);
-        void OnPlayerEntityMoved(PlayerEntityMovementDTO dto);
+        void OnPlayerEntityActed(PlayerEntityActDTO dto);
         void OnPlayerEntityCreatedAppearance(PlayerEntityAppearanceDTO dto);
+
+        void OnGrayShroomEntitySpawned(GrayShroomEntityDTO dto);
+        void OnGrayShroomEntityActed(GrayShroomEntityActDTO dto);
+        void OnGrayShroomEntityDespawned(Guid id);
     }
 }

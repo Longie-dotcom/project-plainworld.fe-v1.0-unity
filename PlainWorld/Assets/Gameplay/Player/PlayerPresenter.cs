@@ -1,3 +1,4 @@
+using Assets.Data.Enum;
 using Assets.Service;
 using Assets.State.Component.Player;
 using Assets.UI.Enum;
@@ -24,6 +25,7 @@ namespace Assets.Gameplay.Player
         private readonly EntityPartCatalog shoeCatalog;
         private readonly EntityPartCatalog eyesCatalog;
         private readonly EntityPartCatalog skinCatalog;
+        private readonly EntityPartCatalog itemCatalog;
 
         private bool disposed;
         #endregion
@@ -44,7 +46,8 @@ namespace Assets.Gameplay.Player
             EntityPartCatalog pantCatalog,
             EntityPartCatalog shoeCatalog,
             EntityPartCatalog eyesCatalog,
-            EntityPartCatalog skinCatalog)
+            EntityPartCatalog skinCatalog,
+            EntityPartCatalog itemCatalog)
         {
             this.playerService = playerService;
             this.gameService = gameService;
@@ -59,6 +62,7 @@ namespace Assets.Gameplay.Player
             this.shoeCatalog = shoeCatalog;
             this.eyesCatalog = eyesCatalog;
             this.skinCatalog = skinCatalog;
+            this.itemCatalog = itemCatalog;
 
             Bind();
             OnPlayerReady();
@@ -87,15 +91,15 @@ namespace Assets.Gameplay.Player
             playerService.PlayerState.OnPlayerForcedLogout += OnPlayerForcedLogout;
         }
 
-        #region Movement
-        private void OnUpdateVisualMove(Vector2 dir)
+        #region Action
+        private void OnUpdateVisualAction(Vector2 dir, EntityAction entityAction)
         {
-            playerService.ApplyPredictedPosition(dir);
+            playerService.ApplyPredictedAction(dir, entityAction);
         }
 
-        private void OnSendMoveToServer()
+        private void OnSendActionToServer()
         {
-            AsyncHelper.Run(() => playerService.MoveAsync());
+            AsyncHelper.Run(() => playerService.ActAsync());
         }
         #endregion
 
@@ -226,15 +230,15 @@ namespace Assets.Gameplay.Player
             if (playerView == null) return;
 
             // Inbound
-            playerView.OnUpdateVisualMove -= OnUpdateVisualMove;
-            playerView.OnSendMoveToServer -= OnSendMoveToServer;
+            playerView.OnUpdateVisualAction -= OnUpdateVisualAction;
+            playerView.OnSendActionToServer -= OnSendActionToServer;
 
             // Outbound
             playerService.PlayerState.Appearance.OnChanged -= ApplyAppearance;
-            playerService.PlayerState.Movement.OnMoveSpeedChanged -= playerView.SetPlayerSpeed;
-            playerService.PlayerState.Movement.OnPositionChanged -= playerView.ApplyPosition;
-            playerService.PlayerState.Movement.OnDirectionChanged -= playerView.SetDirection;
-            playerService.PlayerState.Movement.OnActionChanged -= playerView.SetAction;
+            playerService.PlayerState.Act.OnMoveSpeedChanged -= playerView.SetSpeed;
+            playerService.PlayerState.Act.OnPositionChanged -= playerView.ApplyPosition;
+            playerService.PlayerState.Act.OnDirectionChanged -= playerView.SetDirection;
+            playerService.PlayerState.Act.OnActionChanged -= playerView.SetAction;
             settingService.SettingState.OnChanged -= playerView.ApplySettings;
         }
 
@@ -243,20 +247,23 @@ namespace Assets.Gameplay.Player
             if (playerView == null) return;
 
             // Inbound
-            playerView.OnUpdateVisualMove += OnUpdateVisualMove;
-            playerView.OnSendMoveToServer += OnSendMoveToServer;
+            playerView.OnUpdateVisualAction += OnUpdateVisualAction;
+            playerView.OnSendActionToServer += OnSendActionToServer;
 
             // Outbound
             playerService.PlayerState.Appearance.OnChanged += ApplyAppearance;
             ApplyAppearance();
-            playerService.PlayerState.Movement.OnMoveSpeedChanged += playerView.SetPlayerSpeed;
-            playerView.SetPlayerSpeed(playerService.PlayerState.Movement.MoveSpeed);
-            playerService.PlayerState.Movement.OnPositionChanged += playerView.ApplyPosition;
-            playerView.ApplyPosition(playerService.PlayerState.Movement.Position);
-            playerService.PlayerState.Movement.OnDirectionChanged += playerView.SetDirection;
-            playerView.SetDirection(playerService.PlayerState.Movement.CurrentDirection);
-            playerService.PlayerState.Movement.OnActionChanged += playerView.SetAction;
-            playerView.SetAction(playerService.PlayerState.Movement.CurrentAction);
+
+            playerService.PlayerState.Act.OnMoveSpeedChanged += playerView.SetSpeed;
+            playerView.SetSpeed(playerService.PlayerState.Act.MoveSpeed);
+            playerService.PlayerState.Act.OnPositionChanged += playerView.ApplyPosition;
+            playerView.ApplyPosition(playerService.PlayerState.Act.Position);
+            playerService.PlayerState.Act.OnDirectionChanged += playerView.SetDirection;
+            playerView.SetDirection(playerService.PlayerState.Act.CurrentDirection);
+            playerService.PlayerState.Act.OnActionChanged += playerView.SetAction;
+            playerView.SetAction(playerService.PlayerState.Act.CurrentAction);
+            playerService.PlayerState.Act.OnItemUsed += () => playerView.HoldItem(itemCatalog.GetDefault());  // TEST
+
             settingService.SettingState.OnChanged += playerView.ApplySettings;
             playerView.ApplySettings(settingService.SettingState);
         }

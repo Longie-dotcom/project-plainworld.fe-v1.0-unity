@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cba495992b6e15b4a9c0ef2cffe791e6, type: 3}
+  m_Name: IronSword
+  m_EditorClassIdentifier: 
+  EntityPartName: IronSword
+  EntityPartType: 7
+  FramesPerAction: 4
+  DirectionCount: 4
+  Sprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: -998597774, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: -1566782002, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: 546430621, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: -1799369732, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: 1298616026, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: -166818637, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: -48700351, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: 1607473090, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: 1366951957, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: 1180234258, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: 1278500544, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: 1905863592, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: 564381977, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: 1615491745, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: -2020490553, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  - {fileID: 353715223, guid: cda83dd3e4388774da61397958bfb4f2, type: 3}
+  SupportedActions: 02000000

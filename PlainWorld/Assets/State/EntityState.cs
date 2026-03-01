@@ -1,6 +1,7 @@
 ﻿using Assets.State.Component.Entity;
 using Assets.State.Component.Player;
-using Assets.State.Interface.IReadOnlyState;
+using Assets.State.Component.Shared;
+using Assets.State.Interface.State;
 using System;
 using System.Collections.Generic;
 
@@ -10,11 +11,17 @@ namespace Assets.State
     {
         #region Attributes
         private readonly Dictionary<Guid, PlayerEntity> playerEntities = new();
+
+        private readonly Dictionary<Guid, GrayShroomEntity> grayShroomEntities = new();
+
         #endregion
 
         #region Properties
         public event Action<PlayerEntity> OnPlayerEntityAdded;
         public event Action<Guid, PlayerEntity> OnPlayerEntityRemoved;
+
+        public event Action<GrayShroomEntity> OnGrayShroomEntityAdded;
+        public event Action<Guid, GrayShroomEntity> OnGrayShroomEntityRemoved;
         #endregion
 
         public EntityState() { }
@@ -48,10 +55,10 @@ namespace Assets.State
             OnPlayerEntityAdded?.Invoke(playerEntity);
         }
 
-        public void UpdatePlayerEntityPosition(Guid id, PlayerMovementSnapshot movement)
+        public void UpdatePlayerEntityAction(Guid id, ActSnapshot act)
         {
             if (!playerEntities.TryGetValue(id, out var playerEntity)) return;
-            playerEntity.ApplyMovementSnapshot(movement);
+            playerEntity.ApplyActionSnapshot(act);
         }
 
         public void UpdatePlayerEntityAppearance(Guid id, PlayerAppearanceSnapshot appearance)
@@ -64,6 +71,39 @@ namespace Assets.State
         {
             if (!playerEntities.TryGetValue(id, out var playerEntity)) return;
             playerEntities.Remove(id); OnPlayerEntityRemoved?.Invoke(id, playerEntity);
+        }
+        #endregion
+
+        #region Gray Shroom Entity
+        public IReadOnlyCollection<GrayShroomEntity> GetAllGrayShroomEntities()
+        {
+            return grayShroomEntities.Values;
+        }
+
+        public bool TryGetGrayShroom(Guid id, out GrayShroomEntity grayShroom)
+        {
+            return grayShroomEntities.TryGetValue(id, out grayShroom);
+        }
+
+        public void AddGrayShroomEntity(GrayShroomEntity grayShroomEntity)
+        {
+            if (grayShroomEntities.ContainsKey(grayShroomEntity.ID)) return;
+            grayShroomEntities[grayShroomEntity.ID] = grayShroomEntity;
+
+            // Note: First fired will be re-called later
+            OnGrayShroomEntityAdded?.Invoke(grayShroomEntity);
+        }
+
+        public void UpdateGrayShroomEntityAction(Guid id, ActSnapshot act)
+        {
+            if (!grayShroomEntities.TryGetValue(id, out var grayShroomEntity)) return;
+            grayShroomEntity.ApplyActionSnapshot(act);
+        }
+
+        public void RemoveGrayShroomEntity(Guid id)
+        {
+            if (!grayShroomEntities.TryGetValue(id, out var grayShroomEntity)) return;
+            grayShroomEntities.Remove(id); OnGrayShroomEntityRemoved?.Invoke(id, grayShroomEntity);
         }
         #endregion
         #endregion

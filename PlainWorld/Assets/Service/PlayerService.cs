@@ -1,10 +1,11 @@
 ﻿using Assets.Core;
+using Assets.Data.Enum;
 using Assets.Network.DTO;
 using Assets.Network.Interface.Command;
 using Assets.Service.Interface;
 using Assets.State;
 using Assets.State.Component.Player;
-using Assets.State.Interface.IReadOnlyState;
+using Assets.State.Interface.State;
 using Assets.Utility;
 using System;
 using System.Threading.Tasks;
@@ -52,9 +53,9 @@ namespace Assets.Service
         }
 
         #region Movement
-        public void ApplyPredictedPosition(Vector2 dir)
+        public void ApplyPredictedAction(Vector2 dir, EntityAction action)
         {
-            playerState.ApplyPredictedPosition(dir);
+            playerState.ApplyPredictedAction(dir, action);
         }
         #endregion
 
@@ -139,18 +140,18 @@ namespace Assets.Service
             await PlayerNetworkCommand.Logout();
         }
 
-        public async Task MoveAsync()
+        public async Task ActAsync()
         {
-            if (!playerState.TryCreateMovementCreation(out var snapshot))
+            if (!playerState.TryCreateActionCreation(out var snapshot))
                 return;
 
-            var dto = new PlayerMoveDTO
+            var dto = new PlayerActsDTO
             {
                 Direction = PositionMapper.ToDTO(snapshot.direction),
                 Action = snapshot.action,
                 DeltaTime = Time.deltaTime,
             };
-            await PlayerNetworkCommand.Move(dto);
+            await PlayerNetworkCommand.Act(dto);
         }
 
         public async Task CreateAppearanceAsync()
@@ -174,7 +175,7 @@ namespace Assets.Service
                 playerState.LoadPlayerData(
                     dto.ID,
                     dto.FullName,
-                    PlayerMovementMapper.ToSnapshot(dto.Movement),
+                    ActMapper.ToSnapshot(dto.Act),
                     PlayerAppearanceMapper.ToSnapshot(dto.Appearance)
                 );
             });
@@ -187,12 +188,12 @@ namespace Assets.Service
             );
         }
 
-        public void OnPlayerMoved(PlayerMovementDTO dto)
+        public void OnPlayerActed(PlayerActDTO dto)
         {
             CoroutineRunner.Instance.Schedule(() =>
-                playerState.ApplyServerMovement(
+                playerState.ApplyServerAction(
                     dto.ID,
-                    PlayerMovementMapper.ToSnapshot(dto.Movement))
+                    ActMapper.ToSnapshot(dto.Act))
             );
         }
 

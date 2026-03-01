@@ -1,6 +1,9 @@
-﻿using Assets.State.Component.Player;
-using Assets.State.Interface.IReadOnlyComponent.IReadOnlyPlayerComponent;
-using Assets.State.Interface.IReadOnlyState;
+﻿using Assets.Data.Enum;
+using Assets.State.Component.Player;
+using Assets.State.Component.Shared;
+using Assets.State.Interface.Component.Player;
+using Assets.State.Interface.Component.Shared;
+using Assets.State.Interface.State;
 using System;
 using UnityEngine;
 
@@ -9,7 +12,7 @@ namespace Assets.State
     public class PlayerState : IReadOnlyPlayerState
     {
         #region Attributes
-        private PlayerMovement movement;
+        private Act act;
         private PlayerAppearance appearance;
         #endregion
 
@@ -18,7 +21,7 @@ namespace Assets.State
         public string PlayerName { get; private set; }
         public bool HasJoined { get; private set; }
 
-        public IReadOnlyPlayerMovement Movement { get { return movement; } }
+        public IReadOnlyAct Act { get { return act; } }
         public IReadOnlyPlayerAppearance Appearance { get { return appearance; } }
 
         public event Action OnPlayerDataReady;
@@ -28,7 +31,7 @@ namespace Assets.State
 
         public PlayerState()
         {
-            movement = new PlayerMovement();
+            act = new Act();
             appearance = new PlayerAppearance();
         }
 
@@ -36,7 +39,7 @@ namespace Assets.State
         public void LoadPlayerData(
             Guid playerId,
             string playerName,
-            PlayerMovementSnapshot movement,
+            ActSnapshot act,
             PlayerAppearanceSnapshot appearance)
         {
             if (HasJoined) return;
@@ -46,7 +49,7 @@ namespace Assets.State
             PlayerName = playerName;
             HasJoined = true;
             this.appearance.ApplySnapshot(appearance);
-            this.movement.ApplySnapshot(movement);
+            this.act.ApplySnapshot(act);
 
             // Load scene
             OnPlayerDataReady?.Invoke();
@@ -60,7 +63,7 @@ namespace Assets.State
             PlayerID = Guid.Empty;
             PlayerName = null;
             HasJoined = false;
-            movement = new PlayerMovement();
+            act = new Act();
             appearance = new PlayerAppearance();
         }
 
@@ -78,8 +81,8 @@ namespace Assets.State
         }
         #endregion
 
-        #region Movement
-        public bool TryCreateMovementCreation(
+        #region Action
+        public bool TryCreateActionCreation(
             out (Vector2 direction, int action) snapshot)
         {
             snapshot = default;
@@ -87,26 +90,28 @@ namespace Assets.State
             if (!HasJoined)
                 return false;
 
-            snapshot = movement.CreateMovement();
+            snapshot = act.TryCreateActionCreation();
             return true;
         }
 
         public void SetMoveSpeed(float moveSpeed)
         {
             if (!HasJoined) return;
-            movement.SetMoveSpeed(moveSpeed);
+            act.SetMoveSpeed(moveSpeed);
         }
 
-        public void ApplyPredictedPosition(Vector2 inputDir)
+        public void ApplyPredictedAction(
+            Vector2 inputDir, EntityAction action)
         {
             if (!HasJoined) return;
-            movement.ApplyPredictedPosition(inputDir);
+            act.ApplyPredictedAction(inputDir, action);
         }
 
-        public void ApplyServerMovement(Guid id, PlayerMovementSnapshot snapshot)
+        public void ApplyServerAction
+            (Guid id, ActSnapshot snapshot)
         {
             if (!HasJoined || id != PlayerID) return;
-            movement.ApplySnapshot(snapshot);
+            act.ApplySnapshot(snapshot);
         }
         #endregion
 

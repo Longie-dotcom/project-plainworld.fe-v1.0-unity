@@ -1,7 +1,7 @@
 ﻿using Assets.Network.Interface.Command;
 using Assets.Service.Interface;
 using Assets.State;
-using Assets.State.Interface.IReadOnlyState;
+using Assets.State.Interface.State;
 using Assets.UI.Enum;
 using System.Threading.Tasks;
 

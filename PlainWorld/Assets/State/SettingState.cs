@@ -1,5 +1,5 @@
 ﻿using Assets.Service.Enum;
-using Assets.State.Interface.IReadOnlyState;
+using Assets.State.Interface.State;
 using System;
 using UnityEngine;
 
@@ -28,7 +28,7 @@ namespace Assets.State
 
         public SettingState()
         {
-            AnimationSpeedMultiplier = 3 / 5f;
+            AnimationSpeedMultiplier = 5 / 5f;
             MoveSendRate = 0.01f;
         }
 

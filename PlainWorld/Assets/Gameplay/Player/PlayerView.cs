@@ -1,5 +1,6 @@
 ﻿using Assets.Data.Enum;
-using Assets.State.Interface.IReadOnlyState;
+using Assets.Gameplay.Component.Visual;
+using Assets.State.Interface.State;
 using System;
 using UnityEngine;
 
@@ -7,20 +8,23 @@ public class PlayerView : MonoBehaviour
 {
     #region Attributes
     [Header("Sub Views")]
-    [SerializeField] private PlayerMoveView moveView;
+    [SerializeField] private PlayerActView actView;
     [SerializeField] private PlayerVisualView visualView;
+    [SerializeField] private Camera mainCamera;
+    [SerializeField] private CameraBounds cameraBounds;
+    [SerializeField] private float cameraSmoothTime = 0.12f;
     #endregion
 
     #region Properties
-    public event Action<Vector2> OnUpdateVisualMove;
-    public event Action OnSendMoveToServer;
+    public event Action<Vector2, EntityAction> OnUpdateVisualAction;
+    public event Action OnSendActionToServer;
     #endregion
 
     #region Methods
     private void Awake()
     {
-        moveView.OnUpdateVisualMove += dir => OnUpdateVisualMove?.Invoke(dir);
-        moveView.OnSendMoveToServer += () => OnSendMoveToServer?.Invoke();
+        actView.OnUpdateVisualAction += (Vector2 dir, EntityAction action) => OnUpdateVisualAction?.Invoke(dir, action);
+        actView.OnSendActionToServer += () => OnSendActionToServer?.Invoke();
     }
 
     void Start()
@@ -31,6 +35,11 @@ public class PlayerView : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void HoldItem(EntityPartFrame item)
+    {
+        visualView.HoldItem(item);
     }
 
     public void ApplyAppearance(
@@ -62,14 +71,17 @@ public class PlayerView : MonoBehaviour
             skinColor);
     }
 
-    public void SetPlayerSpeed(float moveSpeed)
+    public void SetSpeed(float moveSpeed)
     {
-        visualView.SetPlayerSpeed(moveSpeed);
+        visualView.SetSpeed(moveSpeed);
     }
 
     public void ApplyPosition(Vector2 pos)
     {
-        transform.position = new Vector3(pos.x, pos.y, 0);
+        Vector3 targetPos = new Vector3(pos.x, pos.y, 0);
+        transform.position = targetPos;
+
+        FollowCamera(targetPos);
     }
 
     public void SetDirection(Vector2 dir)
@@ -85,8 +97,32 @@ public class PlayerView : MonoBehaviour
     public void ApplySettings(IReadOnlySettingState settings)
     {
         visualView.ApplySettings(settings);
-        moveView.ApplySettings(settings);
+        actView.ApplySettings(settings);
     }
+
+    #region Private Helper
+    private void FollowCamera(Vector3 playerPos)
+    {
+        if (mainCamera == null || cameraBounds == null) return;
+
+        float camHeight = mainCamera.orthographicSize;
+        float camWidth = camHeight * mainCamera.aspect;
+
+        float minX = cameraBounds.min.x + camWidth;
+        float maxX = cameraBounds.max.x - camWidth;
+        float minY = cameraBounds.min.y + camHeight;
+        float maxY = cameraBounds.max.y - camHeight;
+
+        Vector3 clamped = new Vector3(
+            Mathf.Clamp(playerPos.x, minX, maxX),
+            Mathf.Clamp(playerPos.y, minY, maxY),
+            mainCamera.transform.position.z
+        );
+
+        // ❗ Immediate stop at boundary
+        mainCamera.transform.position = clamped;
+    }
+    #endregion
     #endregion
 }
 

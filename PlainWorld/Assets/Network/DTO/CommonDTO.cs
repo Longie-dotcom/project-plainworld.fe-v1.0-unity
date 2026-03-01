@@ -30,12 +30,19 @@ namespace Assets.Network.DTO
     }
 
     [Serializable]
-    public class PlayerMovement
+    public class Act
     {
         public float MoveSpeed { get; set; }
         public PositionDTO Position { get; set; } = new PositionDTO();
         public PositionDTO CurrentDirection { get; set; } = new PositionDTO();
         public int CurrentAction { get; set; }
+    }
+
+    [Serializable]
+    public class Health
+    {
+        public int Current { get; set; }
+        public int Max { get; set; }
     }
 
     [Serializable]

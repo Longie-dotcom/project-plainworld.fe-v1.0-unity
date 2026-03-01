@@ -1,6 +1,8 @@
 ﻿using Assets.State.Component.Player;
-using Assets.State.Interface.IReadOnlyComponent.IReadOnlyEntityComponent;
-using Assets.State.Interface.IReadOnlyComponent.IReadOnlyPlayerComponent;
+using Assets.State.Component.Shared;
+using Assets.State.Interface.Component.Entity;
+using Assets.State.Interface.Component.Player;
+using Assets.State.Interface.Component.Shared;
 using System;
 
 namespace Assets.State.Component.Entity
@@ -8,35 +10,35 @@ namespace Assets.State.Component.Entity
     public class PlayerEntity : BaseEntity, IReadOnlyPlayerEntity
     {
         #region Attributes
-        private readonly PlayerMovement movement;
+        private readonly Act act;
         private readonly PlayerAppearance appearance;
         #endregion
 
         #region Properties
         public string Name { get; private set; }
 
-        public IReadOnlyPlayerMovement Movement { get { return movement; } }
+        public IReadOnlyAct Act { get { return act; } }
         public IReadOnlyPlayerAppearance Appearance { get { return appearance; } }
         #endregion
 
         public PlayerEntity(
             Guid id,
             string name,
-            PlayerMovementSnapshot movement,
+            ActSnapshot act,
             PlayerAppearanceSnapshot appearance) : base(id)
         {
             Name = name;
-            this.movement = new PlayerMovement();
+            this.act = new Act();
             this.appearance = new PlayerAppearance();
-            this.movement.ApplySnapshot(movement);
+            this.act.ApplySnapshot(act);
             this.appearance.ApplySnapshot(appearance);
         }
 
         #region Methods
-        #region Movement
-        public void ApplyMovementSnapshot(PlayerMovementSnapshot snapshot)
+        #region Action
+        public void ApplyActionSnapshot(ActSnapshot snapshot)
         {
-            movement.ApplySnapshot(snapshot);
+            act.ApplySnapshot(snapshot);
         }
         #endregion
 

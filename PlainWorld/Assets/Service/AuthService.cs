@@ -2,7 +2,7 @@
 using Assets.Network.Interface.Command;
 using Assets.State;
 using System.Threading.Tasks;
-using Assets.State.Interface.IReadOnlyState;
+using Assets.State.Interface.State;
 
 namespace Assets.Service
 {

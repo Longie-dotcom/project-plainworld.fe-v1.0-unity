@@ -9,6 +9,7 @@ namespace Assets.Data.Enum
         PLAYER_PANT,
         PLAYER_SHIRT,
         PLAYER_SHOE,
-        PLAYER_SKIN
+        PLAYER_SKIN,
+        PLAYER_ITEM
     }
 }

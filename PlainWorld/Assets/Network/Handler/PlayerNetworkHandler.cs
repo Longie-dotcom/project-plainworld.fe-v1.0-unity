@@ -43,10 +43,10 @@ namespace Assets.Network.Handler
                 OnSend.PlayerLogout);
         }
 
-        public Task Move(PlayerMoveDTO dto)
+        public Task Act(PlayerActsDTO dto)
         {
             return sender.Send(
-                OnSend.PlayerMove,
+                OnSend.PlayerAct,
                 dto
             );
         }
@@ -71,9 +71,9 @@ namespace Assets.Network.Handler
             playerService.OnPlayerLogout(id);
         }
 
-        public void OnPlayerMoved(PlayerMovementDTO dto)
+        public void OnPlayerActed(PlayerActDTO dto)
         {
-            playerService.OnPlayerMoved(dto);
+            playerService.OnPlayerActed(dto);
         }
 
         public void OnPlayerCreatedAppearance(PlayerAppearanceDTO dto)

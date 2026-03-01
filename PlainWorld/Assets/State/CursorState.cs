@@ -1,4 +1,4 @@
-﻿using Assets.State.Interface.IReadOnlyState;
+﻿using Assets.State.Interface.State;
 using Assets.UI.Enum;
 using System;
 

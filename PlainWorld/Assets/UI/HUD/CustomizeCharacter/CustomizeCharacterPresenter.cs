@@ -1,6 +1,6 @@
 ﻿using Assets.Data.Enum;
 using Assets.Service;
-using Assets.State.Interface.IReadOnlyComponent.IReadOnlyPlayerComponent;
+using Assets.State.Interface.Component.Player;
 using Assets.UI.Enum;
 using Assets.Utility;
 using System;

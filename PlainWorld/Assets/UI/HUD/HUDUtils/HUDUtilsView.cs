@@ -1,6 +1,8 @@
 using Assets.State;
 using System;
+using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class HUDUtilsView : MonoBehaviour
@@ -35,7 +37,7 @@ public class HUDUtilsView : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !IsTyping())
         {
             ToggleHUD();
         }
@@ -93,6 +95,18 @@ public class HUDUtilsView : MonoBehaviour
         logoutButton.gameObject.SetActive(visible);
         customizeCharacterButton.gameObject.SetActive(visible);
         settingButton.gameObject.SetActive(visible);
+    }
+
+    private bool IsTyping()
+    {
+        if (EventSystem.current == null)
+            return false;
+
+        var selected = EventSystem.current.currentSelectedGameObject;
+        if (selected == null)
+            return false;
+
+        return selected.GetComponent<TMP_InputField>() != null;
     }
     #endregion
 }

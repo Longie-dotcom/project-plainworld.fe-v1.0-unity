@@ -2,7 +2,7 @@
 using Assets.Service.Enum;
 using Assets.Service.Interface;
 using Assets.State;
-using Assets.State.Interface.IReadOnlyState;
+using Assets.State.Interface.State;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
