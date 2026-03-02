@@ -2,6 +2,7 @@
 using Assets.State.Component.Shared;
 using Assets.State.Interface.Component.Entity;
 using Assets.State.Interface.Component.Shared;
+using Assets.Utility;
 using System;
 
 namespace Assets.State.Component.Entity

@@ -18,7 +18,7 @@ public class VisualPart
 public class VisualView : MonoBehaviour
 {
     #region Attributes
-    [SerializeField] private float attackAnimDuration = 1f;
+    [SerializeField] private float attackAnimDuration = 0.15f;
     [SerializeField] private int itemUseFrame = 1;
 
     protected readonly List<VisualPart> bodyParts = new();

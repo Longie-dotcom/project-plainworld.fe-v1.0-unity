@@ -36,6 +36,7 @@ namespace Assets.Network.DTO
         public PositionDTO Position { get; set; } = new PositionDTO();
         public PositionDTO CurrentDirection { get; set; } = new PositionDTO();
         public int CurrentAction { get; set; }
+        public CollisionBoxDTO CollisionBox { get; set; } = new CollisionBoxDTO();
     }
 
     [Serializable]
@@ -50,5 +51,14 @@ namespace Assets.Network.DTO
     {
         public float X { get; set; }
         public float Y { get; set; }
+    }
+
+    [Serializable]
+    public class CollisionBoxDTO
+    {
+        public float MinX { get; set; }
+        public float MinY { get; set; }
+        public float MaxX { get; set; }
+        public float MaxY { get; set; }
     }
 }
