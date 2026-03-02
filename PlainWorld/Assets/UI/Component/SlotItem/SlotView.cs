@@ -1,30 +1,28 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class SlotView : MonoBehaviour, IPointerClickHandler
+public class SlotView : MonoBehaviour, IDropHandler
 {
-    [SerializeField] private SlotItemView itemPrefab;
+    public int Index { get; private set; }
 
     private SlotItemView currentItem;
-    private int index;
 
-    public System.Action<int> OnSlotClicked;
+    public System.Action<int, int> OnItemDropped;
 
-    public void Init(int slotIndex)
+    public void Init(int index)
     {
-        index = slotIndex;
-        Clear();
+        Index = index;
     }
 
-    public void SetItem(InventoryItem item)
+    public void SetItemView(SlotItemView itemView)
     {
-        Clear();
+        currentItem = itemView;
 
-        if (item == null)
-            return;
-
-        currentItem = Instantiate(itemPrefab, transform);
-        currentItem.Bind(item.Item, item.Quantity);
+        if (itemView != null)
+        {
+            itemView.transform.SetParent(transform);
+            itemView.transform.localPosition = Vector3.zero;
+        }
     }
 
     public void Clear()
@@ -35,8 +33,15 @@ public class SlotView : MonoBehaviour, IPointerClickHandler
         currentItem = null;
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnDrop(PointerEventData eventData)
     {
-        OnSlotClicked?.Invoke(index);
+        var item = eventData.pointerDrag?.GetComponent<SlotItemView>();
+        if (item == null) return;
+
+        // ALWAYS reparent to this slot
+        item.transform.SetParent(transform, false);
+        item.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+
+        item.MarkAsDropped();
     }
 }

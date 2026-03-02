@@ -2,31 +2,35 @@ using UnityEngine;
 
 public class InventoryView : MonoBehaviour
 {
-    [SerializeField] private SlotView slotPrefab;
-    [SerializeField] private Transform slotRoot;
+    [SerializeField] private SlotView[] slots;
+    [SerializeField] private SlotItemView slotItemPrefab;
 
-    private SlotView[] slots;
-
-    public void Build(int size)
+    public void Initialize()
     {
-        slots = new SlotView[size];
-
-        for (int i = 0; i < size; i++)
+        for (int i = 0; i < slots.Length; i++)
         {
-            var slot = Instantiate(slotPrefab, slotRoot);
-            slot.Init(i);
-            slots[i] = slot;
+            slots[i].Init(i);
         }
     }
 
-    public void BindSlot(int index, InventoryItem item)
+    public void Bind(InventoryItem[] items)
     {
-        slots[index].SetItem(item);
+        for (int i = 0; i < slots.Length; i++)
+        {
+            slots[i].Clear();
+
+            if (items == null || i >= items.Length || items[i] == null)
+                continue;
+
+            var itemView = Instantiate(slotItemPrefab, slots[i].transform, false);
+            itemView.Bind(items[i], i);
+            slots[i].SetItemView(itemView);
+        }
     }
 
-    public void SubscribeToSlotClicks(System.Action<int> callback)
+    public void SubscribeToDrop(System.Action<int, int> callback)
     {
         foreach (var slot in slots)
-            slot.OnSlotClicked += callback;
+            slot.OnItemDropped += callback;
     }
 }

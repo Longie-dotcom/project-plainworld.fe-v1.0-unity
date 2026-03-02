@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public abstract class ItemSO : ScriptableObject
+[CreateAssetMenu(menuName = "Items/Item")]
+public class ItemSO : ScriptableObject
 {
     public string Id;
     public string DisplayName;

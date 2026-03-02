@@ -4,40 +4,62 @@ public class InventoryPresenter : MonoBehaviour
 {
     [SerializeField] private InventoryView view;
     [SerializeField] private ItemCatalogSO catalog;
+    [SerializeField] private int inventorySize = 16;
 
     private InventoryItem[] items;
-    private const int SIZE = 16;
 
     private void Start()
     {
-        items = new InventoryItem[SIZE];
+        items = new InventoryItem[inventorySize];
+
+        view.Initialize();
+        view.SubscribeToDrop(OnItemDropped);
 
         LoadDummyData();
-
-        view.Build(SIZE);
-        view.SubscribeToSlotClicks(OnSlotClicked);
-
-        Refresh();
+        RefreshView();
     }
 
     private void LoadDummyData()
     {
-        items[0] = new InventoryItem(catalog.Items[0], 1);
-        items[1] = new InventoryItem(catalog.Items[1], 5);
+        if (catalog == null || catalog.Items.Length == 0)
+            return;
+
+        items[0] = new InventoryItem
+        (
+            catalog.Items[0], 1
+        );
+
+        if (catalog.Items.Length > 1)
+        {
+            items[1] = new InventoryItem
+            (
+                catalog.Items[1], 5
+            );
+        }
     }
 
-    private void Refresh()
+    private void OnItemDropped(int fromIndex, int toIndex)
     {
-        for (int i = 0; i < SIZE; i++)
-            view.BindSlot(i, items[i]);
+        if (fromIndex == toIndex)
+            return;
+
+        if (!IsValid(fromIndex) || !IsValid(toIndex))
+            return;
+
+        var temp = items[fromIndex];
+        items[fromIndex] = items[toIndex];
+        items[toIndex] = temp;
+
+        RefreshView();
     }
 
-    private void OnSlotClicked(int index)
+    private void RefreshView()
     {
-        Debug.Log($"Clicked slot {index}");
+        view.Bind(items);
+    }
 
-        // Later:
-        // service.UseItem(index);
-        // service.MoveItem(...)
+    private bool IsValid(int index)
+    {
+        return index >= 0 && index < items.Length;
     }
 }
