@@ -20,8 +20,15 @@ public class SlotView : MonoBehaviour, IDropHandler
 
         if (itemView != null)
         {
-            itemView.transform.SetParent(transform);
-            itemView.transform.localPosition = Vector3.zero;
+            var rect = itemView.GetComponent<RectTransform>();
+
+            rect.SetParent(transform, false);
+
+            rect.anchorMin = Vector2.zero;
+            rect.anchorMax = Vector2.one;
+            rect.offsetMin = Vector2.zero;
+            rect.offsetMax = Vector2.zero;
+            rect.pivot = new Vector2(0f, 0f);
         }
     }
 
@@ -35,13 +42,14 @@ public class SlotView : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-        var item = eventData.pointerDrag?.GetComponent<SlotItemView>();
-        if (item == null) return;
+        var dragged = eventData.pointerDrag?
+            .GetComponent<SlotItemView>();
 
-        // ALWAYS reparent to this slot
-        item.transform.SetParent(transform, false);
-        item.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+        if (dragged == null)
+            return;
 
-        item.MarkAsDropped();
+        // VISUAL MOVE IMMEDIATELY
+        dragged.MarkAsDropped();
+        OnItemDropped?.Invoke(dragged.SlotIndex, Index);
     }
 }

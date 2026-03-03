@@ -1,6 +1,6 @@
+using System;
 using Assets.Service;
 using Assets.UI.Enum;
-using System;
 
 namespace Assets.UI.Common.Popup
 {

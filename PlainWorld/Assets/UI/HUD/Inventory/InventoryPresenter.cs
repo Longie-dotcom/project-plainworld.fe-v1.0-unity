@@ -29,11 +29,16 @@ public class InventoryPresenter : MonoBehaviour
             catalog.Items[0], 1
         );
 
+        items[1] = new InventoryItem
+        (
+            catalog.Items[1], 1
+        );
+
         if (catalog.Items.Length > 1)
         {
-            items[1] = new InventoryItem
+            items[2] = new InventoryItem
             (
-                catalog.Items[1], 5
+                catalog.Items[2], 5
             );
         }
     }
@@ -41,7 +46,10 @@ public class InventoryPresenter : MonoBehaviour
     private void OnItemDropped(int fromIndex, int toIndex)
     {
         if (fromIndex == toIndex)
+        {
+            view.Bind(items);
             return;
+        }
 
         if (!IsValid(fromIndex) || !IsValid(toIndex))
             return;

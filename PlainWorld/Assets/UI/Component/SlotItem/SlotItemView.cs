@@ -38,23 +38,17 @@ public class SlotItemView : MonoBehaviour,
         originalParent = transform.parent;
         wasDropped = false;
 
-        transform.SetParent(transform.root);
+        transform.SetParent(transform.root, true);
+
+        SetPivotWithoutMoving(new Vector2(0.5f, 0.5f));
+
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.8f;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        Vector2 localPoint;
-
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            rectTransform.parent as RectTransform,
-            eventData.position,
-            eventData.pressEventCamera,
-            out localPoint
-        );
-
-        rectTransform.localPosition = localPoint;
+        rectTransform.position = eventData.position;
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -64,15 +58,23 @@ public class SlotItemView : MonoBehaviour,
 
         if (!wasDropped)
         {
-            // Return to original slot
-            transform.SetParent(originalParent);
-            rectTransform.localPosition = Vector3.zero;
+            var slot = originalParent.GetComponent<SlotView>();
+            slot.SetItemView(this);
         }
+
+        SetPivotWithoutMoving(new Vector2(0f, 0f));
     }
 
     // Called by SlotView via eventData.pointerDrag
     public void MarkAsDropped()
     {
         wasDropped = true;
+    }
+
+    private void SetPivotWithoutMoving(Vector2 newPivot)
+    {
+        Vector3 worldPos = rectTransform.position;
+        rectTransform.pivot = newPivot;
+        rectTransform.position = worldPos;
     }
 }
