@@ -9,6 +9,7 @@ public class SlotItemView : MonoBehaviour,
     IDragHandler,
     IEndDragHandler
 {
+    #region Attributes
     [SerializeField] private Image icon;
     [SerializeField] private TMP_Text quantityText;
 
@@ -17,10 +18,14 @@ public class SlotItemView : MonoBehaviour,
 
     private Transform originalParent;
     private bool wasDropped;
+    #endregion
 
+    #region Properties
     public int SlotIndex { get; private set; }
+    #endregion
 
-    private void Awake()
+    #region Methods
+    void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
         rectTransform = GetComponent<RectTransform>();
@@ -77,4 +82,5 @@ public class SlotItemView : MonoBehaviour,
         rectTransform.pivot = newPivot;
         rectTransform.position = worldPos;
     }
+    #endregion
 }

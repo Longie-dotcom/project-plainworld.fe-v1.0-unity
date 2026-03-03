@@ -3,12 +3,17 @@ using UnityEngine.EventSystems;
 
 public class SlotView : MonoBehaviour, IDropHandler
 {
+    #region Attributes
+    private SlotItemView currentItem;
+    #endregion
+
+    #region Properties
     public int Index { get; private set; }
 
-    private SlotItemView currentItem;
-
     public System.Action<int, int> OnItemDropped;
+    #endregion
 
+    #region Methods
     public void Init(int index)
     {
         Index = index;
@@ -52,4 +57,5 @@ public class SlotView : MonoBehaviour, IDropHandler
         dragged.MarkAsDropped();
         OnItemDropped?.Invoke(dragged.SlotIndex, Index);
     }
+    #endregion
 }

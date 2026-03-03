@@ -1,12 +1,12 @@
-﻿using Assets.Network.DTO;
+﻿using System;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+using Assets.Network.DTO;
 using Assets.Network.Interface.Command;
 using Assets.Network.Interface.Receiver;
 using Assets.Network.NetworkException;
 using Assets.Service;
-using System;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.Network.Handler
@@ -19,7 +19,7 @@ namespace Assets.Network.Handler
         private AuthService authService;
         private NetworkCommandSender sender = new();
 
-        private const string BASE_URL = "http://localhost:7000/"; //192.168.1.135
+        private const string BASE_URL = "http://10.151.218.23:7000/"; //192.168.1.135
         private HttpClient httpClient = new HttpClient()
         {
             BaseAddress = new Uri(BASE_URL),

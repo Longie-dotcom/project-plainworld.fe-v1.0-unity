@@ -1,73 +1,97 @@
-using UnityEngine;
+using System;
+using Assets.Service;
 
-public class InventoryPresenter : MonoBehaviour
+namespace Assets.UI.HUD.Inventory
 {
-    [SerializeField] private InventoryView view;
-    [SerializeField] private ItemCatalogSO catalog;
-    [SerializeField] private int inventorySize = 16;
-
-    private InventoryItem[] items;
-
-    private void Start()
+    public class InventoryPresenter : IDisposable
     {
-        items = new InventoryItem[inventorySize];
+        #region Attributes
+        private readonly PlayerService playerService;
+        private readonly InventoryView inventoryView;
 
-        view.Initialize();
-        view.SubscribeToDrop(OnItemDropped);
+        private readonly ItemCatalogSO itemCatalog;
 
-        LoadDummyData();
-        RefreshView();
-    }
+        private readonly int inventorySize = 35;
+        private InventoryItem[] items;
 
-    private void LoadDummyData()
-    {
-        if (catalog == null || catalog.Items.Length == 0)
-            return;
+        private bool disposed;
+        #endregion
 
-        items[0] = new InventoryItem
-        (
-            catalog.Items[0], 1
-        );
-
-        items[1] = new InventoryItem
-        (
-            catalog.Items[1], 1
-        );
-
-        if (catalog.Items.Length > 1)
+        public InventoryPresenter(
+            PlayerService playerService,
+            InventoryView inventoryView,
+            ItemCatalogSO itemCatalog)
         {
-            items[2] = new InventoryItem
-            (
-                catalog.Items[2], 5
-            );
-        }
-    }
+            this.playerService = playerService;
+            this.inventoryView = inventoryView;
+            this.itemCatalog = itemCatalog;
 
-    private void OnItemDropped(int fromIndex, int toIndex)
-    {
-        if (fromIndex == toIndex)
-        {
-            view.Bind(items);
-            return;
+            items = new InventoryItem[inventorySize];
+
+            Bind();
         }
 
-        if (!IsValid(fromIndex) || !IsValid(toIndex))
-            return;
+        #region Methods
+        public void Dispose()
+        {
+            if (disposed) return;
+            disposed = true;
 
-        var temp = items[fromIndex];
-        items[fromIndex] = items[toIndex];
-        items[toIndex] = temp;
+            // Inbound
 
-        RefreshView();
-    }
+            // Outbound
+        }
 
-    private void RefreshView()
-    {
-        view.Bind(items);
-    }
+        private void Bind()
+        {
+            if (disposed)
+                throw new ObjectDisposedException(nameof(InventoryPresenter));
 
-    private bool IsValid(int index)
-    {
-        return index >= 0 && index < items.Length;
+            // Inbound
+
+            // Outbound
+            inventoryView.SubscribeToDrop(OnItemDropped);
+        }
+
+        public void LoadDummyData()
+        {
+            if (itemCatalog == null || itemCatalog.Items.Length == 0)
+                return;
+
+            items[0] = new InventoryItem(itemCatalog.Items[0], 1);
+            items[1] = new InventoryItem(itemCatalog.Items[1], 1);
+            items[2] = new InventoryItem(itemCatalog.Items[2], 5);
+
+            RefreshView();
+        }
+
+        private void OnItemDropped(int fromIndex, int toIndex)
+        {
+            if (fromIndex == toIndex)
+            {
+                inventoryView.Bind(items);
+                return;
+            }
+
+            if (!IsValid(fromIndex) || !IsValid(toIndex))
+                return;
+
+            var temp = items[fromIndex];
+            items[fromIndex] = items[toIndex];
+            items[toIndex] = temp;
+
+            RefreshView();
+        }
+
+        private void RefreshView()
+        {
+            inventoryView.Bind(items);
+        }
+
+        private bool IsValid(int index)
+        {
+            return index >= 0 && index < items.Length;
+        }
+        #endregion
     }
 }

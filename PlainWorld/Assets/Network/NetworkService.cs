@@ -1,12 +1,12 @@
-using Assets.Service.Interface;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Assets.Network.DTO;
 using Assets.Network.Interface.Base;
 using Assets.Network.Interface.Receiver;
+using Assets.Service.Interface;
 using Assets.Utility;
 using Microsoft.AspNetCore.SignalR.Client;
-using System.Collections.Generic;
-using System;
-using System.Threading.Tasks;
 
 namespace Assets.Network
 {
@@ -17,12 +17,12 @@ namespace Assets.Network
         private readonly Dictionary<Type, Queue<Action>> pendingHandlers = new();
 
         private HubConnection connection;
-        private const string HUB_URL = "http://localhost:5020/hubs/game"; // 192.168.1.135:5020
+        private const string HUB_URL = "http://10.151.218.23:5020/hubs/game"; // 192.168.1.135:5020
         #endregion
 
         #region Properties
         public NetworkSessionCoordinator Session { get; private set; }
-        
+
         public bool IsReady
         {
             get { return connection != null && connection.State == HubConnectionState.Connected; }

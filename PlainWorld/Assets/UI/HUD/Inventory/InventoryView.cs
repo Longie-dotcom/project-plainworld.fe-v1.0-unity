@@ -2,10 +2,16 @@ using UnityEngine;
 
 public class InventoryView : MonoBehaviour
 {
+    #region Attributes
     [SerializeField] private SlotView[] slots;
     [SerializeField] private SlotItemView slotItemPrefab;
+    #endregion
 
-    public void Initialize()
+    #region Properties
+    #endregion
+
+    #region Methods
+    void Awake()
     {
         for (int i = 0; i < slots.Length; i++)
         {
@@ -33,4 +39,5 @@ public class InventoryView : MonoBehaviour
         foreach (var slot in slots)
             slot.OnItemDropped += callback;
     }
+    #endregion
 }
