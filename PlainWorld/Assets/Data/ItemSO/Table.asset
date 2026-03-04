@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09d63bcc05f14884d96629f79bcf5298, type: 3}
+  m_Name: Table
+  m_EditorClassIdentifier: 
+  Id: ITEM_TABLE
+  DisplayName: Table
+  Icon: {fileID: 21300000, guid: 711d899c3ae67ab4688c21015f79cb1c, type: 3}
+  IsStackable: 1
+  Prefab: {fileID: 1925106991116539685, guid: b8acf90bd8dbd0740bf316160c751b9d, type: 3}
+  Offset: {x: 0, y: 0, z: 0}
+  SnapToGrid: 1
+  PlacementLayer:
+    serializedVersion: 2
+    m_Bits: 1

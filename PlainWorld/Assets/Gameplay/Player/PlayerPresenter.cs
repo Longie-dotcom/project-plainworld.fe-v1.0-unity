@@ -5,6 +5,7 @@ using Assets.UI.Enum;
 using Assets.Utility;
 using System;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Assets.Gameplay.Player
 {
@@ -26,6 +27,7 @@ namespace Assets.Gameplay.Player
         private readonly EntityPartCatalog eyesCatalog;
         private readonly EntityPartCatalog skinCatalog;
         private readonly EntityPartCatalog itemCatalog;
+        private readonly ItemCatalogSO inventoryItemCatalog;
 
         private bool disposed;
         #endregion
@@ -47,7 +49,8 @@ namespace Assets.Gameplay.Player
             EntityPartCatalog shoeCatalog,
             EntityPartCatalog eyesCatalog,
             EntityPartCatalog skinCatalog,
-            EntityPartCatalog itemCatalog)
+            EntityPartCatalog itemCatalog,
+            ItemCatalogSO inventoryItemCatalog)
         {
             this.playerService = playerService;
             this.gameService = gameService;
@@ -63,6 +66,7 @@ namespace Assets.Gameplay.Player
             this.eyesCatalog = eyesCatalog;
             this.skinCatalog = skinCatalog;
             this.itemCatalog = itemCatalog;
+            this.inventoryItemCatalog = inventoryItemCatalog;
 
             Bind();
             OnPlayerReady();
@@ -156,8 +160,48 @@ namespace Assets.Gameplay.Player
                 a.HairColor,
                 a.PantColor,
                 a.EyeColor,
-                a.SkinColor
+                a.SkinColor,
+                playerService.PlayerState.PlayerName
             );
+        }
+        #endregion
+
+        #region Inventory
+        private void OnSelectedInventorySlotChanged(int index)
+        {
+            // Get currently selected item from PlayerState Inventory
+            var selectedItem = playerService.PlayerState.Inventory.SelectedItem;
+
+            if (selectedItem == null)
+            {
+                // No item selected, deactivate placement
+                playerView.DeactivatePlacement();
+                return;
+            }
+            // Convert the inventory item ID to the PlaceableItemSO
+            var placeableItem = inventoryItemCatalog.GetPlaceableItem(selectedItem.ItemId);
+
+            if (placeableItem != null)
+            {
+                playerView.ActivatePlacement(placeableItem);
+            }
+            else
+            {
+                // No valid item to place
+                playerView.DeactivatePlacement();
+                return;
+            }
+        }
+
+        private void OnWorldObjectPlaced(Vector2 position, string itemId)
+        {
+            // Convert the inventory item ID to the PlaceableItemSO
+            var placeableItem = inventoryItemCatalog.GetPlaceableItem(itemId);
+
+            if (placeableItem != null)
+            {
+                playerView.InstantiatePlacedItem(position, placeableItem);
+            }
         }
         #endregion
 
@@ -221,6 +265,21 @@ namespace Assets.Gameplay.Player
                 await gameService.PlayerLogout();
             });
         }
+
+        private void OnPlaceItem(Vector2 worldPosition, string itemId)
+        {
+            AsyncHelper.Run(() => playerService.PlaceWorldObject(worldPosition, itemId));
+
+            // Forward to the player service
+            playerService.RemoveSelectedItem();
+
+            if (playerService.PlayerState.Inventory.SelectedItem == null)
+            {
+                // No item selected, deactivate placement
+                playerView.DeactivatePlacement();
+                return;
+            }
+        }
         #endregion
         #endregion
 
@@ -232,13 +291,18 @@ namespace Assets.Gameplay.Player
             // Inbound
             playerView.OnUpdateVisualAction -= OnUpdateVisualAction;
             playerView.OnSendActionToServer -= OnSendActionToServer;
+            playerView.OnPlaceItemAction -= OnPlaceItem;
 
             // Outbound
             playerService.PlayerState.Appearance.OnChanged -= ApplyAppearance;
+
             playerService.PlayerState.Act.OnMoveSpeedChanged -= playerView.SetSpeed;
             playerService.PlayerState.Act.OnPositionChanged -= playerView.ApplyPosition;
             playerService.PlayerState.Act.OnDirectionChanged -= playerView.SetDirection;
             playerService.PlayerState.Act.OnActionChanged -= playerView.SetAction;
+
+            playerService.PlayerState.Inventory.OnSelectedInventorySlotChanged -= OnSelectedInventorySlotChanged;
+
             settingService.SettingState.OnChanged -= playerView.ApplySettings;
         }
 
@@ -249,6 +313,8 @@ namespace Assets.Gameplay.Player
             // Inbound
             playerView.OnUpdateVisualAction += OnUpdateVisualAction;
             playerView.OnSendActionToServer += OnSendActionToServer;
+            playerView.OnPlaceItemAction += OnPlaceItem;
+
 
             // Outbound
             playerService.PlayerState.Appearance.OnChanged += ApplyAppearance;
@@ -262,7 +328,11 @@ namespace Assets.Gameplay.Player
             playerView.SetDirection(playerService.PlayerState.Act.CurrentDirection);
             playerService.PlayerState.Act.OnActionChanged += playerView.SetAction;
             playerView.SetAction(playerService.PlayerState.Act.CurrentAction);
-            playerService.PlayerState.Act.OnItemUsed += () => playerView.HoldItem(itemCatalog.GetDefault());  // TEST
+
+            playerService.PlayerState.Act.OnItemUsed += () => playerView.HoldItem(itemCatalog.GetDefault());  // TEST (SWORD ANIMATION) FIXXXXX LATERRRRR!!!!!!
+            playerService.PlayerState.OnWorldObjectPlaced += OnWorldObjectPlaced;   // TEST FIXXXXX LATERRRRR!!!!!!
+
+            playerService.PlayerState.Inventory.OnSelectedInventorySlotChanged += OnSelectedInventorySlotChanged;
 
             settingService.SettingState.OnChanged += playerView.ApplySettings;
             playerView.ApplySettings(settingService.SettingState);

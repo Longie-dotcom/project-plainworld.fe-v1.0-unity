@@ -1,8 +1,21 @@
 using System;
 using Assets.Service;
+using Assets.State.Component.Player;
 
 namespace Assets.UI.HUD.Inventory
 {
+    public class InventoryItemViewModel
+    {
+        public ItemSO Item { get; }
+        public int Quantity { get; }
+
+        public InventoryItemViewModel(ItemSO item, int quantity)
+        {
+            Item = item;
+            Quantity = quantity;
+        }
+    }
+
     public class InventoryPresenter : IDisposable
     {
         #region Attributes
@@ -10,9 +23,6 @@ namespace Assets.UI.HUD.Inventory
         private readonly InventoryView inventoryView;
 
         private readonly ItemCatalogSO itemCatalog;
-
-        private readonly int inventorySize = 35;
-        private InventoryItem[] items;
 
         private bool disposed;
         #endregion
@@ -26,8 +36,6 @@ namespace Assets.UI.HUD.Inventory
             this.inventoryView = inventoryView;
             this.itemCatalog = itemCatalog;
 
-            items = new InventoryItem[inventorySize];
-
             Bind();
         }
 
@@ -38,8 +46,11 @@ namespace Assets.UI.HUD.Inventory
             disposed = true;
 
             // Inbound
+            inventoryView.UnsubscribeToDrop(OnItemDropped);
+            inventoryView.OnSelectedItemChanged -= OnSelectedItemChanged;
 
             // Outbound
+            playerService.PlayerState.Inventory.OnInventoryChanged -= RefreshView;
         }
 
         private void Bind()
@@ -48,49 +59,52 @@ namespace Assets.UI.HUD.Inventory
                 throw new ObjectDisposedException(nameof(InventoryPresenter));
 
             // Inbound
+            inventoryView.SubscribeToDrop(OnItemDropped);
+            inventoryView.OnSelectedItemChanged += OnSelectedItemChanged;
 
             // Outbound
-            inventoryView.SubscribeToDrop(OnItemDropped);
-        }
-
-        public void LoadDummyData()
-        {
-            if (itemCatalog == null || itemCatalog.Items.Length == 0)
-                return;
-
-            items[0] = new InventoryItem(itemCatalog.Items[0], 1);
-            items[1] = new InventoryItem(itemCatalog.Items[1], 1);
-            items[2] = new InventoryItem(itemCatalog.Items[2], 5);
-
-            RefreshView();
+            playerService.PlayerState.Inventory.OnInventoryChanged += RefreshView;
         }
 
         private void OnItemDropped(int fromIndex, int toIndex)
         {
+            // Invalid drop (item dropped outside valid slots)
             if (fromIndex == toIndex)
             {
-                inventoryView.Bind(items);
+                RefreshView();
                 return;
             }
 
-            if (!IsValid(fromIndex) || !IsValid(toIndex))
-                return;
+            // Valid drop → swap in state
+            playerService.SwapInventory(fromIndex, toIndex);
+        }
 
-            var temp = items[fromIndex];
-            items[fromIndex] = items[toIndex];
-            items[toIndex] = temp;
-
-            RefreshView();
+        private void OnSelectedItemChanged(int index)
+        {
+            playerService.SelectInventorySlot(index);
         }
 
         private void RefreshView()
         {
-            inventoryView.Bind(items);
-        }
+            var items = playerService.PlayerState.Inventory.Items;
 
-        private bool IsValid(int index)
-        {
-            return index >= 0 && index < items.Length;
+            var displayItems = new InventoryItemViewModel[items.Length];
+
+            for (int i = 0; i < items.Length; i++)
+            {
+                var id = items[i]?.ItemId;
+
+                if (string.IsNullOrEmpty(id)) continue;
+
+                var quantity = items[i]?.Quantity ?? 0;
+
+                // Lookup the actual SO
+                var itemSO = id != null ? itemCatalog.GetById(id) : null;
+
+                displayItems[i] = new InventoryItemViewModel(itemSO, quantity);
+            }
+
+            inventoryView.Bind(displayItems);
         }
         #endregion
     }

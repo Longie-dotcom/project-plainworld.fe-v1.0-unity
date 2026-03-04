@@ -107,8 +107,8 @@ namespace Assets.Gameplay.Entity.Player
         protected override void BindView(PlayerEntityView view, PlayerEntity playerEntity)
         {
             // Outbound
-            playerEntity.Appearance.OnChanged += () => ApplyAppearanceToView(view, playerEntity.Appearance); 
-            ApplyAppearanceToView(view, playerEntity.Appearance);
+            playerEntity.Appearance.OnChanged += () => ApplyAppearanceToView(view, playerEntity.Appearance, playerEntity.Name); 
+            ApplyAppearanceToView(view, playerEntity.Appearance, playerEntity.Name);
             
             playerEntity.Act.OnMoveSpeedChanged += view.SetSpeed;
             view.SetSpeed(playerEntity.Act.MoveSpeed);
@@ -118,7 +118,7 @@ namespace Assets.Gameplay.Entity.Player
             view.SetDirection(playerEntity.Act.CurrentDirection);
             playerEntity.Act.OnActionChanged += view.SetAction;
             view.SetAction(playerEntity.Act.CurrentAction);
-            playerEntity.Act.OnItemUsed += () => view.HoldItem(itemCatalog.GetDefault()); // TEST
+            playerEntity.Act.OnItemUsed += () => view.HoldItem(itemCatalog.GetDefault());  // TEST (SWORD ANIMATION) FIXXXXX LATERRRRR!!!!!!
 
             settingService.SettingState.OnChanged += view.ApplySettings;
             view.ApplySettings(settingService.SettingState);
@@ -127,7 +127,7 @@ namespace Assets.Gameplay.Entity.Player
         protected override void UnbindView(PlayerEntityView view, PlayerEntity playerEntity)
         {
             // Outbound
-            playerEntity.Appearance.OnChanged -= () => ApplyAppearanceToView(view, playerEntity.Appearance);
+            playerEntity.Appearance.OnChanged -= () => ApplyAppearanceToView(view, playerEntity.Appearance, playerEntity.Name);
 
             playerEntity.Act.OnMoveSpeedChanged -= view.SetSpeed;
             playerEntity.Act.OnPositionChanged -= view.ApplyPosition;
@@ -141,7 +141,8 @@ namespace Assets.Gameplay.Entity.Player
         #region Private Helpers
         private void ApplyAppearanceToView(
             PlayerEntityView view,
-            IReadOnlyPlayerAppearance appearance)
+            IReadOnlyPlayerAppearance appearance,
+            string name)
         {
             if (view == null)
                 return;
@@ -173,7 +174,9 @@ namespace Assets.Gameplay.Entity.Player
                 appearance.HairColor == default ? defaults.HairColor : appearance.HairColor,
                 appearance.PantColor == default ? defaults.PantColor : appearance.PantColor,
                 appearance.EyeColor == default ? defaults.EyeColor : appearance.EyeColor,
-                appearance.SkinColor == default ? defaults.SkinColor : appearance.SkinColor
+                appearance.SkinColor == default ? defaults.SkinColor : appearance.SkinColor,
+
+                name
             );
         }
         #endregion

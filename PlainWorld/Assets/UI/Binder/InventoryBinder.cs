@@ -38,8 +38,6 @@ public class InventoryBinder : ComponentBinder
             inventoryView,
             itemCatalogSO);
 
-        inventoryPresenter.LoadDummyData();
-
         GameLogger.Info(
             Channel.System,
             "HUD: Inventory UI components binded successfully");

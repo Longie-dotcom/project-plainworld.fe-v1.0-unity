@@ -12,12 +12,12 @@ public class HUDUtilsView : MonoBehaviour
     [SerializeField] private Button logoutButton;
     [SerializeField] private Button customizeCharacterButton;
     [SerializeField] private Button settingButton;
-    [SerializeField] private Button inventoryButton;
+    [SerializeField] private Button inventoryStorageButton;
 
     [Header("Panels")]
     [SerializeField] private CustomizeCharacterView customizeCharacterView;
     [SerializeField] private SettingView settingView;
-    [SerializeField] private InventoryView inventoryView;
+    [SerializeField] private InventoryStorage inventoryStorage;
     #endregion
 
     #region Properties
@@ -30,7 +30,7 @@ public class HUDUtilsView : MonoBehaviour
         logoutButton.onClick.AddListener(() => OnLogoutClicked?.Invoke());
         customizeCharacterButton.onClick.AddListener(() => Open(customizeCharacterView, customizeCharacterButton));
         settingButton.onClick.AddListener(() => Open(settingView, settingButton));
-        inventoryButton.onClick.AddListener(() => Open(inventoryView, inventoryButton));
+        inventoryStorageButton.onClick.AddListener(() => Open(inventoryStorage, inventoryStorageButton));
     }
 
     void Start()
@@ -62,11 +62,11 @@ public class HUDUtilsView : MonoBehaviour
     {
         customizeCharacterView.gameObject.SetActive(false);
         settingView.gameObject.SetActive(false);
-        inventoryView.gameObject.SetActive(false);
+        inventoryStorage.gameObject.SetActive(false);
 
         customizeCharacterButton.interactable = true;
         settingButton.interactable = true;
-        inventoryButton.interactable = true;
+        inventoryStorageButton.interactable = true;
     }
 
     private void UpdateButtons(Button activeButton)
@@ -78,8 +78,8 @@ public class HUDUtilsView : MonoBehaviour
         settingButton.interactable =
             settingButton != activeButton;
 
-        inventoryButton.interactable =
-            inventoryButton != activeButton;
+        inventoryStorageButton.interactable =
+            inventoryStorageButton != activeButton;
     }
 
     private void ToggleHUD()
@@ -93,7 +93,7 @@ public class HUDUtilsView : MonoBehaviour
         }
         else
         {
-            Open(customizeCharacterView, customizeCharacterButton);
+            Open(inventoryStorage, inventoryStorageButton);
             SetButtonsVisible(true);
         }
     }
@@ -103,7 +103,7 @@ public class HUDUtilsView : MonoBehaviour
         logoutButton.gameObject.SetActive(visible);
         customizeCharacterButton.gameObject.SetActive(visible);
         settingButton.gameObject.SetActive(visible);
-        inventoryButton.gameObject.SetActive(visible);
+        inventoryStorageButton.gameObject.SetActive(visible);
     }
 
     private bool IsTyping()

@@ -11,5 +11,7 @@ namespace Assets.Network.Interface.Receiver
         void OnPlayerActed(PlayerActDTO dto);
         void OnPlayerCreatedAppearance(PlayerAppearanceDTO dto);
         void OnPlayerForcedLogout();
+        void OnPlayerPickedItem(Item item);
+        void OnWorldObjectPlaced (WorldObjectDTO dto);
     }
 }

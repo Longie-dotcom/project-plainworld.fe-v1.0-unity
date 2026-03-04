@@ -40,6 +40,13 @@ namespace Assets.Network.DTO
     }
 
     [Serializable]
+    public class Item
+    {
+        public string Id { get; set; } = string.Empty;
+        public int Quantity { get; set; }
+    }
+
+    [Serializable]
     public class Health
     {
         public int Current { get; set; }

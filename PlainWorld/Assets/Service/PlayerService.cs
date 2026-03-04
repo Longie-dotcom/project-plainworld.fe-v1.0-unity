@@ -123,6 +123,28 @@ namespace Assets.Service
         }
         #endregion
 
+        #region Inventory
+        public void SwapInventory(int from, int to)
+        {
+            playerState.SwapInventory(from, to);
+        }
+
+        public void SetInventoryItem(int index, InventoryItemSnapshot item)
+        {
+            playerState.SetInventoryItem(index, item);
+        }
+
+        public void SelectInventorySlot(int index)
+        {
+            playerState.SelectInventorySlot(index);
+        }
+
+        public void RemoveSelectedItem(int quantity = 1)
+        {
+            playerState.RemoveSelectedItem(quantity);
+        }
+        #endregion
+
         #region Senders
         public async Task JoinAsync()
         {
@@ -164,6 +186,19 @@ namespace Assets.Service
                 Appearance = PlayerAppearanceMapper.ToDTO(snapshot)
             };
             await PlayerNetworkCommand.CreateAppearance(dto);
+        }
+
+        public async Task PlaceWorldObject(Vector2 position, string itemId)
+        {
+            if (!PlayerState.HasJoined)
+                return;
+
+            var dto = new PlayerPlaceWorldObjectDTO
+            {
+                ItemID = itemId,
+                Position = PositionMapper.ToDTO(position),
+            };
+            await PlayerNetworkCommand.PlaceWorldObject(dto);
         }
         #endregion
 
@@ -210,6 +245,23 @@ namespace Assets.Service
         {
             CoroutineRunner.Instance.Schedule(() => 
                 playerState.ForcedLogout()
+            );
+        }
+
+        public void OnPlayerPickedItem(Item item)
+        {
+            CoroutineRunner.Instance.Schedule(() =>
+                playerState.PickUpItem(
+                    ItemMapper.ToSnapshot(item))
+            );
+        }
+
+        public void OnWorldObjectPlaced(WorldObjectDTO dto)
+        {
+            CoroutineRunner.Instance.Schedule(() =>
+                playerState.OnWorldObjectPlace(
+                    PositionMapper.ToVector2(dto.Position),
+                    dto.ItemID)
             );
         }
         #endregion

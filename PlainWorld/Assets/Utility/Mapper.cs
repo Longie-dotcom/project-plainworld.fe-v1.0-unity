@@ -135,4 +135,31 @@ namespace Assets.Utility
             };
         }
     }
+
+    public static class ItemMapper
+    {
+        // DTO to Snapshot
+        public static InventoryItemSnapshot ToSnapshot(Network.DTO.Item dto)
+        {
+
+            if (dto == null)
+            {
+                return new InventoryItemSnapshot(
+                    string.Empty, 0);
+            };
+
+            return new InventoryItemSnapshot(
+                dto.Id, dto.Quantity);
+        }
+
+        // Snapshot to DTO
+        public static Network.DTO.Item ToDTO(InventoryItemSnapshot snapshot)
+        {
+            return new Network.DTO.Item
+            {
+                Id = snapshot.ItemId,
+                Quantity = snapshot.Quantity,
+            };
+        }
+    }
 }

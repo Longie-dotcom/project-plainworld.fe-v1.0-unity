@@ -10,14 +10,15 @@ public class PlayerView : MonoBehaviour
     [Header("Sub Views")]
     [SerializeField] private PlayerActView actView;
     [SerializeField] private PlayerVisualView visualView;
+    [SerializeField] private PlayerPlacementView placementView;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private CameraBounds cameraBounds;
-    [SerializeField] private float cameraSmoothTime = 0.12f;
     #endregion
 
     #region Properties
     public event Action<Vector2, EntityAction> OnUpdateVisualAction;
     public event Action OnSendActionToServer;
+    public event Action<Vector2, string> OnPlaceItemAction;
     #endregion
 
     #region Methods
@@ -25,6 +26,11 @@ public class PlayerView : MonoBehaviour
     {
         actView.OnUpdateVisualAction += (Vector2 dir, EntityAction action) => OnUpdateVisualAction?.Invoke(dir, action);
         actView.OnSendActionToServer += () => OnSendActionToServer?.Invoke();
+
+        placementView.OnPlaceItem += (Vector2 pos, string itemId) =>
+        {
+            OnPlaceItemAction?.Invoke(pos, itemId);
+        };
     }
 
     void Start()
@@ -54,7 +60,9 @@ public class PlayerView : MonoBehaviour
         Color hairColor,
         Color pantColor,
         Color eyeColor,
-        Color skinColor)
+        Color skinColor,
+        
+        string name)
     {
         visualView.ApplyAppearance(
             hair,
@@ -68,7 +76,19 @@ public class PlayerView : MonoBehaviour
             hairColor,
             pantColor,
             eyeColor,
-            skinColor);
+            skinColor,
+            
+            name);
+    }
+
+    public void ActivatePlacement(PlaceableItemSO item)
+    {
+        placementView.Activate(item);
+    }
+
+    public void DeactivatePlacement()
+    {
+        placementView.Deactivate();
     }
 
     public void SetSpeed(float moveSpeed)
@@ -98,6 +118,11 @@ public class PlayerView : MonoBehaviour
     {
         visualView.ApplySettings(settings);
         actView.ApplySettings(settings);
+    }
+
+    public void InstantiatePlacedItem(Vector2 position, PlaceableItemSO item)
+    {
+        placementView.InstantiatePlacedItem(position, item);
     }
 
     #region Private Helper

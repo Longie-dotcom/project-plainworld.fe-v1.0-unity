@@ -1,3 +1,5 @@
+using Assets.State.Component.Player;
+using Assets.UI.HUD.Inventory;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -31,7 +33,7 @@ public class SlotItemView : MonoBehaviour,
         rectTransform = GetComponent<RectTransform>();
     }
 
-    public void Bind(InventoryItem item, int slotIndex)
+    public void Bind(InventoryItemViewModel item, int slotIndex)
     {
         SlotIndex = slotIndex;
         icon.sprite = item.Item.Icon;

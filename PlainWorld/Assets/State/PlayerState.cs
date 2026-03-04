@@ -14,6 +14,7 @@ namespace Assets.State
         #region Attributes
         private Act act;
         private PlayerAppearance appearance;
+        private Inventory inventory;
         #endregion
 
         #region Properties
@@ -23,16 +24,22 @@ namespace Assets.State
 
         public IReadOnlyAct Act { get { return act; } }
         public IReadOnlyPlayerAppearance Appearance { get { return appearance; } }
+        public IReadOnlyInventory Inventory { get { return inventory; } }
 
         public event Action OnPlayerDataReady;
         public event Action OnPlayerLogout;
         public event Action OnPlayerForcedLogout;
+
+
+        // IMPORTANT!!!!! (REMOVE LATER, SPLIT TO ANOTHER SERVICE)
+        public event Action<Vector2, string> OnWorldObjectPlaced;
         #endregion
 
         public PlayerState()
         {
             act = new Act();
             appearance = new PlayerAppearance();
+            inventory = new Inventory(40);
         }
 
         #region Methods
@@ -208,6 +215,45 @@ namespace Assets.State
         {
             if (!HasJoined) return;
             appearance.ApplyNormalizedSnapshot(snapshot, defaults);
+        }
+        #endregion
+
+        #region Inventory
+        public void SwapInventory(int from, int to)
+        {
+            if (!HasJoined) return;
+            inventory.Swap(from, to);
+        }
+
+        public void SetInventoryItem(int index, InventoryItemSnapshot item)
+        {
+            if (!HasJoined) return;
+            inventory.SetItem(index, item);
+        }
+
+        public bool PickUpItem(InventoryItemSnapshot item)
+        {
+            if (!HasJoined) return false;
+            return inventory.PickUpItem(item.ItemId, item.Quantity);
+        }
+
+        public void SelectInventorySlot(int index)
+        {
+            if (!HasJoined) return;
+            inventory.SelectInventorySlot(index);
+        }
+
+        public bool RemoveSelectedItem(int quantity = 1)
+        {
+            return inventory.RemoveSelectedItem(quantity);
+        }
+        #endregion
+
+        #region REMOVE LATER!!!!
+        public void OnWorldObjectPlace(Vector2 position, string itemId)
+        {
+            if (!HasJoined) return;
+            OnWorldObjectPlaced?.Invoke(position, itemId);
         }
         #endregion
     }

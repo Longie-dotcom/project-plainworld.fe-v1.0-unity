@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 
 public class PlayerVisualView : VisualView
 {
@@ -12,6 +13,7 @@ public class PlayerVisualView : VisualView
     [SerializeField] private SpriteRenderer eyeRenderer;
     [SerializeField] private SpriteRenderer skinRenderer;
     [SerializeField] private SpriteRenderer itemRenderer;
+    [SerializeField] private TMP_Text nameText;
     #endregion
 
     #region Properties
@@ -30,7 +32,9 @@ public class PlayerVisualView : VisualView
         Color hairColor,
         Color pantColor,
         Color eyeColor,
-        Color skinColor)
+        Color skinColor,
+        
+        string name)
     {
         bodyParts.Clear();
 
@@ -46,6 +50,8 @@ public class PlayerVisualView : VisualView
         pantRenderer.color = pantColor;
         eyeRenderer.color = eyeColor;
         skinRenderer.color = skinColor;
+
+        nameText.text = name;
 
         animationTimer = 0f;
     }

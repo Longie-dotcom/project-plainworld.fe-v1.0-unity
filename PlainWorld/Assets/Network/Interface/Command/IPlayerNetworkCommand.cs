@@ -9,5 +9,6 @@ namespace Assets.Network.Interface.Command
         Task Logout();
         Task Act(PlayerActsDTO dto);
         Task CreateAppearance(PlayerCreateAppearanceDTO dto);
+        Task PlaceWorldObject(PlayerPlaceWorldObjectDTO dto);
     }
 }

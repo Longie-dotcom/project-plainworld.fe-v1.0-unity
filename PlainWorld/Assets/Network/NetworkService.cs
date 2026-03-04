@@ -17,7 +17,7 @@ namespace Assets.Network
         private readonly Dictionary<Type, Queue<Action>> pendingHandlers = new();
 
         private HubConnection connection;
-        private const string HUB_URL = "http://10.151.218.23:5020/hubs/game"; // 192.168.1.135:5020
+        private const string HUB_URL = "http://171.239.243.177:5020/hubs/game"; // 192.168.1.135:5020
         #endregion
 
         #region Properties
@@ -187,6 +187,30 @@ namespace Assets.Network
                 {
                     Dispatch<IPlayerNetworkReceiver, object>(
                          null, (r, _) => r.OnPlayerForcedLogout());
+                });
+
+            connection.On<Item>(
+                OnReceive.OnPlayerPickItem, dto =>
+                {
+                    Dispatch<IPlayerNetworkReceiver, Item>(
+                         dto, (r, _) => r.OnPlayerPickedItem(dto));
+                });
+
+            connection.On<WorldObjectDTO>(
+                OnReceive.OnWorldObjectPlaced, dto =>
+                {
+                    Dispatch<IPlayerNetworkReceiver, WorldObjectDTO>(
+                         dto, (r, _) => r.OnWorldObjectPlaced(dto));
+                });
+
+            connection.On<IEnumerable<WorldObjectDTO>>(
+                OnReceive.OnWorldObjectPlaced, dtos =>
+                {
+                    foreach (var dto in dtos)
+                    {
+                        Dispatch<IPlayerNetworkReceiver, WorldObjectDTO>(
+                            dto, (r, d) => r.OnWorldObjectPlaced(d));
+                    }
                 });
 
             connection.On<ChatDTO>(

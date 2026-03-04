@@ -58,6 +58,14 @@ namespace Assets.Network.Handler
                 dto
             );
         }
+
+        public Task PlaceWorldObject(PlayerPlaceWorldObjectDTO dto)
+        {
+            return sender.Send(
+                OnSend.PlayerPlaceWorldObject,
+                dto
+            );
+        }
         #endregion
 
         #region Receive Handlers
@@ -84,6 +92,16 @@ namespace Assets.Network.Handler
         public void OnPlayerForcedLogout()
         {
             playerService.OnPlayerForcedLogout();
+        }
+
+        public void OnPlayerPickedItem(Item item)
+        {
+            playerService.OnPlayerPickedItem(item);
+        }
+
+        public void OnWorldObjectPlaced(WorldObjectDTO dto)
+        {
+            playerService.OnWorldObjectPlaced(dto);
         }
         #endregion
     }

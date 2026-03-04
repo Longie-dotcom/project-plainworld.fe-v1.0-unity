@@ -44,7 +44,9 @@ public class PlayerEntityView : EntityView
         Color hairColor,
         Color pantColor,
         Color eyeColor,
-        Color skinColor)
+        Color skinColor,
+        
+        string name)
     {
         visualView.ApplyAppearance(
             hair, 
@@ -58,7 +60,9 @@ public class PlayerEntityView : EntityView
             hairColor, 
             pantColor, 
             eyeColor, 
-            skinColor);
+            skinColor,
+            
+            name);
     }
 
     public override void ApplyPosition(Vector2 pos)

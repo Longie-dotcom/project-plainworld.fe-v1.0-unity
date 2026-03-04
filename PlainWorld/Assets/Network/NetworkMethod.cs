@@ -8,6 +8,8 @@ namespace Assets.Network
         public const string OnPlayerAct = "OnPlayerAct";
         public const string OnPlayerCreateAppearance = "OnPlayerCreateAppearance";
         public const string OnPlayerForcedLogout = "OnPlayerForcedLogout";
+        public const string OnPlayerPickItem = "OnPlayerPickItem";
+        public const string OnPlayerPlaceWorldObject = "OnPlayerPlaceWorldObject";
         public const string OnPlayerChat = "OnPlayerChat";
 
         // --- Entity Service ---
@@ -16,6 +18,8 @@ namespace Assets.Network
         public const string OnPlayerEntityAct = "OnPlayerEntityAct";
         public const string OnPlayerEntityCreateAppearance = "OnPlayerEntityCreateAppearance";
         public const string OnPlayerEntityOnline = "OnPlayerEntityOnline";
+
+        public const string OnWorldObjectPlaced = "OnWorldObjectPlaced";
 
         public const string OnGrayShroomEntitySpawn = "OnGrayShroomEntitySpawn";
         public const string OnGrayShroomEntityAct = "OnGrayShroomEntityAct";
@@ -36,6 +40,7 @@ namespace Assets.Network
         public const string PlayerLogout = "PlayerLogout";
         public const string PlayerAct = "PlayerAct";
         public const string PlayerCreateAppearance = "PlayerCreateAppearance";
+        public const string PlayerPlaceWorldObject = "PlayerPlaceWorldObject";
         public const string PlayerChat = "PlayerChat";
     }
 }
