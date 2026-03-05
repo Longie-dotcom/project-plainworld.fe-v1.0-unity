@@ -19,7 +19,7 @@ namespace Assets.Network.Handler
         private AuthService authService;
         private NetworkCommandSender sender = new();
 
-        private const string BASE_URL = "http://171.239.243.177:7000/"; //192.168.1.135
+        private const string BASE_URL = "http://26.127.117.155:7000/"; //192.168.1.135
         private HttpClient httpClient = new HttpClient()
         {
             BaseAddress = new Uri(BASE_URL),
